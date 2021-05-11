@@ -67,6 +67,7 @@ Terra operates on Google Cloud Platform, so you will need a (free) Google accoun
 - Receive alerts when spending reaches specified thresholds
 
 ```{r, child=c("reusable_content/_create_google_account.Rmd")}
+
 ```
 
 ### Step 2: Set up Google Billing
