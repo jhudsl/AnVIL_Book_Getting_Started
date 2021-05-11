@@ -1,0 +1,90 @@
+# (PART\*) Getting Started {-}
+
+# PIs and Lab Managers
+
+## Introduction
+
+### Who is this guide for?
+
+### What's in this guide?
+
+### Philosophy
+
+## Account Setup
+
+This guide provides an opinionated walkthrough on how to set up AnVIL for your lab, based on experiences from many labs actively using AnVIL.  Following our recommendations will help you configure your team so that you can more clearly see where charges are coming from and have greater control over which users can spend your money and access your data.
+
+### Goals for this guide
+
+```{r, echo=FALSE, fig.alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_165")
+```
+
+### Overview
+
+AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform, so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
+
+```{r, echo=FALSE, fig.alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_138")
+```
+
+1. Create a Google account
+1. Set up Google Billing (and claim your free credits!).
+    + Add an administrator or viewer (optional)
+1. Link Terra to the Google Billing Account
+1. Create Terra Billing Projects
+1. Set budgets and alerts (optional, but highly recommended)
+1. Add users and Workspaces
+
+### Lab Management Roles
+
+While there are many ways to configure your lab, this guide defines the following roles and responsibilities:
+
+- **PI** - The PI sets up the lab’s Google Cloud Account, creates its Google Billing Account(s), and Google Payment Method(s), links Terra with GCP, and invites Lab Managers to be Google Cloud “Billing Account Users.”
+
+- **Lab Manager** (Optional) - A Lab Manager creates or clones Terra Workspaces and manages who can use those Workspaces. The Lab Manager is also responsible for creating one or more Terra Billing Projects configuring GCP budgets and alerts.  Importantly, **lab managers control who can spend lab money** and should have an understanding of Google Cloud Billing and Terra Billing Projects.  Depending on your lab, the PI may choose to be the only Lab Manager, or may appoint trusted lab members to assist.
+
+- **Data Analyst** - A lab member who is granted write + can-compute access on one or more Terra workspaces by a Lab Manager and who will run analyses in Terra.  Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).
+
+### Before you start
+
+- You will need a **credit card or bank account** to activate your free trial and get started.  Don't worry! **You won't be billed until you explicitly turn on automatic billing**, but payment information is needed for verification purposes.
+- Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
+- To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
+
+
+### Step 1: Create a Google Account
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 1 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_160")
+```
+
+
+Terra operates on Google Cloud Platform, so you will need a (free) Google account which will allow you to
+
+- Access the Terra platform to manage team members, data, and analyses
+- Access Google Cloud Platform to manage billing
+- Receive alerts when spending reaches specified thresholds
+
+```{r, child=c("reusable_content/_create_google_account.Rmd")}
+
+```
+
+### Step 2: Set up Google Billing
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 2 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_170")
+```
+
+Terra operates on Google Cloud Platform, and does not charge any markup.  Rather than paying Terra or AnVIL, users set up billing directly with Google Cloud Platform.
+
+**Make sure to use the same Google account ID you use to log into Terra for Google Cloud Billing.**
+
+To set up billing, you must first create a **Google “Billing Account”**.
+You can create multiple Billing Accounts associated with your Google ID.  We recommend creating separate Billing Accounts for different funding sources.
+
+#### Create a Google Billing Account
+
+```{r, child=c("reusable_content/_create_google_billing_account.Rmd")}
+```
+
