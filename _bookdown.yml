@@ -1,10 +1,19 @@
 book_filename: "AnVIL_Getting_Started"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/AnVIL_Book_Getting_Started
-rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "02-getting_started_pis.Rmd",
-            "About.Rmd"]
+rmd_files: [
+  "index.Rmd",
+  "01-intro.Rmd",
+  "02-pis.Rmd",
+  "03-data-analysts.Rmd",
+  "04-instructors.Rmd",
+  "05-tools.Rmd",
+  "06-data.Rmd",
+  "07-workflows.Rmd",
+  "08-security.Rmd",
+  "09-billing.Rmd",
+  "About.Rmd"
+]
 new_session: yes
 delete_merged_file: true
 language:
