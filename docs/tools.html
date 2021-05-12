@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 PIs and Lab Managers | Getting Started on AnVIL</title>
+  <title>Chapter 5 Tools | Getting Started on AnVIL</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 PIs and Lab Managers | Getting Started on AnVIL" />
+  <meta property="og:title" content="Chapter 5 Tools | Getting Started on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 PIs and Lab Managers | Getting Started on AnVIL" />
+  <meta name="twitter:title" content="Chapter 5 Tools | Getting Started on AnVIL" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction.html"/>
-<link rel="next" href="data-analysts.html"/>
+<link rel="prev" href="instructors.html"/>
+<link rel="next" href="data.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -172,107 +172,16 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_main_image.png">
 </div>
-<div id="pis-and-lab-managers" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> PIs and Lab Managers</h1>
-<div id="introduction-1" class="section level2">
-<h2><span class="header-section-number">2.1</span> Introduction</h2>
-<div id="who-is-this-guide-for" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Who is this guide for?</h3>
+<div id="tools" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Tools</h1>
+<div id="introduction-4" class="section level2">
+<h2><span class="header-section-number">5.1</span> Introduction</h2>
+<div id="who-is-this-guide-for-3" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Who is this guide for?</h3>
 </div>
-<div id="whats-in-this-guide" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> What’s in this guide?</h3>
-</div>
-<div id="philosophy" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> Philosophy</h3>
-</div>
-</div>
-<div id="account-setup" class="section level2">
-<h2><span class="header-section-number">2.2</span> Account Setup</h2>
-<p>This guide provides an opinionated walkthrough on how to set up AnVIL for your lab, based on experiences from many labs actively using AnVIL. Following our recommendations will help you configure your team so that you can more clearly see where charges are coming from and have greater control over which users can spend your money and access your data.</p>
-<div id="goals-for-this-guide" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Goals for this guide</h3>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."  /></p>
-</div>
-<div id="overview" class="section level3">
-<h3><span class="header-section-number">2.2.2</span> Overview</h3>
-<p>AnVIL uses <a href="https://anvil.terra.bio/">Terra</a> to run analyses. Terra operates on Google Cloud Platform, so you’ll pay for all storage and analysis costs through a Google account linked to Terra. The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis. These costs are passed along through Terra without any markup.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_138.png" title="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces" alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces"  /></p>
-<ol style="list-style-type: decimal">
-<li>Create a Google account</li>
-<li>Set up Google Billing (and claim your free credits!).
-<ul>
-<li>Add an administrator or viewer (optional)</li>
-</ul></li>
-<li>Link Terra to the Google Billing Account</li>
-<li>Create Terra Billing Projects</li>
-<li>Set budgets and alerts (optional, but highly recommended)</li>
-<li>Add users and Workspaces</li>
-</ol>
-</div>
-<div id="lab-management-roles" class="section level3">
-<h3><span class="header-section-number">2.2.3</span> Lab Management Roles</h3>
-<p>While there are many ways to configure your lab, this guide defines the following roles and responsibilities:</p>
-<ul>
-<li><p><strong>PI</strong> - The PI sets up the lab’s Google Cloud Account, creates its Google Billing Account(s), and Google Payment Method(s), links Terra with GCP, and invites Lab Managers to be Google Cloud “Billing Account Users.”</p></li>
-<li><p><strong>Lab Manager</strong> (Optional) - A Lab Manager creates or clones Terra Workspaces and manages who can use those Workspaces. The Lab Manager is also responsible for creating one or more Terra Billing Projects configuring GCP budgets and alerts. Importantly, <strong>lab managers control who can spend lab money</strong> and should have an understanding of Google Cloud Billing and Terra Billing Projects. Depending on your lab, the PI may choose to be the only Lab Manager, or may appoint trusted lab members to assist.</p></li>
-<li><p><strong>Data Analyst</strong> - A lab member who is granted write + can-compute access on one or more Terra workspaces by a Lab Manager and who will run analyses in Terra. Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).</p></li>
-</ul>
-</div>
-<div id="before-you-start" class="section level3">
-<h3><span class="header-section-number">2.2.4</span> Before you start</h3>
-<ul>
-<li>You will need a <strong>credit card or bank account</strong> to activate your free trial and get started. Don’t worry! <strong>You won’t be billed until you explicitly turn on automatic billing</strong>, but payment information is needed for verification purposes.</li>
-<li>Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).</li>
-<li>To add lab members, you will need to know the Google account they will use to access Terra. You can complete most setup steps without this information and then add them once you know the correct accounts.</li>
-</ul>
-</div>
-<div id="step-1-create-a-google-account" class="section level3">
-<h3><span class="header-section-number">2.2.5</span> Step 1: Create a Google Account</h3>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_160.png" title="Diagram showing an overview of the six steps. Step 1 is highlighted." alt="Diagram showing an overview of the six steps. Step 1 is highlighted."  /></p>
-<p>Terra operates on Google Cloud Platform, so you will need a (free) Google account which will allow you to</p>
-<ul>
-<li>Access the Terra platform to manage team members, data, and analyses</li>
-<li>Access Google Cloud Platform to manage billing</li>
-<li>Receive alerts when spending reaches specified thresholds</li>
-</ul>
-<p>If you do not already have a Google account that you would like to use for accessing Terra, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
-<p>If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</p>
-</div>
-<div id="step-2-set-up-google-billing" class="section level3">
-<h3><span class="header-section-number">2.2.6</span> Step 2: Set up Google Billing</h3>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_170.png" title="Diagram showing an overview of the six steps. Step 2 is highlighted." alt="Diagram showing an overview of the six steps. Step 2 is highlighted."  /></p>
-<p>Terra operates on Google Cloud Platform, and does not charge any markup. Rather than paying Terra or AnVIL, users set up billing directly with Google Cloud Platform.</p>
-<p><strong>Make sure to use the same Google account ID you use to log into Terra for Google Cloud Billing.</strong></p>
-<p>To set up billing, you must first create a <strong>Google “Billing Account”</strong>.
-You can create multiple Billing Accounts associated with your Google ID. We recommend creating separate Billing Accounts for different funding sources.</p>
-<div id="create-a-google-billing-account" class="section level4">
-<h4><span class="header-section-number">2.2.6.1</span> Create a Google Billing Account</h4>
-<ol style="list-style-type: decimal">
-<li>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using your Google ID.
-<ul>
-<li><strong>Make sure to use the same Google account ID you use to log into Terra.</strong></li>
-</ul></li>
-<li>If you are a first time user, don’t forget to claim your free credits!
-<ul>
-<li>If you haven’t been to the console before, once you accept the Terms of Service you will be greeted with an invitation to “Try for Free.”</li>
-<li><img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_152.png" title="Screenshot of the Google Cloud Console with the &quot;Try for Free&quot; button highlighted." alt="Screenshot of the Google Cloud Console with the &quot;Try for Free&quot; button highlighted."  /></li>
-<li>Follow the instructions to sign up for a Billing Account and get your credits.
-<ul>
-<li>Choose “Individual Account”. This “billing account” is just for managing billing, so you don’t need to be able to add your lab members.</li>
-<li>You will need to give either a credit card or bank account for security. Don’t worry! <strong>You won’t be billed until you explicitly turn on automatic billing</strong>.</li>
-<li><img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_145.png" title="Screenshot of the Google Cloud Billing Account Setup, with &quot;Individual Account&quot; highlighted.  Also highlighted is text stating &quot;You won't be charged unless you manually upgrade to a paid account.&quot;" alt="Screenshot of the Google Cloud Billing Account Setup, with &quot;Individual Account&quot; highlighted.  Also highlighted is text stating &quot;You won't be charged unless you manually upgrade to a paid account.&quot;"  /></li>
-</ul></li>
-</ul></li>
-<li>You can view and edit your new Billing Account, by selecting “Billing” from the left-hand menu, or going direction to the billing console <a href="https://console.cloud.google.com/billing">console.cloud.google.com/billing</a>
-<ul>
-<li><img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_153.png" title="Screenshot of the Google Cloud Console dropdown menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console dropdown menu, with &quot;Billing&quot; highlighted."  /></li>
-<li>Clicking on the Billing Account name will allow you to manage the account, including accessing reports, setting alerts, and managing payments and billing. We will cover account management in greater detail below.</li>
-<li><img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_160.png" title="Screenshot of the Google Cloud Console Billing Page, with the name of the new billing account highlighted." alt="Screenshot of the Google Cloud Console Billing Page, with the name of the new billing account highlighted."  /></li>
-</ul></li>
-</ol>
-<p>At any point, you can create additional Billing Accounts using the <strong>Create Account</strong> button. We recommend creating a new Billing Account for each funding source.</p>
+<div id="whats-in-this-guide-3" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> What’s in this guide?</h3>
 
-</div>
 </div>
 </div>
 </div>
@@ -289,8 +198,8 @@ You can create multiple Billing Accounts associated with your Google ID. We reco
           </div>
         </div>
       </div>
-<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-analysts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="instructors.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
