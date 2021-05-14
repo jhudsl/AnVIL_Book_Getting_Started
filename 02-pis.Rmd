@@ -169,5 +169,60 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_207")
 ```
 
+### Step 4: Create Terra Billing Projects
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 4 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_217")
+```
+
+
+This is how you enable Terra users to charge to the Google Billing Account.
+
+Note that Google will report charges at the level of Billing Projects.  **If you create only one Billing Project for your lab, you will not be able to see a breakdown of where charges are coming from**.
+
+It is highly recommended that you create separate Billing Projects for each category of spending you would like to track.  For example:
+
+- A Billing Project for each **lab member**, if you would like to track individual spending
+- A Billing Project for each **analysis type**, if you would like to track spending on e.g. RNA-seq vs. variant calling.
+- A Billing Project for each **cohort**, if you would like to track spending per data set
+
+If you are uncertain, **we recommend starting by setting up a Billing Project per lab member**.  This makes it easy to track lab member spending, and also makes it easier to cleanly shut down projects when a member leaves the lab.
+
+#### Create a Billing Project
+
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  **Make sure to use the same Google account that you used to set up Google Billing.**
+    + If this is your first time logging in to Terra, you will need to accept the Terms of Service.
+1. In the drop-down menu on the left, navigate to “Billing”.
+    + Click the triple bar in the top left corner to access the menu.
+    + Click the arrow next to your name to expand the menu.
+    + Click Billing.
+    +
+```{r, echo=FALSE, fig.alt='Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the "hamburger" button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item "Billing".'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_222")
+```
+
+1. On the Billing page, click the **plus icon** to create a new Billing Project.
+    + If prompted, select the Google account to use.  Make sure to use the same Google account that you used to set up Google Billing.
+    + If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
+    +
+```{r, echo=FALSE, fig.alt='Screenshot of the Terra Billing Page.  The "plus" button next to "Billing Projects" is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_226")
+```
+
+1. Enter a unique name for your Terra Billing Project and select the appropriate Google Billing Account.
+    + The name of the Terra Billing Project must:
+        + Only contain lowercase letters, numbers and hyphens
+        + Start with a lowercase letter
+        + Not end with a hyphen
+        + Be between 6 and 30 characters
+        + Be unique across all Google Billing Projects
+    +
+```{r, echo=FALSE, fig.alt='Screenshot of the Terra Add Billing Project dialog box.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_230")
+```
+
+As mentioned above, we recommend creating separate Terra Billing Projects for each of your team members so you can track their spending.  These Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
+
+
 
 ## Budget Templates
