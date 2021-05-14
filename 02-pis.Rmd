@@ -44,7 +44,7 @@ While there are many ways to configure your lab, this guide defines the followin
 
 - **Lab Manager** (Optional) - A Lab Manager creates or clones Terra Workspaces and manages who can use those Workspaces. The Lab Manager is also responsible for creating one or more Terra Billing Projects configuring GCP budgets and alerts.  Importantly, **lab managers control who can spend lab money** and should have an understanding of Google Cloud Billing and Terra Billing Projects.  Depending on your lab, the PI may choose to be the only Lab Manager, or may appoint trusted lab members to assist.
 
-- **Data Analyst** - A lab member who is granted write + can-compute access on one or more Terra workspaces by a Lab Manager and who will run analyses in Terra.  Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).
+- **Data Analyst** - A lab member who is granted write + can-compute access on one or more Terra Workspaces by a Lab Manager and who will run analyses in Terra.  Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).
 
 ### Before you start
 
@@ -102,12 +102,12 @@ To add a member to a Billing Project
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
 1. Navigate to [Billing](https://console.cloud.google.com/billing)
     +
-    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console dropdown menu, with "Billing" highlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_153")
 ```
     + You may be automatically directed to view a specific Billing Account.  If you see information about a single account rather than a list of your Billing Accounts, you can get back to the list by clicking “Manage Billing Accounts” from the drop-down menu.
     + 
-```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the dropdown menu item "Manage Billing Accounts" highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_167")
 ```
 
@@ -117,9 +117,9 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_178")
 ```
 
-1. Enter their Google ID in the textbox. In the dropdown menu, mouse over Billing, then choose the appropriate role.
+1. Enter their Google ID in the text box. In the drop-down menu, mouse over Billing, then choose the appropriate role.
     +
-```{r, echo=FALSE, fig.alt='Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. In the dropdown menu labeled "Select a Role", the item "Billing" and the submenu item "Billing Account Viewer" are highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. In the drop-down menu labeled "Select a Role", the item "Billing" and the submenu item "Billing Account Viewer" are highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_185")
 ```
     
