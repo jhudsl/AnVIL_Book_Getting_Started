@@ -15,6 +15,8 @@ step-2-set-up-google-billing
 create-a-google-billing-account
 add-users-or-viewers-optional
 budget-templates
+types-of-costs
+usage-of-budget-templates
 data-analysts
 introduction-2
 who-is-this-guide-for-1

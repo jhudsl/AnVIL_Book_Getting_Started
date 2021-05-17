@@ -1,7 +1,7 @@
 ---
 title: "Getting Started on AnVIL"
 author: "Katherine Cox"
-date: "2021-05-14"
+date: "2021-05-17"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
