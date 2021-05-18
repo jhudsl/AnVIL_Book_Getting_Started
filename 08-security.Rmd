@@ -1,4 +1,4 @@
-# (PART\*) Appendix {-}
+# (APPENDIX) Appendix {-}
 
 # Security
 
