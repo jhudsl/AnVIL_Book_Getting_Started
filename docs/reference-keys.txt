@@ -21,6 +21,10 @@ create-a-billing-project
 step-5-set-budgets-and-alerts
 set-alerts
 step-6-add-users-and-workspaces
+create-a-new-workspace
+add-members-to-workspaces
+user-access-levels-and-permissions
+wrap-up
 budget-templates
 types-of-costs
 usage-of-budget-templates
