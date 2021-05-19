@@ -1,6 +1,9 @@
 AnVIL
 GCP
+GCP’s
 Gmail
 PI
+preemptible
 walkthrough
 Workspace
+Workspace’s
