@@ -4,11 +4,11 @@
 
 ## Introduction
 
-### Who is this guide for?
+This chapter is targeted towards people who are responsible for bringing a team to AnVIL.  Broadly targeted towards principal investigators (PIs), but also relevant to team leads and lab managers, you will find here:
 
-### What's in this guide?
-
-### Philosophy
+- Account Setup -- Step-by-step instructions to create your first accounts on AnVIL
+- Planning Guide -- Questions to help you customize your analysis environment (coming soon!)
+- Budget Templates -- Example documents to help you write AnVIL into your next grant
 
 ## Account Setup
 
