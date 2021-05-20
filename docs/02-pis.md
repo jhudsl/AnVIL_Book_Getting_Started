@@ -4,17 +4,36 @@
 
 ## Introduction
 
-### Who is this guide for?
+This chapter is targeted towards people who are responsible for bringing a team to AnVIL. Broadly targeted towards principal investigators (PIs), but also relevant to team leads or lab managers, you will find here:
 
-### What's in this guide?
-
-### Philosophy
+- Account Setup -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
+- Planning Guide -- Questions to help you customize your analysis environment (coming soon!)
+- Budget Templates -- Example documents to help you write AnVIL into your grant
 
 ## Account Setup
 
 ### Overview
 
-This guide provides an opinionated walkthrough on how to set up AnVIL for your lab, based on experiences from many labs actively using AnVIL.  Following our recommendations will help you configure your team so that you can more clearly see where charges are coming from and have greater control over which users can spend your money and access your data.
+This guide provides an opinionated walkthrough on how to set up AnVIL for your lab, based on experiences from many labs actively using AnVIL.  These step-by-step instructions take team leads that are completely new to the AnVIL through account setup to the point where team members can start working on AnVIL.  Following the recommendations in this guide will help you more clearly see where charges are coming from and have greater control over which users can spend your money and access your data.  In support of these goals we have made the following design decisions:
+
+1. COST CONTROL
+
+a. Prevent charges to your funding account until you explicitly give authorization by starting with Google’s free $300 credit program
+b. Control who can charge to your account by limiting who can “share” permission to compute - yourself and any designated "Lab Managers"
+
+2. COST TRANSPARENCY
+
+a. Allow fine-grain accounting of who spent what by creating individual "Billing Projects" for each user
+b. Monitor costs by setting up email alerts to warn you when you reach spending thresholds
+c. Enable detailed analysis of costs by exporting cost data using BigQuery
+
+3. DATA ACCESS CONTROLS
+
+a. Reduce unwanted access by limiting who can "share" your data and analyses - yourself and any designated "Lab Managers"
+b. Stricter data access management can be enforced through "Authorization Domains"; however this can make future sharing and publication difficult.  This guide recommends avoiding Authorization Domains for most uses, especially as you are starting out.  If you are working with highly sensitive data, see [this documentation](https://support.terra.bio/hc/en-us/articles/360026775691-Managing-data-privacy-and-access-with-Authorization-Domains) for more information.
+
+These design decisions are made to help you get up and running as quickly as possible without overwhelming new users.  As your experience and comfort with AnVIL grows, you will likely change your design to better match your unique needs e.g. enabling Authorization Domains when working with protected data.
+
 
 #### Goals for this guide
 
@@ -80,6 +99,7 @@ You can create multiple Billing Accounts associated with your Google ID.  We rec
 
 #### Create a Google Billing Account
 
+
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
     + **Make sure to use the same Google account ID you use to log into Terra.**
 1. If you are a first time user, don’t forget to claim your free credits!
@@ -101,7 +121,6 @@ You can create multiple Billing Accounts associated with your Google ID.  We rec
 
 At any point, you can create additional Billing Accounts using the **Create Account** button.  We recommend creating a new Billing Account for each funding source.
 
-
 #### Add users or viewers (optional)
 
 If you have a project manager or finance administrator who needs access to a Billing Account, you can add them with a few different levels of permissions.  Generally the most useful are:
@@ -109,33 +128,35 @@ If you have a project manager or finance administrator who needs access to a Bil
 - **Users** have a great deal of power over spending - they can create new "Billing Projects" and control who can spend money on those projects.  If you have a lab or accounts manager responsible for expenses, it may make sense to add them as a Billing Account User.  If you wish to retain full control over who can spend money on GCP, you should not add any Users.
 - **Viewers** can see the activity in the Billing Account but can’t make any changes.  This can be useful for finance staff who need access to the reports, or for lab members to be able to see what their analyses are costing.
 
+
 Anyone you wish to add to the Billing Account will need their own Google ID.
 
 To add a member to a Billing Project:
-
+  
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
 1. Navigate to [Billing](https://console.cloud.google.com/billing)
     +
-    <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_153.png" title="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted."  />
+  <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_153.png" title="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted."  />
     + You may be automatically directed to view a specific Billing Account.  If you see information about a single account rather than a list of your Billing Accounts, you can get back to the list by clicking "Manage Billing Accounts" from the drop-down menu.
     + 
-<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_167.png" title="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted."  />
+  <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_167.png" title="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted."  />
 
 1. Check the box next to the Billing Account you wish to add a member to, click "ADD MEMBER".
     +
-<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_178.png" title="Screenshot of Google Cloud Billing Accounts Overview. The checkbox next to the name of a Billing Account is checked and highlighted, and the &quot;Add Member&quot; button is highlighted." alt="Screenshot of Google Cloud Billing Accounts Overview. The checkbox next to the name of a Billing Account is checked and highlighted, and the &quot;Add Member&quot; button is highlighted."  />
+  <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_178.png" title="Screenshot of Google Cloud Billing Accounts Overview. The checkbox next to the name of a Billing Account is checked and highlighted, and the &quot;Add Member&quot; button is highlighted." alt="Screenshot of Google Cloud Billing Accounts Overview. The checkbox next to the name of a Billing Account is checked and highlighted, and the &quot;Add Member&quot; button is highlighted."  />
 
 1. Enter their Google ID in the text box. In the drop-down menu, mouse over Billing, then choose the appropriate role.
     +
-<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_185.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. In the drop-down menu labeled &quot;Select a Role&quot;, the item &quot;Billing&quot; and the submenu item &quot;Billing Account Viewer&quot; are highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. In the drop-down menu labeled &quot;Select a Role&quot;, the item &quot;Billing&quot; and the submenu item &quot;Billing Account Viewer&quot; are highlighted."  />
-    
+  <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_185.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. In the drop-down menu labeled &quot;Select a Role&quot;, the item &quot;Billing&quot; and the submenu item &quot;Billing Account Viewer&quot; are highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. In the drop-down menu labeled &quot;Select a Role&quot;, the item &quot;Billing&quot; and the submenu item &quot;Billing Account Viewer&quot; are highlighted."  />
+
 1. Click "SAVE".
     +
-<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_192.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted."  />
+  <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_192.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted."  />
 
 ### Step 3: Add Terra to the Google Billing Account
 
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_198.png" title="Diagram showing an overview of the six steps. Step 3 is highlighted." alt="Diagram showing an overview of the six steps. Step 3 is highlighted."  />
+
 
 This gives Terra permission to create projects and send charges to the Google Billing Account, and must be done by an administrator of the Google Billing Account.
 
@@ -179,6 +200,7 @@ It is highly recommended that you create separate Billing Projects for each cate
 If you are uncertain, **we recommend starting by setting up a Billing Project per lab member**.  This makes it easy to track lab member spending, and also makes it easier to cleanly shut down projects when a member leaves the lab.
 
 #### Create a Billing Project
+
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  **Make sure to use the same Google account that you used to set up Google Billing.**
     + If this is your first time logging in to Terra, you will need to accept the Terms of Service.
@@ -274,7 +296,9 @@ You can set a single Budget for your entire lab, set up individual budgets for e
     +
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_55.png" title="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." alt="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget."  />
 
+#### Export Cost Data to BigQuery
 
+Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
 
 ### Step 6: Add Users and Workspaces
 
@@ -375,6 +399,10 @@ Your lab members should be free to carry out analyses in the Workspaces you crea
 
 You can view costs at any time through [Google Cloud Billing](https://console.cloud.google.com/billing).  Note that costs are reported with a delay (~1 day).
 
+
+## Planning Guide
+
+Coming soon -- advice on how to customize AnVIL for *your* team and research projects.
 
 ## Budget Templates
 
