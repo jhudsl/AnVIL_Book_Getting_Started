@@ -1,9 +1,14 @@
 AnVIL
+AnVIL’s
 GCP
 GCP’s
 Gmail
+Jupyter
+NHGRI's
 PI
 preemptible
+RStudio
 walkthrough
+walkthroughs
 Workspace
 Workspace’s
