@@ -1,5 +1,8 @@
 introduction
-motivation
+welcome
+what-is-anvil
+does-anvil-cost-money
+how-to-use-this-book
 pis-and-lab-managers
 introduction-1
 account-setup
