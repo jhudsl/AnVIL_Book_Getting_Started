@@ -1,0 +1,118 @@
+--- 
+title: "Publishing Workspaces to AnVIL with AnVILPublish"
+author:
+- name: Ava Hoffman
+  affiliation: Johns Hopkins University Data Science Lab
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+# Installation
+
+This guide is based heavily on the AnVILPublish vignette [here](https://bioconductor.org/packages/release/bioc/vignettes/AnVILPublish/inst/doc/AnVILPublishIntro.html).
+
+### AnVIL and AnVILPublish
+
+Install `AnVIL` and `AnVILPublish`. **Make sure to load the development version of `AnVILPublish`.** Don't worry about loading them for now.
+
+```{r install_bioc, eval = FALSE}
+if(!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+# Development version
+BiocManager::install("Bioconductor/AnVIL")
+
+# Development version
+BiocManager::install("Bioconductor/AnVILPublish")
+```
+
+### Google Cloud SDK
+
+Install Google CLoud (gcloud) SDK. This allows you to authenticate your access to AnVIL. This step can also be done separately from R/RStudio [here](https://cloud.google.com/sdk/docs/quickstart).
+
+```{r install_gcloud, eval = FALSE}
+if (!"cloudml" %in% rownames(installed.packages()))
+    BiocManager::install("cloudml")
+```
+
+### Notedown
+
+Install `notedown` using `pip` following instructions [here](https://github.com/aaren/notedown) (i.e., `pip install notedown`). This module converts markdown documents into .ipynb notebooks.
+
+```{r notedown_1}
+# Confirm notedown is accessible
+system2("notedown", "--version")
+```
+
+This can be non-trivial because RStudio might not know where to look for `notedown`. Usually this can accomplished by editing your `PATH` (see help for [Mac](https://www.architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/) and [Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)) to include the directories where python modules are installed (e.g., `/Users/username/opt/anaconda3/bin/`). If you don't have permissions to do so, you can also specify where RStudio should look to find `notedown` manually by:
+
+- Determining where `notedown` is installed by running `which notedown` in your Terminal or PowerShell
+- Copying the parent directory where `notedown` is installed
+- Adding to the RStudio PATH using `Sys.setenv()`.
+- For example:
+
+```{r notedown_2, eval = FALSE}
+# Not run
+existing_path <- Sys.getenv("PATH")
+notedown_path <- "/Users/username/opt/anaconda3/bin" # This varies based on your operating system
+Sys.setenv(PATH = paste(existing_path, notedown_path, sep = ":"))
+
+# Confirm notedown is accessible
+system2("notedown", "--version")
+```
+
+# Google Cloud credentials setup
+
+Prompt the gcloud SDK setup process. This will take you to the Terminal tab of Rstudio. You'll be asked for your AnVIL credentials (Google account) in a browser popup. Finally, you'll be asked what billing project to use for setup. This does not need to be done every time, just whenever you need to change the billing project.
+
+```{r cloudml, eval = FALSE}
+cloudml::gcloud_install(update = TRUE)
+```
+
+Use `AnVIL::gcloud_exists()` to determine whether the gcloud configuration has been completed (`[1] True`)
+
+```{r gcloudcheck}
+# Is gcloud set up?
+AnVIL::gcloud_exists()
+```
+
+Use `AnVIL::gcloud_account()` to confirm the correct email is being used. Use `AnVIL::gcloud_project()` to determine the default billing project.
+
+```{r gclouddetails}
+# Which account is being used?
+AnVIL::gcloud_account()
+AnVIL::gcloud_project()
+```
+
+# Workspace content
+
+You need a folder on your local machine to get started. The easiest way to do this is to first clone this [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton). You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with a `.Rmd` file. Edit the information in `DESCRIPTION` but keep the structure the same. The `.Rmd` file contains your content. You can make many `.Rmd` files.
+
+If you only have a few files, you don't need the `vignettes` directory, but you must make sure the `.Rmd` file(s) are in the same directory as the `DESCRIPTION` and `NAMESPACE` files.
+
+The first line of the `DESCRIPTION` file contains a `Package:` argument. This "package name" must match the name of the folder containing the `DESCRIPTION` and other files.
+
+```
+|-DESCRIPTION
+|-LICENSE.md
+|-NAMESPACE
+|-README.md
+|-vignettes
+  |-Notebook_1.Rmd
+```
+
+# Running AnVILPublish
+
+Run `AnVILPublish::as_workspace`:
+
+```{r publish, eval = FALSE}
+AnVILPublish::as_workspace(
+  path = "/Path/to/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  namespace = "billing-project-1",         # Billing project
+  name = "My Workspace",                   # Actual Workspace name
+  create = TRUE,                           # Use `update = TRUE` to overwrite
+  use_readme = TRUE     # Use README file for additional Dashboard Description
+)
+```
