@@ -6,11 +6,13 @@ GCP
 GCP’s
 Gmail
 Jupyter
+leanbuild
 NHGRI's
 notedown
 PI
 preemptible
 RStudio
+SDK
 walkthrough
 walkthroughs
 Workspace

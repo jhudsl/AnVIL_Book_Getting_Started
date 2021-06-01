@@ -41,7 +41,7 @@ system2("notedown", "--version")
 
 This can be non-trivial because RStudio might not know where to look for `notedown`. Usually this can accomplished by editing your `PATH` (see help for [Mac](https://www.architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/) and [Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)) to include the directories where python modules are installed (e.g., `/Users/username/opt/anaconda3/bin/`). If you don't have permissions to do so, you can also specify where RStudio should look to find `notedown` manually by:
 
-- Determining where `notedown` is installed by running `which notedown` in your Terminal or PowerShell
+- Determining where `notedown` is installed by running `which notedown` in your Terminal or Power Shell
 - Copying the parent directory where `notedown` is installed
 - Adding to the RStudio PATH using `Sys.setenv()`.
 - For example:
@@ -58,7 +58,7 @@ system2("notedown", "--version")
 
 ## Google Cloud credentials setup
 
-Prompt the gcloud SDK setup process. This will take you to the Terminal tab of Rstudio. You'll be asked for your AnVIL credentials (Google account) in a browser pop-up. Finally, you'll be asked what billing project to use for setup. This does not need to be done every time, just whenever you need to change the billing project.
+Prompt the gcloud SDK setup process. This will take you to the Terminal tab of Rstudio . You'll be asked for your AnVIL credentials (Google account) in a browser pop-up. Finally, you'll be asked what billing project to use for setup. This does not need to be done every time, just whenever you need to change the billing project.
 
 ```{r cloudml, eval = FALSE}
 cloudml::gcloud_install(update = TRUE)
