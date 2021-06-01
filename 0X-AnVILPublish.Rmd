@@ -23,7 +23,7 @@ BiocManager::install("Bioconductor/AnVILPublish")
 
 ### Google Cloud SDK
 
-Install Google CLoud (gcloud) SDK. This allows you to authenticate your access to AnVIL. This step can also be done separately from R/RStudio [here](https://cloud.google.com/sdk/docs/quickstart).
+Install Google Cloud (gcloud) SDK. This allows you to authenticate your access to AnVIL. This step can also be done separately from R/RStudio [here](https://cloud.google.com/sdk/docs/quickstart).
 
 ```{r install_gcloud, eval = FALSE}
 if (!"cloudml" %in% rownames(installed.packages()))
@@ -32,7 +32,7 @@ if (!"cloudml" %in% rownames(installed.packages()))
 
 ### Notedown
 
-Install `notedown` using `pip` following instructions [here](https://github.com/aaren/notedown) (i.e., `pip install notedown`). This module converts markdown documents into .ipynb notebooks.
+Install `notedown` using `pip` following instructions [here](https://github.com/aaren/notedown) (i.e., `pip install notedown`). This module converts markdown documents into `.ipynb` notebooks.
 
 ```{r notedown_1}
 # Confirm notedown is accessible
@@ -64,7 +64,7 @@ Prompt the gcloud SDK setup process. This will take you to the Terminal tab of R
 cloudml::gcloud_install(update = TRUE)
 ```
 
-Use `AnVIL::gcloud_exists()` to determine whether the `gcloud` configuration has been completed (`[1] True`)
+Use `AnVIL::gcloud_exists()` to determine whether the gcloud configuration has been completed (`[1] True`)
 
 ```{r gcloudcheck}
 # Is gcloud set up?
