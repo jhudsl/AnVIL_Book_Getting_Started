@@ -11,8 +11,9 @@ This guide is based heavily on the AnVILPublish vignette [here](https://biocondu
 Install `AnVIL` and `AnVILPublish`. **Make sure to load the development version of `AnVILPublish`.** Don't worry about loading them for now.
 
 ```{r install_bioc, eval = FALSE}
-if(!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager")
+}
 
 # Development version
 BiocManager::install("Bioconductor/AnVIL")
@@ -26,8 +27,9 @@ BiocManager::install("Bioconductor/AnVILPublish")
 Install Google Cloud (gcloud) SDK. This allows you to authenticate your access to AnVIL. This step can also be done separately from R/RStudio [here](https://cloud.google.com/sdk/docs/quickstart).
 
 ```{r install_gcloud, eval = FALSE}
-if (!"cloudml" %in% rownames(installed.packages()))
-    BiocManager::install("cloudml")
+if (!"cloudml" %in% rownames(installed.packages())) {
+  BiocManager::install("cloudml")
+}
 ```
 
 ### Notedown
@@ -149,9 +151,9 @@ Run `AnVILPublish::as_workspace`:
 ```{r publish, eval = FALSE}
 AnVILPublish::as_workspace(
   path = "/path/to/AnVILPublish-skeleton", # directory containing DESCRIPTION file
-  namespace = "billing-project",           # Billing project
-  name = "My-Workspace",                   # Actual Workspace name
-  create = TRUE,                           # Use `update = TRUE` to overwrite
-  use_readme = TRUE     # Use README file for additional Dashboard Description
+  namespace = "billing-project", # Billing project
+  name = "My-Workspace", # Actual Workspace name
+  create = TRUE, # Use `update = TRUE` to overwrite
+  use_readme = TRUE # Use README file for additional Dashboard Description
 )
 ```
