@@ -102,15 +102,15 @@ Edit the information in `DESCRIPTION` but keep the structure the same.
 2. `Title:` argument: This will become the name of your Workspace on the dashboard.
 
 ```{r, echo=FALSE, fig.alt="The Workspace Dashboard title is visible in the DESCRIPTION file."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1K8LLyP1yhDnNPtwsTQm20gXJG1m9hj-ZGwTTPGryDWc/edit#slide=id.p")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gcf1264c749_0_140")
 ```
 
 ```{r, echo=FALSE, fig.alt="The Workspace Dashboard title is visible as subtext in the list of Workspaces."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1K8LLyP1yhDnNPtwsTQm20gXJG1m9hj-ZGwTTPGryDWc/edit#slide=id.gdcee1b7ab9_1_1")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_2")
 ```
 
 ```{r, echo=FALSE, fig.alt="The Workspace Dashboard title is most visible from the Workspace Dashboard tab."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1K8LLyP1yhDnNPtwsTQm20gXJG1m9hj-ZGwTTPGryDWc/edit#slide=id.gdcee1b7ab9_1_7")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_7")
 ```
 
 3. `Authors@R:` argument: Your author information and information
@@ -137,11 +137,11 @@ You will need a few things:
 - The Workspace name that will appear in the link 
 
 ```{r, echo=FALSE, fig.alt="The Workspace name is visible from your list of Workspaces."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1K8LLyP1yhDnNPtwsTQm20gXJG1m9hj-ZGwTTPGryDWc/edit#slide=id.gdcee1b7ab9_1_16")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_12")
 ```
 
 ```{r, echo=FALSE, fig.alt="The Workspace name is visible in the Workspace URL."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1K8LLyP1yhDnNPtwsTQm20gXJG1m9hj-ZGwTTPGryDWc/edit#slide=id.gdcee1b7ab9_1_21")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_17")
 ```
 
 Run `AnVILPublish::as_workspace`:
