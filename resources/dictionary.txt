@@ -1,5 +1,7 @@
 AnVIL
 AnVIL’s
+dbGaP
+eRA
 GCP
 GCP’s
 Gmail
@@ -8,7 +10,10 @@ NHGRI's
 PI
 preemptible
 RStudio
+TCGA
+TOPMed
 walkthrough
 walkthroughs
+WDL
 Workspace
 Workspace’s
