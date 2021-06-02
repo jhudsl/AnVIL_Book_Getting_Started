@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A.1 Introduction | Getting Started on AnVIL</title>
+  <title>3.1 Account Setup | Getting Started on AnVIL</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A.1 Introduction | Getting Started on AnVIL" />
+  <meta property="og:title" content="3.1 Account Setup | Getting Started on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A.1 Introduction | Getting Started on AnVIL" />
+  <meta name="twitter:title" content="3.1 Account Setup | Getting Started on AnVIL" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="security.html"/>
-<link rel="next" href="billing.html"/>
+<link rel="prev" href="data-analysts.html"/>
+<link rel="next" href="instructors.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -180,13 +180,43 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_main_image.png">
 </div>
-<div id="introduction-7" class="section level2">
-<h2><span class="header-section-number">A.1</span> Introduction</h2>
-<div id="who-is-this-guide-for-4" class="section level3">
-<h3><span class="header-section-number">A.1.1</span> Who is this guide for?</h3>
+<div id="account-setup-1" class="section level2">
+<h2><span class="header-section-number">3.1</span> Account Setup</h2>
+<p><strong>Terra</strong> is the compute engine of AnVIL; i.e. where you will run your analyses. Terra currently offers access to <strong>Jupyter Notebooks</strong> and <strong>RStudio</strong> for interactive analysis, as well as the <strong>Workflow Description Language</strong> (WDL) for batch processing of many samples. Behind the scenes, Terra runs on Google Cloud Platform, so you will need a (free) Google Account.</p>
+<p><img src="03-data-analysts_files/figure-html/1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gd84a304855_0_138.png" title="Diagram illustrating the relationship between Terra and Google Cloud Platform." alt="Diagram illustrating the relationship between Terra and Google Cloud Platform."  /></p>
+<div id="overview-1" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Overview</h3>
+<ol style="list-style-type: decimal">
+<li>Create a Google account</li>
+<li><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a> and sign in with your Google account</li>
+<li>Link external accounts (Gen3, dbGaP) to Terra (optional - enables you to import AnVIL open access datasets and to access protected data if you have appropriate authorization)</li>
+</ol>
 </div>
-<div id="whats-in-this-guide-4" class="section level3">
-<h3><span class="header-section-number">A.1.2</span> What’s in this guide?</h3>
+<div id="create-a-google-account" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Create a Google Account</h3>
+<p>Terra operates on Google Cloud Platform, so you will need a (free) Google account to create a Terra account and run analyses on AnVIL.</p>
+<p>If you do not already have a Google account that you would like to use for accessing Terra, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
+<p>If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</p>
+</div>
+<div id="set-up-terra" class="section level3">
+<h3><span class="header-section-number">3.1.3</span> Set up Terra</h3>
+<p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a>, and you should be prompted to sign in with your Google account.</p>
+<ul>
+<li>Once you have signed in, your Terra account is set up and your PI or manager should be able to add you to projects.</li>
+<li>If this is the <strong>first time you or your team has used Terra</strong>, the PI will also need to set up billing.</li>
+</ul>
+<p>You can always access Terra by going to <a href="https://anvil.terra.bio/">anvil.terra.bio</a>, or by clicking the link on the AnVIL home page.</p>
+<p><img src="03-data-analysts_files/figure-html/1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gde7783227e_0_31.png" title="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." alt="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted."  /></p>
+</div>
+<div id="link-external-accounts-optional" class="section level3">
+<h3><span class="header-section-number">3.1.4</span> Link External Accounts (optional)</h3>
+<p>AnVIL provides access to a wide selection of datasets, including controlled-access data. Linking your accounts will enable you to import these data into Terra.</p>
+<p>The following links will take you to the Terra documentation for setting up and linking external accounts.</p>
+<ul>
+<li><a href="https://gen3.theanvil.io/login">Set up a Gen3 account</a> - allows you to use the Gen3 data explorer to create artificial cohorts over AnVIL datasets that have been indexed by Gen3.</li>
+<li><a href="https://support.terra.bio/hc/en-us/articles/360050390451">Link Gen3 and Terra accounts</a> - allows you to analyze Gen3 data on Terra.</li>
+<li><a href="https://support.terra.bio/hc/en-us/articles/360038086332-Linking-Terra-to-External-Servers">Link Terra and eRA Commons ID</a> - To use controlled-access data on Terra, you will need to link your Terra user ID to your authorization account (such as a dbGaP account). Linking to external servers will allow Terra to automatically determine if you can access controlled datasets hosted in Terra (ex. TCGA, TOPMed, etc.) based on your approved dbGaP applications.</li>
+</ul>
 
 </div>
 </div>
@@ -204,8 +234,8 @@
           </div>
         </div>
       </div>
-<a href="security.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="billing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-analysts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="instructors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -25,7 +25,7 @@ This book is not intended to be read through sequentially, rather, it is a colle
 Provides step-by-step instructions for new AnVIL users to set up their accounts and start using the AnVIL platform.  We have included recommendations for configuring your accounts based on several common use cases:
 
 - **PIs and Lab Managers**: managing a team of researchers working on AnVIL
-- **Data Analysts**: joining team working on AnVIL
+- **Data Analysts**: joining a team working on AnVIL
 - **Instructors**: using AnVIL to teach a course or Workshop
 
 **Working on AnVIL**
