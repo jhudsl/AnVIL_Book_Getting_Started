@@ -148,14 +148,14 @@ Choose **Option 2** if you:
     + Navigate to your [Workspaces](https://anvil.terra.bio/#workspaces).
     + Click the "Share" button.  
     ```{r, echo=FALSE, fig.alt="Screenshot of the Terra Workspaces page. The teardrop button and the Share button are highlighted for the Workspace we want to share."}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_127")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_127")
     ```
 
 1. Type the Group `@firecloud.org` address in the User email box.
     + The Group will also appear when you click the "Add people or groups" text.
     + Click the Group name.  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Share Workspace dialog box. The Group name has been typed in the "User email" box and the Group name shown in the resulting drop down is highlighted.'}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_138")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_138")
     ```
     
 1. Change Group permissions.
@@ -163,7 +163,7 @@ Choose **Option 2** if you:
     + Ensure "Can compute" is selected.
     + Click "SAVE".  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Share Workspace dialog box. The permissions dropdown shows "Writer" underneath the Group. The option checkbox "Can compute" has been selected. The permissions dropdown, "Can compute" option checkbox, and SAVE button are highlighted.'}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gde79f452fa_0_8")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gde79f452fa_0_8")
     ```
 
 #### Permissions on the Billing Account (Option 2)
