@@ -1,6 +1,8 @@
 AnVIL
 AnVIL’s
 AnVILPublish
+dbGaP
+eRA
 gcloud
 GCP
 GCP’s
@@ -13,7 +15,10 @@ PI
 preemptible
 RStudio
 SDK
+TCGA
+TOPMed
 walkthrough
 walkthroughs
+WDL
 Workspace
 Workspace’s

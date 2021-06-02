@@ -25,7 +25,7 @@ This book is not intended to be read through sequentially, rather, it is a colle
 Provides step-by-step instructions for new AnVIL users to set up their accounts and start using the AnVIL platform.  We have included recommendations for configuring your accounts based on several common use cases:
 
 - **PIs and Lab Managers**: managing a team of researchers working on AnVIL
-- **Data Analysts**: joining team working on AnVIL
+- **Data Analysts**: joining a team working on AnVIL
 - **Instructors**: using AnVIL to teach a course or Workshop
 
 **Working on AnVIL**
@@ -33,5 +33,5 @@ Provides step-by-step instructions for new AnVIL users to set up their accounts 
 Examples and walkthroughs of common tasks on the AnVIL platform:
 
 - **Tools**: how to run common tools including Jupyter Notebooks, Galaxy, and RStudio
-- **Data**: finding and accessing AnVIL datasets, as well as uploading and managing your own data
+- **Data**: how to find and access AnVIL datasets, as well as upload and manage your own data
 - **Workflows**: how to find and run existing automated data processing pipelines, and how to customize and share your own

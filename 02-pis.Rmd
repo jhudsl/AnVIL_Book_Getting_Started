@@ -2,7 +2,7 @@
 
 # PIs and Lab Managers
 
-## Introduction
+### Introduction
 
 This chapter is targeted towards people who are responsible for bringing a team to AnVIL. Broadly targeted towards principal investigators (PIs), but also relevant to team leads or lab managers, you will find here:
 
