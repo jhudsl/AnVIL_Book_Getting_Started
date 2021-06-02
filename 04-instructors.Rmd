@@ -8,6 +8,11 @@ This chapter is targeted towards people who are using AnVIL to teach a course, w
 
 ### What's in this guide?
 
+1. Setting up an account and first Workspace
+1. Adding students/participants to Billing Groups
+1. Adding teaching assistants/additional instructors
+1. Deactivating a Billing Project (when the course is over)
+
 ## Account Setup
 
 ### Before you start
@@ -165,8 +170,6 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 
 *Coming soon*
 
-### Deactivating a Billing Project
-
 ## Adding Teaching Assistants
 
-
+### Deactivating a Billing Project
