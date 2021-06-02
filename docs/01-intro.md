@@ -33,5 +33,5 @@ Provides step-by-step instructions for new AnVIL users to set up their accounts 
 Examples and walkthroughs of common tasks on the AnVIL platform:
 
 - **Tools**: how to run common tools including Jupyter Notebooks, Galaxy, and RStudio
-- **Data**: finding and accessing AnVIL datasets, as well as uploading and managing your own data
+- **Data**: how to find and access AnVIL datasets, as well as upload and manage your own data
 - **Workflows**: how to find and run existing automated data processing pipelines, and how to customize and share your own
