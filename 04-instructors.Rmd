@@ -98,7 +98,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 
 ### Step 6: Create a Workspace 
 
-The following steps show you how to set up a Workspace manually. Once you are more familiar with AnVIL, you can use [AnVILPublish](#link to AnVILPublish) to add Workspaces programmatically. **To start, we recommend creating one Workspace for each course**
+The following steps show you how to set up a Workspace manually. Once you are more familiar with AnVIL, you can use [ AnVILPublish ](#link to AnVILPublish) to add Workspaces from RStudio. **To start, we recommend creating one Workspace for each course**
 
 ```{r, child=c("_child_create_terra_workspace_instructors.Rmd")}
 
@@ -135,7 +135,7 @@ Participants can work directly on a shared Workspace (Option 1) or work independ
 Choose **Option 1** if you:  
     + Want students to access any files you make in the Workspace
     + Want open sharing of space for code, notebooks, etc. among participants
-    + Have a limited number of code noteboooks and files
+    + Have a limited number of code notebooks and files
 
 Choose **Option 2** if you:
     + Want students to work from a private space
@@ -148,22 +148,22 @@ Choose **Option 2** if you:
     + Navigate to your [Workspaces](https://anvil.terra.bio/#workspaces).
     + Click the "Share" button.  
     ```{r, echo=FALSE, fig.alt="Screenshot of the Terra Workspaces page. The teardrop button and the Share button are highlighted for the Workspace we want to share."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_127")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_127")
     ```
 
 1. Type the Group `@firecloud.org` address in the User email box.
     + The Group will also appear when you click the "Add people or groups" text.
     + Click the Group name.  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Share Workspace dialog box. The Group name has been typed in the "User email" box and the Group name shown in the resulting drop down is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_138")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_138")
     ```
     
 1. Change Group permissions.
-    + Select "Writer" from the dropdown menu under the Group name.
+    + Select "Writer" from the drop-down menu under the Group name.
     + Ensure "Can compute" is selected.
     + Click "SAVE".  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Share Workspace dialog box. The permissions dropdown shows "Writer" underneath the Group. The option checkbox "Can compute" has been selected. The permissions dropdown, "Can compute" option checkbox, and SAVE button are highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gde79f452fa_0_8")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gde79f452fa_0_8")
     ```
 
 #### Permissions on the Billing Account (Option 2)

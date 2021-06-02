@@ -5,13 +5,13 @@
     + Click the arrow next to your name to expand the menu.
     + Click "Groups".  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the "hamburger" button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item "Groups".'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdd7e85f9a2_0_17")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdd7e85f9a2_0_17")
     ```
 
 1. Create a New Group
     + On the Groups page, click the **plus icon** to create a new Group.  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Groups Page.  The "plus" button next to "Create a New Group" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_6")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_6")
     ```
 
 1. Enter a unique name for your Group.
@@ -19,24 +19,24 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
     + Keep the "Allow anyone to request access" option selected.
     + Click "CREATE GROUP".  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Create New Group dialog box.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_16")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_16")
     ```
 
 1. Find your new Group
     + Your new Group will appear on the [Groups](https://anvil.terra.bio/#groups) page. Note that if you have many groups you can also use the search box.
     + Note the `firecloud.org` address associated with your Group.  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Groups page. The new Group now appears. The Group firecloud.org address "JHU-bioinformatics-intro-workshop@firecloud.org" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_24")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_24")
     ```
     + Click on the Group name.  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Groups page. The Group name is highlighted and should be clicked in order to add users.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_32")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_32")
     ```
                                              
 1. Add students to your Group
     + On the Group Management page, click the **plus icon** to "Add a User".  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Group Management page. The "plus" button next to "Add a User" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_38")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_38")
     ```
     + Enter the first participant's/student's Gmail account, leaving the "Can manage users (admin)" box **unchecked**.
     + Click "ADD USER".  
@@ -48,11 +48,11 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 1. Add a Teaching Assistant or additional instructor (optional)
     + On the Group Management page, click the **plus icon** to "Add a User".  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Group Management page. The "plus" button next to "Add a User" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_38")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_38")
     ```
     + Enter the Teaching Assistant's Gmail account.
     + Check the "Can manage users (admin)" box.
     + Click "ADD USER".  
     ```{r, echo=FALSE, fig.alt='Screenshot of the "Add a User" dialog box. The Teaching Assistant email is filled in for User email. The "Can manage users (admin)" box is checked. The ADD USER button is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_54")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_54")
     ```

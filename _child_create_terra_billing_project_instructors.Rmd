@@ -5,7 +5,7 @@
     + Click the arrow next to your name to expand the menu.
     + Click Billing.  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra drop-down menu. Three items are highlighted: 1) the "hamburger" button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item "Billing".'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_80")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_80")
     ```
 
 1. On the Billing page, click **+ CREATE** to create a new Billing Project.
@@ -13,7 +13,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
     + If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
     +
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Billing Page.  The "plus Create" button next to "Billing Projects" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_88")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_88")
     ```
 
 1. Enter a unique name for your Terra Billing Project and select the appropriate Google Billing Account.
@@ -21,5 +21,5 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
     + If you will be teaching multiple iterations of the course, be sure to include information about the date in the Billing Project name.
     + Click "CREATE BILLING PROJECT". It will take several minutes before the Billing Project is ready for use.  
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Add Billing Project dialog box.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_98")
+    leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_98")
     ```
