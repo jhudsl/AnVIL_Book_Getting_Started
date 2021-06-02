@@ -1,7 +1,172 @@
+# (PART\*) Getting Started {-}
+
 # Instructors
 
 ## Introduction
 
-### Who is this guide for?
+This chapter is targeted towards people who are using AnVIL to teach a course, workshop, or other educational resource.
 
 ### What's in this guide?
+
+## Account Setup
+
+### Before you start
+
+- You will need a **credit card or bank account** to activate your free trial and get started.  Don't worry! **You won't be billed until you explicitly turn on automatic billing**, but payment information is needed for verification purposes.
+- Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
+- Google also offers [educational credits](https://cloud.google.com/billing/docs/how-to/edu-grants) with a short application.
+
+### Step 1: Create a Google Account
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 1 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_160")
+```
+
+Terra operates on Google Cloud Platform, so you will need a (free) [Google account](https://accounts.google.com/signup) which will allow you to:
+
+- Access the Terra platform to manage course content, including data and analyses
+- Access Google Cloud Platform to manage billing
+- Receive alerts when spending reaches specified thresholds
+
+```{r, child=c("_child_create_google_account.Rmd")}
+
+```
+
+### Step 2: Set up Google Billing
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 2 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_170")
+```
+
+Terra operates on Google Cloud Platform, and does not charge any markup. Rather than paying Terra or AnVIL, users set up billing directly with Google Cloud Platform.
+
+To set up billing, you must first create a **Google “Billing Account”**.
+You can create multiple Billing Accounts associated with your Google ID.  We recommend creating separate Billing Accounts for different courses.
+
+#### Create a Google Billing Account
+
+```{r, child=c("_child_create_google_billing_account.Rmd")}
+
+```
+
+#### Add users or viewers (optional)
+
+If you have a project manager or finance administrator who needs access to a Billing Account, you can add them with a few different levels of permissions. [insert reference to adding a]
+
+### Step 3: Add Terra to the Google Billing Account
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 3 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_198")
+```
+
+```{r, child=c("_child_add_terra_to_google_billing_account.Rmd")}
+
+```
+
+### Step 4: Create Terra Billing Projects
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 4 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_217")
+```
+
+Terra Billing Projects allow Terra users (your students) to charge to the above Google Billing Account.
+
+Note that Google will report charges at the level of Billing Projects. **If you create one Billing Project for your course, you will not be able to see a breakdown of who charges are coming from**. If you feel like there will be a need to track individual student charges, such as for longer or more independent research-focused courses, you can create separate Billing Projects for each student you would like to track. Multiple Billing Projects (courses) should be associated with the same Google Billing Account if they are funded by the same source.
+
+#### Billing Projects by Group
+
+You can set up a single Billing Project for all course all participants. 
+
+```{r, child=c("_child_create_terra_billing_project_instructors.Rmd")}
+
+```
+
+### Step 5: Set Budgets and Alerts
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 5 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
+```
+
+```{r, echo=FALSE}
+# TODO: Add child md here that discusses alerts, because I think this could be redundant with the PI section
+```
+
+### Step 6: Create a Workspace 
+
+The following steps show you how to set up a Workspace manually. Once you are more familiar with AnVIL, you can use [AnVILPublish](#link to AnVILPublish) to add Workspaces programmatically. **To start, we recommend creating one Workspace for each course**
+
+```{r, child=c("_child_create_terra_workspace_instructors.Rmd")}
+
+```
+
+## Adding Student Accounts
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 6 is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_64")
+```
+
+On Terra, you can add other users (such as course participants and teaching assistants) and give them permission to run analyses and manage the content funded through your Billing Projects.
+
+Billing permissions on Terra can be confusing. For this reason, **We recommend starting by having a single person responsible for managing all Workspaces (either yourself or a trusted "course manager"). This person should create all Workspaces and add additional instructors as Writers (not Owners) to the Workspaces**. This provides the greatest control over spending. Once you are familiar with the permissions system and are certain your instructors understand the implication of different permission settings, you may decide to give them greater control over Workspace access.
+
+Students generally do not need to be added to Workspaces. They will interact with the content by making a copy to their own AnVIL account. You will give them the name of the Billing Project so that they can run analyses.
+
+For more information on adding users and granting permissions, see {link to adding users in PI doc}
+
+### Billing Groups
+
+An AnVIL "Group" allows you to provide and revoke access as a group rather than as individuals, and to provide all the same accesses to someone new just by adding them to the appropriate Group. You could have Groups for your course, workshop, etc.
+
+Participants will need to provide their Gmail accounts.
+
+```{r, child=c("_child_create_terra_billing_group.Rmd")}
+
+```
+
+### Group Compute Permissions
+
+Participants can work directly on a shared Workspace (Option 1) or work independently on a cloned copy of the Workspace (Option 2).
+
+Choose **Option 1** if you:  
+    + Want students to access any files you make in the Workspace
+    + Want open sharing of space for code, notebooks, etc. among participants
+    + Have a limited number of code noteboooks and files
+
+Choose **Option 2** if you:
+    + Want students to work from a private space
+    + Want to protect the "main" version of your files, with students working from a cloned Workspace
+    + Want to work from multiple code notebooks
+    
+#### Permissions on shared Workspace (Option 1)
+
+1. Click the teardrop button to share the Workspace with your Group.
+    + Navigate to your [Workspaces](https://anvil.terra.bio/#workspaces).
+    + Click the "Share" button.  
+    ```{r, echo=FALSE, fig.alt="Screenshot of the Terra Workspaces page. The teardrop button and the Share button are highlighted for the Workspace we want to share."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_127")
+    ```
+
+1. Type the Group `@firecloud.org` address in the User email box.
+    + The Group will also appear when you click the "Add people or groups" text.
+    + Click the Group name.  
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Share Workspace dialog box. The Group name has been typed in the "User email" box and the Group name shown in the resulting drop down is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_138")
+    ```
+    
+1. Change Group permissions.
+    + Select "Writer" from the dropdown menu under the Group name.
+    + Ensure "Can compute" is selected.
+    + Click "SAVE".  
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Share Workspace dialog box. The permissions dropdown shows "Writer" underneath the Group. The option checkbox "Can compute" has been selected. The permissions dropdown, "Can compute" option checkbox, and SAVE button are highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gde79f452fa_0_8")
+    ```
+
+#### Permissions on the Billing Account (Option 2)
+
+*Coming soon*
+
+### Deactivating a Billing Project
+
+## Adding Teaching Assistants
+
+
