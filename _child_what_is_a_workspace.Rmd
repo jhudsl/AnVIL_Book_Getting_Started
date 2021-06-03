@@ -1,0 +1,15 @@
+Workspaces enable you to organize your **data**, **compute environments** and **documentation**, and **share** your projects with other users.
+
+This video gives a quick tour of a Workspace, showing how the data, interactive notebooks, and workflows are organized.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ONc1Wf7rEuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  Workspaces can be used to...
+
+- **Organize data, analysis pipelines, and compute environments, e.g.**
+    - A specific research project
+- **Share data and workflows, e.g.**
+    - A common set of data and/or workflows that members can copy over to use in their own Workspaces
+    - A gold-standard analysis or tutorial for members to learn from or replicate
+- **Manage controlled access to data**
+    - Workspaces can have "**Authorization Domains**", which automatically prevent the Workspace from being shared with non-authorized users.  Note that Authorization Domains cannot be changed after a Workspace is created (but users can be added to or removed from an Authorization Domain).
