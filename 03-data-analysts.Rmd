@@ -59,6 +59,7 @@ The following links will take you to the Terra documentation for setting up and 
 
 **Workspace Access Levels control who is permitted to conduct billable activity in that Workspace**.  Users can be added to a Workspace as an "owner", "writer", or "reader".  Owners and writers can run analyses (which cost money), readers can only view the Workspace contents (free).
 
+Depending on what permission levels you have been granted in Terra, you may be able to create your own Workspaces, or your team manager may need to create them for you.
 
 ### Overview
 

@@ -4,7 +4,7 @@ This video gives a quick tour of a Workspace, showing how the data, interactive 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ONc1Wf7rEuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
-  Workspaces can be used to...
+Workspaces can be used to...
 
 - **Organize data, analysis pipelines, and compute environments, e.g.**
     - A specific research project

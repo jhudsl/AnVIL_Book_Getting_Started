@@ -1,3 +1,10 @@
+**NOTE:** In order to create a Workspace you must be a member of an active Terra Billing Project.  To see your Billing Projects:
+
+1. [Launch Terra](https://anvil.terra.bio/#workspaces)
+1. In the drop-down menu on the left, click on your name, then click Billing.  This will display your Billing Projects.  If there are no Billing Projects, contact the administrator of your team’s Billing Projects, or set up billing yourself.
+
+To create a new workspace:
+
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
 1. In the drop-down menu on the left, navigate to "Workspaces".
     + Click the triple bar in the top left corner to access the menu.
