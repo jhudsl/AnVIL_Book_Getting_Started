@@ -68,14 +68,14 @@ cloudml::gcloud_install(update = TRUE)
 
 Use `AnVIL::gcloud_exists()` to determine whether the gcloud configuration has been completed (`[1] True`)
 
-```{r gcloudcheck}
+```{r gcloudcheck, eval = FALSE}
 # Is gcloud set up?
 AnVIL::gcloud_exists()
 ```
 
 Use `AnVIL::gcloud_account()` to confirm the correct email is being used. Use `AnVIL::gcloud_project()` to determine the default billing project.
 
-```{r gclouddetails}
+```{r gclouddetails, eval = FALSE}
 # Which account is being used?
 AnVIL::gcloud_account()
 AnVIL::gcloud_project()
