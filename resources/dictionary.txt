@@ -6,6 +6,8 @@ eRA
 gcloud
 GCP
 GCP’s
+github
+GitHub
 Gmail
 Jupyter
 leanbuild
@@ -13,6 +15,7 @@ NHGRI's
 notedown
 PI
 preemptible
+programmatically
 RStudio
 SDK
 TCGA

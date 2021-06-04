@@ -67,7 +67,7 @@ Workspace-folder
 
 You have a couple of options to add content: 
 
-* Locate a repository in Github with content you want to copy. It must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file.   
+* Locate a repository in GitHub with content you want to copy. It must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file.   
 
 * If you want to start from scratch, the easiest way to do this is to first clone this [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton). You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with a `.Rmd` file.  
     ```{bash gitclone, eval = FALSE}
@@ -157,7 +157,7 @@ AnVILPublish::as_workspace(
 
 ## Committing your changes
 
-If this is a brand new repository for you, don't forget to `add` files, `commit` changes, and `push` those changes to your Github repository.
+If this is a brand new repository for you, don't forget to `add` files, `commit` changes, and `push` those changes to your GitHub repository.
 
 1. Initialize your `.Rproj`.
 
@@ -173,7 +173,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wCh
 1. Login to [github.com](https://github.com/) and create a new repository.  
 
     - Note the name of your new repository.  
-    - Don't add a README, .gitignore, or license.  
+    - Don't add a `README.md`, `.gitignore`, or license.  
   
 1. In the RStudio terminal, rename the AnVIL repository's current 'origin' to 'upstream'.  
   
@@ -181,7 +181,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wCh
 git remote rename origin upstream
     ```
 
-1. Give the local repository an 'origin' that points to your repository on github.com. Replace `<your-username>` with your Github username and `<your-new-repo>` with the name of the new repository you just created.  
+1. Give the local repository an 'origin' that points to your repository on github.com. Replace `<your-username>` with your GitHub username and `<your-new-repo>` with the name of the new repository you just created.  
 
     ```{bash add_origin, eval = FALSE}
 git remote add origin https://github.com/<your-username>/<your-new-repo>.git
@@ -192,4 +192,4 @@ git remote add origin https://github.com/<your-username>/<your-new-repo>.git
     ```{bash push_orign, eval = FALSE}
 git push origin main
     ```
-    - You will be prompted for your Github credentials. Remember that you might need to use a Github Personal Token instead of your password!
+    - You will be prompted for your GitHub credentials. Remember that you might need to use a GitHub Personal Token instead of your password!
