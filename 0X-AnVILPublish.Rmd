@@ -2,90 +2,61 @@
 
 # Publishing Workspaces to AnVIL with AnVILPublish
 
+## Overview
+
+This guide will show you how to publish a Workspace on AnVIL using RStudio. Publishing Workspaces programmatically makes it easier to incorporate version control (e.g., using [Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)) and ensures that all of your notebook files end up in the Workspace. 
+
+### Before you start
+
+1. You need to set up Billing. This includes your Google Billing Account and Terra Billing Project. Take note of your Terra Billing Project name.
+
+1. Create your first Workspace. A first Workspace is needed to launch RStudio, but after that, all Workspaces can be made programmatically from within Workspaces.
+
+1. Launch RStudio using the Community-Maintained RStudio Environment. This requires you to be familiar with computing environments.
+
 ## Installation
 
-This guide is based heavily on the AnVILPublish vignette [here](https://bioconductor.org/packages/release/bioc/vignettes/AnVILPublish/inst/doc/AnVILPublishIntro.html).
+This guide is based on the [AnVILPublish vignette](https://bioconductor.org/packages/release/bioc/vignettes/AnVILPublish/inst/doc/AnVILPublishIntro.html), which can serve as an additional reference.
 
 ### AnVIL and AnVILPublish
 
-Install `AnVIL` and `AnVILPublish`. **Make sure to load the development version of `AnVILPublish`.** Don't worry about loading them for now.
+Install `AnVIL` and `AnVILPublish`. **Make sure to load the development version of `AnVILPublish`.** Don't worry about loading it for now.
 
 ```{r install_bioc, eval = FALSE}
-if (!requireNamespace("BiocManager", quietly = TRUE)) {
-  install.packages("BiocManager")
-}
-
-# Development version
-BiocManager::install("Bioconductor/AnVIL")
-
 # Development version
 BiocManager::install("Bioconductor/AnVILPublish")
 ```
 
-### Google Cloud SDK
-
-Install Google Cloud (gcloud) SDK. This allows you to authenticate your access to AnVIL. This step can also be done separately from R/RStudio [here](https://cloud.google.com/sdk/docs/quickstart).
-
-```{r install_gcloud, eval = FALSE}
-if (!"cloudml" %in% rownames(installed.packages())) {
-  BiocManager::install("cloudml")
-}
-```
-
 ### Notedown
 
-Install `notedown` using `pip` following instructions [here](https://github.com/aaren/notedown) (i.e., `pip install notedown`). This module converts markdown documents into `.ipynb` notebooks.
+Navigate to the RStudio Terminal and install [`notedown`](https://github.com/aaren/notedown) using `pip3`. This module converts markdown documents into `.ipynb` notebooks.
 
-```{r notedown_1}
-# Confirm notedown is accessible
-system2("notedown", "--version")
+```{bash notedown_1, eval=FALSE}
+pip3 install notedown
 ```
 
-This can be non-trivial because RStudio might not know where to look for `notedown`. Usually this can accomplished by editing your `PATH` (see help for [Mac](https://www.architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/) and [Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)) to include the directories where python modules are installed (e.g., `/Users/username/opt/anaconda3/bin/`). If you don't have permissions to do so, you can also specify where RStudio should look to find `notedown` manually by:
-
-- Determining where `notedown` is installed by running `which notedown` in your Terminal or Power Shell
-- Copying the parent directory where `notedown` is installed
-- Adding to the RStudio PATH using `Sys.setenv()`.
-- For example:
+RStudio doesn't automatically know where to look for `notedown`. Add the `notedown` installation to your RStudio PATH:
 
 ```{r notedown_2, eval = FALSE}
-# Not run
+# Add to PATH
 existing_path <- Sys.getenv("PATH")
-notedown_path <- "/Users/username/opt/anaconda3/bin" # This varies based on your operating system
+notedown_path <- "/home/rstudio/.local/bin"
 Sys.setenv(PATH = paste(existing_path, notedown_path, sep = ":"))
+```
 
+Confirm that `notedown` is ready to use:
+
+```{r notedown_3}
 # Confirm notedown is accessible
 system2("notedown", "--version")
-```
-
-## Google Cloud credentials setup
-
-Prompt the gcloud SDK setup process. This will take you to the Terminal tab of Rstudio . You'll be asked for your AnVIL credentials (Google account) in a browser pop-up. Finally, you'll be asked what billing project to use for setup. This does not need to be done every time, just whenever you need to change the billing project.
-
-```{r cloudml, eval = FALSE}
-cloudml::gcloud_install(update = TRUE)
-```
-
-Use `AnVIL::gcloud_exists()` to determine whether the gcloud configuration has been completed (`[1] True`)
-
-```{r gcloudcheck, eval = FALSE}
-# Is gcloud set up?
-AnVIL::gcloud_exists()
-```
-
-Use `AnVIL::gcloud_account()` to confirm the correct email is being used. Use `AnVIL::gcloud_project()` to determine the default billing project.
-
-```{r gclouddetails, eval = FALSE}
-# Which account is being used?
-AnVIL::gcloud_account()
-AnVIL::gcloud_project()
 ```
 
 ## Workspace content
 
-You need a folder on your local machine to get started. The easiest way to do this is to first clone this [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton). You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with a `.Rmd` file. 
+You need a folder with content to get started. This will be the basic structure of your files:
 
 ```
+Workspace-folder
 |-DESCRIPTION
 |-LICENSE.md
 |-NAMESPACE
@@ -94,13 +65,27 @@ You need a folder on your local machine to get started. The easiest way to do th
   |-Notebook_1.Rmd
 ```
 
-If you only have a few files, you don't need the `vignettes` directory, but you must make sure the `.Rmd` file(s) are in the same directory as the `DESCRIPTION` and `NAMESPACE` files.
+You have a couple of options to add content: 
+
+* Locate a repository in Github with content you want to copy. It must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file.   
+
+* If you want to start from scratch, the easiest way to do this is to first clone this [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton). You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with a `.Rmd` file.  
+    ```{bash gitclone, eval = FALSE}
+git clone https://github.com/avahoffman/AnVILPublish-skeleton
+    ```  
+
+* *NOTE: If you only have a few files, you don't need the `vignettes` directory, but you must make sure the `.Rmd` file(s) are in the same directory as the `DESCRIPTION` and `NAMESPACE` files.*
 
 ### `DESCRIPTION` file
 
 Edit the information in `DESCRIPTION` but keep the structure the same. 
 
 1. `Package:` argument: This "package name" must match the name of the folder containing the `DESCRIPTION` and other files.
+
+```{r, echo=FALSE, fig.alt="The Workspace Package name in the DESCRIPTION file is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdeb937803b_0_0")
+```
+
 2. `Title:` argument: This will become the name of your Workspace on the dashboard.
 
 ```{r, echo=FALSE, fig.alt="The Workspace Dashboard title is visible in the DESCRIPTION file."}
@@ -115,7 +100,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wCh
 leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_7")
 ```
 
-3. `Authors@R:` argument: Your author information and information
+3. `Authors@R:` argument: Your author information and information.
 4. `Description:` argument: A several-sentence description of the project.
 
 ### `NAMESPACE` file
@@ -132,28 +117,79 @@ The `.Rmd` file contains your content. You can make many `.Rmd` files.
 
 ## Running AnVILPublish
 
-You will need a few things:
-
-- The directory containing the `DESCRIPTION` file
-- The appropriate billing project
-- The Workspace name that will appear in the link 
+Before you start, you should note the Terra Billing Project. If you are **updating** a Workspace, take note of the Workspace name. If you are **creating** a Workspace, pick a new meaningful name for the Workspace.
 
 ```{r, echo=FALSE, fig.alt="The Workspace name is visible from your list of Workspaces."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_12")
 ```
 
 ```{r, echo=FALSE, fig.alt="The Workspace name is visible in the Workspace URL."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_17")
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdeb937803b_0_8")
 ```
 
-Run `AnVILPublish::as_workspace`:
+### Creating a new Workspace
 
-```{r publish, eval = FALSE}
+Run `AnVILPublish::as_workspace()`. Replace `<billing-project>` with the appropriate Billing Project of your choosing above. Replace `<My-Workspace>` with the Workspace name of your choosing above.
+
+```{r publish_1, eval = FALSE}
 AnVILPublish::as_workspace(
-  path = "/path/to/AnVILPublish-skeleton", # directory containing DESCRIPTION file
-  namespace = "billing-project", # Billing project
-  name = "My-Workspace", # Actual Workspace name
-  create = TRUE, # Use `update = TRUE` to overwrite
+  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  namespace = "<billing-project>", # Billing project
+  name = "<My-Workspace>", # Actual Workspace name
+  create = TRUE, # Makes a *new* Workspace
   use_readme = TRUE # Use README file for additional Dashboard Description
 )
 ```
+
+### Updating a Workspace
+
+Run `AnVILPublish::as_workspace()`. Replace `<billing-project>` with the appropriate Billing Project. Replace `<My-Workspace>` with the Workspace name. Note that the Workspace name cannot be changed after the Workspace is created, so make sure this matches your existing Workspace exactly!
+
+```{r publish_2, eval = FALSE}
+AnVILPublish::as_workspace(
+  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  namespace = "<billing-project>", # Billing project
+  name = "<My-Workspace>", # Actual Workspace name
+  update = TRUE, # Updates the Workspace with your changes
+  use_readme = TRUE # Use README file for additional Dashboard Description
+)
+```
+
+## Committing your changes
+
+If this is a brand new repository for you, don't forget to `add` files, `commit` changes, and `push` those changes to your Github repository.
+
+1. Initialize your `.Rproj`.
+
+    - Click on File > "New Project..."  
+    ```{r, echo=FALSE, fig.alt="A screenshot of the RStudio File dropdown menu on AnVIL. The listing 'New Project' is highlighted."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1tgDv3RvflT5wChx2pFNkcLQqcW5EehQ82JRdo6uB-us/edit#slide=id.gdd7e85f9a2_0_17")
+    ```  
+    - Select "Existing Directory".  
+    - Select the AnVIL directory you've been working in.  
+    
+1. [`add`](https://git-scm.com/docs/git-add/en) and [`commit`](https://git-scm.com/docs/git-commit) your changes.  
+  
+1. Login to [github.com](https://github.com/) and create a new repository.  
+
+    - Note the name of your new repository.  
+    - Don't add a README, .gitignore, or license.  
+  
+1. In the RStudio terminal, rename the AnVIL repository's current 'origin' to 'upstream'.  
+  
+    ```{bash rename_origin, eval = FALSE}
+git remote rename origin upstream
+    ```
+
+1. Give the local repository an 'origin' that points to your repository on github.com. Replace `<your-username>` with your Github username and `<your-new-repo>` with the name of the new repository you just created.  
+
+    ```{bash add_origin, eval = FALSE}
+git remote add origin https://github.com/<your-username>/<your-new-repo>.git
+    ```
+
+1. Push the AnVIL repository to your remote repository on github.com.
+
+    ```{bash push_orign, eval = FALSE}
+git push origin main
+    ```
+    - You will be prompted for your Github credentials. Remember that you might need to use a Github Personal Token instead of your password!
