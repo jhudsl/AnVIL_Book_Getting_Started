@@ -2,17 +2,22 @@
 
 # PIs and Lab Managers
 
-### Introduction
-
 This chapter is targeted towards people who are responsible for bringing a team to AnVIL. Broadly targeted towards principal investigators (PIs), but also relevant to team leads or lab managers, you will find here:
 
-- Account Setup -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
-- Planning Guide -- Questions to help you customize your analysis environment (coming soon!)
-- Budget Templates -- Example documents to help you write AnVIL into your grant
+- **Overview** -- Design philosophy and goals for this guide - is this a good fit for your team?  What should you know before you start?
+- **Account Setup** -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
+- **Planning Guide** -- Questions to help you customize your analysis environment (coming soon!)
+- **Budget Templates** -- Example documents to help you write AnVIL into your grant
 
-## Account Setup
+## Overview
 
-### Overview
+### Goals for this guide
+
+```{r, echo=FALSE, fig.alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_165")
+```
+
+### Design Philosophy
 
 This guide provides an opinionated walkthrough on how to set up AnVIL for your lab, based on experiences from many labs actively using AnVIL.  These step-by-step instructions take team leads that are completely new to the AnVIL through account setup to the point where team members can start working on AnVIL.  Following the recommendations in this guide will help you more clearly see where charges are coming from and have greater control over which users can spend your money and access your data.  In support of these goals we have made the following design decisions:
 
@@ -34,14 +39,15 @@ b. Stricter data access management can be enforced through "Authorization Domain
 
 These design decisions are made to help you get up and running as quickly as possible without overwhelming new users.  As your experience and comfort with AnVIL grows, you will likely change your design to better match your unique needs e.g. enabling Authorization Domains when working with protected data.
 
+### Before you start
 
-#### Goals for this guide
+- You will need a **credit card or bank account** to activate your free trial and get started.  Don't worry! **You won't be billed until you explicitly turn on automatic billing**, but payment information is needed for verification purposes.
+- Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
+- To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
 
-```{r, echo=FALSE, fig.alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_165")
-```
+## Account Setup
 
-#### Overview of Account Setup
+### Overview of Account Setup
 
 AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform, so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
 
@@ -66,13 +72,6 @@ While there are many ways to configure your lab, this guide defines the followin
 - **Lab Manager** (Optional) - A Lab Manager creates or clones Terra Workspaces and manages who can use those Workspaces. The Lab Manager is also responsible for creating one or more Terra Billing Projects configuring GCP budgets and alerts.  Importantly, **lab managers control who can spend lab money** and should have an understanding of Google Cloud Billing and Terra Billing Projects.  Depending on your lab, the PI may choose to be the only Lab Manager, or may appoint trusted lab members to assist.
 
 - **Data Analyst** - A lab member who is granted write + can-compute access on one or more Terra Workspaces by a Lab Manager and who will run analyses in Terra.  Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).
-
-#### Before you start
-
-- You will need a **credit card or bank account** to activate your free trial and get started.  Don't worry! **You won't be billed until you explicitly turn on automatic billing**, but payment information is needed for verification purposes.
-- Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
-- To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
-
 
 ### Step 1: Create a Google Account
 
