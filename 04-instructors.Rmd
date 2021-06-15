@@ -1,7 +1,95 @@
+# (PART\*) Getting Started {-}
+
 # Instructors
 
-## Introduction
+<!------------------------------------------>
 
-### Who is this guide for?
+## Overview
 
-### What's in this guide?
+### Goals for this guide
+
+<!-- Google slide -->
+
+### Design Philosophy
+
+#### Account Setup 
+
+<!-- done once e.g. Google free $300 credits -->
+
+#### Class Setup
+
+<!-- done for each class e.g. STRIDES? -->
+
+### Before you start
+
+#### Checklist
+
+<!------------------------------------------>
+
+## Account Setup
+
+### Create a Google Account
+
+### Set Up Google Billing
+
+### Add Terra to Google Billing Account
+
+### Create a Terra Billing Project
+
+### Set Up Alerts
+
+### Create First Workspace
+
+<!------------------------------------------>
+
+## Developing Content
+
+### Overview
+
+### Setup AnVILPublish using AnVIL!
+
+### Update Dashboard
+
+### Post Jupyter Notebook
+
+<!------------------------------------------>
+
+## Class Setup
+
+### Identify Funding
+
+### Set Up Billing Project
+
+### Collect Student IDs
+
+### Set Up Permissions
+
+#### Add students as “Member” 
+
+to Terra Group (so don’t have to type every ID)
+
+#### Add group as “Reader” 
+
+to Instructor Workspace (to allow clone of this workspace)
+
+#### Add group as “User” 
+
+Roles on Billing Project (allow to clone any workspace)
+
+<!------------------------------------------>
+
+## Class Ending
+
+### Notify Students
+
+### Disable Billing
+
+<!------------------------------------------>
+
+## Student Account Setup
+
+### Create a Google Account
+
+### Set Up Terra
+
+### Provide ID to Instructor
