@@ -66,15 +66,15 @@
 
 #### Add students as “Member” 
 
-to Terra Group (so don’t have to type every ID)
+<!-- to Terra Group (so don’t have to type every ID) -->
 
 #### Add group as “Reader” 
 
-to Instructor Workspace (to allow clone of this workspace)
+<!-- to Instructor Workspace (to allow clone of this workspace) -->
 
 #### Add group as “User” 
 
-Roles on Billing Project (allow to clone any workspace)
+<!-- Roles on Billing Project (allow to clone any workspace) -->
 
 <!------------------------------------------>
 
