@@ -5,6 +5,7 @@ output: html_document
 
 # About the Authors {-}
 
+**Katherine Cox**
 
-**Author Name** is a Blank in the Blank at the Blank.
+**Ava Hoffman** is a Research Associate in the Department of Biostatistics at Johns Hopkins University.
 
