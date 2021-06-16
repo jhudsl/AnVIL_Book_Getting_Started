@@ -1,44 +1,48 @@
-# (PART\*) Getting Started {-}
-
 # Instructors
 
 <!------------------------------------------>
 
 ## Overview
 
-### Goals for this guide
+### Goals for This Guide
 
 <!-- Google slide -->
 
 ### Design Philosophy
 
-#### Account Setup 
+1. Account Setup 
 
 <!-- done once e.g. Google free $300 credits -->
 
-#### Class Setup
+1. Developing Content
+
+1. Class Setup
 
 <!-- done for each class e.g. STRIDES? -->
 
-### Before you start
+### Before You Start
 
-#### Checklist
+<!-- Checklist -->
 
 <!------------------------------------------>
 
 ## Account Setup
 
-### Create a Google Account
+### Overview of Account Setup
 
-### Set Up Google Billing
+### Step 1: Create a Google Account
 
-### Add Terra to Google Billing Account
+### Step 2: Set Up Google Billing
 
-### Create a Terra Billing Project
+### Step 3: Add Terra to Google Billing Account
 
-### Set Up Alerts
+### Step 4: Create a Terra Billing Project
 
-### Create First Workspace
+### Step 5: Set Up Alerts
+
+### Step 6: Create First Workspace
+
+### Wrap-Up
 
 <!------------------------------------------>
 
@@ -46,7 +50,7 @@
 
 ### Overview
 
-### Setup AnVILPublish using AnVIL!
+### Setup AnVILPublish Using AnVIL
 
 ### Update Dashboard
 
@@ -68,11 +72,11 @@
 
 <!-- to Terra Group (so don’t have to type every ID) -->
 
-#### Add group as “Reader” 
+#### Add Group as “Reader” 
 
 <!-- to Instructor Workspace (to allow clone of this workspace) -->
 
-#### Add group as “User” 
+#### Add Group as “User” 
 
 <!-- Roles on Billing Project (allow to clone any workspace) -->
 
