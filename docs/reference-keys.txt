@@ -1,7 +1,7 @@
 introduction
-welcome
 what-is-anvil
 does-anvil-cost-money
+where-can-i-get-help
 how-to-use-this-book
 pis-and-lab-managers
 overview
