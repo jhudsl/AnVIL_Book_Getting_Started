@@ -7,4 +7,4 @@
 - Galaxy -- [Galaxy on AnVIL Walkthrough](https://youtube.com/watch?v=-Q4SjLEd99s) -- 5m50s 12/9/20
 - Data Tables -- [Introduction to Data Tables in Terra](https://youtube.com/watch?v=IeLywroCNNA) -- 5m25s 4/5/20
 - Dockstore -- [Importing a GATK workflow from Dockstore into Terra](https://youtube.com/watch?v=SGqMPNITQSE) -- 8m29s 10/15/20
-- Workflows -- [Configuring and running a GATK workflow on Gen3 data in Terra](https://youtube.com/watch?v=Vr7GH_h49ts) -- 11/25/20 28m10s
+- Workflows -- [Configuring and running a GATK workflow on Gen3 data in Terra](https://youtube.com/watch?v=Vr7GH_h49ts) -- 28m10s 11/25/20
