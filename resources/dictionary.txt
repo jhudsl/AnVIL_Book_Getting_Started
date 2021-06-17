@@ -3,7 +3,6 @@ AnVIL’s
 dbGaP
 Dockstore
 eRA
-fastqs
 FISMA
 GCP
 GCP’s
@@ -25,7 +24,6 @@ sandboxed
 SSAE
 TCGA
 TOPMed
-vcfs
 walkthrough
 walkthroughs
 WDL
