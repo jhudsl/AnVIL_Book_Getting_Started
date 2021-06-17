@@ -1,22 +1,24 @@
 # Introduction 
 
-### Welcome!
-
 Welcome to the AnVIL Getting Started guide!  In it you will find step-by-step instructions for setting up your accounts, as well as guides on how to use some of AnVIL’s key features.
 
-#### What is AnVIL?
+### What Is AnVIL?
 
 AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics Lab-Space.  It provides a platform for performing genomic data analysis on the cloud.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QTCtAEb4kpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Does AnVIL cost money?
+### Does AnVIL Cost Money?
 
 Through AnVIL, you pay for computing resources as you use them.  If you'd like to try it out, new users can claim a $300 Google Cloud credit to test out the platform and perform some small analyses.
 
 We also provide a [cost estimator](https://jhudatascience.org/AnVIL_Book_Getting_Started/pis-and-lab-managers.html#types-of-costs).
 
-### How to use this book
+### Where Can I Get Help?
+
+Please visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org) with any questions (or suggestions!) you may have.
+
+### How to Use This Book
 
 This book is not intended to be read through sequentially, rather, it is a collection of guides that you can reference based on your needs.  It is divided into two major sections:
 
