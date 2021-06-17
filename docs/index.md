@@ -1,7 +1,7 @@
 ---
 title: "Getting Started on AnVIL"
 author: "Katherine Cox, Ava Hoffman"
-date: "2021-06-15"
+date: "2021-06-17"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
