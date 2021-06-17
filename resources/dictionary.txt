@@ -13,7 +13,6 @@ GCP’s
 Genomics’
 Gmail
 HIPAA
-https
 IRB
 IRBs
 ISAE
@@ -37,4 +36,3 @@ WGS
 whitepaper
 Workspace
 Workspace’s
-support.terra.bio
