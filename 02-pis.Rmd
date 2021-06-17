@@ -474,11 +474,11 @@ Every research study involves the risk of loss of privacy. The personal informat
 
 **Workspace access controls**
 
-- [https://support.terra.bio/hc/en-us/articles/360025851892](https://support.terra.bio/hc/en-us/articles/360025851892)
+- [`https://support.terra.bio/hc/en-us/articles/360025851892`](https://support.terra.bio/hc/en-us/articles/360025851892)
 - PIs can grant read / write / compute access, and can revoke access.
 
 **Authorization Domains**
 
-- [https://support.terra.bio/hc/en-us/articles/360026775691](https://support.terra.bio/hc/en-us/articles/360026775691)
+- [`https://support.terra.bio/hc/en-us/articles/360026775691`](https://support.terra.bio/hc/en-us/articles/360026775691)
 - Must be setup when a Workspace is created - prevents accidental sharing
 
