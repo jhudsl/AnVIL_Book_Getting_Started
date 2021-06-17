@@ -1,8 +1,5 @@
 AnVIL
 AnVIL’s
-BAMs
-BCLs
-CRAMs
 dbGaP
 Dockstore
 eRA

@@ -427,8 +427,8 @@ The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Spac
 
 ### Data Storage
 
-We will keep a copy of the participant’s genomics data in various data formats (formats - CRAMs, BAMs, vcfs, BCLs, fastqs).  This will be stored in Broad’s Google Cloud services, which is the underlying storage platform for AnVIL.  The Google Cloud Platform has summarized its services with respect to genomics data processing in a white paper here:
-[https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf](https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf)
+We will keep a copy of the participant’s genomics data in various data formats (formats - `CRAMs`, `BAMs`, `vcfs`, `BCLs`, `fastqs`).  This will be stored in Broad’s Google Cloud services, which is the underlying storage platform for AnVIL.  The Google Cloud Platform has summarized its services with respect to genomics data processing in a white paper here:
+[`https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf`](https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf)
 
 ### Privacy and Confidentiality
 
@@ -455,7 +455,7 @@ The Broad Institute has a strong commitment to information security, appropriate
 
 ### Consent Questions
 
-#### For what type of research will my samples be used?
+#### Types of Research
 
 - We may use your sample to do other biological and genetic research. Genetic research may include looking at some or all of your genes and DNA to see if there are links to different types of health conditions.
 - We may use your sample and your DNA sequence information to help create new analytical and machine learning methods to look at genomic and clinical data.
