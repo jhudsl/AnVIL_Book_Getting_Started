@@ -30,7 +30,7 @@ Terra operates on Google Cloud Platform, so you will need a (free) Google accoun
 
 ```
 
-### Set up Terra
+### Set Up Terra
 
 [Launch Terra](https://anvil.terra.bio/#workspaces), and you should be prompted to sign in with your Google account.
 
