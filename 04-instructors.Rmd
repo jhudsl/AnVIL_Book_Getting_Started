@@ -1,10 +1,10 @@
 # Instructors
 
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
+
 <!------------------------------------------>
 
 ## Overview
-
-*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
 
 ### Goals for This Guide
 
@@ -52,8 +52,6 @@
 
 ## Developing Content
 
-*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
-
 ### Overview
 
 ### Setup AnVILPublish Using AnVIL
@@ -65,8 +63,6 @@
 <!------------------------------------------>
 
 ## Class Setup
-
-*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
 
 ### Identify Funding
 
@@ -92,8 +88,6 @@
 
 ## Class Ending
 
-*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
-
 ### Notify Students
 
 ### Disable Billing
@@ -101,8 +95,6 @@
 <!------------------------------------------>
 
 ## Student Account Setup
-
-*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
 
 ### Create a Google Account
 
