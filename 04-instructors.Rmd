@@ -4,6 +4,8 @@
 
 ## Overview
 
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
+
 ### Goals for This Guide
 
 <!-- Google slide -->
@@ -28,6 +30,8 @@
 
 ## Account Setup
 
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
+
 ### Overview of Account Setup
 
 ### Step 1: Create a Google Account
@@ -48,6 +52,8 @@
 
 ## Developing Content
 
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
+
 ### Overview
 
 ### Setup AnVILPublish Using AnVIL
@@ -59,6 +65,8 @@
 <!------------------------------------------>
 
 ## Class Setup
+
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
 
 ### Identify Funding
 
@@ -84,6 +92,8 @@
 
 ## Class Ending
 
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
+
 ### Notify Students
 
 ### Disable Billing
@@ -91,6 +101,8 @@
 <!------------------------------------------>
 
 ## Student Account Setup
+
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
 
 ### Create a Google Account
 
