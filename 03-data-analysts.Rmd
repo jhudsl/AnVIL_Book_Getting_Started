@@ -30,14 +30,14 @@ Terra operates on Google Cloud Platform, so you will need a (free) Google accoun
 
 ```
 
-### Set up Terra
+### Set Up Terra
 
 [Launch Terra](https://anvil.terra.bio/#workspaces), and you should be prompted to sign in with your Google account.
 
 - Once you have signed in, your Terra account is set up and your PI or manager should be able to add you to projects.
 - If this is the **first time you or your team has used Terra**, the PI will also need to set up billing.
 
-You can always access Terra by going to [anvil.terra.bio](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
+You can always access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the AnVIL home page. The button to "launch Terra" is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM/edit#slide=id.gde7783227e_0_31")
