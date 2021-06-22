@@ -1,7 +1,125 @@
 # Instructors
 
-## Introduction
+This chapter is targeted towards people who are teaching a course or workshop on AnVIL.
 
-### Who is this guide for?
+<br> <!-- Capital letter makes part of below content indented which doesn't look good.. can remove the <br> if more text is added above -->
+<br>
 
-### What's in this guide?
+- **Overview**
+- **Account Setup**
+- **Developing Content**
+- **Class Setup**
+- **Class Ending**
+- **Student Account Setup**
+
+::: {.fyi}
+Please click on the subsection headers in the left hand 
+navigation bar (e.g., 2.2, 4.2) a second time to expand the 
+table of contents and enable the `scroll_highlight` feature 
+([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+:::
+
+<!------------------------------------------>
+
+## Overview
+
+### Goals for This Guide
+
+<!-- Google slide -->
+
+### Design Philosophy
+
+1. Account Setup 
+
+<!-- done once e.g. Google free $300 credits -->
+
+1. Developing Content
+
+1. Class Setup
+
+<!-- done for each class e.g. STRIDES? -->
+
+### Before You Start
+
+<!-- Checklist -->
+
+<!------------------------------------------>
+
+## Account Setup
+
+::: {.fyi}
+Please click on the subsection headers in the left hand 
+navigation bar (e.g., 2.2, 4.2) a second time to expand the 
+table of contents and enable the `scroll_highlight` feature 
+([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+:::
+
+### Overview of Account Setup
+
+### Step 1: Create a Google Account
+
+### Step 2: Set Up Google Billing
+
+### Step 3: Add Terra to Google Billing Account
+
+### Step 4: Create a Terra Billing Project
+
+### Step 5: Set Up Alerts
+
+### Step 6: Create First Workspace
+
+### Wrap-Up
+
+<!------------------------------------------>
+
+## Developing Content
+
+### Overview
+
+### Setup AnVILPublish Using AnVIL
+
+### Update Dashboard
+
+### Post Jupyter Notebook
+
+<!------------------------------------------>
+
+## Class Setup
+
+### Identify Funding
+
+### Set Up Billing Project
+
+### Collect Student IDs
+
+### Set Up Permissions
+
+#### Add students as “Member” 
+
+<!-- to Terra Group (so don’t have to type every ID) -->
+
+#### Add Group as “Reader” 
+
+<!-- to Instructor Workspace (to allow clone of this workspace) -->
+
+#### Add Group as “User” 
+
+<!-- Roles on Billing Project (allow to clone any workspace) -->
+
+<!------------------------------------------>
+
+## Class Ending
+
+### Notify Students
+
+### Disable Billing
+
+<!------------------------------------------>
+
+## Student Account Setup
+
+### Create a Google Account
+
+### Set Up Terra
+
+### Provide ID to Instructor
