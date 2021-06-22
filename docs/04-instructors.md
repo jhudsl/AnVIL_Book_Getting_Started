@@ -1,5 +1,24 @@
 # Instructors
 
+This chapter is targeted towards people who are teaching a course or workshop on AnVIL.
+
+<br> <!-- Capital letter makes part of below content indented which doesn't look good.. can remove the <br> if more text is added above -->
+<br>
+
+- **Overview**
+- **Account Setup**
+- **Developing Content**
+- **Class Setup**
+- **Class Ending**
+- **Student Account Setup**
+
+::: {.fyi}
+Please click on the subsection headers in the left hand 
+navigation bar (e.g., 2.2, 4.2) a second time to expand the 
+table of contents and enable the `scroll_highlight` feature 
+([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+:::
+
 <!------------------------------------------>
 
 ## Overview
@@ -27,6 +46,13 @@
 <!------------------------------------------>
 
 ## Account Setup
+
+::: {.fyi}
+Please click on the subsection headers in the left hand 
+navigation bar (e.g., 2.2, 4.2) a second time to expand the 
+table of contents and enable the `scroll_highlight` feature 
+([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+:::
 
 ### Overview of Account Setup
 

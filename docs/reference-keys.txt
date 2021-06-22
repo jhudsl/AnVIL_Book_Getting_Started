@@ -3,6 +3,7 @@ what-is-anvil
 does-anvil-cost-money
 where-can-i-get-help
 how-to-use-this-book
+activate-scroll_highlight-feature
 pis-and-lab-managers
 overview
 goals-for-this-guide

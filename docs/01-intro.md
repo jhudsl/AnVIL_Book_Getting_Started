@@ -37,3 +37,9 @@ Examples and walkthroughs of common tasks on the AnVIL platform:
 - **Tools**: how to run common tools including Jupyter Notebooks, Galaxy, and RStudio
 - **Data**: how to find and access AnVIL datasets, as well as upload and manage your own data
 - **Workflows**: how to find and run existing automated data processing pipelines, and how to customize and share your own
+
+### Activate `scroll_highlight` Feature
+
+Note that some sections of this book cover steps in a lot of detail. When navigating the table of contents, you can click subsection (e.g., 2.2, 4.2) headers a second time to expand the table of contents and enable the `scroll_highlight` feature. This can help you follow the separate steps within more clearly.
+
+<img src="01-intro_files/figure-html//18yUr5XSEMgPk8JXFLKfG9JF7L9NpKbCF_mIcXagogKg_gde0d2ef5f6_0_1.png" title="Double-clicking on the H2 headers (for example, 2.2) will expand the contents for view using the 'scroll_highlight' feature." alt="Double-clicking on the H2 headers (for example, 2.2) will expand the contents for view using the 'scroll_highlight' feature."  />

@@ -290,7 +290,7 @@ div.hat {
 div.puzzle, div.fyi, div.demo, div.note {
   padding: 1em;
   margin: 1em 0;
-  padding-left: 100px;
+  padding-left: 10px;
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: 15px center;
