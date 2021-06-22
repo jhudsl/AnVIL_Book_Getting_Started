@@ -1,10 +1,10 @@
 # Instructors
 
-*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
-
 <!------------------------------------------>
 
 ## Overview
+
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
 
 ### Goals for This Guide
 
