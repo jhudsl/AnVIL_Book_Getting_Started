@@ -16,7 +16,7 @@ step-1-create-a-google-account
 step-2-set-up-google-billing
 create-a-google-billing-account
 add-users-or-viewers-optional
-step-3-add-terra-to-the-google-billing-account
+step-3-add-terra-to-google-billing-account
 step-4-create-terra-billing-projects
 create-a-billing-project
 step-5-set-budgets-and-alerts
@@ -31,6 +31,16 @@ planning-guide
 budget-templates
 types-of-costs
 usage-of-budget-templates
+irb-templates
+general-information
+description-of-anvil
+data-storage
+privacy-and-confidentiality
+consent-questions
+types-of-research
+data-repository-submission
+potential-risks
+additional-considerations
 data-analysts
 introduction-1
 account-setup-1
@@ -47,7 +57,7 @@ account-setup-2
 overview-of-account-setup-1
 step-1-create-a-google-account-1
 step-2-set-up-google-billing-1
-step-3-add-terra-to-google-billing-account
+step-3-add-terra-to-google-billing-account-1
 step-4-create-a-terra-billing-project
 step-5-set-up-alerts
 step-6-create-first-workspace

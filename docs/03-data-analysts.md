@@ -29,14 +29,14 @@ If you do not already have a Google account that you would like to use for acces
 
 If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow [these instructions](https://support.terra.bio/hc/en-us/articles/360029186611).
 
-### Set up Terra
+### Set Up Terra
 
 [Launch Terra](https://anvil.terra.bio/#workspaces), and you should be prompted to sign in with your Google account.
 
 - Once you have signed in, your Terra account is set up and your PI or manager should be able to add you to projects.
 - If this is the **first time you or your team has used Terra**, the PI will also need to set up billing.
 
-You can always access Terra by going to [anvil.terra.bio](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
+You can always access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
 
 <img src="03-data-analysts_files/figure-html//1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gde7783227e_0_31.png" title="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." alt="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted."  />
 
