@@ -1,10 +1,22 @@
 # Instructors
 
+This chapter is targeted towards people who are teaching a course or workshop on AnVIL.
+
+<br> <!-- Capital letter makes part of below content indented which doesn't look good.. can remove the <br> if more text is added above -->
+<br>
+
+- **Overview**
+- **Account Setup**
+- **Developing Content**
+- **Class Setup**
+- **Class Ending**
+- **Student Account Setup**
+
+*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
+
 <!------------------------------------------>
 
 ## Overview
-
-*Please click on the header a second time to expand the table of contents and enable the `scroll_highlight` feature.*
 
 ### Goals for This Guide
 
