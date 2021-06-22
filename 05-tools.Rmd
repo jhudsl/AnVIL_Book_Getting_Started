@@ -18,4 +18,16 @@ The slides for this tutorial are are located [here](https://docs.google.com/pres
 
 ## Starting RStudio
 
+<iframe src="https://drive.google.com/file/d/1v72ZG8JIRDUaewFQgGfcCO_qoM4eYmYX/preview" width="640" height="360" allow="autoplay"></iframe>
+
+### Objectives
+
+- Start compute for your RStudio environment
+- Tour RStudio on AnVIL
+- Stop compute to minimize expenses
+
+### Slides
+
+The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw).
+
 ## Starting Galaxy
