@@ -87,6 +87,8 @@ starting-jupyter-notebook
 objectives
 slides
 starting-rstudio
+objectives-1
+slides-1
 starting-galaxy
 data
 introduction-2
