@@ -23,6 +23,7 @@ NHGRI's
 NIST
 PI
 preemptible
+programmatically
 RStudio
 sandboxed
 SSAE
