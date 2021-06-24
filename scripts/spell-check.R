@@ -17,7 +17,7 @@ root_dir <- rprojroot::find_root(rprojroot::has_dir(".git"))
 dictionary <- readLines(file.path(root_dir, 'resources', 'dictionary.txt'))
 
 # Read in dictionary one-off exceptions
-one_off <- readr::read_delim(file.path(root_dir, 'one-off-dictionary.txt'), delim = "\t")
+one_off <- readr::read_delim(file.path(root_dir, 'resources', 'one-off-dictionary.txt'), delim = "\t")
 one_off$lines <- as.character(one_off$lines)
 
 # Add mysterious emoji joining character
