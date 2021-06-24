@@ -16,6 +16,10 @@ root_dir <- rprojroot::find_root(rprojroot::has_dir(".git"))
 # Read in dictionary
 dictionary <- readLines(file.path(root_dir, 'resources', 'dictionary.txt'))
 
+# Read in dictionary one-off exceptions
+one_off <- read_delim(file.path(root_dir, 'one-off-dictionary.txt'), delim = "\t")
+one_off$lines <- as.character(one_off$lines)
+
 # Add mysterious emoji joining character
 dictionary <- c(dictionary, spelling::spell_check_text("⬇️")$word)
 
@@ -26,7 +30,8 @@ files <- list.files(pattern = 'Rmd$', recursive = TRUE, full.names = TRUE)
 sp_errors <- spelling::spell_check_files(files, ignore = dictionary) %>%
   data.frame() %>%
   tidyr::unnest(cols = found) %>%
-  tidyr::separate(found, into = c("file", "lines"), sep = ":")
+  tidyr::separate(found, into = c("file", "lines"), sep = ":") %>%
+  dplyr::anti_join(one_off, by = c("word", "file"))
 
 # Print out how many spell check errors
 write(nrow(sp_errors), stdout())
