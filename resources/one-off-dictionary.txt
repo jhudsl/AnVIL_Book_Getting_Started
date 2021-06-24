@@ -1,0 +1,2 @@
+word	file	lines
+Anexception	Untitled.Rmd	16
