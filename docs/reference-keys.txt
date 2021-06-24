@@ -90,6 +90,8 @@ starting-rstudio
 objectives-1
 slides-1
 starting-galaxy
+objectives-2
+slides-2
 data
 introduction-2
 who-is-this-guide-for
