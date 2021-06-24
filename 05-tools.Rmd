@@ -31,3 +31,15 @@ The slides for this tutorial are are located [here](https://docs.google.com/pres
 The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw).
 
 ## Starting Galaxy
+
+<iframe src="https://drive.google.com/file/d/16QEY8x-gBsUkKEeO3w_H-I4SLIBPloXd/preview" width="640" height="360" allow="autoplay"></iframe>
+
+### Objectives
+
+- Start compute for your Galaxy on AnVIL
+- Run tool to quality control sequencing reads
+- Stop compute to minimize expenses
+
+### Slides
+
+The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q).
