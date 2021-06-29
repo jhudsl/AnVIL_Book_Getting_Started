@@ -33,17 +33,23 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 
 This guide provides an opinionated walkthrough on how to set up AnVIL for your class.  These step-by-step instructions take instructors that are completely new to the AnVIL through account setup to the point where you can feel comfortable hosting a class from start-to-finish on AnVIL. Following the recommendations in this guide will help you minimize expenses, more clearly organize students, develop content programmatically, and stop billing expenses from accruing once the class is complete. In support of these goals we have made the following design decisions:
 
-1. Account Setup 
-  
-<!-- done once e.g. Google free $300 credits -->
+1. ACCOUNT SETUP
 
-1. Developing Content
+a. Sign up a personal Google Cloud Account only once, where you can get started by claiming [$300 free Google credits](https://cloud.google.com/free/docs/gcp-free-tier/#free-trial).
 
-1. Class Setup
+1. DEVELOPING CONTENT
 
-<!-- done for each class e.g. STRIDES? -->
+a. Include version control and visibility of course content by using GitHub. This will allow you to add content programmatically, keep track of changes, and even share your content with others outside of AnVIL.
+
+1. CLASS SETUP
+
+a. Create a separate Google Billing Account for each of your classes. For example, you might have a class associated with an [NIH STRIDES](https://cloud.nih.gov/enrollment/) funding source.
+b. Create separate Terra Billing Projects and Workspaces for each class based on their Google Billing Project. This will allow you to quickly stop billing expenses from accruing once the class is complete.
 
 ### Before You Start
+
+- You will need a **credit card or bank account** to activate your free trial and get started. Don't worry! **You won't be billed until you explicitly turn on automatic billing**, but payment information is needed for verification purposes.
+- Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
 
 <!-- Checklist -->
 
