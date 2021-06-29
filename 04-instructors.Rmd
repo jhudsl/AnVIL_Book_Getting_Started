@@ -31,7 +31,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 
 ### Design Philosophy
 
-This guide provides an opinionated walkthrough on how to set up AnVIL for your class.  These step-by-step instructions take instructors that are completely new to the AnVIL through account setup to the point where you can feel comfortable hosting a class from start-to-finish on AnVIL. Following the recommendations in this guide will help you minimize expenses, more clearly organize students, develop content programmatically, and cleanly stop computing once the class is complete. In support of these goals we have made the following design decisions:
+This guide provides an opinionated walkthrough on how to set up AnVIL for your class.  These step-by-step instructions take instructors that are completely new to the AnVIL through account setup to the point where you can feel comfortable hosting a class from start-to-finish on AnVIL. Following the recommendations in this guide will help you minimize expenses, more clearly organize students, develop content programmatically, and stop billing expenses from accruing once the class is complete. In support of these goals we have made the following design decisions:
 
 1. Account Setup 
   
