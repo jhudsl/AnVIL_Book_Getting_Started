@@ -35,11 +35,11 @@ This guide provides an opinionated walkthrough on how to set up AnVIL for your c
 
 1. ACCOUNT SETUP
 
-a. Sign up a personal Google Cloud Account only once, where you can get started by claiming [$300 free Google credits](https://cloud.google.com/free/docs/gcp-free-tier/#free-trial).
+a. Sign up for a personal Google Cloud Account only once, where you can get started by claiming [$300 free Google credits](https://cloud.google.com/free/docs/gcp-free-tier/#free-trial).
 
 2. DEVELOPING CONTENT
 
-a. Include version control and visibility of course content by using GitHub. This will allow you to add content programmatically, keep track of changes, and even share your content with others outside of AnVIL.
+a. Include version control and visibility of course content by using GitHub. This will allow you to add content programmatically, keep track of changes, and share your content with others outside of AnVIL.
 
 3. CLASS SETUP
 
