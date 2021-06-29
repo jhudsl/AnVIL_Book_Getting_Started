@@ -1,16 +1,16 @@
 # Instructors
 
-This chapter is targeted towards people who are teaching a course or workshop on AnVIL.
+This chapter is targeted towards people who are teaching a course or workshop on AnVIL. You will find here:
 
 <br> <!-- Capital letter makes part of below content indented which doesn't look good.. can remove the <br> if more text is added above -->
 <br>
 
-- **Overview**
-- **Account Setup**
-- **Developing Content**
-- **Class Setup**
-- **Class Ending**
-- **Student Account Setup**
+- **Overview** -- Design philosophy and goals for this guide - is this a good fit for your class?  What should you know before you start?
+- **Account Setup** -- Step-by-step instructions to create your first accounts on AnVIL and create your first class Workspace
+- **Developing Content** -- Additional tools to help you customize your class Workspace
+- **Class Setup** -- Step-by-step instructions to help you group students into a class on AnVIL
+- **Class Ending** -- Best practices for finishing your course cleanly and minimizing costs
+- **Student Account Setup** -- Step-by-step account set up for students using AnVIL in your class
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
@@ -25,12 +25,14 @@ table of contents and enable the `scroll_highlight` feature
 
 ### Goals for This Guide
 
-<!-- Google slide -->
+<img src="04-instructors_files/figure-html//1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_ge21c626cf0_0_5.png" title="List of goals for this guide: (1) get your accounts, (2) set up billing, (3) create your first Workspace, (4) develop content, and (5) set up classes with students." alt="List of goals for this guide: (1) get your accounts, (2) set up billing, (3) create your first Workspace, (4) develop content, and (5) set up classes with students."  />
 
 ### Design Philosophy
 
-1. Account Setup 
+This guide provides an opinionated walkthrough on how to set up AnVIL for your class.  These step-by-step instructions take instructors that are completely new to the AnVIL through account setup to the point where you can feel comfortable hosting a class from start-to-finish on AnVIL. Following the recommendations in this guide will help you minimize expenses, more clearly organize students, develop content programmatically, and stop billing expenses from accruing once the class is complete. In support of these goals we have made the following design decisions:
 
+1. Account Setup 
+  
 <!-- done once e.g. Google free $300 credits -->
 
 1. Developing Content
