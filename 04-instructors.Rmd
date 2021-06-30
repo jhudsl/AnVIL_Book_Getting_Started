@@ -8,7 +8,7 @@ This chapter is targeted towards people who are teaching a course or workshop on
 - **Overview** -- Design philosophy and goals for this guide - is this a good fit for your class?  What should you know before you start?
 - **Account Setup** -- Step-by-step instructions to create your first accounts on AnVIL and create your first class Workspace
 - **Developing Content** -- Additional tools to help you customize your class Workspace
-- **Class Setup** -- Step-by-step instructions to help you group students into a class on AnVIL
+- **Class Setup** -- Step-by-step instructions to help you add students into a class on AnVIL
 - **Class Ending** -- Best practices for finishing your course cleanly and minimizing costs
 - **Student Account Setup** -- Step-by-step account set up for students using AnVIL in your class
 
@@ -31,7 +31,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 
 ### Design Philosophy
 
-This guide provides an opinionated walkthrough on how to set up AnVIL for your class.  These step-by-step instructions take instructors that are completely new to the AnVIL through account setup to the point where you can feel comfortable hosting a class from start-to-finish on AnVIL. Following the recommendations in this guide will help you minimize expenses, more clearly organize students, develop content programmatically, and stop billing expenses from accruing once the class is complete. In support of these goals we have made the following design decisions:
+This guide provides an opinionated walkthrough on how to set up AnVIL for your class.  These step-by-step instructions take instructors that are completely new to the AnVIL through account setup to the point where you can feel comfortable hosting a class from start-to-finish on AnVIL. Following the recommendations in this guide will help you minimize expenses, develop content programmatically, track individual student expenses, and stop billing expenses from accruing once the class is complete. In support of these goals we have made the following design decisions:
 
 1. ACCOUNT SETUP
 
@@ -44,7 +44,7 @@ a. Include version control and visibility of course content by using GitHub. Thi
 3. CLASS SETUP
 
 a. Create a separate Google Billing Account for each of your classes. For example, you might have a class associated with an [NIH STRIDES](https://cloud.nih.gov/enrollment/) funding source.
-b. Create separate Terra Billing Projects and Workspaces for each class based on their Google Billing Project. This will allow you to quickly stop billing expenses from accruing once the class is complete.
+b. Create separate Terra Billing Projects for each student within your Google Billing Project. This will allow you to monitor billing expenses closely and work with students to build best computing practices.
 
 ### Before You Start
 
