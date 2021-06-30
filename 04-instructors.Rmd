@@ -119,12 +119,12 @@ This checklist can serve as a reminder of the overall suggested steps to make a 
 **Billing**
 
 - Obtain NIH STRIDES account or other funding (optional)
-- Create Terra Billing Project for your class
 - Create a Workspace for your class
 - Request students make AnVIL IDs (Google IDs) 
 - Collect AnVIL IDs (Google IDs) from students
-- Add students to AnVIL Group and Workspace
-- Deactivate Billing Project
+- Create Terra Billing Projects for your students
+- Direct students to Workspace
+- Deactivate Billing Projects
 
 **Compute**
 
