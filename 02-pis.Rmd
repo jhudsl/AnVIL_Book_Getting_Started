@@ -443,7 +443,7 @@ The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Spac
 ### Data Storage
 
 We will keep a copy of the participant’s genomics data in various data formats (formats - `CRAMs`, `BAMs`, `vcfs`, `BCLs`, `fastqs`).  This will be stored in Broad’s Google Cloud services, which is the underlying storage platform for AnVIL.  The Google Cloud Platform has summarized its services with respect to genomics data processing in a white paper here:
-[`https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf`](https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf)
+[`https://cloud.google.com/files/genomics-data-wp.pdf`](https://cloud.google.com/files/genomics-data-wp.pdf)
 
 ### Privacy and Confidentiality
 
