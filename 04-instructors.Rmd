@@ -43,7 +43,7 @@ a. Include version control and visibility of course content by using GitHub. Thi
 
 3. CLASS SETUP
 
-a. Create a separate Google Billing Account for each of your classes. For example, you might have a class associated with an [NIH STRIDES](https://cloud.nih.gov/enrollment/) funding source.
+a. Create a separate Google Billing Account for each of your classes. Through the [STRIDES](https://datascience.nih.gov/strides) program, NHGRI makes funding available to new users of the AnVIL, in collaboration with [NIH's Office of Data Science Strategy](https://datascience.nih.gov/about/odss). NHGRI currently supports the [AnVIL Cloud Credits Program (AC2)](https://anvilproject.org/news/2021/04/12/announcing-anvil-cloud-cost-credits-program) and will have a second round of funding available in fall of 2021.
 b. Create separate Terra Billing Projects for each student within your Google Billing Project. This will allow you to monitor billing expenses closely and work with students to build best computing practices.
 
 ### Before You Start
