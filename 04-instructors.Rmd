@@ -118,7 +118,7 @@ This checklist can serve as a reminder of the overall suggested steps to make a 
 
 **Billing**
 
-- Obtain NIH STRIDES account or other funding (optional)
+- Obtain funding through the [STRIDES](https://datascience.nih.gov/strides) program (optional)
 - Create a Workspace for your class
 - Request students make AnVIL IDs (Google IDs) 
 - Collect AnVIL IDs (Google IDs) from students
