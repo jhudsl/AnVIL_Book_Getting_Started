@@ -5,7 +5,13 @@ output: html_document
 
 # About the Authors {-}
 
-**Katherine Cox**
+### Authors
+
+The following people authored major sections of this book:
+
+**Katherine Cox** is an Associate Faculty in the Department of Biostatistics at the Johns Hopkins Bloomberg School of Public Health.  She creates onboarding and training materials for the [AnVIL](https://anvilproject.org/) (Analysis, Visualization, and Informatics Lab-Space) Project.  She is also the director of C-MOOR (Carnegie Massive Open Online Research), where she leads development of cloud-based bioinformatics training and research opportunities.
 
 **Ava Hoffman** is a Research Associate in the Department of Biostatistics at Johns Hopkins University.
+
+### Contributors:
 
