@@ -109,3 +109,5 @@ introduction-5
 who-is-this-guide-for-3
 whats-in-this-guide-3
 overview-videos
+authors
+contributors
