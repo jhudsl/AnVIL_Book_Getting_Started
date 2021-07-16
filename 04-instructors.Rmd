@@ -146,6 +146,7 @@ Through the [STRIDES](https://datascience.nih.gov/strides) program, NHGRI makes 
 This checklist can serve as a reminder of the overall suggested steps to make a new class on AnVIL. You might find yourself changing these steps slightly as you become more familiar with AnVIL.
 
 **Billing**
+
 - Obtain funding through the [STRIDES](https://datascience.nih.gov/strides) program (optional)
 - Request students make AnVIL IDs (Google IDs) 
 - Collect AnVIL IDs (Google IDs) from students
@@ -154,11 +155,13 @@ This checklist can serve as a reminder of the overall suggested steps to make a 
 - Deactivate Billing Projects
 
 **Resources**
+
 - Create a Workspace for your class
 - Notify Terra of your course dates and times
 - Direct students to the Workspace
 
 **Permissions**
+
 - Set up Groups to manage permissions
 
 | AnVIL Group | Class Workspace | Terra Billing Projects*|
