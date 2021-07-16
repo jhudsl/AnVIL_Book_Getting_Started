@@ -10,6 +10,13 @@ This chapter is targeted towards people who are responsible for bringing a team 
 - **Budget Templates** -- Example documents to help you write AnVIL into your grant
 - **IRB Templates** -- Example language to help you write AnVIL into your IRB application
 
+::: {.fyi}
+Please click on the subsection headers in the left hand 
+navigation bar (e.g., 2.2, 4.2) a second time to expand the 
+table of contents and enable the `scroll_highlight` feature 
+([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+:::
+
 ## Overview
 
 ### Goals for This Guide
@@ -47,6 +54,13 @@ These design decisions are made to help you get up and running as quickly as pos
 - To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
 
 ## Account Setup
+
+::: {.fyi}
+Please click on the subsection headers in the left hand 
+navigation bar (e.g., 2.2, 4.2) a second time to expand the 
+table of contents and enable the `scroll_highlight` feature 
+([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+:::
 
 ### Overview of Account Setup
 
@@ -418,7 +432,8 @@ When writing an IRB research plan you will be required to fill out a few fields 
 - **Authorize**: All data requires explicit authorization to access
 - **Audit**: All data access is logged (to a different system), with alerts for anomalous events
 - **Encrypt**: All data-in-transit and all data-at-rest is encrypted.
-There is language in the AnVIL_IRB document about data storage, which you will need for your research plan. There is also a section about privacy and confidentiality, which you will also need.
+
+There is language below about data storage, which you will need for your research plan. There is also a section about privacy and confidentiality, which you will also need.
 
 ### Description of AnVIL
 
@@ -428,7 +443,7 @@ The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Spac
 ### Data Storage
 
 We will keep a copy of the participant’s genomics data in various data formats (formats - `CRAMs`, `BAMs`, `vcfs`, `BCLs`, `fastqs`).  This will be stored in Broad’s Google Cloud services, which is the underlying storage platform for AnVIL.  The Google Cloud Platform has summarized its services with respect to genomics data processing in a white paper here:
-[`https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf`](https://cloud.google.com/genomics/resources/google-genomics-whitepaper.pdf)
+[`https://cloud.google.com/files/genomics-data-wp.pdf`](https://cloud.google.com/files/genomics-data-wp.pdf)
 
 ### Privacy and Confidentiality
 

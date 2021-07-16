@@ -1,7 +1,9 @@
 AnVIL
 AnVIL’s
 AnVILPublish
+bioinformatics
 Biostatistics
+Bloomberg
 Computability
 dbGaP
 Dockstore
@@ -21,6 +23,7 @@ NCI
 NHGRI
 NHGRI's
 NIST
+onboarding
 PI
 preemptible
 programmatically
@@ -36,3 +39,5 @@ WGS
 whitepaper
 Workspace
 Workspace’s
+# custom block types
+fyi

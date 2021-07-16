@@ -1,6 +1,6 @@
 ---
 title: "Getting Started on AnVIL"
-author: "Katherine Cox, Ava Hoffman"
+author: "Katherine Cox, Ava Hoffman, Frederick Tan"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
