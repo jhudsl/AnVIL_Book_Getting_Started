@@ -165,7 +165,7 @@ This checklist can serve as a reminder of the overall suggested steps to make a 
 - Set up Groups to manage permissions
 
 | AnVIL Group | Class Workspace | Terra Billing Projects*|
-|-------------|-----------------|------------------------|
+|:------------|:----------------|:-----------------------|
 | Instructor  | Owner           | Owner                  |
 | TAs         | Writer          | Owner                  |
 | Students    | Reader          | User                   |
