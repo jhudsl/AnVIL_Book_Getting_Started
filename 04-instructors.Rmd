@@ -149,6 +149,7 @@ This checklist can serve as a reminder of the overall suggested steps to make a 
 - Obtain funding through the [STRIDES](https://datascience.nih.gov/strides) program (optional)
 - Request students make AnVIL IDs (Google IDs) 
 - Collect AnVIL IDs (Google IDs) from students
+- Create Google Billing Account for your class
 - Create Terra Billing Projects for your students
 - Deactivate Billing Projects
 
