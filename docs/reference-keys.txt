@@ -83,6 +83,7 @@ student-account-setup
 create-a-google-account-1
 set-up-terra-1
 provide-id-to-instructor
+class-checklist
 tools
 starting-jupyter-notebook
 objectives
