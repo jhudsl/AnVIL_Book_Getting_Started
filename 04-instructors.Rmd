@@ -141,6 +141,54 @@ You should see the version number printed to the console:
 leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_80")
 ```
 
+### Create Workspace Structure
+
+#### Identify Your Repository
+
+You need a folder with content to get started. In the next step, this will be the basic structure of your files:
+
+```
+AnVILPublish-skeleton
+|-DESCRIPTION
+|-LICENSE.md
+|-NAMESPACE
+|-README.md
+|-vignettes
+  |-Notebook_1.Rmd
+```
+
+"AnVILPublish-skeleton" is the name of the folder containing all of your information. The folder must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file. As you develop content, you might end up with many `.Rmd` notebooks inside the `vignettes` directory. We will practice with a basic set of files that are already set up for you on [GitHub](https://github.com/).
+
+First, you will want to clone the [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton). You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with an `.Rmd` file.
+
+```{bash gitclone, eval = FALSE}
+git clone https://github.com/avahoffman/AnVILPublish-skeleton
+```  
+
+#### Changing the `DESCRIPTION` File
+
+Edit the information in `DESCRIPTION` but keep the structure the same.
+
+1. `Package:` argument: This "package name" must match the name of the folder containing the `DESCRIPTION` and other files. In this case, it should be "AnVILPublish-skeleton".
+
+```{r, echo=FALSE, fig.alt="File screenshot showing the `Package:` argument is AnVILPublish-skeleton"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_8")
+```
+
+2. `Title:` argument: This will become the header for your Workspace's Dashboard.
+
+```{r, echo=FALSE, fig.alt="File screenshot showing the `Title:` argument is 'Workspace title on the Dashboard'"}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_14")
+```
+
+3. `Authors@R:` argument: Your author information and roles.
+
+4. `Description:` argument: A several-sentence description of the project.
+
+#### Changing Other Files
+
+Do not edit the `NAMESPACE` file. The `README.md` file and `.Rmd` file(s) will be discussed in more detail in [Update Dashboard].
+
 ### Update Dashboard
 
 ### Post Jupyter Notebook
