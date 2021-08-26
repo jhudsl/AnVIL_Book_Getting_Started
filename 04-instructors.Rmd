@@ -189,6 +189,21 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 
 Do not edit the `NAMESPACE` file. The `README.md` file and `.Rmd` file(s) will be discussed in more detail in [Update Dashboard].
 
+#### Create the Workspace
+
+Use the `AnVILPublish::as_workspace()` function. Replace `<billing-project>` with the appropriate Terra Billing Project of your choosing. Replace `<My-Workspace>` with the Workspace name of your choosing.
+
+```{r publish_1, eval = FALSE}
+AnVILPublish::as_workspace(
+  path = "/home/rstudio/AnVILPublish-skeleton",  # directory containing DESCRIPTION file
+  namespace = "<billing-project>",     # Billing project
+  name = "<My-Workspace>",             # Actual Workspace name
+  create = TRUE                        # Makes a *new* Workspace
+)
+```
+
+You should now see this new Workspace at [https://anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces).
+
 ### Update Dashboard
 
 ### Post Jupyter Notebook
