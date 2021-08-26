@@ -250,7 +250,23 @@ AnVILPublish::as_workspace(
 
 Note that this is the same code used to update the Workspace Dashboard. You can use this exact code to update your workspace any time you save changes in RStudio!
 
+### Push Changes to GitHub
 
+Hosting the code behind your course on GitHub will ensure that it is reproducible, easy to update, and robust to any tweaks you make. After cloning the skeleton repository, you will need to make a few changes to ensure your content ends up associated with your GitHub account. This means you own it and can make/save changes!
+
+Briefly, you should:
+
+1. Create a new repository on [GitHub](https://github.com/new). Don't add a `README.md`, `.gitignore`, or license.
+
+1. Return to RStudio on AnVIL and Initialize your `.Rproj`.
+
+1. `add` and `commit` your changes on AnVIL.  
+
+1. [Rename and add](https://git-scm.com/docs/git-remote) a new origin that points to the new repository you just created.
+
+1. `push` your changes. Remember that you will need to use a [GitHub Personal Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) instead of your password.
+
+Git can be challenging. Please reach out to our community network at [help.anvilproject.org](https://help.anvilproject.org/) for help if needed!
 
 ## Class Setup
 
