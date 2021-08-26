@@ -87,7 +87,7 @@ table of contents and enable the `scroll_highlight` feature
 
 ### Overview of Developing Content
 
-This section will show you how to publish a Workspace on AnVIL using RStudio. Publishing Workspaces programmatically makes it easier to incorporate version control (e.g., using Git) and ensures that all of your notebook files end up in the Workspace.
+This section will show you how to publish a Workspace on AnVIL using RStudio. Publishing Workspaces programmatically makes it easier to incorporate version control (e.g., using [git](https://git-scm.com/)) and ensures that all of your notebook files end up in the Workspace.
 
 Much of the information in this section comes from the [AnVILPublish vignette](https://bioconductor.org/packages/release/bioc/vignettes/AnVILPublish/inst/doc/AnVILPublishIntro.html), which can serve as an additional reference.
 
@@ -159,11 +159,17 @@ AnVILPublish-skeleton
 
 "AnVILPublish-skeleton" is the name of the folder containing all of your information. The folder must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file. As you develop content, you might end up with many `.Rmd` notebooks inside the `vignettes` directory. We will practice with a basic set of files that are already set up for you on [GitHub](https://github.com/).
 
-First, you will want to clone the [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton). You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with an `.Rmd` file.
+First, you should clone the [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton).
 
 ```{bash gitclone, eval = FALSE}
 git clone https://github.com/avahoffman/AnVILPublish-skeleton
 ```  
+
+You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with an `.Rmd` file.
+
+```{r, echo=FALSE, fig.alt="RStudio screenshot showing the files present in the cloned AnVILPublish-skeleton repository."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_38")
+```
 
 #### Changing the `DESCRIPTION` File
 
@@ -171,13 +177,13 @@ Edit the information in `DESCRIPTION` but keep the structure the same.
 
 1. `Package:` argument: This "package name" must match the name of the folder containing the `DESCRIPTION` and other files. In this case, it should be "AnVILPublish-skeleton".
 
-```{r, echo=FALSE, fig.alt="File screenshot showing the `Package:` argument is AnVILPublish-skeleton"}
+```{r, echo=FALSE, fig.alt="File screenshot showing the `Package:` argument is AnVILPublish-skeleton."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_8")
 ```
 
 2. `Title:` argument: This will become the header for your Workspace's Dashboard.
 
-```{r, echo=FALSE, fig.alt="File screenshot showing the `Title:` argument is 'Workspace title on the Dashboard'"}
+```{r, echo=FALSE, fig.alt="File screenshot showing the `Title:` argument is 'Workspace title on the Dashboard'."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_14")
 ```
 
@@ -220,7 +226,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 
 ### Update Dashboard
 
-Edit the `README.md` file to add more details to your Workspace Dashboard page. You will use the same function you used to create the Workspace as to update it, with a small change. Instead of `create = TRUE` you’ll now see an argument `update = TRUE`. Be very careful to use the correct Workspace name here, so you don’t accidentally overwrite the wrong Workspace.
+Edit the `README.md` file to add more details to your Workspace Dashboard page. You will use the same function you used to create the Workspace as to update it, with a small change. Instead of `create = TRUE` you’ll now see an argument `update = TRUE`. **Be very careful to use the correct Workspace name** here, so you don’t accidentally overwrite the wrong Workspace.
 
 ```{r publish_2, eval = FALSE}
 AnVILPublish::as_workspace(
@@ -252,7 +258,7 @@ Note that this is the same code used to update the Workspace Dashboard. You can 
 
 ### Push Changes to GitHub
 
-Hosting the code behind your course on GitHub will ensure that it is reproducible, easy to update, and robust to any tweaks you make. After cloning the skeleton repository, you will need to make a few changes to ensure your content ends up associated with your GitHub account. This means you own it and can make/save changes!
+Hosting your course's code on GitHub will ensure that it is reproducible, easy to update, and robust to any tweaks you make. After cloning the skeleton repository, you will need to make a few changes to ensure your content ends up associated with your GitHub account. This means you own it and can make/save changes!
 
 Briefly, you should:
 
@@ -260,11 +266,11 @@ Briefly, you should:
 
 1. Return to RStudio on AnVIL and Initialize your `.Rproj`.
 
-1. `add` and `commit` your changes on AnVIL.  
+1. [`add`](https://git-scm.com/docs/git-add/en) and [`commit`](https://git-scm.com/docs/git-commit) your changes on AnVIL.  
 
-1. [Rename and add](https://git-scm.com/docs/git-remote) a new origin that points to the new repository you just created.
+1. [`rename`](https://git-scm.com/docs/git-remote) and [`add`](https://git-scm.com/docs/git-remote) a new origin that points to the new repository you just created.
 
-1. `push` your changes. Remember that you will need to use a [GitHub Personal Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) instead of your password.
+1. [`push`](https://git-scm.com/docs/git-push) your changes. Remember that you will need to use a [GitHub Personal Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) instead of your password.
 
 Git can be challenging. Please reach out to our community network at [help.anvilproject.org](https://help.anvilproject.org/) for help.
 
