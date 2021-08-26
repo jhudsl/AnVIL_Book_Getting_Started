@@ -56,7 +56,7 @@ b. Create separate Terra Billing Projects for each student. This will allow you 
 
 <!------------------------------------------>
 
-## Account Setup
+## Account Setup {#account-setup-instructors}
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
@@ -85,9 +85,61 @@ table of contents and enable the `scroll_highlight` feature
 
 ## Developing Content
 
-### Overview
+### Overview of Developing Content
 
-### Setup AnVILPublish Using AnVIL
+This section will show you how to publish a Workspace on AnVIL using RStudio. Publishing Workspaces programmatically makes it easier to incorporate version control (e.g., using Git) and ensures that all of your notebook files end up in the Workspace.
+
+Much of the information in this section comes from the [AnVILPublish vignette](https://bioconductor.org/packages/release/bioc/vignettes/AnVILPublish/inst/doc/AnVILPublishIntro.html), which can serve as an additional reference.
+
+#### Before You Start
+
+1. You need to set up [Billing](#account-setup-instructors). This includes your Google Billing Account and Terra Billing Project. Take note of your Terra Billing Project name.
+
+1. Create your first Workspace. A first Workspace is needed to launch RStudio, but after that, all Workspaces can be made programmatically from within other Workspaces.
+
+1. Launch RStudio using the Community-Maintained RStudio Environment. This requires you to be familiar with [RStudio on AnVIL](#starting-rstudio).
+
+### Set Up AnVILPublish on AnVIL
+
+#### Install AnVILPublish
+
+Install `AnVIL` and `AnVILPublish`. **Make sure to load the development version of `AnVILPublish`.** Don't worry about loading it for now.
+
+```{r install_anvil, eval = FALSE}
+BiocManager::install("AnVIL")
+# Development version
+BiocManager::install("Bioconductor/AnVILPublish")
+```
+
+#### Install Notedown
+
+Next, navigate to the RStudio Terminal and install [`notedown`](https://github.com/aaren/notedown) using `pip3`. This module converts markdown documents into `.ipynb` notebooks.
+
+```{bash notedown_1, eval=FALSE}
+pip3 install notedown
+```
+
+RStudio doesn't automatically know where to look for `notedown`. Add the `notedown` installation to your RStudio PATH:
+
+```{r notedown_2, eval = FALSE}
+# Add to PATH
+existing_path <- Sys.getenv("PATH")
+notedown_path <- "/home/rstudio/.local/bin"
+Sys.setenv(PATH = paste(existing_path, notedown_path, sep = ":"))
+```
+
+Confirm that `notedown` is ready to use:
+
+```{r notedown_3}
+# Confirm notedown is accessible
+system2("notedown", "--version")
+```
+
+You should see the version number printed to the console:
+
+```{r, echo=FALSE, fig.alt="Output on the RStudio console. You should see the version number printed if notedown has been installed correctly."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.gdb96a00840_0_80")
+```
 
 ### Update Dashboard
 
