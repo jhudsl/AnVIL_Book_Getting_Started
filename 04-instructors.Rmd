@@ -202,7 +202,21 @@ AnVILPublish::as_workspace(
 )
 ```
 
+You will see output in the console as the function converts the `.Rmd` to `.md`. You might get some warning messages, but make sure that the Workspace was created without error:
+
+```{r, echo=FALSE, fig.alt="Code to create a new Workspace produces knitr output in the console."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_20")
+```
+
+```{r, echo=FALSE, fig.alt="Code to create a new Workspace produces knitr output in the console. You should not see any errors in the output."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_26")
+```
+
 You should now see this new Workspace at [https://anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces).
+
+```{r, echo=FALSE, fig.alt="After running AnVILPublish, you should see the newly created Workspace in https://anvil.terra.bio/#workspaces."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_32")
+```
 
 ### Update Dashboard
 
@@ -222,7 +236,21 @@ You can also click the pencil button next to “ABOUT THE WORKSPACE” to edit t
 
 ### Post Jupyter Notebook
 
-<!------------------------------------------>
+The `.Rmd` file contains your content. You can make many `.Rmd` files. These will get turned into `.ipynb` Jupyter Notebooks when you update using AnVILPublish. After you make changes to your `.Rmd` files, update the Workspace by running:
+
+```{r publish_3, eval = FALSE}
+AnVILPublish::as_workspace(
+  path = "/home/rstudio/AnVILPublish-skeleton",  # directory containing DESCRIPTION file
+  namespace = "<billing-project>",    # Billing project
+  name = "<My-Workspace>",            # Actual Workspace name
+  update = TRUE,                      # Updates the Workspace with your changes
+  use_readme = TRUE                   # Use README file for Dashboard Description
+)
+```
+
+Note that this is the same code used to update the Workspace Dashboard. You can use this exact code to update your workspace any time you save changes in RStudio!
+
+
 
 ## Class Setup
 
