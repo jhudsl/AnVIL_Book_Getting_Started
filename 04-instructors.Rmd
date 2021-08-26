@@ -206,6 +206,20 @@ You should now see this new Workspace at [https://anvil.terra.bio/#workspaces](h
 
 ### Update Dashboard
 
+Edit the `README.md` file to add more details to your Workspace Dashboard page. You will use the same function you used to create the Workspace as to update it, with a small change. Instead of `create = TRUE` you’ll now see an argument `update = TRUE`. Be very careful to use the correct Workspace name here, so you don’t accidentally overwrite the wrong Workspace.
+
+```{r publish_2, eval = FALSE}
+AnVILPublish::as_workspace(
+  path = "/home/rstudio/AnVILPublish-skeleton",  # directory containing DESCRIPTION file
+  namespace = "<billing-project>",    # Billing project
+  name = "<My-Workspace>",            # Actual Workspace name
+  update = TRUE,                      # Updates the Workspace with your changes
+  use_readme = TRUE                   # Use README file for Dashboard Description
+)
+```
+
+You can also click the pencil button next to “ABOUT THE WORKSPACE” to edit the Dashboard manually, but these changes won’t show up later in GitHub. They will also be overwritten by other AnVILPublish updates.
+
 ### Post Jupyter Notebook
 
 <!------------------------------------------>
