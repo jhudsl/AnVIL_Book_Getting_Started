@@ -268,26 +268,6 @@ Briefly, you should:
 
 Git can be challenging. Please reach out to our community network at [help.anvilproject.org](https://help.anvilproject.org/) for help.
 
-<!--
-1. Sever the connection between the repository on AnVIL and the repository on GitHub. To do that, we’ll rename the connection. In the RStudio terminal, rename the AnVIL repository's current “origin” to “upstream”.  
-
-```{bash rename_origin, eval = FALSE}
-git remote rename origin upstream
-```
-
-1. Give the local repository on AnVIL an “origin” that points to your new repository on github.com. Replace `<your-username>` with your GitHub username and `<your-new-repo>` with the name of the new repository you just created.  
-
-```{bash add_origin, eval = FALSE}
-git remote add origin https://github.com/<your-username>/<your-new-repo>.git
-```
-
-1. Push your changes on AnVIL to github.com to establish the changes there. You will be prompted for your GitHub credentials. Remember that you might need to use a GitHub Personal Token instead of your password!
-
-```{bash push_orign, eval = FALSE}
-git push origin main
-```
--->
-
 ## Class Setup
 
 ### Identify Funding
