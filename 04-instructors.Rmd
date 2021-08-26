@@ -111,7 +111,7 @@ BiocManager::install("AnVIL")
 BiocManager::install("Bioconductor/AnVILPublish")
 ```
 
-#### Install Notedown
+#### Install `notedown`
 
 Next, navigate to the RStudio Terminal and install [`notedown`](https://github.com/aaren/notedown) using `pip3`. This module converts markdown documents into `.ipynb` notebooks.
 
@@ -218,7 +218,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_26")
 ```
 
-You should now see this new Workspace at [https://anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces).
+You should now see this new Workspace at [`https://anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).
 
 ```{r, echo=FALSE, fig.alt="After running AnVILPublish, you should see the newly created Workspace in https://anvil.terra.bio/#workspaces."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_32")
@@ -272,7 +272,7 @@ Briefly, you should:
 
 1. [`push`](https://git-scm.com/docs/git-push) your changes. Remember that you will need to use a [GitHub Personal Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) instead of your password.
 
-Git can be challenging. Please reach out to our community network at [help.anvilproject.org](https://help.anvilproject.org/) for help.
+Git can be challenging. Please reach out to our community network at [`help.anvilproject.org`](https://help.anvilproject.org/) for help.
 
 ## Class Setup
 
@@ -343,10 +343,10 @@ This checklist can serve as a reminder of the overall suggested steps to make a 
 
 - Set up Groups to manage permissions
 
-| AnVIL Group | Class Workspace | Terra Billing Projects*|
-|:------------|:----------------|:-----------------------|
-| Instructor  | Owner           | Owner                  |
-| TAs         | Writer          | Owner                  |
-| Students    | Reader          | User                   |
+| AnVIL Group         | Class Workspace | Terra Billing Projects*|
+|:--------------------|:----------------|:-----------------------|
+| Instructor          | Owner           | Owner                  |
+| Teaching assistants | Writer          | Owner                  |
+| Students            | Reader          | User                   |
 
 \* You should have n + 1 Terra Billing Projects: one for each student and one shared by instructors.
