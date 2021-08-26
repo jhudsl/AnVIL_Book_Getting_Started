@@ -201,10 +201,10 @@ Use the `AnVILPublish::as_workspace()` function. Replace `<billing-project>` wit
 
 ```{r publish_1, eval = FALSE}
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton",  # directory containing DESCRIPTION file
-  namespace = "<billing-project>",     # Billing project
-  name = "<My-Workspace>",             # Actual Workspace name
-  create = TRUE                        # Makes a *new* Workspace
+  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  namespace = "<billing-project>", # Billing project
+  name = "<My-Workspace>", # Actual Workspace name
+  create = TRUE # Makes a *new* Workspace
 )
 ```
 
@@ -230,11 +230,11 @@ Edit the `README.md` file to add more details to your Workspace Dashboard page. 
 
 ```{r publish_2, eval = FALSE}
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton",  # directory containing DESCRIPTION file
-  namespace = "<billing-project>",    # Billing project
-  name = "<My-Workspace>",            # Actual Workspace name
-  update = TRUE,                      # Updates the Workspace with your changes
-  use_readme = TRUE                   # Use README file for Dashboard Description
+  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  namespace = "<billing-project>", # Billing project
+  name = "<My-Workspace>", # Actual Workspace name
+  update = TRUE, # Updates the Workspace with your changes
+  use_readme = TRUE # Use README file for Dashboard Description
 )
 ```
 
@@ -246,11 +246,11 @@ The `.Rmd` file contains your content. You can make many `.Rmd` files. These wil
 
 ```{r publish_3, eval = FALSE}
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton",  # directory containing DESCRIPTION file
-  namespace = "<billing-project>",    # Billing project
-  name = "<My-Workspace>",            # Actual Workspace name
-  update = TRUE,                      # Updates the Workspace with your changes
-  use_readme = TRUE                   # Use README file for Dashboard Description
+  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  namespace = "<billing-project>", # Billing project
+  name = "<My-Workspace>", # Actual Workspace name
+  update = TRUE, # Updates the Workspace with your changes
+  use_readme = TRUE # Use README file for Dashboard Description
 )
 ```
 
