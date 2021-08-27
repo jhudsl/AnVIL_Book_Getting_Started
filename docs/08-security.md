@@ -2,7 +2,7 @@
 
 # Security
 
-## Introduction {-#introduction-security}
+## Introduction {#introduction-security}
 
 ### Who is this guide for?
 
