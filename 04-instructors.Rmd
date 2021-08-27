@@ -21,7 +21,7 @@ table of contents and enable the `scroll_highlight` feature
 
 <!------------------------------------------>
 
-## Overview
+## Overview {#overview-instructors}
 
 ### Goals for This Guide
 
