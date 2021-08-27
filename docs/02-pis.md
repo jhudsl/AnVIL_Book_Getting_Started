@@ -17,7 +17,7 @@ table of contents and enable the `scroll_highlight` feature
 ([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
 :::
 
-## Overview
+## Overview {-#overview-pis}
 
 ### Goals for This Guide
 
@@ -51,7 +51,7 @@ These design decisions are made to help you get up and running as quickly as pos
 - Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
 - To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
 
-## Account Setup
+## Account Setup {-#account-setup-pis}
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
@@ -309,6 +309,45 @@ You can set a single Budget for your entire lab, set up individual budgets for e
 1. You can edit your budgets at any time by going to Billing > Budgets & alerts, and clicking on the name of the budget you want to edit.
     +
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_55.png" title="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." alt="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget."  />
+
+#### View spend
+
+
+You can always check your current spend through the Google Billing console, but remember
+
+- There is a reporting delay (~1 day), so you cannot immediately see what an analysis cost
+- Costs are reported at the level of Billing Projects, so if you have not created separate Billing Projects, you will not be able to determine where charges are coming from.
+
+The Google Billing console displays information by Billing Account.  To view spending:
+  
+1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
+
+1. Navigate to [Billing](https://console.cloud.google.com/billing)
+    +
+<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_153.png" title="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted."  />
+    + You may be automatically directed to view a specific Billing Account.  If you see information about a single account (other than the one you're interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
+    + 
+<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_167.png" title="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted."  />
+
+1. Click on the name of the Billing Account for the project you want to view.
+    +
+<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_5.png" title="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted." alt="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted."  />
+
+1. Look at the top of the **Overview** tab to see your month-to-date spending.
+    +
+<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_0.png" title="Screenshot of a Google Cloud Billing Account Overview." alt="Screenshot of a Google Cloud Billing Account Overview."  />
+
+1. Scroll further down the **Overview** tab to show your top projects.
+    +
+<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_4.png" title="Screenshot of a Google Cloud Billing Account top projects." alt="Screenshot of a Google Cloud Billing Account top projects."  />
+
+1. Click on the **Reports** tab to see more detailed information about each of your billing projects.  This is probably the most useful tab for exploring costs of individual projects over time.
+    +
+<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_8.png" title="Screenshot of a Google Cloud Billing Account Reports tab." alt="Screenshot of a Google Cloud Billing Account Reports tab."  />
+
+1. Click on the **Cost table** tab to obtain a convenient table of spending per project.
+    +
+<img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_12.png" title="Screenshot of a Google Cloud Billing Account Cost table tab." alt="Screenshot of a Google Cloud Billing Account Cost table tab."  />
 
 #### Export Cost Data to BigQuery
 

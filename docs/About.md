@@ -3,7 +3,7 @@ title: "about"
 output: html_document
 ---
 
-# About the Authors {-}
+# About the Authors {-#about}
 
 ### Authors
 

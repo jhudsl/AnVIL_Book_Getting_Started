@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5.3 Starting Galaxy | about</title>
+  <title>Overview | about</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5.3 Starting Galaxy | about" />
+  <meta property="og:title" content="Overview | about" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5.3 Starting Galaxy | about" />
+  <meta name="twitter:title" content="Overview | about" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="starting-rstudio.html"/>
-<link rel="next" href="data.html"/>
+<link rel="prev" href="instructors.html"/>
+<link rel="next" href="account-setup-instructors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -265,25 +265,46 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_main_image.png">
 </div>
-<div id="starting-galaxy" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Starting Galaxy</h2>
-<iframe src="https://drive.google.com/file/d/16QEY8x-gBsUkKEeO3w_H-I4SLIBPloXd/preview" width="640" height="360" allow="autoplay">
-</iframe>
-<div id="objectives-2" class="section level3" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> Objectives</h3>
+<div id="overview-instructors" class="section level2 unnumbered">
+<h2>Overview</h2>
+<div id="goals-for-this-guide" class="section level3" number="4.0.1">
+<h3><span class="header-section-number">4.0.1</span> Goals for This Guide</h3>
+<p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_ge21c626cf0_0_5.png" title="List of goals for this guide: (1) get your accounts, (2) set up billing, (3) create your first Workspace, (4) develop content, and (5) set up classes with students." alt="List of goals for this guide: (1) get your accounts, (2) set up billing, (3) create your first Workspace, (4) develop content, and (5) set up classes with students."  /></p>
+</div>
+<div id="design-philosophy" class="section level3" number="4.0.2">
+<h3><span class="header-section-number">4.0.2</span> Design Philosophy</h3>
+<p>This guide provides an opinionated walkthrough on how to set up AnVIL for your class. These step-by-step instructions take instructors that are completely new to the AnVIL through account setup to the point where you can feel comfortable hosting a class from start-to-finish on AnVIL. Following the recommendations in this guide will help you minimize expenses, develop content programmatically, track individual student expenses, and stop billing expenses from accruing once the class is complete. In support of these goals we have made the following design decisions:</p>
+<ol style="list-style-type: decimal">
+<li>ACCOUNT SETUP</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Sign up for a personal Google Cloud Account, where you can get started by claiming <a href="https://cloud.google.com/free/docs/gcp-free-tier/#free-trial">$300 free Google credits</a>.</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>CONTENT DEVELOPING</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Include version control and visibility of course content by using GitHub. This will allow you to add content programmatically, keep track of changes, and share your content with others outside of AnVIL.</li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li>CLASS SETUP</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Create a separate Google Billing Account for each class. This will allow you to easily shut down expenses at the end of the class.</li>
+<li>Choose one funding source per class (for example, the <a href="class-setup.html#strides-funding">STRIDES</a> Program).</li>
+<li>Create separate Terra Billing Projects for each student. This will allow you to monitor billing expenses closely and work with students to build best computing practices.</li>
+</ol>
+</div>
+<div id="before-you-start" class="section level3" number="4.0.3">
+<h3><span class="header-section-number">4.0.3</span> Before You Start</h3>
 <ul>
-<li>Start compute for your Galaxy on AnVIL</li>
-<li>Run tool to quality control sequencing reads</li>
-<li>Stop compute to minimize expenses</li>
+<li>You will need a <strong>credit card or bank account</strong> to activate your free trial and get started. Don’t worry! <strong>You won’t be billed until you explicitly turn on automatic billing</strong>, but payment information is needed for verification purposes.</li>
+<li>Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).</li>
 </ul>
-</div>
-<div id="slides-2" class="section level3" number="5.3.2">
-<h3><span class="header-section-number">5.3.2</span> Slides</h3>
-<p>The slides for this tutorial are are located <a href="https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q">here</a>.</p>
-
+<!-- Checklist -->
+<!------------------------------------------>
 </div>
 </div>
-<!-- </div> -->
 <hr>
 <center> 
   <div class="footer">
@@ -297,8 +318,8 @@
           </div>
         </div>
       </div>
-<a href="starting-rstudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="instructors.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="account-setup-instructors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
