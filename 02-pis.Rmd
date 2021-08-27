@@ -17,7 +17,7 @@ table of contents and enable the `scroll_highlight` feature
 ([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
 :::
 
-## Overview
+## Overview {-#overview-pis}
 
 ### Goals for This Guide
 
@@ -53,7 +53,7 @@ These design decisions are made to help you get up and running as quickly as pos
 - Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
 - To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
 
-## Account Setup
+## Account Setup {-#account-setup-pis}
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
