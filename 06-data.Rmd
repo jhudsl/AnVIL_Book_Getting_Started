@@ -1,6 +1,6 @@
 # Data
 
-## Introduction {-#introduction-data}
+## Introduction {#introduction-data}
 
 ### Who is this guide for?
 
