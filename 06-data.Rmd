@@ -2,6 +2,56 @@
 
 ## Introduction {#introduction-data}
 
-### Who is this guide for?
+<!------------------------------------------>
 
-### What's in this guide?
+## Bring Your Own Data
+
+### Overview
+
+### Upload Individual Files
+
+### Upload Folders
+
+### Upload Files Using `gsutil`
+
+#### Install `gsutil` on Your Local Computer or Local Server
+
+#### Copy Files From Your Local Computer to a Workspace Bucket
+
+#### Copy Files Between Workspaces
+
+#### Learn More
+
+<!------------------------------------------>
+
+## Import Existing Data
+
+<!-- Import data from available projects to existing or new workspace -->
+
+### Explore Data in the Data Library
+
+### Import Data From the Data Library to a Workspace
+
+<!------------------------------------------>
+
+## Store Data (Persistent Disk)
+
+<!--Cloud Environment "Persistent Disk" (PD)-->
+
+### Overview
+
+#### What is Persistent Disk?
+
+<!--(https://support.terra.bio/hc/en-us/articles/360047318551)-->
+
+#### Costs for Persistent Disk 
+
+<!--(e.g., 50GB, $2 per month)-->
+
+### Copy Files From the Persistent Disk to the Workspace Bucket
+
+### Copy Files From the Workspace Bucket to the Persistent Disk
+
+### Copy to Local Storage
+
+### Delete Persistent Disk Storage
