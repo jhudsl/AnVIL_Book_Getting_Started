@@ -3,9 +3,9 @@ title: "about"
 output: html_document
 ---
 
-# About the Authors {-}
+# About the Authors {-#about}
 
-### Authors
+### Authors {-}
 
 The following people authored major sections of this book:
 
@@ -13,5 +13,5 @@ The following people authored major sections of this book:
 
 **Ava Hoffman** is a Research Associate in the Department of Biostatistics at Johns Hopkins University.
 
-### Contributors:
+### Contributors: {-}
 

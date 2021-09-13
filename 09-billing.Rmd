@@ -1,6 +1,6 @@
 # Billing
 
-## Introduction
+## Introduction {#introduction-billing}
 
 ### Who is this guide for?
 

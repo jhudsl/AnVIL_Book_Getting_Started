@@ -17,7 +17,7 @@ table of contents and enable the `scroll_highlight` feature
 ([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
 :::
 
-## Overview
+## Overview {#overview-pis}
 
 ### Goals for This Guide
 
@@ -53,7 +53,7 @@ These design decisions are made to help you get up and running as quickly as pos
 - Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
 - To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
 
-## Account Setup
+## Account Setup {#account-setup-pis}
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
@@ -259,6 +259,12 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
     +
 ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left "hamburger" button for extending the drop-down menu, 2) the drop-down menu item "Billing", 3) the submenu item "Budgets & alerts, 4) the name of a budget.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_55")
+```
+
+#### View spend
+
+```{r, child=c("_child_view_google_spending.Rmd")}
+
 ```
 
 #### Export Cost Data to BigQuery

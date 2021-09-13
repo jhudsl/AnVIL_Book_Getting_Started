@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Introduction | about</title>
+  <title>2.1 Overview | about</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Introduction | about" />
+  <meta property="og:title" content="2.1 Overview | about" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Introduction | about" />
+  <meta name="twitter:title" content="2.1 Overview | about" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="pis-and-lab-managers.html"/>
+<link rel="prev" href="pis-and-lab-managers.html"/>
+<link rel="next" href="account-setup-pis.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -265,52 +265,48 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_main_image.png">
 </div>
-<div id="introduction" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>Welcome to the AnVIL Getting Started guide! In it you will find step-by-step instructions for setting up your accounts, as well as guides on how to use some of AnVIL’s key features.</p>
-<div id="what-is-anvil" class="section level3" number="1.0.1">
-<h3><span class="header-section-number">1.0.1</span> What Is AnVIL?</h3>
-<p>AnVIL is NHGRI’s Genomic Data Science Analysis, Visualization, and Informatics Lab-Space. It provides a platform for performing genomic data analysis on the cloud.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QTCtAEb4kpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<div id="overview-pis" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Overview</h2>
+<div id="goals-for-this-guide" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Goals for This Guide</h3>
+<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."  /></p>
 </div>
-<div id="does-anvil-cost-money" class="section level3" number="1.0.2">
-<h3><span class="header-section-number">1.0.2</span> Does AnVIL Cost Money?</h3>
-<p>Through AnVIL, you pay for computing resources as you use them. If you’d like to try it out, new users can claim a $300 Google Cloud credit to test out the platform and perform some small analyses.</p>
-<p>We also provide a <a href="https://jhudatascience.org/AnVIL_Book_Getting_Started/pis-and-lab-managers.html#types-of-costs">cost estimator</a>.</p>
+<div id="design-philosophy" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Design Philosophy</h3>
+<p>This guide provides an opinionated walkthrough on how to set up AnVIL for your lab, based on experiences from many labs actively using AnVIL. These step-by-step instructions take team leads that are completely new to the AnVIL through account setup to the point where team members can start working on AnVIL. Following the recommendations in this guide will help you more clearly see where charges are coming from and have greater control over which users can spend your money and access your data. In support of these goals we have made the following design decisions:</p>
+<ol style="list-style-type: decimal">
+<li>COST CONTROL</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Prevent charges to your funding account until you explicitly give authorization by starting with Google’s free $300 credit program</li>
+<li>Control who can charge to your account by limiting who can “share” permission to compute - yourself and any designated “Lab Managers”</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>COST TRANSPARENCY</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Allow fine-grain accounting of who spent what by creating individual “Billing Projects” for each user</li>
+<li>Monitor costs by setting up email alerts to warn you when you reach spending thresholds</li>
+<li>Enable detailed analysis of costs by exporting cost data using BigQuery</li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li>DATA ACCESS CONTROLS</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Reduce unwanted access by limiting who can “share” your data and analyses - yourself and any designated “Lab Managers”</li>
+<li>Stricter data access management can be enforced through “Authorization Domains”; however this can make future sharing and publication difficult. This guide recommends avoiding Authorization Domains for most uses, especially as you are starting out. If you are working with highly sensitive data, see <a href="https://support.terra.bio/hc/en-us/articles/360026775691-Managing-data-privacy-and-access-with-Authorization-Domains">this documentation</a> for more information.</li>
+</ol>
+<p>These design decisions are made to help you get up and running as quickly as possible without overwhelming new users. As your experience and comfort with AnVIL grows, you will likely change your design to better match your unique needs e.g. enabling Authorization Domains when working with protected data.</p>
 </div>
-<div id="where-can-i-get-help" class="section level3" number="1.0.3">
-<h3><span class="header-section-number">1.0.3</span> Where Can I Get Help?</h3>
-<p>Please visit our community support forum at <a href="https://help.anvilproject.org"><code>help.anvilproject.org</code></a> with any questions (or suggestions!) you may have.</p>
-</div>
-<div id="how-to-use-this-book" class="section level3" number="1.0.4">
-<h3><span class="header-section-number">1.0.4</span> How to Use This Book</h3>
-<p>This book is not intended to be read through sequentially, rather, it is a collection of guides that you can reference based on your needs. It is divided into two major sections:</p>
-<p><strong>Getting Started</strong></p>
-<p>Provides step-by-step instructions for new AnVIL users to set up their accounts and start using the AnVIL platform. We have included recommendations for configuring your accounts based on several common use cases:</p>
+<div id="before-you-start" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Before You Start</h3>
 <ul>
-<li><strong>PIs and Lab Managers</strong>: managing a team of researchers working on AnVIL</li>
-<li><strong>Data Analysts</strong>: joining a team working on AnVIL</li>
-<li><strong>Instructors</strong>: using AnVIL to teach a course or Workshop</li>
-</ul>
-<p><strong>Working on AnVIL</strong></p>
-<p>Examples and walkthroughs of common tasks on the AnVIL platform:</p>
-<ul>
-<li><strong>Tools</strong>: how to run common tools including Jupyter Notebooks, Galaxy, and RStudio</li>
-<li><strong>Data</strong>: how to find and access AnVIL datasets, as well as upload and manage your own data</li>
-<li><strong>Workflows</strong>: how to find and run existing automated data processing pipelines, and how to customize and share your own</li>
+<li>You will need a <strong>credit card or bank account</strong> to activate your free trial and get started. Don’t worry! <strong>You won’t be billed until you explicitly turn on automatic billing</strong>, but payment information is needed for verification purposes.</li>
+<li>Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).</li>
+<li>To add lab members, you will need to know the Google account they will use to access Terra. You can complete most setup steps without this information and then add them once you know the correct accounts.</li>
 </ul>
 </div>
-<div id="activate-scroll_highlight-feature" class="section level3" number="1.0.5">
-<h3><span class="header-section-number">1.0.5</span> Activate <code>scroll_highlight</code> Feature</h3>
-<p>Note that some sections of this book cover steps in a lot of detail. When navigating the table of contents, you can click subsection (e.g., 2.2, 4.2) headers a second time to expand the table of contents and enable the <code>scroll_highlight</code> feature. This can help you follow the separate steps within more clearly.</p>
-<p><img src="01-intro_files/figure-html/18yUr5XSEMgPk8JXFLKfG9JF7L9NpKbCF_mIcXagogKg_gde0d2ef5f6_0_1.png" title="Double-clicking on the H2 headers (for example, 2.2) will expand the contents for view using the 'scroll_highlight' feature." alt="Double-clicking on the H2 headers (for example, 2.2) will expand the contents for view using the 'scroll_highlight' feature."  /></p>
-
 </div>
-</div>
-
-
-
 <hr>
 <center> 
   <div class="footer">
@@ -324,8 +320,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="pis-and-lab-managers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="pis-and-lab-managers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="account-setup-pis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
