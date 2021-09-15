@@ -77,7 +77,7 @@ table of contents and enable the `scroll_highlight` feature
 
 ### Step 5: Set Up Alerts
 
-### Step 6: Create First Workspace
+### Step 6: Create First Workspace  {#first-workspace}
 
 ### Wrap-Up
 
@@ -95,7 +95,7 @@ Much of the information in this section comes from the [AnVILPublish vignette](h
 
 1. You need to set up [Billing](#account-setup-instructors). This includes your Google Billing Account and Terra Billing Project. Take note of your Terra Billing Project name.
 
-1. Create your first Workspace. A first Workspace is needed to launch RStudio, but after that, all Workspaces can be made programmatically from within other Workspaces.
+1. Create your [first Workspace](#first-workspace). A first Workspace is needed to launch RStudio, but after that, all Workspaces can be made programmatically from within other Workspaces.
 
 1. Launch RStudio using the Community-Maintained RStudio Environment. This requires you to be familiar with [RStudio on AnVIL](#starting-rstudio).
 
@@ -103,12 +103,11 @@ Much of the information in this section comes from the [AnVILPublish vignette](h
 
 #### Install AnVILPublish
 
-Install `AnVIL` and `AnVILPublish`. **Make sure to load the development version of `AnVILPublish`.** Don't worry about loading it for now.
+Install `AnVIL` and `AnVILPublish`. Don't worry about loading it for now.
 
 ```{r install_anvil, eval = FALSE}
 BiocManager::install("AnVIL")
-# Development version
-BiocManager::install("Bioconductor/AnVILPublish")
+BiocManager::install("AnVILPublish")
 ```
 
 #### Install `notedown`
@@ -119,7 +118,7 @@ Next, navigate to the RStudio Terminal and install [`notedown`](https://github.c
 pip3 install notedown
 ```
 
-RStudio doesn't automatically know where to look for `notedown`. Add the `notedown` installation to your RStudio PATH:
+Return to the RStudio Console. RStudio doesn't automatically know where to look for `notedown`. Add the `notedown` installation to your RStudio PATH:
 
 ```{r notedown_2, eval = FALSE}
 # Add to PATH
