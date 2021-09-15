@@ -107,17 +107,25 @@ Through the [STRIDES](https://datascience.nih.gov/strides) program, NHGRI makes 
 
 ### Set Up Permissions
 
-#### Add students as “Member” 
+#### Create Groups
 
-<!-- to Terra Group (so don’t have to type every ID) -->
+<!-- To manage group permissions for Instructors versus students -->
 
-#### Add Group as “Reader” 
+#### Add Additional Instructors as "Owner"
 
-<!-- to Instructor Workspace (to allow clone of this workspace) -->
+<!-- To Instructor Group -->
 
-#### Add Group as “User” 
+#### Add Students as "Reader"
 
-<!-- Roles on Billing Project (allow to clone any workspace) -->
+<!-- to Student Group -->
+
+#### Set Permissions
+
+<!-- Set Instructor and Student permissions for Workspace and Terra Billing Projects -->
+
+### Notify Terra
+
+<!-- Request no scheduled maintenance downtime / ask about major changes -->
 
 <!------------------------------------------>
 
