@@ -107,7 +107,7 @@ Install `AnVIL` and `AnVILPublish`. Don't worry about loading it for now.
 
 ```{r install_anvil, eval = FALSE}
 BiocManager::install("AnVIL")
-BiocManager::install("AnVILPublish")
+AnVIL::install("AnVILPublish")
 ```
 
 #### Install `notedown`
