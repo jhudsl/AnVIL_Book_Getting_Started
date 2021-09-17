@@ -432,19 +432,23 @@ If you plan to use the AnVIL platform for data storage, data movement, and data 
 
 ### General Information
 
-When writing an IRB research plan you will be required to fill out a few fields about data collection and data storage. The following sections provide the information that you will need for these IRB sections. There is also language regarding consent, with some suggested text that you may include in the IRB research plan and your consent form. An IRB usually addresses data storage. If you are using AnVIL, you should know that the storage is on Google Cloud Platform, so it is encrypted, it is not stored on a secure server, and it is backed up through multi-site replication. Important things to know about AnVIL security are that there are four key design concepts:
+When writing an IRB research plan you will be required to fill out a few fields about data collection and data storage. The following sections provide the information that you will need for these IRB sections. There is also language regarding consent, with some suggested text that you may include in the IRB research plan and your consent form. If you are using AnVIL, you should know that the storage is on Google Cloud Platform, so it is encrypted, it is not stored on a secure server, and it is backed up through multi-site replication. Important things to know about AnVIL security are that there are four key design concepts:
 
 - **Authenticate**: All components require authentication at every step, not just the perimeter
 - **Authorize**: All data requires explicit authorization to access
 - **Audit**: All data access is logged (to a different system), with alerts for anomalous events
-- **Encrypt**: All data-in-transit and all data-at-rest is encrypted.
+- **Encrypt**: All data-in-transit and all data-at-rest is encrypted
 
 There is language below about data storage, which you will need for your research plan. There is also a section about privacy and confidentiality, which you will also need.
 
 ### Description of AnVIL
 
-The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space, or AnVIL provides a collaborative environment for creating and sharing data and analysis workflows for both users with limited computational expertise and sophisticated data scientist users.  The platform is built on a set of established components that have been used in a number of flagship scientific projects. The Terra platform provides a compute environment with secure data and analysis sharing capabilities. Dockstore provides standards based sharing of containerized tools and workflows. The Gen3 data commons framework provides data and metadata ingest, querying, and organization. Bioconductor and Galaxy provide environments for users at different skill levels to construct and execute analyses.
+The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space, or AnVIL provides a collaborative environment for creating and sharing data and analysis workflows for both users with limited computational expertise and sophisticated data scientist users.  The platform is built on a set of established components that have been used in a number of flagship scientific projects:
 
+- The **Terra platform**: provides a compute environment with secure data and analysis sharing capabilities 
+- **Dockstore**: provides standards based sharing of containerized tools and workflows
+- **The Gen3 data commons framework**: provides data and metadata ingest, querying, and organization 
+- **Bioconductor and Galaxy**: provide environments for users at different skill levels to construct and execute analyses
 
 ### Data Storage
 
@@ -454,6 +458,8 @@ We will keep a copy of the participant’s genomics data in various data formats
 ### Privacy and Confidentiality
 
 There is a small risk of loss of privacy and confidentiality for the participant and their personal health information. While it is unlikely, there is a possibility that genetic information could be seen by unauthorized individuals.  Researchers who will have access to genetic information about participants will take measures to maintain the privacy of the participant and confidentiality of their information.  
+
+### Security
 
 Terra (powered by Broad Genomics’ Workbench) is operated by the Broad Institute at the FISMA (Federal Information Systems Management Act) “moderate” level and received Authority to Operate from NCI and NIH in May of 2016. FISMA is a practice of documentation, audit, and organizational risk acceptance.  It is centered on the controls outlined in NIST (National Institute of Standards and Technology) Special Publications 800-30 and 800-53.   Covered topics include:
 
@@ -474,7 +480,7 @@ The Senior Director of Information Security & Compliance (DISC) facilitates the 
 The Broad Institute has a strong commitment to information security, appropriate use of data, compliance with applicable regulations, and respect for data privacy.
  
 
-### Consent Questions
+### Example Language for Informed Consent
 
 #### Types of Research
 
