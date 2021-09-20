@@ -101,12 +101,12 @@ Much of the information in this section comes from the [AnVILPublish vignette](h
 
 #### Install AnVILPublish
 
-Install `AnVIL` and `AnVILPublish`. Don't worry about loading it for now.
+Install `AnVIL` and `AnVILPublish`. Don't worry about loading it for now. Tip: hover over the top-right corner of the box below to copy the code.
 
 
 ```r
 BiocManager::install("AnVIL")
-BiocManager::install("AnVILPublish")
+AnVIL::install("AnVILPublish")
 ```
 
 #### Install `notedown`
