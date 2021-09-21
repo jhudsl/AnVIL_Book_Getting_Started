@@ -147,7 +147,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 You need a folder with content to get started. In the next step, this will be the basic structure of your files:
 
 ```
-AnVILPublish-skeleton
+AnVILPublishSkeleton
 |-DESCRIPTION
 |-LICENSE.md
 |-NAMESPACE
@@ -156,17 +156,17 @@ AnVILPublish-skeleton
   |-Notebook_1.Rmd
 ```
 
-"AnVILPublish-skeleton" is the name of the folder containing all of your information. The folder must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file. As you develop content, you might end up with many `.Rmd` notebooks inside the `vignettes` directory. We will practice with a basic set of files that are already set up for you on [GitHub](https://github.com/).
+"AnVILPublishSkeleton" is the name of the folder containing all of your information. The folder must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file. As you develop content, you might end up with many `.Rmd` notebooks inside the `vignettes` directory. We will practice with a basic set of files that are already set up for you on [GitHub](https://github.com/).
 
-First, you should clone the [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton).
+First, you should clone the [skeleton repository](https://github.com/avahoffman/AnVILPublishSkeleton).
 
 ```{bash gitclone, eval = FALSE}
-git clone https://github.com/avahoffman/AnVILPublish-skeleton
+git clone https://github.com/avahoffman/AnVILPublishSkeleton
 ```  
 
 You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with an `.Rmd` file.
 
-```{r, echo=FALSE, fig.alt="RStudio screenshot showing the files present in the cloned AnVILPublish-skeleton repository."}
+```{r, echo=FALSE, fig.alt="RStudio screenshot showing the files present in the cloned AnVILPublishSkeleton repository."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_38")
 ```
 
@@ -174,9 +174,9 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K
 
 Edit the information in `DESCRIPTION` but keep the structure the same.
 
-1. `Package:` argument: This "package name" must match the name of the folder containing the `DESCRIPTION` and other files. In this case, it should be "AnVILPublish-skeleton".
+1. `Package:` argument: This "package name" must match the name of the folder containing the `DESCRIPTION` and other files. In this case, it should be "AnVILPublishSkeleton".
 
-```{r, echo=FALSE, fig.alt="File screenshot showing the `Package:` argument is AnVILPublish-skeleton."}
+```{r, echo=FALSE, fig.alt="File screenshot showing the `Package:` argument is AnVILPublishSkeleton."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.geb84bbba9a_2_8")
 ```
 
@@ -200,7 +200,7 @@ Use the `AnVILPublish::as_workspace()` function. Replace `<billing-project>` wit
 
 ```{r publish_1, eval = FALSE}
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  path = "/home/rstudio/AnVILPublishSkeleton", # directory containing DESCRIPTION file
   namespace = "<billing-project>", # Billing project
   name = "<My-Workspace>", # Actual Workspace name
   create = TRUE # Makes a *new* Workspace
@@ -229,7 +229,7 @@ Edit the `README.md` file to add more details to your Workspace Dashboard page. 
 
 ```{r publish_2, eval = FALSE}
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  path = "/home/rstudio/AnVILPublishSkeleton", # directory containing DESCRIPTION file
   namespace = "<billing-project>", # Billing project
   name = "<My-Workspace>", # Actual Workspace name
   update = TRUE, # Updates the Workspace with your changes
@@ -245,7 +245,7 @@ The `.Rmd` file contains your content. You can make many `.Rmd` files. These wil
 
 ```{r publish_3, eval = FALSE}
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  path = "/home/rstudio/AnVILPublishSkeleton", # directory containing DESCRIPTION file
   namespace = "<billing-project>", # Billing project
   name = "<My-Workspace>", # Actual Workspace name
   update = TRUE, # Updates the Workspace with your changes
