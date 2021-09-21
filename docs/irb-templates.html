@@ -24,7 +24,7 @@
 <meta name="author" content="Katherine Cox, Ava Hoffman, Frederick Tan" />
 
 
-<meta name="date" content="2021-09-20" />
+<meta name="date" content="2021-09-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -174,8 +174,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.5.2" data-path="irb-templates.html"><a href="irb-templates.html#description-of-anvil"><i class="fa fa-check"></i><b>2.5.2</b> Description of AnVIL</a></li>
 <li class="chapter" data-level="2.5.3" data-path="irb-templates.html"><a href="irb-templates.html#data-storage"><i class="fa fa-check"></i><b>2.5.3</b> Data Storage</a></li>
 <li class="chapter" data-level="2.5.4" data-path="irb-templates.html"><a href="irb-templates.html#privacy-and-confidentiality"><i class="fa fa-check"></i><b>2.5.4</b> Privacy and Confidentiality</a></li>
-<li class="chapter" data-level="2.5.5" data-path="irb-templates.html"><a href="irb-templates.html#consent-questions"><i class="fa fa-check"></i><b>2.5.5</b> Consent Questions</a></li>
-<li class="chapter" data-level="2.5.6" data-path="irb-templates.html"><a href="irb-templates.html#additional-considerations"><i class="fa fa-check"></i><b>2.5.6</b> Additional Considerations</a></li>
+<li class="chapter" data-level="2.5.5" data-path="irb-templates.html"><a href="irb-templates.html#security"><i class="fa fa-check"></i><b>2.5.5</b> Security</a></li>
+<li class="chapter" data-level="2.5.6" data-path="irb-templates.html"><a href="irb-templates.html#example-language-for-informed-consent"><i class="fa fa-check"></i><b>2.5.6</b> Example Language for Informed Consent</a></li>
+<li class="chapter" data-level="2.5.7" data-path="irb-templates.html"><a href="irb-templates.html#additional-resources"><i class="fa fa-check"></i><b>2.5.7</b> Additional Resources</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-analysts.html"><a href="data-analysts.html"><i class="fa fa-check"></i><b>3</b> Data Analysts</a>
@@ -274,7 +275,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>A</b> Security</a>
+<li class="chapter" data-level="A" data-path="irb-templates.html"><a href="irb-templates.html#security"><i class="fa fa-check"></i><b>A</b> Security</a>
 <ul>
 <li class="chapter" data-level="A.1" data-path="introduction-security.html"><a href="introduction-security.html"><i class="fa fa-check"></i><b>A.1</b> Introduction</a>
 <ul>
@@ -336,18 +337,24 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>If you plan to use the AnVIL platform for data storage, data movement, and data analysis, you will likely need to provide information about AnVIL in your IRB application. While all IRBs will have different questions and requirements, there are general areas of concern that are common across IRB applications. The following sections provide general information about AnVIL as well as examples of language addressing some of these concerns.</p>
 <div id="general-information" class="section level3" number="2.5.1">
 <h3><span class="header-section-number">2.5.1</span> General Information</h3>
-<p>When writing an IRB research plan you will be required to fill out a few fields about data collection and data storage. The following sections provide the information that you will need for these IRB sections. There is also language regarding consent, with some suggested text that you may include in the IRB research plan and your consent form. An IRB usually addresses data storage. If you are using AnVIL, you should know that the storage is on Google Cloud Platform, so it is encrypted, it is not stored on a secure server, and it is backed up through multi-site replication. Important things to know about AnVIL security are that there are four key design concepts:</p>
+<p>When writing an IRB research plan you will be required to fill out a few fields about data collection and data storage. The following sections provide the information that you will need for these IRB sections. There is also language regarding consent, with some suggested text that you may include in the IRB research plan and your consent form. If you are using AnVIL, you should know that the storage is on Google Cloud Platform, so it is encrypted, it is not stored on a secure server, and it is backed up through multi-site replication. Important things to know about AnVIL security are that there are four key design concepts:</p>
 <ul>
 <li><strong>Authenticate</strong>: All components require authentication at every step, not just the perimeter</li>
 <li><strong>Authorize</strong>: All data requires explicit authorization to access</li>
 <li><strong>Audit</strong>: All data access is logged (to a different system), with alerts for anomalous events</li>
-<li><strong>Encrypt</strong>: All data-in-transit and all data-at-rest is encrypted.</li>
+<li><strong>Encrypt</strong>: All data-in-transit and all data-at-rest is encrypted</li>
 </ul>
 <p>There is language below about data storage, which you will need for your research plan. There is also a section about privacy and confidentiality, which you will also need.</p>
 </div>
 <div id="description-of-anvil" class="section level3" number="2.5.2">
 <h3><span class="header-section-number">2.5.2</span> Description of AnVIL</h3>
-<p>The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space, or AnVIL provides a collaborative environment for creating and sharing data and analysis workflows for both users with limited computational expertise and sophisticated data scientist users. The platform is built on a set of established components that have been used in a number of flagship scientific projects. The Terra platform provides a compute environment with secure data and analysis sharing capabilities. Dockstore provides standards based sharing of containerized tools and workflows. The Gen3 data commons framework provides data and metadata ingest, querying, and organization. Bioconductor and Galaxy provide environments for users at different skill levels to construct and execute analyses.</p>
+<p>The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space, or AnVIL provides a collaborative environment for creating and sharing data and analysis workflows for both users with limited computational expertise and sophisticated data scientist users. The platform is built on a set of established components that have been used in a number of flagship scientific projects:</p>
+<ul>
+<li>The <strong>Terra platform</strong>: provides a compute environment with secure data and analysis sharing capabilities</li>
+<li><strong>Dockstore</strong>: provides standards based sharing of containerized tools and workflows</li>
+<li><strong>The Gen3 data commons framework</strong>: provides data and metadata ingest, querying, and organization</li>
+<li><strong>Bioconductor and Galaxy</strong>: provide environments for users at different skill levels to construct and execute analyses</li>
+</ul>
 </div>
 <div id="data-storage" class="section level3" number="2.5.3">
 <h3><span class="header-section-number">2.5.3</span> Data Storage</h3>
@@ -357,6 +364,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="privacy-and-confidentiality" class="section level3" number="2.5.4">
 <h3><span class="header-section-number">2.5.4</span> Privacy and Confidentiality</h3>
 <p>There is a small risk of loss of privacy and confidentiality for the participant and their personal health information. While it is unlikely, there is a possibility that genetic information could be seen by unauthorized individuals. Researchers who will have access to genetic information about participants will take measures to maintain the privacy of the participant and confidentiality of their information.</p>
+</div>
+<div id="security" class="section level3" number="2.5.5">
+<h3><span class="header-section-number">2.5.5</span> Security</h3>
 <p>Terra (powered by Broad Genomics’ Workbench) is operated by the Broad Institute at the FISMA (Federal Information Systems Management Act) “moderate” level and received Authority to Operate from NCI and NIH in May of 2016. FISMA is a practice of documentation, audit, and organizational risk acceptance. It is centered on the controls outlined in NIST (National Institute of Standards and Technology) Special Publications 800-30 and 800-53. Covered topics include:</p>
 <ul>
 <li>Network penetration testing and assessment by a Federally authorized outside firm</li>
@@ -372,36 +382,45 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>The Senior Director of Information Security &amp; Compliance (DISC) facilitates the development and maintenance of the information security program, leads the development of information security policies, standards and procedures, and collaborates with business and system owners in understanding their security responsibilities. The DISC also promotes consistency in the development and implementation of strategic initiatives and policies based on industry and regulatory standards (FISMA, etc).</p>
 <p>The Broad Institute has a strong commitment to information security, appropriate use of data, compliance with applicable regulations, and respect for data privacy.</p>
 </div>
-<div id="consent-questions" class="section level3" number="2.5.5">
-<h3><span class="header-section-number">2.5.5</span> Consent Questions</h3>
-<div id="types-of-research" class="section level4" number="2.5.5.1">
-<h4><span class="header-section-number">2.5.5.1</span> Types of Research</h4>
-<ul>
-<li>We may use your sample to do other biological and genetic research. Genetic research may include looking at some or all of your genes and DNA to see if there are links to different types of health conditions.</li>
-<li>We may use your sample and your DNA sequence information to help create new analytical and machine learning methods to look at genomic and clinical data.</li>
-<li>We may share your samples, your DNA sequence information, your health information, and results from our research results with other data banks, such as those sponsored by the National Institutes of Health, so that researchers from around the world can use them to study many conditions. A code will be assigned to your samples and health information. Your name, medical record number, or other information that easily identifies you will not be stored with your samples or health information. The key to the code that connects your name to your samples and information will be stored securely in a controlled access database. This method is discussed more below.</li>
-</ul>
+<div id="example-language-for-informed-consent" class="section level3" number="2.5.6">
+<h3><span class="header-section-number">2.5.6</span> Example Language for Informed Consent</h3>
+<p>Below we provide some possible language that could be used for consent forms.</p>
+<div id="types-of-research" class="section level4" number="2.5.6.1">
+<h4><span class="header-section-number">2.5.6.1</span> Types of Research</h4>
+<blockquote>
+<p><em>We may use your sample to do other biological and genetic research. Genetic research may include looking at some or all of your genes and DNA to see if there are links to different types of health conditions.</em></p>
+</blockquote>
+<blockquote>
+<p><em>We may use your sample and your DNA sequence information to help create new analytical and machine learning methods to look at genomic and clinical data.</em></p>
+</blockquote>
+<blockquote>
+<p><em>We may share your samples, your DNA sequence information, your health information, and results from our research results with other data banks, such as those sponsored by the National Institutes of Health, so that researchers from around the world can use them to study many conditions. A code will be assigned to your samples and health information. Your name, medical record number, or other information that easily identifies you will not be stored with your samples or health information. The key to the code that connects your name to your samples and information will be stored securely in a controlled access database. This method is discussed more below.</em></p>
+</blockquote>
 </div>
-<div id="data-repository-submission" class="section level4" number="2.5.5.2">
-<h4><span class="header-section-number">2.5.5.2</span> Data Repository Submission</h4>
-<p>Your individual genomic data and health information may be put in a controlled-access data commons. This means that only researchers who apply for and get permission to use the information for a specific research project will be able to access the information. If this happens, your genomic data and health information will not be labeled with your name or other information that could be used to identify you. Your data and information will be entered in the database with the random study identifier created by the research team. Researchers approved to access information in the database will agree not to attempt to identify you.</p>
+<div id="data-repository-submission" class="section level4" number="2.5.6.2">
+<h4><span class="header-section-number">2.5.6.2</span> Data Repository Submission</h4>
+<blockquote>
+<p><em>Your individual genomic data and health information may be put in a controlled-access data commons. This means that only researchers who apply for and get permission to use the information for a specific research project will be able to access the information. If this happens, your genomic data and health information will not be labeled with your name or other information that could be used to identify you. Your data and information will be entered in the database with the random study identifier created by the research team. Researchers approved to access information in the database will agree not to attempt to identify you.</em></p>
+</blockquote>
 </div>
-<div id="potential-risks" class="section level4" number="2.5.5.3">
-<h4><span class="header-section-number">2.5.5.3</span> Potential Risks</h4>
-<p>Every research study involves the risk of loss of privacy. The personal information that will be associated with your WGS cannot typically be used to identify you. However, it is possible that in the future there may be a way to link stored genomic information back to you. We believe that the possibility of this is low. Your information will be stored on a cloud-computing storage system administered by The Broad Institute.</p>
+<div id="potential-risks" class="section level4" number="2.5.6.3">
+<h4><span class="header-section-number">2.5.6.3</span> Potential Risks</h4>
+<blockquote>
+<p><em>Every research study involves the risk of loss of privacy. The personal information that will be associated with your WGS cannot typically be used to identify you. However, it is possible that in the future there may be a way to link stored genomic information back to you. We believe that the possibility of this is low. Your information will be stored on a cloud-computing storage system administered by The Broad Institute.</em></p>
+</blockquote>
 </div>
 </div>
-<div id="additional-considerations" class="section level3" number="2.5.6">
-<h3><span class="header-section-number">2.5.6</span> Additional Considerations</h3>
+<div id="additional-resources" class="section level3" number="2.5.7">
+<h3><span class="header-section-number">2.5.7</span> Additional Resources</h3>
 <p><strong>Workspace access controls</strong></p>
 <ul>
 <li><a href="https://support.terra.bio/hc/en-us/articles/360025851892"><code>https://support.terra.bio/hc/en-us/articles/360025851892</code></a></li>
-<li>PIs can grant read / write / compute access, and can revoke access.</li>
+<li>Workspace owners (e.g. PI, Lab Manager, Data Coordination Center) can grant read / write / compute access, and can revoke access.</li>
 </ul>
 <p><strong>Authorization Domains</strong></p>
 <ul>
 <li><a href="https://support.terra.bio/hc/en-us/articles/360026775691"><code>https://support.terra.bio/hc/en-us/articles/360026775691</code></a></li>
-<li>Must be setup when a Workspace is created - prevents accidental sharing</li>
+<li>Must be set up when a Workspace is created - prevents accidental sharing</li>
 </ul>
 
 </div>

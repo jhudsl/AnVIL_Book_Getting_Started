@@ -136,10 +136,6 @@ Confirm that `notedown` is ready to use:
 system2("notedown", "--version")
 ```
 
-```
-## Warning in system2("notedown", "--version"): error in running command
-```
-
 You should see the version number printed to the console:
 
 <img src="04-instructors_files/figure-html//1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_gdb96a00840_0_80.png" title="Output on the RStudio console. You should see the version number printed if notedown has been installed correctly." alt="Output on the RStudio console. You should see the version number printed if notedown has been installed correctly."  />
