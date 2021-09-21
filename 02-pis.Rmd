@@ -482,30 +482,34 @@ The Broad Institute has a strong commitment to information security, appropriate
 
 ### Example Language for Informed Consent
 
+Below we provide some possible language that could be used for consent forms.
+
 #### Types of Research
 
-- We may use your sample to do other biological and genetic research. Genetic research may include looking at some or all of your genes and DNA to see if there are links to different types of health conditions.
-- We may use your sample and your DNA sequence information to help create new analytical and machine learning methods to look at genomic and clinical data.
-- We may share your samples, your DNA sequence information, your health information, and results from our research results with other data banks, such as those sponsored by the National Institutes of Health, so that researchers from around the world can use them to study many conditions. A code will be assigned to your samples and health information. Your name, medical record number, or other information that easily identifies you will not be stored with your samples or health information. The key to the code that connects your name to your samples and information will be stored securely in a controlled access database. This method is discussed more below.
+> *We may use your sample to do other biological and genetic research. Genetic research may include looking at some or all of your genes and DNA to see if there are links to different types of health conditions.*
+  
+> *We may use your sample and your DNA sequence information to help create new analytical and machine learning methods to look at genomic and clinical data.*
+  
+> *We may share your samples, your DNA sequence information, your health information, and results from our research results with other data banks, such as those sponsored by the National Institutes of Health, so that researchers from around the world can use them to study many conditions. A code will be assigned to your samples and health information. Your name, medical record number, or other information that easily identifies you will not be stored with your samples or health information. The key to the code that connects your name to your samples and information will be stored securely in a controlled access database. This method is discussed more below.*
 
 #### Data Repository Submission
 
-Your individual genomic data and health information may be put in a controlled-access data commons.  This means that only researchers who apply for and get permission to use the information for a specific research project will be able to access the information. If this happens, your genomic data and health information will not be labeled with your name or other information that could be used to identify you. Your data and information will be entered in the database with the random study identifier created by the research team. Researchers approved to access information in the database will agree not to attempt to identify you.
+> *Your individual genomic data and health information may be put in a controlled-access data commons.  This means that only researchers who apply for and get permission to use the information for a specific research project will be able to access the information. If this happens, your genomic data and health information will not be labeled with your name or other information that could be used to identify you. Your data and information will be entered in the database with the random study identifier created by the research team. Researchers approved to access information in the database will agree not to attempt to identify you.*
 
 #### Potential Risks
 
-Every research study involves the risk of loss of privacy. The personal information that will be associated with your WGS cannot typically be used to identify you. However, it is possible that in the future there may be a way to link stored genomic information back to you. We believe that the possibility of this is low. Your information will be stored on a cloud-computing storage system administered by The Broad Institute.
+> *Every research study involves the risk of loss of privacy. The personal information that will be associated with your WGS cannot typically be used to identify you. However, it is possible that in the future there may be a way to link stored genomic information back to you. We believe that the possibility of this is low. Your information will be stored on a cloud-computing storage system administered by The Broad Institute.*
 
 
-### Additional Considerations
+### Additional Resources
 
 **Workspace access controls**
 
 - [`https://support.terra.bio/hc/en-us/articles/360025851892`](https://support.terra.bio/hc/en-us/articles/360025851892)
-- PIs can grant read / write / compute access, and can revoke access.
+- Workspace owners (e.g. PI, Lab Manager, Data Coordination Center) can grant read / write / compute access, and can revoke access.
 
 **Authorization Domains**
 
 - [`https://support.terra.bio/hc/en-us/articles/360026775691`](https://support.terra.bio/hc/en-us/articles/360026775691)
-- Must be setup when a Workspace is created - prevents accidental sharing
+- Must be set up when a Workspace is created - prevents accidental sharing
 
