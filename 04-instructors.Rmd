@@ -129,7 +129,7 @@ Sys.setenv(PATH = paste(existing_path, notedown_path, sep = ":"))
 
 Confirm that `notedown` is ready to use:
 
-```{r notedown_3}
+```{r notedown_3, eval = FALSE}
 # Confirm notedown is accessible
 system2("notedown", "--version")
 ```
