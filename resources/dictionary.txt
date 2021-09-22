@@ -1,6 +1,7 @@
 AnVIL
 AnVIL’s
 AnVILPublish
+AnVILPublishSkeleton
 bioinformatics
 Biostatistics
 Bloomberg
