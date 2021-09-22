@@ -24,7 +24,7 @@
 <meta name="author" content="Katherine Cox, Ava Hoffman, Frederick Tan" />
 
 
-<meta name="date" content="2021-09-21" />
+<meta name="date" content="2021-09-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -376,33 +376,40 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="identify-your-repository" class="section level4" number="4.3.3.1">
 <h4><span class="header-section-number">4.3.3.1</span> Identify Your Repository</h4>
 <p>You need a folder with content to get started. In the next step, this will be the basic structure of your files:</p>
-<pre><code>AnVILPublish-skeleton
+<pre><code>AnVILPublishSkeleton
 |-DESCRIPTION
 |-LICENSE.md
 |-NAMESPACE
 |-README.md
 |-vignettes
   |-Notebook_1.Rmd</code></pre>
-<p>“AnVILPublish-skeleton” is the name of the folder containing all of your information. The folder must contain a <code>DESCRIPTION</code> file, <code>NAMESPACE</code> file, and a <code>vignettes</code> directory with at least one <code>.Rmd</code> file. As you develop content, you might end up with many <code>.Rmd</code> notebooks inside the <code>vignettes</code> directory. We will practice with a basic set of files that are already set up for you on <a href="https://github.com/">GitHub</a>.</p>
-<p>First, you should clone the <a href="https://github.com/avahoffman/AnVILPublish-skeleton">skeleton repository</a>.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="developing-content.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/avahoffman/AnVILPublish-skeleton</span></code></pre></div>
+<p>“AnVILPublishSkeleton” is the name of the folder containing all of your information. The folder must contain a <code>DESCRIPTION</code> file, <code>NAMESPACE</code> file, and a <code>vignettes</code> directory with at least one <code>.Rmd</code> file. As you develop content, you might end up with many <code>.Rmd</code> notebooks inside the <code>vignettes</code> directory. We will practice with a basic set of files that are already set up for you on <a href="https://github.com/">GitHub</a>.</p>
+<p>First, you should clone the <a href="https://github.com/avahoffman/AnVILPublishSkeleton">skeleton repository</a>.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="developing-content.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/avahoffman/AnVILPublishSkeleton</span></code></pre></div>
 <p>You’ll notice it contains a <code>DESCRIPTION</code> file, <code>NAMESPACE</code> file, and a <code>vignettes</code> directory with an <code>.Rmd</code> file.</p>
-<p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_38.png" title="RStudio screenshot showing the files present in the cloned AnVILPublish-skeleton repository." alt="RStudio screenshot showing the files present in the cloned AnVILPublish-skeleton repository."  /></p>
+<p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_38.png" title="RStudio screenshot showing the files present in the cloned AnVILPublishSkeleton repository." alt="RStudio screenshot showing the files present in the cloned AnVILPublishSkeleton repository."  /></p>
 </div>
 <div id="changing-the-description-file" class="section level4" number="4.3.3.2">
 <h4><span class="header-section-number">4.3.3.2</span> Changing the <code>DESCRIPTION</code> File</h4>
 <p>Edit the information in <code>DESCRIPTION</code> but keep the structure the same.</p>
 <ol style="list-style-type: decimal">
-<li><code>Package:</code> argument: This “package name” must match the name of the folder containing the <code>DESCRIPTION</code> and other files. In this case, it should be “AnVILPublish-skeleton”.</li>
+<li><code>Package:</code> argument: This “package name” must match the name of the folder containing the <code>DESCRIPTION</code> and other files. In this case, it should be “AnVILPublishSkeleton”.</li>
 </ol>
-<p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_8.png" title="File screenshot showing the `Package:` argument is AnVILPublish-skeleton." alt="File screenshot showing the `Package:` argument is AnVILPublish-skeleton."  /></p>
+<p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_8.png" title="File screenshot showing the `Package:` argument is AnVILPublishSkeleton." alt="File screenshot showing the `Package:` argument is AnVILPublishSkeleton."  /></p>
 <ol start="2" style="list-style-type: decimal">
 <li><code>Title:</code> argument: This will become the header for your Workspace’s Dashboard.</li>
 </ol>
 <p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_14.png" title="File screenshot showing the `Title:` argument is 'Workspace title on the Dashboard'." alt="File screenshot showing the `Title:` argument is 'Workspace title on the Dashboard'."  /></p>
 <ol start="3" style="list-style-type: decimal">
-<li><p><code>Authors@R:</code> argument: Your author information and roles.</p></li>
-<li><p><code>Description:</code> argument: A several-sentence description of the project.</p></li>
+<li><code>Authors@R:</code> argument: Your author information and roles. At minimum, you should include a first name, family name, a role, and an email. You can add additional authors and roles as needed. See a more detailed guide to package metadata <a href="https://r-pkgs.org/description.html#author">here</a>. The most common roles are creator (<code>cre</code>), author (<code>aut</code>), and contributor (<code>ctb</code>), but there are <a href="https://www.loc.gov/marc/relators/relaterm.html">many more</a> to choose from if none of these fit the bill.</li>
+</ol>
+<pre><code>Authors@R: 
+    person(given = &quot;Firstname&quot;,
+           family = &quot;Lastname&quot;,
+           role = &quot;cre&quot;,
+           email = &quot;firstnamelastname@gmail.com&quot;)</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li><code>Description:</code> argument: A several-sentence description of the project.</li>
 </ol>
 </div>
 <div id="changing-other-files" class="section level4" number="4.3.3.3">
@@ -412,12 +419,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="create-the-workspace" class="section level4" number="4.3.3.4">
 <h4><span class="header-section-number">4.3.3.4</span> Create the Workspace</h4>
 <p>Use the <code>AnVILPublish::as_workspace()</code> function. Replace <code>&lt;billing-project&gt;</code> with the appropriate Terra Billing Project of your choosing. Replace <code>&lt;My-Workspace&gt;</code> with the Workspace name of your choosing.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="developing-content.html#cb7-1" aria-hidden="true" tabindex="-1"></a>AnVILPublish<span class="sc">::</span><span class="fu">as_workspace</span>(</span>
-<span id="cb7-2"><a href="developing-content.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">&quot;/home/rstudio/AnVILPublish-skeleton&quot;</span>, <span class="co"># directory containing DESCRIPTION file</span></span>
-<span id="cb7-3"><a href="developing-content.html#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">namespace =</span> <span class="st">&quot;&lt;billing-project&gt;&quot;</span>, <span class="co"># Billing project</span></span>
-<span id="cb7-4"><a href="developing-content.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;&lt;My-Workspace&gt;&quot;</span>, <span class="co"># Actual Workspace name</span></span>
-<span id="cb7-5"><a href="developing-content.html#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">create =</span> <span class="cn">TRUE</span> <span class="co"># Makes a *new* Workspace</span></span>
-<span id="cb7-6"><a href="developing-content.html#cb7-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="developing-content.html#cb8-1" aria-hidden="true" tabindex="-1"></a>AnVILPublish<span class="sc">::</span><span class="fu">as_workspace</span>(</span>
+<span id="cb8-2"><a href="developing-content.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">&quot;/home/rstudio/AnVILPublishSkeleton&quot;</span>, <span class="co"># directory containing DESCRIPTION file</span></span>
+<span id="cb8-3"><a href="developing-content.html#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">namespace =</span> <span class="st">&quot;&lt;billing-project&gt;&quot;</span>, <span class="co"># Billing project</span></span>
+<span id="cb8-4"><a href="developing-content.html#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;&lt;My-Workspace&gt;&quot;</span>, <span class="co"># Actual Workspace name</span></span>
+<span id="cb8-5"><a href="developing-content.html#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">create =</span> <span class="cn">TRUE</span> <span class="co"># Makes a *new* Workspace</span></span>
+<span id="cb8-6"><a href="developing-content.html#cb8-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <p>You will see output in the console as the function converts the <code>.Rmd</code> to <code>.md</code>. You might get some warning messages, but make sure that the Workspace was created without error:</p>
 <p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_20.png" title="Code to create a new Workspace produces knitr output in the console." alt="Code to create a new Workspace produces knitr output in the console."  /></p>
 <p><img src="04-instructors_files/figure-html/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_26.png" title="Code to create a new Workspace produces knitr output in the console. You should not see any errors in the output." alt="Code to create a new Workspace produces knitr output in the console. You should not see any errors in the output."  /></p>
@@ -428,25 +435,25 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="update-dashboard" class="section level3" number="4.3.4">
 <h3><span class="header-section-number">4.3.4</span> Update Dashboard</h3>
 <p>Edit the <code>README.md</code> file to add more details to your Workspace Dashboard page. You will use the same function you used to create the Workspace as to update it, with a small change. Instead of <code>create = TRUE</code> you’ll now see an argument <code>update = TRUE</code>. <strong>Be very careful to use the correct Workspace name</strong> here, so you don’t accidentally overwrite the wrong Workspace.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="developing-content.html#cb8-1" aria-hidden="true" tabindex="-1"></a>AnVILPublish<span class="sc">::</span><span class="fu">as_workspace</span>(</span>
-<span id="cb8-2"><a href="developing-content.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">&quot;/home/rstudio/AnVILPublish-skeleton&quot;</span>, <span class="co"># directory containing DESCRIPTION file</span></span>
-<span id="cb8-3"><a href="developing-content.html#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">namespace =</span> <span class="st">&quot;&lt;billing-project&gt;&quot;</span>, <span class="co"># Billing project</span></span>
-<span id="cb8-4"><a href="developing-content.html#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;&lt;My-Workspace&gt;&quot;</span>, <span class="co"># Actual Workspace name</span></span>
-<span id="cb8-5"><a href="developing-content.html#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">update =</span> <span class="cn">TRUE</span>, <span class="co"># Updates the Workspace with your changes</span></span>
-<span id="cb8-6"><a href="developing-content.html#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">use_readme =</span> <span class="cn">TRUE</span> <span class="co"># Use README file for Dashboard Description</span></span>
-<span id="cb8-7"><a href="developing-content.html#cb8-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
-<p>You can also click the pencil button next to “ABOUT THE WORKSPACE” to edit the Dashboard manually, but these changes won’t show up later in GitHub. They will also be overwritten by other AnVILPublish updates.</p>
-</div>
-<div id="post-jupyter-notebook" class="section level3" number="4.3.5">
-<h3><span class="header-section-number">4.3.5</span> Post Jupyter Notebook</h3>
-<p>The <code>.Rmd</code> file contains your content. You can make many <code>.Rmd</code> files. These will get turned into <code>.ipynb</code> Jupyter Notebooks when you update using AnVILPublish. After you make changes to your <code>.Rmd</code> files, update the Workspace by running:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="developing-content.html#cb9-1" aria-hidden="true" tabindex="-1"></a>AnVILPublish<span class="sc">::</span><span class="fu">as_workspace</span>(</span>
-<span id="cb9-2"><a href="developing-content.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">&quot;/home/rstudio/AnVILPublish-skeleton&quot;</span>, <span class="co"># directory containing DESCRIPTION file</span></span>
+<span id="cb9-2"><a href="developing-content.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">&quot;/home/rstudio/AnVILPublishSkeleton&quot;</span>, <span class="co"># directory containing DESCRIPTION file</span></span>
 <span id="cb9-3"><a href="developing-content.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">namespace =</span> <span class="st">&quot;&lt;billing-project&gt;&quot;</span>, <span class="co"># Billing project</span></span>
 <span id="cb9-4"><a href="developing-content.html#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;&lt;My-Workspace&gt;&quot;</span>, <span class="co"># Actual Workspace name</span></span>
 <span id="cb9-5"><a href="developing-content.html#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">update =</span> <span class="cn">TRUE</span>, <span class="co"># Updates the Workspace with your changes</span></span>
 <span id="cb9-6"><a href="developing-content.html#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">use_readme =</span> <span class="cn">TRUE</span> <span class="co"># Use README file for Dashboard Description</span></span>
 <span id="cb9-7"><a href="developing-content.html#cb9-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p>You can also click the pencil button next to “ABOUT THE WORKSPACE” to edit the Dashboard manually, but these changes won’t show up later in GitHub. They will also be overwritten by other AnVILPublish updates.</p>
+</div>
+<div id="post-jupyter-notebook" class="section level3" number="4.3.5">
+<h3><span class="header-section-number">4.3.5</span> Post Jupyter Notebook</h3>
+<p>The <code>.Rmd</code> file contains your content. You can make many <code>.Rmd</code> files. These will get turned into <code>.ipynb</code> Jupyter Notebooks when you update using AnVILPublish. After you make changes to your <code>.Rmd</code> files, update the Workspace by running:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="developing-content.html#cb10-1" aria-hidden="true" tabindex="-1"></a>AnVILPublish<span class="sc">::</span><span class="fu">as_workspace</span>(</span>
+<span id="cb10-2"><a href="developing-content.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">&quot;/home/rstudio/AnVILPublishSkeleton&quot;</span>, <span class="co"># directory containing DESCRIPTION file</span></span>
+<span id="cb10-3"><a href="developing-content.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">namespace =</span> <span class="st">&quot;&lt;billing-project&gt;&quot;</span>, <span class="co"># Billing project</span></span>
+<span id="cb10-4"><a href="developing-content.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;&lt;My-Workspace&gt;&quot;</span>, <span class="co"># Actual Workspace name</span></span>
+<span id="cb10-5"><a href="developing-content.html#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">update =</span> <span class="cn">TRUE</span>, <span class="co"># Updates the Workspace with your changes</span></span>
+<span id="cb10-6"><a href="developing-content.html#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">use_readme =</span> <span class="cn">TRUE</span> <span class="co"># Use README file for Dashboard Description</span></span>
+<span id="cb10-7"><a href="developing-content.html#cb10-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <p>Note that this is the same code used to update the Workspace Dashboard. You can use this exact code to update your workspace any time you save changes in RStudio!</p>
 </div>
 <div id="push-changes-to-github" class="section level3" number="4.3.6">

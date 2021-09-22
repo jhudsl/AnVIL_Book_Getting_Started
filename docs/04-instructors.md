@@ -147,7 +147,7 @@ You should see the version number printed to the console:
 You need a folder with content to get started. In the next step, this will be the basic structure of your files:
 
 ```
-AnVILPublish-skeleton
+AnVILPublishSkeleton
 |-DESCRIPTION
 |-LICENSE.md
 |-NAMESPACE
@@ -156,32 +156,40 @@ AnVILPublish-skeleton
   |-Notebook_1.Rmd
 ```
 
-"AnVILPublish-skeleton" is the name of the folder containing all of your information. The folder must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file. As you develop content, you might end up with many `.Rmd` notebooks inside the `vignettes` directory. We will practice with a basic set of files that are already set up for you on [GitHub](https://github.com/).
+"AnVILPublishSkeleton" is the name of the folder containing all of your information. The folder must contain a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with at least one `.Rmd` file. As you develop content, you might end up with many `.Rmd` notebooks inside the `vignettes` directory. We will practice with a basic set of files that are already set up for you on [GitHub](https://github.com/).
 
-First, you should clone the [skeleton repository](https://github.com/avahoffman/AnVILPublish-skeleton).
+First, you should clone the [skeleton repository](https://github.com/avahoffman/AnVILPublishSkeleton).
 
 
 ```bash
-git clone https://github.com/avahoffman/AnVILPublish-skeleton
+git clone https://github.com/avahoffman/AnVILPublishSkeleton
 ```
 
 You'll notice it contains a `DESCRIPTION` file, `NAMESPACE` file, and a `vignettes` directory with an `.Rmd` file.
 
-<img src="04-instructors_files/figure-html//1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_38.png" title="RStudio screenshot showing the files present in the cloned AnVILPublish-skeleton repository." alt="RStudio screenshot showing the files present in the cloned AnVILPublish-skeleton repository."  />
+<img src="04-instructors_files/figure-html//1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_38.png" title="RStudio screenshot showing the files present in the cloned AnVILPublishSkeleton repository." alt="RStudio screenshot showing the files present in the cloned AnVILPublishSkeleton repository."  />
 
 #### Changing the `DESCRIPTION` File
 
 Edit the information in `DESCRIPTION` but keep the structure the same.
 
-1. `Package:` argument: This "package name" must match the name of the folder containing the `DESCRIPTION` and other files. In this case, it should be "AnVILPublish-skeleton".
+1. `Package:` argument: This "package name" must match the name of the folder containing the `DESCRIPTION` and other files. In this case, it should be "AnVILPublishSkeleton".
 
-<img src="04-instructors_files/figure-html//1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_8.png" title="File screenshot showing the `Package:` argument is AnVILPublish-skeleton." alt="File screenshot showing the `Package:` argument is AnVILPublish-skeleton."  />
+<img src="04-instructors_files/figure-html//1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_8.png" title="File screenshot showing the `Package:` argument is AnVILPublishSkeleton." alt="File screenshot showing the `Package:` argument is AnVILPublishSkeleton."  />
 
 2. `Title:` argument: This will become the header for your Workspace's Dashboard.
 
 <img src="04-instructors_files/figure-html//1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag_geb84bbba9a_2_14.png" title="File screenshot showing the `Title:` argument is 'Workspace title on the Dashboard'." alt="File screenshot showing the `Title:` argument is 'Workspace title on the Dashboard'."  />
 
-3. `Authors@R:` argument: Your author information and roles.
+3. `Authors@R:` argument: Your author information and roles. At minimum, you should include a first name, family name, a role, and an email. You can add additional authors and roles as needed. See a more detailed guide to package metadata [here](https://r-pkgs.org/description.html#author). The most common roles are creator (`cre`), author (`aut`), and contributor (`ctb`), but there are [many more](https://www.loc.gov/marc/relators/relaterm.html) to choose from if none of these fit the bill.
+
+```
+Authors@R: 
+    person(given = "Firstname",
+           family = "Lastname",
+           role = "cre",
+           email = "firstnamelastname@gmail.com")
+```
 
 4. `Description:` argument: A several-sentence description of the project.
 
@@ -196,7 +204,7 @@ Use the `AnVILPublish::as_workspace()` function. Replace `<billing-project>` wit
 
 ```r
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  path = "/home/rstudio/AnVILPublishSkeleton", # directory containing DESCRIPTION file
   namespace = "<billing-project>", # Billing project
   name = "<My-Workspace>", # Actual Workspace name
   create = TRUE # Makes a *new* Workspace
@@ -220,7 +228,7 @@ Edit the `README.md` file to add more details to your Workspace Dashboard page. 
 
 ```r
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  path = "/home/rstudio/AnVILPublishSkeleton", # directory containing DESCRIPTION file
   namespace = "<billing-project>", # Billing project
   name = "<My-Workspace>", # Actual Workspace name
   update = TRUE, # Updates the Workspace with your changes
@@ -237,7 +245,7 @@ The `.Rmd` file contains your content. You can make many `.Rmd` files. These wil
 
 ```r
 AnVILPublish::as_workspace(
-  path = "/home/rstudio/AnVILPublish-skeleton", # directory containing DESCRIPTION file
+  path = "/home/rstudio/AnVILPublishSkeleton", # directory containing DESCRIPTION file
   namespace = "<billing-project>", # Billing project
   name = "<My-Workspace>", # Actual Workspace name
   update = TRUE, # Updates the Workspace with your changes
