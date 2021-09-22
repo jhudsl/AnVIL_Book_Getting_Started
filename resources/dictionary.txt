@@ -2,6 +2,7 @@ AnVIL
 AnVIL’s
 AnVILPublish
 AnVILPublishSkeleton
+BDC
 bioinformatics
 Biostatistics
 Bloomberg
@@ -16,6 +17,7 @@ GCP’s
 Genomics’
 Gmail
 HIPAA
+HPC
 IRB
 IRBs
 ISAE
