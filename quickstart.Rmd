@@ -1,6 +1,6 @@
-# Quickstart
+# Quick Start
 
-### Overivew
+### Overview
 
 - Watch our [4 minute video](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html)
 - Read more at https://anvilproject.org/overview
@@ -24,7 +24,7 @@
     - "Terminal" available through Jupyter and RStudio
 - Migrate your HPC analysis to AnVIL using Docker/WDLs
     - Introducing the Learn WDL Course ([10 min video](https://www.youtube.com/watch?v=RtcW2Zdn_28))
-    - Basic WDL covered in [Webinar 2](https://drive.google.com/drive/folders/1uSBSnXnMRE4e-KRMKiUIQG7Pxij9lXZx) from [BDCSpring21](https://docs.google.com/document/d/13q6ofeMzObaG92Tfv7SaFMwdihQ_oXa9QZ3gmJqnAr4)
+    - Basic WDL covered in [Webinar 2](https://drive.google.com/drive/folders/1uSBSnXnMRE4e-KRMKiUIQG7Pxij9lXZx) from [BDC Spring 21](https://docs.google.com/document/d/13q6ofeMzObaG92Tfv7SaFMwdihQ_oXa9QZ3gmJqnAr4)
     - Become a WDL super hero with https://github.com/openwdl/learn-wdl
 
 ### Help
