@@ -8,35 +8,37 @@
 
 ### Overview
 
-### Upload Individual Files
+### Browser: Upload Single Files
 
-### Upload Folders
+### Browser: Upload Folders
 
-### Upload Files Using `gsutil`
+### `gsutil`: Local to Cloud
 
 #### Install `gsutil` on Your Local Computer or Local Server
 
 #### Copy Files From Your Local Computer to a Workspace Bucket
 
-#### Copy Files Between Workspaces
+### `gsutil`: Cloud to Cloud
 
-#### Learn More
+#### Copy Files Between Workspaces
 
 <!------------------------------------------>
 
-## Import Existing Data
+## Analyze Existing Data
 
 <!-- Import data from available projects to existing or new workspace -->
+
+### Clone Workspace
 
 ### Explore Data in the Data Library
 
 ### Import Data From the Data Library to a Workspace
 
+### Gen3 PFB
+
 <!------------------------------------------>
 
-## Store Data (Persistent Disk)
-
-<!--Cloud Environment "Persistent Disk" (PD)-->
+## Work with Persistent Disks
 
 ### Overview
 
@@ -44,9 +46,11 @@
 
 <!--(https://support.terra.bio/hc/en-us/articles/360047318551)-->
 
-#### Costs for Persistent Disk 
+#### Compare Workspace Bucket and Persistent Disk
 
-<!--(e.g., 50GB, $2 per month)-->
+<!-- Storage sharing vs. faster compute (for Jupyter/RStudio/Galaxy) -->
+<!-- Backed up vs. not -->
+<!-- Expense -->
 
 ### Copy Files From the Persistent Disk to the Workspace Bucket
 
