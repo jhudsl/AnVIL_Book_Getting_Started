@@ -8,14 +8,14 @@
 
 ### Accounts
 
-- What Billing Accounts do you have available?  [Google $300 Free Trial](https://cloud.google.com/free/docs/gcp-free-tier), [AC2](https://anvilproject.org/news/2021/04/12/announcing-anvil-cloud-cost-credits-program)
-- Getting Started Guide for [PIs and Lab Managers](https://jhudatascience.org/AnVIL_Book_Getting_Started/pis-and-lab-managers.html)
+- Identify Billing Account(s) e.g. [Google $300 Free Trial](https://cloud.google.com/free/docs/gcp-free-tier), [AC2](https://anvilproject.org/news/2021/04/12/announcing-anvil-cloud-cost-credits-program)
+- Make an account (see [PIs and Lab Managers](https://jhudatascience.org/AnVIL_Book_Getting_Started/account-setup-pis.html) example)
 
 
 ### Data
 
 - Browse the [Data Dashboard](https://anvilproject.org/data)
-- [Apply for access](https://anvilproject.org/learn/accessing-data/requesting-data-access) if necessary via dbGaP or Consortia
+- [Request access](https://anvilproject.org/learn/accessing-data/requesting-data-access) if necessary for Controlled Access Data or Consortia Access Data
 - [Bring Your Own Data](https://jhudatascience.org/AnVIL_Book_Getting_Started/bring-your-own-data.html)
 
 ### Tools
