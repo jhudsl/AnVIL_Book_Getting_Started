@@ -4,6 +4,7 @@ repo: https://github.com/jhudsl/AnVIL_Book_Getting_Started
 rmd_files: [
   "index.Rmd",
   "01-intro.Rmd",
+  "quickstart.Rmd",
   "02-pis.Rmd",
   "03-data-analysts.Rmd",
   "04-instructors.Rmd",
