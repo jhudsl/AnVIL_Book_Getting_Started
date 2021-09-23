@@ -1,5 +1,3 @@
-# (APPENDIX) Appendix {-}
-
 # Security
 
 ## Introduction {#introduction-security}
