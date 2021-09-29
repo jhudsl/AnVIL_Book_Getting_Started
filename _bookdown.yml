@@ -6,6 +6,7 @@ rmd_files: [
   "01-intro.Rmd",
   "02-pis.Rmd",
   "03-data-analysts.Rmd",
+  "04-consortia.Rmd",
   "05-tools.Rmd",
   "06-data.Rmd",
   "07-workflows.Rmd",
