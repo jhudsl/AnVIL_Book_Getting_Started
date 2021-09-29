@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Workflows | about</title>
+  <title>2.7 Step 6: Add Users and Workspaces | about</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Workflows | about" />
+  <meta property="og:title" content="2.7 Step 6: Add Users and Workspaces | about" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Workflows | about" />
+  <meta name="twitter:title" content="2.7 Step 6: Add Users and Workspaces | about" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="analyze-existing-data.html"/>
-<link rel="next" href="introduction-workflows.html"/>
+<link rel="prev" href="step-5-set-budgets-and-alerts.html"/>
+<link rel="next" href="wrap-up.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -253,8 +253,97 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_main_image.png">
 </div>
-<div id="workflows" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Workflows</h1>
+<div id="step-6-add-users-and-workspaces" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> Step 6: Add Users and Workspaces</h2>
+<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_0.png" title="Diagram showing an overview of the six steps. Step 6 is highlighted." alt="Diagram showing an overview of the six steps. Step 6 is highlighted."  /></p>
+<p>Finally, back on Terra, you can add lab members and give them permission to run analyses funded through your Billing Projects.</p>
+<p>There are two primary ways to permit users to charge to your Billing Projects:</p>
+<ul>
+<li><strong>Add them directly to the Billing Project</strong>. This gives them flexibility to create and manage their own Workspaces, but reduces your control over spending. Anyone they add to their Workspaces with sufficient permissions (i.e. permission to compute) can charge to your Billing Project.</li>
+<li><strong>Create a Workspace yourself, and add them to the Workspace</strong> (or have a designated Lab Manager responsible for managing Workspaces). This gives you much more control over who can charge to your Billing Project.</li>
+</ul>
+<p>Billing permissions on Terra can be confusing. For this reason, <strong>We recommend starting by having a single person responsible for managing all Workspaces (either yourself or a trusted “lab manager”). This person should create all Workspaces and add lab members as Writers (not Owners) to the Workspaces</strong>. This provides the greatest control over spending. Once you are familiar with the permissions system and are certain your lab members understand the implication of different permission settings, you may decide to give them greater control over Workspace access.</p>
+<div id="create-a-new-workspace" class="section level3" number="2.7.1">
+<h3><span class="header-section-number">2.7.1</span> Create a New Workspace</h3>
+<ol style="list-style-type: decimal">
+<li><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></li>
+<li>In the drop-down menu on the left, navigate to “Workspaces”.
+<ul>
+<li>Click the triple bar in the top left corner to access the menu.</li>
+<li>Click “Workspaces”.</li>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_75.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted."  /></li>
+</ul></li>
+<li>Click on the <strong>plus icon</strong> near the top of left of the page.
+<ul>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_69.png" title="Screenshot of Terra Workspaces page.  The &quot;+&quot; is highlighted." alt="Screenshot of Terra Workspaces page.  The &quot;+&quot; is highlighted."  /></li>
+</ul></li>
+<li>Name your Workspace and select the appropriate Billing Project. <strong>All activity in the Workspace will be charged to this Billing Project</strong> (regardless of who conducted it).
+<ul>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_84.png" title="Screenshot of Terra dialog box for creating a new Workspace.  The text box labeled &quot;Workspace name&quot; and the drop-down menu labeled &quot;Billing project&quot; are highlighted." alt="Screenshot of Terra dialog box for creating a new Workspace.  The text box labeled &quot;Workspace name&quot; and the drop-down menu labeled &quot;Billing project&quot; are highlighted."  /></li>
+</ul></li>
+<li>If you are working with protected data, you can set the <strong>Authorization Domain</strong> to limit who can be added to your Workspace. Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future). Workspaces by default are only visible to people you specifically share them with. Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated. We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data). For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.
+<ul>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_91.png" title="Screenshot of Terra dialog box for creating a new Workspace.  The drop-down menu labeled &quot;Authorization domain&quot; is highlighted." alt="Screenshot of Terra dialog box for creating a new Workspace.  The drop-down menu labeled &quot;Authorization domain&quot; is highlighted."  /></li>
+</ul></li>
+<li>Click “Create Workspace”. The new workspace should now show up under your Workspaces.
+<ul>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_97.png" title="Screenshot of Terra dialog box for creating a new Workspace.  The &quot;Create Workspace&quot; button is highlighted." alt="Screenshot of Terra dialog box for creating a new Workspace.  The &quot;Create Workspace&quot; button is highlighted."  /></li>
+</ul></li>
+</ol>
+<p><strong>To start, we recommend creating one Workspace for each lab member</strong> (associated with that lab member’s Billing Project, if you have created separate Billing Projects for your lab members). This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work. You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).</p>
+</div>
+<div id="add-members-to-workspaces" class="section level3" number="2.7.2">
+<h3><span class="header-section-number">2.7.2</span> Add Members to Workspaces</h3>
+<p>Lab members must have logged in to Terra at least once before they can be added to your Billing Projects and Workspaces (they do not need to log in to Google Cloud Console).</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></li>
+<li>In the drop-down menu on the left, navigate to “Workspaces”.
+<ul>
+<li>Click the triple bar in the top left corner to access the menu.</li>
+<li>Click “Workspaces”.</li>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_75.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted."  /></li>
+</ul></li>
+<li>Click on the name of the Workspace to open the Workspace.
+<ul>
+<li>Opening a Workspace does not cost anything. Certain activities in the Workspace (such as running an analysis) will charge to the Workspace’s Billing Project. Workspace management (e.g. adding and removing members, editing the description) does not cost money.</li>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_103.png" title="Screenshot of Terra Workspace page.  The name of a Workspace is highlighted." alt="Screenshot of Terra Workspace page.  The name of a Workspace is highlighted."  /></li>
+</ul></li>
+<li>Click the circle with 3 dots on the right hand side to open the Workspace management menu. Click “Share”
+<ul>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_109.png" title="Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces's drop-down menu is highlighted, and the menu item &quot;Share&quot; is highlighted." alt="Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces's drop-down menu is highlighted, and the menu item &quot;Share&quot; is highlighted."  /></li>
+</ul></li>
+<li>Enter the email address of the user you want to share the Workspace with. This must be the address associated with the account they are using to access Terra.
+<ul>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_116.png" title="Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled &quot;User email&quot; is highlighted." alt="Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled &quot;User email&quot; is highlighted."  /></li>
+</ul></li>
+<li>Choose their permission level. <strong>We recommend adding lab members as Writers</strong> to start. This gives them permission to freely use the Workspace, (adding and removing data, conducting analyses, etc.) but prevents them from adding additional members who could charge to your Billing Project.
+<ul>
+<li>“Can compute” should be checked</li>
+<li>“Can share” should <strong>NOT</strong> be checked</li>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_128.png" title="Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item &quot;Writer&quot; is selected.  The check box labeled &quot;Can share&quot; is annotated with the word &quot;No&quot; and is unchecked.  The checkbox labeled &quot;Can compute&quot; is annotated with the word &quot;Yes&quot; and is checked." alt="Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item &quot;Writer&quot; is selected.  The check box labeled &quot;Can share&quot; is annotated with the word &quot;No&quot; and is unchecked.  The checkbox labeled &quot;Can compute&quot; is annotated with the word &quot;Yes&quot; and is checked."  /></li>
+</ul></li>
+<li>Click “Save”. The user should now be able to see the Workspace when logged in to Terra.
+<ul>
+<li><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_132.png" title="Screenshot of the dialog box for sharing a Terra Workspace.  The &quot;Save&quot; button is highlighted." alt="Screenshot of the dialog box for sharing a Terra Workspace.  The &quot;Save&quot; button is highlighted."  /></li>
+</ul></li>
+</ol>
+</div>
+<div id="user-access-levels-and-permissions" class="section level3" number="2.7.3">
+<h3><span class="header-section-number">2.7.3</span> User Access Levels and Permissions</h3>
+<p>Managing permissions for your Workspace has important implications:</p>
+<ul>
+<li><strong>Billing</strong>: Terra charges are associated with Workspaces rather than users. Any billable activity that takes place in a given Workspace will be charged to the associated Billing Project, regardless of who conducted the activity. If there are multiple users with permission to compute, you won’t be able to tell who conducted the activity.</li>
+<li><strong>Data access</strong>: Especially when working with protected data, it’s important to ensure that users have proper authorization to view the data before giving them access to a Workspace containing the data. Terra provides <strong>Authorization Domains</strong> to assist with this.</li>
+</ul>
+<p>In general we recommend:</p>
+<ul>
+<li><strong>Writers: Lab members who need permission to compute</strong> (and charge to your Billing Project).</li>
+<li><strong>Readers: All other users</strong> (i.e. users who need to see the Workspace but should not charge to your Billing Project). Readers can always “clone” the Workspace (creating a copy of it associated with their own Billing Project) if they want to run computations themselves.</li>
+<li>If working with protected data, take advantage of Authorization Domains to increase security.</li>
+</ul>
+<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_122.png" title="Table summarizing Workspace permission levels." alt="Table summarizing Workspace permission levels."  /></p>
+<p>More details about the permissions associated with each Access Level can be found in the <a href="https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained">Terra documentation</a>.</p>
+</div>
 </div>
 <hr>
 <center> 
@@ -269,8 +358,8 @@
           </div>
         </div>
       </div>
-<a href="analyze-existing-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="introduction-workflows.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="step-5-set-budgets-and-alerts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="wrap-up.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

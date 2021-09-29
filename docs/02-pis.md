@@ -1,23 +1,20 @@
-# (PART\*) Getting Started {-}
+# (PART\*) Account Setup {-}
 
 # PIs and Lab Managers
 
 This chapter is targeted towards people who are responsible for bringing a team to AnVIL. Broadly targeted towards principal investigators (PIs), but also relevant to team leads or lab managers, you will find here:
 
-- **Overview** -- Design philosophy and goals for this guide - is this a good fit for your team?  What should you know before you start?
-- **Account Setup** -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
-- **Planning Guide** -- Questions to help you customize your analysis environment (coming soon!)
-- **Budget Templates** -- Example documents to help you write AnVIL into your grant
-- **IRB Templates** -- Example language to help you write AnVIL into your IRB application
+- **Account Setup Overview** -- Design philosophy and goals for this guide - is this a good fit for your team?  What should you know before you start?
+- **Account Setup Steps** -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
 navigation bar (e.g., 2.2, 4.2) a second time to expand the 
 table of contents and enable the `scroll_highlight` feature 
-([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+([see more](introduction.html#scroll-highlight)).
 :::
 
-## Overview {#overview-pis}
+## Account Setup Overview {#overview-pis}
 
 ### Goals for This Guide
 
@@ -51,16 +48,7 @@ These design decisions are made to help you get up and running as quickly as pos
 - Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
 - To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
 
-## Account Setup {#account-setup-pis}
-
-::: {.fyi}
-Please click on the subsection headers in the left hand 
-navigation bar (e.g., 2.2, 4.2) a second time to expand the 
-table of contents and enable the `scroll_highlight` feature 
-([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
-:::
-
-### Overview of Account Setup
+### Starting Setup {#account-setup-pis}
 
 AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform, so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
 
@@ -74,7 +62,7 @@ AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on
 1. Set budgets and alerts (optional, but highly recommended)
 1. Add users and Workspaces
 
-#### Lab Management Roles
+### Lab Management Roles
 
 While there are many ways to configure your lab, this guide defines the following roles and responsibilities:
 
@@ -84,7 +72,7 @@ While there are many ways to configure your lab, this guide defines the followin
 
 - **Data Analyst** - A lab member who is granted write + can-compute access on one or more Terra Workspaces by a Lab Manager and who will run analyses in Terra.  Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).
 
-### Step 1: Create a Google Account
+## Step 1: Create a Google Account
 
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_160.png" title="Diagram showing an overview of the six steps. Step 1 is highlighted." alt="Diagram showing an overview of the six steps. Step 1 is highlighted."  />
 
@@ -100,7 +88,7 @@ If you do not already have a Google account that you would like to use for acces
 
 If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow [these instructions](https://support.terra.bio/hc/en-us/articles/360029186611).
 
-### Step 2: Set Up Google Billing
+## Step 2: Set Up Google Billing
 
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_170.png" title="Diagram showing an overview of the six steps. Step 2 is highlighted." alt="Diagram showing an overview of the six steps. Step 2 is highlighted."  />
 
@@ -111,7 +99,7 @@ Terra operates on Google Cloud Platform, and does not charge any markup.  Rather
 To set up billing, you must first create a **Google “Billing Account”**.
 You can create multiple Billing Accounts associated with your Google ID.  We recommend creating separate Billing Accounts for different funding sources.
 
-#### Create a Google Billing Account
+### Create a Google Billing Account
 
 
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
@@ -135,7 +123,7 @@ You can create multiple Billing Accounts associated with your Google ID.  We rec
 
 At any point, you can create additional Billing Accounts using the **Create Account** button.  We recommend creating a new Billing Account for each funding source.
 
-#### Add Users or Viewers (optional)
+### Add Users or Viewers (optional)
 
 If you have a project manager or finance administrator who needs access to a Billing Account, you can add them with a few different levels of permissions.  Generally the most useful are:
 
@@ -167,7 +155,7 @@ To add a member to a Billing Project:
     +
   <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_192.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted."  />
 
-### Step 3: Add Terra to Google Billing Account
+## Step 3: Add Terra to Google Billing Account
 
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_198.png" title="Diagram showing an overview of the six steps. Step 3 is highlighted." alt="Diagram showing an overview of the six steps. Step 3 is highlighted."  />
 
@@ -196,7 +184,7 @@ Terra needs to be added as a "Billing Account User":
     +
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_207.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted."  />
 
-### Step 4: Create Terra Billing Projects
+## Step 4: Create Terra Billing Projects
 
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_217.png" title="Diagram showing an overview of the six steps. Step 4 is highlighted." alt="Diagram showing an overview of the six steps. Step 4 is highlighted."  />
 
@@ -213,7 +201,7 @@ It is highly recommended that you create separate Billing Projects for each cate
 
 If you are uncertain, **we recommend starting by setting up a Billing Project per lab member**.  This makes it easy to track lab member spending, and also makes it easier to cleanly shut down projects when a member leaves the lab.
 
-#### Create a Billing Project
+### Create a Billing Project
 
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  **Make sure to use the same Google account that you used to set up Google Billing.**
@@ -243,7 +231,7 @@ If you are uncertain, **we recommend starting by setting up a Billing Project pe
 
 As mentioned above, we recommend creating separate Terra Billing Projects for each of your team members so you can track their spending.  These Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
 
-### Step 5: Set Budgets and Alerts
+## Step 5: Set Budgets and Alerts
 
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_0.png" title="Diagram showing an overview of the six steps. Step 5 is highlighted." alt="Diagram showing an overview of the six steps. Step 5 is highlighted."  />
 
@@ -264,7 +252,7 @@ As a PI or lab manager, there are some steps you can take to help monitor and li
 
 You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
 
-#### Set Alerts
+### Set Alerts
 
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
 1. Navigate to [Billing](https://console.cloud.google.com/billing)
@@ -310,7 +298,7 @@ You can set a single Budget for your entire lab, set up individual budgets for e
     +
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_55.png" title="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." alt="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget."  />
 
-#### View spend
+### View spend
 
 
 You can always check your current spend through the Google Billing console, but remember
@@ -349,11 +337,11 @@ The Google Billing console displays information by Billing Account.  To view spe
     +
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_12.png" title="Screenshot of a Google Cloud Billing Account Cost table tab." alt="Screenshot of a Google Cloud Billing Account Cost table tab."  />
 
-#### Export Cost Data to BigQuery
+### Export Cost Data to BigQuery
 
 Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
 
-### Step 6: Add Users and Workspaces
+## Step 6: Add Users and Workspaces
 
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_0.png" title="Diagram showing an overview of the six steps. Step 6 is highlighted." alt="Diagram showing an overview of the six steps. Step 6 is highlighted."  />
 
@@ -366,7 +354,7 @@ There are two primary ways to permit users to charge to your Billing Projects:
 
 Billing permissions on Terra can be confusing.  For this reason, **We recommend starting by having a single person responsible for managing all Workspaces (either yourself or a trusted "lab manager").  This person should create all Workspaces and add lab members as Writers (not Owners) to the Workspaces**.  This provides the greatest control over spending.  Once you are familiar with the permissions system and are certain your lab members understand the implication of different permission settings, you may decide to give them greater control over Workspace access.
 
-#### Create a New Workspace
+### Create a New Workspace
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
 1. In the drop-down menu on the left, navigate to "Workspaces".
@@ -393,7 +381,7 @@ Billing permissions on Terra can be confusing.  For this reason, **We recommend 
 
 **To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, if you have created separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
 
-#### Add Members to Workspaces
+### Add Members to Workspaces
 
 Lab members must have logged in to Terra at least once before they can be added to your Billing Projects and Workspaces (they do not need to log in to Google Cloud Console).
 
@@ -427,7 +415,7 @@ Lab members must have logged in to Terra at least once before they can be added 
     +
 <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_132.png" title="Screenshot of the dialog box for sharing a Terra Workspace.  The &quot;Save&quot; button is highlighted." alt="Screenshot of the dialog box for sharing a Terra Workspace.  The &quot;Save&quot; button is highlighted."  />
 
-#### User Access Levels and Permissions
+### User Access Levels and Permissions
 
 Managing permissions for your Workspace has important implications:
 
@@ -444,128 +432,10 @@ In general we recommend:
 
 More details about the permissions associated with each Access Level can be found in the [Terra documentation](https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained).
 
-### Wrap-Up
+## Wrap-Up
 
 **Congratulations!  You have successfully set up AnVIL for your lab!**
 
 Your lab members should be free to carry out analyses in the Workspaces you created.  You should not need to do any further configuration through Terra until you decide to add or change user permissions for your Billing Projects and Workspaces.
 
 You can view costs at any time through [Google Cloud Billing](https://console.cloud.google.com/billing).  Note that costs are reported with a delay (~1 day).
-
-
-## Planning Guide
-
-Coming soon -- advice on how to customize AnVIL for *your* team and research projects.
-
-## Budget Templates
-
-If you want to apply for a grant and you plan to use the AnVIL platform for data storage, data movement, and data analysis, you can include the anticipated costs in your proposal. We have created a template for the budget justification paragraph of your grant proposal. The documents described in the following provide you with insightful knowledge.
-
-
-### Types of Costs
-
-There are three types of costs that are typically occur when performing operations on the Google Cloud Platform.
-
-**1. Cost for Computing** is driven by your particular CPU and memory requirements. Importantly, you can save money if your work can tolerate being interrupted (also known as a preemptible compute resource). In this case, you pay less per hour with the understanding that your work may be interrupted by a customer willing to pay more. Details and current pricing can be found [here](https://cloud.google.com/compute/all-pricing#top_of_page).
-
-**2. Cost for Storage** is driven by the amount of data and the length of time you wish to store the data. Here, you can save money if you have data that you do not plan to access frequently. This would be the case for raw data that has already been processed, backups, and archives. Details and current pricing can be found [here](https://cloud.google.com/storage/pricing#storage-pricing and https://cloud.google.com/compute/all-pricing#localssdpricing).
-
-**3. Cost for Network Usage (egress)** applies to data being transferred out of a Cloud resource. In this context, a Cloud resource refers to a set of computers in a particular region. This would apply, for example, if you transferred data from Google’s East Coast computers to Amazon’s West Coast computers. In general, while it’s free to upload data to the Cloud, you will incur costs when downloading data to your local computer or between Cloud regions. Details and current pricing can be found [here](https://cloud.google.com/storage/pricing#network-egress).
-
-
-### Usage of Budget Templates
-
-In a first step, you can use the template Google Sheet [AnVIL_Cost_Estimator](https://docs.google.com/spreadsheets/d/1GUN93HDRqDbZ0uktaZjoP-y8Ril1T_VIJnQrjRD6tV4) to calculate costs for computing, storage, and network usage (egress) for your proposal. In a second step, you can use the template Google Doc [AnVIL_Budget_Justification](https://docs.google.com/document/d/145JFLn2hviLmaYF-mO06gbCkG0i4HRaWvkUBKORo85Y) to create a budget justification paragraph for your proposal by including the information highlighted in <span style="background-color: #EA33F7">pink</span>
- (mostly copying entries from your Google Sheet **AnVIL_Cost_Estimator**). Please download and adapt both documents to your project. 
- 
-Please check that the prices are up to date by using the links listed below or in the [AnVIL_Cost_Estimator](https://docs.google.com/spreadsheets/d/1GUN93HDRqDbZ0uktaZjoP-y8Ril1T_VIJnQrjRD6tV4).  
-
-For further guidance, you can have a look at a completed document [AnVIL_Budget_Justification_Example](https://docs.google.com/document/d/1qMZNvZig7vNXposBxA77AIASY0gDCwaYwGl2YwzHXuY).
-
-## IRB Templates
-
-If you plan to use the AnVIL platform for data storage, data movement, and data analysis, you will likely need to provide information about AnVIL in your IRB application.  While all IRBs will have different questions and requirements, there are general areas of concern that are common across IRB applications.  The following sections provide general information about AnVIL as well as examples of language addressing some of these concerns.
-
-### General Information
-
-When writing an IRB research plan you will be required to fill out a few fields about data collection and data storage. The following sections provide the information that you will need for these IRB sections. There is also language regarding consent, with some suggested text that you may include in the IRB research plan and your consent form. If you are using AnVIL, you should know that the storage is on Google Cloud Platform, so it is encrypted, it is not stored on a secure server, and it is backed up through multi-site replication. Important things to know about AnVIL security are that there are four key design concepts:
-
-- **Authenticate**: All components require authentication at every step, not just the perimeter
-- **Authorize**: All data requires explicit authorization to access
-- **Audit**: All data access is logged (to a different system), with alerts for anomalous events
-- **Encrypt**: All data-in-transit and all data-at-rest is encrypted
-
-There is language below about data storage, which you will need for your research plan. There is also a section about privacy and confidentiality, which you will also need.
-
-### Description of AnVIL
-
-The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space, or AnVIL provides a collaborative environment for creating and sharing data and analysis workflows for both users with limited computational expertise and sophisticated data scientist users.  The platform is built on a set of established components that have been used in a number of flagship scientific projects:
-
-- The **Terra platform**: provides a compute environment with secure data and analysis sharing capabilities 
-- **Dockstore**: provides standards based sharing of containerized tools and workflows
-- **The Gen3 data commons framework**: provides data and metadata ingest, querying, and organization 
-- **Bioconductor and Galaxy**: provide environments for users at different skill levels to construct and execute analyses
-
-### Data Storage
-
-We will keep a copy of the participant’s genomics data in various data formats (formats - `CRAMs`, `BAMs`, `vcfs`, `BCLs`, `fastqs`).  This will be stored in Broad’s Google Cloud services, which is the underlying storage platform for AnVIL.  The Google Cloud Platform has summarized its services with respect to genomics data processing in a white paper here:
-[`https://cloud.google.com/files/genomics-data-wp.pdf`](https://cloud.google.com/files/genomics-data-wp.pdf)
-
-### Privacy and Confidentiality
-
-There is a small risk of loss of privacy and confidentiality for the participant and their personal health information. While it is unlikely, there is a possibility that genetic information could be seen by unauthorized individuals.  Researchers who will have access to genetic information about participants will take measures to maintain the privacy of the participant and confidentiality of their information.  
-
-### Security
-
-Terra (powered by Broad Genomics’ Workbench) is operated by the Broad Institute at the FISMA (Federal Information Systems Management Act) “moderate” level and received Authority to Operate from NCI and NIH in May of 2016. FISMA is a practice of documentation, audit, and organizational risk acceptance.  It is centered on the controls outlined in NIST (National Institute of Standards and Technology) Special Publications 800-30 and 800-53.   Covered topics include:
-
-- Network penetration testing and assessment by a Federally authorized outside firm
-- Maintaining system logs separate from the primary system for forensic analysis
-- Regular review of logs and changes by an in-house auditor  
-- Security training and background screening for staff with elevated access to the system
-- Documented procedures to respond to security incidents
-
-The Terra portal and its underlying platform, Broad Genomics’ Workbench, are hosted on Google’s Cloud Services. See below for details. Since Terra requires that users utilize Google logins, the application operates on top of Google’s world-class security that protects from nation-state level attacks. Terra supports the use of Google’s 2 Factor authentication as well. As a FISMA Moderate system, all logs are audited continually and various levels of security layering are required. These include Web Application Firewalls, weekly scanning, code scanning (dynamic and static), dependency scanning and manual penetration testing. Data analysis is constrained to computing nodes that are sandboxed using Docker within Google’s Pipelines API.
-
-Google undergoes several independent third party audits on a regular basis to provide verification of security, privacy and compliance controls including annual audits for SSAE 16/ISAE 3402 Type II.  Google's infrastructure provides reliable information security that can meet or exceed the requirements of HIPAA and protected health information.
-
-Broad Information Security & Compliance Team provides risk review and consulting security services for legacy, current, and future computing infrastructure, applications, and information services across the enterprise. Risk management and mitigation services are also provided to assist business units with meeting regulatory requirements. The team also takes a lead role in incident response processes, including network, system, and data forensic efforts and is responsible for developing and ensuring proper review of all security policies, standards, and procedures.
- 
-The Senior Director of Information Security & Compliance (DISC) facilitates the development and maintenance of the information security program, leads the development of information security policies, standards and procedures, and collaborates with business and system owners in understanding their security responsibilities. The DISC also promotes consistency in the development and implementation of strategic initiatives and policies based on industry and regulatory standards (FISMA, etc).
- 
-The Broad Institute has a strong commitment to information security, appropriate use of data, compliance with applicable regulations, and respect for data privacy.
- 
-
-### Example Language for Informed Consent
-
-Below we provide some possible language that could be used for consent forms.
-
-#### Types of Research
-
-> *We may use your sample to do other biological and genetic research. Genetic research may include looking at some or all of your genes and DNA to see if there are links to different types of health conditions.*
-  
-> *We may use your sample and your DNA sequence information to help create new analytical and machine learning methods to look at genomic and clinical data.*
-  
-> *We may share your samples, your DNA sequence information, your health information, and results from our research results with other data banks, such as those sponsored by the National Institutes of Health, so that researchers from around the world can use them to study many conditions. A code will be assigned to your samples and health information. Your name, medical record number, or other information that easily identifies you will not be stored with your samples or health information. The key to the code that connects your name to your samples and information will be stored securely in a controlled access database. This method is discussed more below.*
-
-#### Data Repository Submission
-
-> *Your individual genomic data and health information may be put in a controlled-access data commons.  This means that only researchers who apply for and get permission to use the information for a specific research project will be able to access the information. If this happens, your genomic data and health information will not be labeled with your name or other information that could be used to identify you. Your data and information will be entered in the database with the random study identifier created by the research team. Researchers approved to access information in the database will agree not to attempt to identify you.*
-
-#### Potential Risks
-
-> *Every research study involves the risk of loss of privacy. The personal information that will be associated with your WGS cannot typically be used to identify you. However, it is possible that in the future there may be a way to link stored genomic information back to you. We believe that the possibility of this is low. Your information will be stored on a cloud-computing storage system administered by The Broad Institute.*
-
-
-### Additional Resources
-
-**Workspace access controls**
-
-- [`https://support.terra.bio/hc/en-us/articles/360025851892`](https://support.terra.bio/hc/en-us/articles/360025851892)
-- Workspace owners (e.g. PI, Lab Manager, Data Coordination Center) can grant read / write / compute access, and can revoke access.
-
-**Authorization Domains**
-
-- [`https://support.terra.bio/hc/en-us/articles/360026775691`](https://support.terra.bio/hc/en-us/articles/360026775691)
-- Must be set up when a Workspace is created - prevents accidental sharing
-
