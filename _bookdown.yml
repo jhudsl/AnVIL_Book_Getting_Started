@@ -12,7 +12,6 @@ rmd_files: [
   "07-workflows.Rmd",
   "faqs.Rmd",
   "08-security.Rmd",
-  "09-billing.Rmd",
   "10-overview-videos.Rmd",
   "About.Rmd"
 ]
