@@ -1,3 +1,21 @@
 # (PART\*) Working on AnVIL {-}
 
 # Workspaces
+
+Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results. The video below gives a brief introduction to the parts of a Workspace.
+
+<!-- video tour -->
+
+## Create a New Workspace
+
+```{r, child=c("_child_create_workspace.Rmd")}
+
+```
+
+## Clone an Existing Workspace
+
+<!-- Remind that data in tables is linked back to original data/Workspace -->
+
+```{r, child=c("_child_clone_workspace.Rmd")}
+
+```
