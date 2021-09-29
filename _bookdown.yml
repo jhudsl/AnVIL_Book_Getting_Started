@@ -6,13 +6,16 @@ rmd_files: [
   "01-intro.Rmd",
   "02-pis.Rmd",
   "03-data-analysts.Rmd",
-  "05-tools.Rmd",
-  "06-data.Rmd",
-  "07-workflows.Rmd",
-  "faqs.Rmd",
-  "08-security.Rmd",
-  "09-billing.Rmd",
-  "10-overview-videos.Rmd",
+  "04-consortia.Rmd",
+  "05-workspaces.Rmd",
+  "06-tools.Rmd",
+  "07-data.Rmd",
+  "08-workflows.Rmd",
+  "09-faqs.Rmd",
+  "10-security.Rmd",
+  "11-templates.Rmd",
+  "12-overview-videos.Rmd",
+  "13-not-included.Rmd",
   "About.Rmd"
 ]
 new_session: yes
