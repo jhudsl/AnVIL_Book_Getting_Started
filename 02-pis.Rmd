@@ -187,67 +187,64 @@ You can set a single Budget for your entire lab, set up individual budgets for e
 
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
 1. Navigate to [Billing](https://console.cloud.google.com/billing)
-    +
+
     ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_153")
-```
-    + You may be automatically directed to view a specific Billing Account.  If you see information about a single account (other than the one you're interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
-    + 
-```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
+    ```
+
+1. You may be automatically directed to view a specific Billing Account.  If you see information about a single account (other than the one you're interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_167")
-```
+    ```
 
 1. Click on the name of the Billing Account you want to set alerts for.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted.'}
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_5")
-```
+    ```
 
 1. In the left-hand menu, click "Budgets & alerts".
-    + 
-```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the left-hand menu item "Budgets & alerts" highlighted.'}
+ 
+    ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the left-hand menu item "Budgets & alerts" highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_11")
-```
+    ```
 
 1. Click "Create Budget".
-    + 
-```{r, echo=FALSE, fig.alt='Screenshot of the budgets and alerts page for a Google Cloud Billing Account. The "Create Budget" button highlighted.'}
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the budgets and alerts page for a Google Cloud Billing Account. The "Create Budget" button highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_17")
-```
+    ```
 
 1. Enter a name for your budget, and then choose what you want to monitor.  Click "Next".
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget scope for a Google Cloud Billing Account. Three things are highlighted:  1) the box for entering a "Name" for the budget, 2) the dropdown menu labeled "Projects" for selecting which Billing Projects are part of the budget, and 3) the "Next" button.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_24")
-```
 
+    ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget scope for a Google Cloud Billing Account. Three things are highlighted:  1) the box for entering a "Name" for the budget, 2) the dropdown menu labeled "Projects" for selecting which Billing Projects are part of the budget, and 3) the "Next" button.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_24")
+    ```
 
 1. For Budget Type, select "Specified amount".  Enter the total budget amount for the month (you will set alerts at different thresholds in the next step).  Click "**Next**" (not "Finish").
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget amount for a Google Cloud Billing Account.  The drop-down menu labeled "Budget type" is highlighted and "Specified amount" is selected.  Also highlighted are the text box labeled "Target amount" and the "Next" button.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_32")
-```
 
+    ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget amount for a Google Cloud Billing Account.  The drop-down menu labeled "Budget type" is highlighted and "Specified amount" is selected.  Also highlighted are the text box labeled "Target amount" and the "Next" button.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_32")
+    ```
 
 1. Enter the threshold amounts where you want to receive an alert.  We recommend starting with 50% and 90%.  You can set other alerts if you prefer.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget actions for a Google Cloud Billing Account.  The boxes for entering "Percent of budget" or "Amount" are highlighted.  The drop-down menu labeled "Trigger on" is highlighted and "Actual" is selected.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_40")
-```
 
+    ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget actions for a Google Cloud Billing Account.  The boxes for entering "Percent of budget" or "Amount" are highlighted.  The drop-down menu labeled "Trigger on" is highlighted and "Actual" is selected.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_40")
+    ```
 
 1. Check the box for "Email alerts to billing admins and users".  Click "**Finish**".  Now you (as the owner and admin), along with anyone you added with admin or user privileges (e.g lab managers) will receive alerts when your lab members reach the specified spending thresholds.  These emails will be sent to the Gmail accounts associated with the Billing Account.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget alerts for a Google Cloud Billing Account.  The checkbox labeled "Email alerts to billing admins and users" is highligheted and checked.  The "Finish" button is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_44")
-```
 
+    ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget alerts for a Google Cloud Billing Account.  The checkbox labeled "Email alerts to billing admins and users" is highligheted and checked.  The "Finish" button is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_44")
+    ```
 
 1. You can edit your budgets at any time by going to Billing > Budgets & alerts, and clicking on the name of the budget you want to edit.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left "hamburger" button for extending the drop-down menu, 2) the drop-down menu item "Billing", 3) the submenu item "Budgets & alerts, 4) the name of a budget.'}
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left "hamburger" button for extending the drop-down menu, 2) the drop-down menu item "Billing", 3) the submenu item "Budgets & alerts, 4) the name of a budget.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_55")
-```
+    ```
 
 ### View spend
 
@@ -276,86 +273,55 @@ Billing permissions on Terra can be confusing.  For this reason, **We recommend 
 
 ### Create a New Workspace
 
-1. [Launch Terra](https://anvil.terra.bio/#workspaces)
-1. In the drop-down menu on the left, navigate to "Workspaces".
-    + Click the triple bar in the top left corner to access the menu.
-    + Click "Workspaces".
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_75")
-```
-1. Click on the **plus icon** near the top of left of the page.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspaces page.  The "+" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_69")
+```{r, child=c("_child_create_workspace.Rmd")}
+
 ```
 
-
-1. Name your Workspace and select the appropriate Billing Project.  **All activity in the Workspace will be charged to this Billing Project** (regardless of who conducted it).
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Terra dialog box for creating a new Workspace.  The text box labeled "Workspace name" and the drop-down menu labeled "Billing project" are highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_84")
-```
-
-1. If you are working with protected data, you can set the **Authorization Domain** to limit who can be added to your Workspace.  Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future).  Workspaces by default are only visible to people you specifically share them with.  Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated.  We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data).  For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Terra dialog box for creating a new Workspace.  The drop-down menu labeled "Authorization domain" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_91")
-```
-
-1. Click "Create Workspace".  The new workspace should now show up under your Workspaces.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Terra dialog box for creating a new Workspace.  The "Create Workspace" button is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_97")
-```
-
-**To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, if you have created separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
+**To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, with separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
 
 ### Add Members to Workspaces
 
 Lab members must have logged in to Terra at least once before they can be added to your Billing Projects and Workspaces (they do not need to log in to Google Cloud Console).
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
-1. In the drop-down menu on the left, navigate to "Workspaces".
-    + Click the triple bar in the top left corner to access the menu.
-    + Click "Workspaces".
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_75")
-```
 
-1. Click on the name of the Workspace to open the Workspace.
-    + Opening a Workspace does not cost anything.  Certain activities in the Workspace (such as running an analysis) will charge to the Workspace’s Billing Project.  Workspace management (e.g. adding and removing members, editing the description) does not cost money.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace page.  The name of a Workspace is highlighted.'}
+1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_75")
+    ```
+
+1. Click on the name of the Workspace to open the Workspace. Opening a Workspace does not cost anything.  Certain activities in the Workspace (such as running an analysis) will charge to the Workspace’s Billing Project.  Workspace management (e.g. adding and removing members, editing the description) does not cost money.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace page.  The name of a Workspace is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_103")
-```
+    ```
 
 1. Click the circle with 3 dots on the right hand side to open the Workspace management menu.  Click "Share"
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces\'s drop-down menu is highlighted, and the menu item "Share" is highlighted.'}
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces\'s drop-down menu is highlighted, and the menu item "Share" is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_109")
-```
+    ```
 
 1. Enter the email address of the user you want to share the Workspace with.  This must be the address associated with the account they are using to access Terra.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled "User email" is highlighted.'}
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled "User email" is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_116")
-```
+    ```
 
 1. Choose their permission level.  **We recommend adding lab members as Writers** to start.  This gives them permission to freely use the Workspace, (adding and removing data, conducting analyses, etc.) but prevents them from adding additional members who could charge to your Billing Project.
     + "Can compute" should be checked
     + "Can share" should **NOT** be checked
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item "Writer" is selected.  The check box labeled "Can share" is annotated with the word "No" and is unchecked.  The checkbox labeled "Can compute" is annotated with the word "Yes" and is checked.'}
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item "Writer" is selected.  The check box labeled "Can share" is annotated with the word "No" and is unchecked.  The checkbox labeled "Can compute" is annotated with the word "Yes" and is checked.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_128")
-```
+    ```
 
 1. Click "Save".  The user should now be able to see the Workspace when logged in to Terra.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The "Save" button is highlighted.'}
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The "Save" button is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_132")
-```
+    ```
 
 ### User Access Levels and Permissions
 
