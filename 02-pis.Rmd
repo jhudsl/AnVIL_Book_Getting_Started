@@ -4,20 +4,17 @@
 
 This chapter is targeted towards people who are responsible for bringing a team to AnVIL. Broadly targeted towards principal investigators (PIs), but also relevant to team leads or lab managers, you will find here:
 
-- **Overview** -- Design philosophy and goals for this guide - is this a good fit for your team?  What should you know before you start?
-- **Account Setup** -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
-- **Planning Guide** -- Questions to help you customize your analysis environment (coming soon!)
-- **Budget Templates** -- Example documents to help you write AnVIL into your grant
-- **IRB Templates** -- Example language to help you write AnVIL into your IRB application
+- **Account Setup Overview** -- Design philosophy and goals for this guide - is this a good fit for your team?  What should you know before you start?
+- **Account Setup Steps** -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
 navigation bar (e.g., 2.2, 4.2) a second time to expand the 
 table of contents and enable the `scroll_highlight` feature 
-([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
+([see more](introduction.html#scroll-highlight)).
 :::
 
-## Overview {#overview-pis}
+## Account Setup Overview {#overview-pis}
 
 ### Goals for This Guide
 
@@ -53,16 +50,7 @@ These design decisions are made to help you get up and running as quickly as pos
 - Before setting up billing yourself, you may want to check with your institutional procurement office and see if they have a preferred account set-up method with Google (such as a third party reseller or an existing account).
 - To add lab members, you will need to know the Google account they will use to access Terra.  You can complete most setup steps without this information and then add them once you know the correct accounts.
 
-## Account Setup {#account-setup-pis}
-
-::: {.fyi}
-Please click on the subsection headers in the left hand 
-navigation bar (e.g., 2.2, 4.2) a second time to expand the 
-table of contents and enable the `scroll_highlight` feature 
-([see more](https://jhudatascience.org/AnVIL_Book_Getting_Started/introduction.html#activate-scroll_highlight-feature)).
-:::
-
-### Overview of Account Setup
+### Starting Setup {#account-setup-pis}
 
 AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform, so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
 
@@ -78,7 +66,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 1. Set budgets and alerts (optional, but highly recommended)
 1. Add users and Workspaces
 
-#### Lab Management Roles
+### Lab Management Roles
 
 While there are many ways to configure your lab, this guide defines the following roles and responsibilities:
 
@@ -88,7 +76,7 @@ While there are many ways to configure your lab, this guide defines the followin
 
 - **Data Analyst** - A lab member who is granted write + can-compute access on one or more Terra Workspaces by a Lab Manager and who will run analyses in Terra.  Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).
 
-### Step 1: Create a Google Account
+## Step 1: Create a Google Account
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 1 is highlighted."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_160")
@@ -105,7 +93,7 @@ Terra operates on Google Cloud Platform, so you will need a (free) Google accoun
 
 ```
 
-### Step 2: Set Up Google Billing
+## Step 2: Set Up Google Billing
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 2 is highlighted."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_170")
@@ -118,13 +106,13 @@ Terra operates on Google Cloud Platform, and does not charge any markup.  Rather
 To set up billing, you must first create a **Google “Billing Account”**.
 You can create multiple Billing Accounts associated with your Google ID.  We recommend creating separate Billing Accounts for different funding sources.
 
-#### Create a Google Billing Account
+### Create a Google Billing Account
 
 ```{r, child=c("_child_create_google_billing_account.Rmd")}
 
 ```
 
-#### Add Users or Viewers (optional)
+### Add Users or Viewers (optional)
 
 If you have a project manager or finance administrator who needs access to a Billing Account, you can add them with a few different levels of permissions.  Generally the most useful are:
 
@@ -135,7 +123,7 @@ If you have a project manager or finance administrator who needs access to a Bil
 
 ```
 
-### Step 3: Add Terra to Google Billing Account
+## Step 3: Add Terra to Google Billing Account
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 3 is highlighted."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_198")
@@ -145,7 +133,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 
 ```
 
-### Step 4: Create Terra Billing Projects
+## Step 4: Create Terra Billing Projects
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 4 is highlighted."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_217")
@@ -164,7 +152,7 @@ It is highly recommended that you create separate Billing Projects for each cate
 
 If you are uncertain, **we recommend starting by setting up a Billing Project per lab member**.  This makes it easy to track lab member spending, and also makes it easier to cleanly shut down projects when a member leaves the lab.
 
-#### Create a Billing Project
+### Create a Billing Project
 
 ```{r, child=c("_child_create_terra_billing_project.Rmd")}
 
@@ -172,7 +160,7 @@ If you are uncertain, **we recommend starting by setting up a Billing Project pe
 
 As mentioned above, we recommend creating separate Terra Billing Projects for each of your team members so you can track their spending.  These Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
 
-### Step 5: Set Budgets and Alerts
+## Step 5: Set Budgets and Alerts
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 5 is highlighted."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
@@ -195,7 +183,7 @@ As a PI or lab manager, there are some steps you can take to help monitor and li
 
 You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
 
-#### Set Alerts
+### Set Alerts
 
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
 1. Navigate to [Billing](https://console.cloud.google.com/billing)
@@ -261,17 +249,17 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_55")
 ```
 
-#### View spend
+### View spend
 
 ```{r, child=c("_child_view_google_spending.Rmd")}
 
 ```
 
-#### Export Cost Data to BigQuery
+### Export Cost Data to BigQuery
 
 Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
 
-### Step 6: Add Users and Workspaces
+## Step 6: Add Users and Workspaces
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 6 is highlighted."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
@@ -286,7 +274,7 @@ There are two primary ways to permit users to charge to your Billing Projects:
 
 Billing permissions on Terra can be confusing.  For this reason, **We recommend starting by having a single person responsible for managing all Workspaces (either yourself or a trusted "lab manager").  This person should create all Workspaces and add lab members as Writers (not Owners) to the Workspaces**.  This provides the greatest control over spending.  Once you are familiar with the permissions system and are certain your lab members understand the implication of different permission settings, you may decide to give them greater control over Workspace access.
 
-#### Create a New Workspace
+### Create a New Workspace
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
 1. In the drop-down menu on the left, navigate to "Workspaces".
@@ -323,7 +311,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 
 **To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, if you have created separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
 
-#### Add Members to Workspaces
+### Add Members to Workspaces
 
 Lab members must have logged in to Terra at least once before they can be added to your Billing Projects and Workspaces (they do not need to log in to Google Cloud Console).
 
@@ -369,7 +357,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_132")
 ```
 
-#### User Access Levels and Permissions
+### User Access Levels and Permissions
 
 Managing permissions for your Workspace has important implications:
 
@@ -388,7 +376,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 
 More details about the permissions associated with each Access Level can be found in the [Terra documentation](https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained).
 
-### Wrap-Up
+## Wrap-Up
 
 **Congratulations!  You have successfully set up AnVIL for your lab!**
 
