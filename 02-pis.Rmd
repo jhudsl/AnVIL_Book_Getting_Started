@@ -273,38 +273,11 @@ Billing permissions on Terra can be confusing.  For this reason, **We recommend 
 
 ### Create a New Workspace
 
-1. [Launch Terra](https://anvil.terra.bio/#workspaces)
-1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+```{r, child=c("_child_create_workspace.Rmd")}
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_75")
-    ```
+```
 
-1. Click on the **plus icon** near the top of left of the page.
-
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspaces page.  The "+" is highlighted.'}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_69")
-    ```
-
-1. Name your Workspace and select the appropriate Billing Project.  **All activity in the Workspace will be charged to this Billing Project** (regardless of who conducted it).
-
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra dialog box for creating a new Workspace.  The text box labeled "Workspace name" and the drop-down menu labeled "Billing project" are highlighted.'}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_84")
-    ```
-
-1. If you are working with protected data, you can set the **Authorization Domain** to limit who can be added to your Workspace.  Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future).  Workspaces by default are only visible to people you specifically share them with.  Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated.  We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data).  For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.
-
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra dialog box for creating a new Workspace.  The drop-down menu labeled "Authorization domain" is highlighted.'}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_91")
-    ```
-
-1. Click "Create Workspace".  The new workspace should now show up under your Workspaces.
-
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra dialog box for creating a new Workspace.  The "Create Workspace" button is highlighted.'}
-    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_97")
-    ```
-
-**To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, if you have created separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
+**To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, with separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
 
 ### Add Members to Workspaces
 
