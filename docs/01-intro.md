@@ -28,7 +28,7 @@ Provides step-by-step instructions for new AnVIL users to set up their accounts 
 
 - **PIs and Lab Managers**: managing a team of researchers working on AnVIL
 - **Data Analysts**: joining a team working on AnVIL
-- **Instructors**: using AnVIL to teach a course or Workshop
+- **Consortia**: using AnVIL as part of a research consortium
 
 **Working on AnVIL**
 

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6.1 Introduction | about</title>
+  <title>5.1 Introduction | about</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6.1 Introduction | about" />
+  <meta property="og:title" content="5.1 Introduction | about" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6.1 Introduction | about" />
+  <meta name="twitter:title" content="5.1 Introduction | about" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Katherine Cox, Ava Hoffman, Frederick Tan" />
 
 
-<meta name="date" content="2021-09-23" />
+<meta name="date" content="2021-09-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,7 +34,8 @@
 <link rel="prev" href="data.html"/>
 <link rel="next" href="bring-your-own-data.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,72 +51,11 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
@@ -181,7 +121,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-analysts.html"><a href="data-analysts.html"><i class="fa fa-check"></i><b>3</b> Data Analysts</a>
 <ul>
-<li class="chapter" data-level="3.0.1" data-path="introduction.html"><a href="introduction.html#introduction"><i class="fa fa-check"></i><b>3.0.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.0.1" data-path="data-analysts.html"><a href="data-analysts.html#introduction-1"><i class="fa fa-check"></i><b>3.0.1</b> Introduction</a></li>
 <li class="chapter" data-level="3.1" data-path="account-setup.html"><a href="account-setup.html"><i class="fa fa-check"></i><b>3.1</b> Account Setup</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="account-setup.html"><a href="account-setup.html#overview"><i class="fa fa-check"></i><b>3.1.1</b> Overview</a></li>
@@ -190,132 +130,83 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1.4" data-path="account-setup.html"><a href="account-setup.html#link-external-accounts-optional"><i class="fa fa-check"></i><b>3.1.4</b> Link External Accounts (optional)</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="instructors.html"><a href="instructors.html"><i class="fa fa-check"></i><b>4</b> Instructors</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="overview-instructors.html"><a href="overview-instructors.html"><i class="fa fa-check"></i><b>4.1</b> Overview</a>
-<ul>
-<li class="chapter" data-level="4.1.1" data-path="overview-pis.html"><a href="overview-pis.html#goals-for-this-guide"><i class="fa fa-check"></i><b>4.1.1</b> Goals for This Guide</a></li>
-<li class="chapter" data-level="4.1.2" data-path="overview-pis.html"><a href="overview-pis.html#design-philosophy"><i class="fa fa-check"></i><b>4.1.2</b> Design Philosophy</a></li>
-<li class="chapter" data-level="4.1.3" data-path="overview-pis.html"><a href="overview-pis.html#before-you-start"><i class="fa fa-check"></i><b>4.1.3</b> Before You Start</a></li>
-</ul></li>
-<li class="chapter" data-level="4.2" data-path="account-setup-instructors.html"><a href="account-setup-instructors.html"><i class="fa fa-check"></i><b>4.2</b> Account Setup</a>
-<ul>
-<li class="chapter" data-level="4.2.1" data-path="account-setup-pis.html"><a href="account-setup-pis.html#overview-of-account-setup"><i class="fa fa-check"></i><b>4.2.1</b> Overview of Account Setup</a></li>
-<li class="chapter" data-level="4.2.2" data-path="account-setup-pis.html"><a href="account-setup-pis.html#step-1-create-a-google-account"><i class="fa fa-check"></i><b>4.2.2</b> Step 1: Create a Google Account</a></li>
-<li class="chapter" data-level="4.2.3" data-path="account-setup-pis.html"><a href="account-setup-pis.html#step-2-set-up-google-billing"><i class="fa fa-check"></i><b>4.2.3</b> Step 2: Set Up Google Billing</a></li>
-<li class="chapter" data-level="4.2.4" data-path="account-setup-pis.html"><a href="account-setup-pis.html#step-3-add-terra-to-google-billing-account"><i class="fa fa-check"></i><b>4.2.4</b> Step 3: Add Terra to Google Billing Account</a></li>
-<li class="chapter" data-level="4.2.5" data-path="account-setup-instructors.html"><a href="account-setup-instructors.html#step-4-create-a-terra-billing-project"><i class="fa fa-check"></i><b>4.2.5</b> Step 4: Create a Terra Billing Project</a></li>
-<li class="chapter" data-level="4.2.6" data-path="account-setup-instructors.html"><a href="account-setup-instructors.html#step-5-set-up-alerts"><i class="fa fa-check"></i><b>4.2.6</b> Step 5: Set Up Alerts</a></li>
-<li class="chapter" data-level="4.2.7" data-path="account-setup-instructors.html"><a href="account-setup-instructors.html#first-workspace"><i class="fa fa-check"></i><b>4.2.7</b> Step 6: Create First Workspace</a></li>
-<li class="chapter" data-level="4.2.8" data-path="account-setup-pis.html"><a href="account-setup-pis.html#wrap-up"><i class="fa fa-check"></i><b>4.2.8</b> Wrap-Up</a></li>
-</ul></li>
-<li class="chapter" data-level="4.3" data-path="developing-content.html"><a href="developing-content.html"><i class="fa fa-check"></i><b>4.3</b> Developing Content</a>
-<ul>
-<li class="chapter" data-level="4.3.1" data-path="developing-content.html"><a href="developing-content.html#overview-of-developing-content"><i class="fa fa-check"></i><b>4.3.1</b> Overview of Developing Content</a></li>
-<li class="chapter" data-level="4.3.2" data-path="developing-content.html"><a href="developing-content.html#set-up-anvilpublish-on-anvil"><i class="fa fa-check"></i><b>4.3.2</b> Set Up AnVILPublish on AnVIL</a></li>
-<li class="chapter" data-level="4.3.3" data-path="developing-content.html"><a href="developing-content.html#create-workspace-structure"><i class="fa fa-check"></i><b>4.3.3</b> Create Workspace Structure</a></li>
-<li class="chapter" data-level="4.3.4" data-path="developing-content.html"><a href="developing-content.html#update-dashboard"><i class="fa fa-check"></i><b>4.3.4</b> Update Dashboard</a></li>
-<li class="chapter" data-level="4.3.5" data-path="developing-content.html"><a href="developing-content.html#post-jupyter-notebook"><i class="fa fa-check"></i><b>4.3.5</b> Post Jupyter Notebook</a></li>
-<li class="chapter" data-level="4.3.6" data-path="developing-content.html"><a href="developing-content.html#push-changes-to-github"><i class="fa fa-check"></i><b>4.3.6</b> Push Changes to GitHub</a></li>
-</ul></li>
-<li class="chapter" data-level="4.4" data-path="class-setup.html"><a href="class-setup.html"><i class="fa fa-check"></i><b>4.4</b> Class Setup</a>
-<ul>
-<li class="chapter" data-level="4.4.1" data-path="class-setup.html"><a href="class-setup.html#identify-funding"><i class="fa fa-check"></i><b>4.4.1</b> Identify Funding</a></li>
-<li class="chapter" data-level="4.4.2" data-path="class-setup.html"><a href="class-setup.html#set-up-billing-project"><i class="fa fa-check"></i><b>4.4.2</b> Set Up Billing Project</a></li>
-<li class="chapter" data-level="4.4.3" data-path="class-setup.html"><a href="class-setup.html#collect-student-ids"><i class="fa fa-check"></i><b>4.4.3</b> Collect Student IDs</a></li>
-<li class="chapter" data-level="4.4.4" data-path="class-setup.html"><a href="class-setup.html#set-up-permissions"><i class="fa fa-check"></i><b>4.4.4</b> Set Up Permissions</a></li>
-<li class="chapter" data-level="4.4.5" data-path="class-setup.html"><a href="class-setup.html#notify-terra"><i class="fa fa-check"></i><b>4.4.5</b> Notify Terra</a></li>
-</ul></li>
-<li class="chapter" data-level="4.5" data-path="class-ending.html"><a href="class-ending.html"><i class="fa fa-check"></i><b>4.5</b> Class Ending</a>
-<ul>
-<li class="chapter" data-level="4.5.1" data-path="class-ending.html"><a href="class-ending.html#notify-students"><i class="fa fa-check"></i><b>4.5.1</b> Notify Students</a></li>
-<li class="chapter" data-level="4.5.2" data-path="class-ending.html"><a href="class-ending.html#disable-billing"><i class="fa fa-check"></i><b>4.5.2</b> Disable Billing</a></li>
-</ul></li>
-<li class="chapter" data-level="4.6" data-path="student-account-setup.html"><a href="student-account-setup.html"><i class="fa fa-check"></i><b>4.6</b> Student Account Setup</a>
-<ul>
-<li class="chapter" data-level="4.6.1" data-path="account-setup.html"><a href="account-setup.html#create-a-google-account"><i class="fa fa-check"></i><b>4.6.1</b> Create a Google Account</a></li>
-<li class="chapter" data-level="4.6.2" data-path="account-setup.html"><a href="account-setup.html#set-up-terra"><i class="fa fa-check"></i><b>4.6.2</b> Set Up Terra</a></li>
-<li class="chapter" data-level="4.6.3" data-path="student-account-setup.html"><a href="student-account-setup.html#provide-id-to-instructor"><i class="fa fa-check"></i><b>4.6.3</b> Provide ID to Instructor</a></li>
-</ul></li>
-<li class="chapter" data-level="4.7" data-path="class-checklist.html"><a href="class-checklist.html"><i class="fa fa-check"></i><b>4.7</b> Class Checklist</a></li>
-</ul></li>
 <li class="part"><span><b>Working on AnVIL</b></span></li>
-<li class="chapter" data-level="5" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>5</b> Tools</a>
+<li class="chapter" data-level="4" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>4</b> Tools</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="starting-jupyter-notebook.html"><a href="starting-jupyter-notebook.html"><i class="fa fa-check"></i><b>5.1</b> Starting Jupyter Notebook</a>
+<li class="chapter" data-level="4.1" data-path="starting-jupyter-notebook.html"><a href="starting-jupyter-notebook.html"><i class="fa fa-check"></i><b>4.1</b> Starting Jupyter Notebook</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="starting-jupyter-notebook.html"><a href="starting-jupyter-notebook.html#objectives"><i class="fa fa-check"></i><b>5.1.1</b> Objectives</a></li>
-<li class="chapter" data-level="5.1.2" data-path="starting-jupyter-notebook.html"><a href="starting-jupyter-notebook.html#slides"><i class="fa fa-check"></i><b>5.1.2</b> Slides</a></li>
+<li class="chapter" data-level="4.1.1" data-path="starting-jupyter-notebook.html"><a href="starting-jupyter-notebook.html#objectives"><i class="fa fa-check"></i><b>4.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="4.1.2" data-path="starting-jupyter-notebook.html"><a href="starting-jupyter-notebook.html#slides"><i class="fa fa-check"></i><b>4.1.2</b> Slides</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="starting-rstudio.html"><a href="starting-rstudio.html"><i class="fa fa-check"></i><b>5.2</b> Starting RStudio</a>
+<li class="chapter" data-level="4.2" data-path="starting-rstudio.html"><a href="starting-rstudio.html"><i class="fa fa-check"></i><b>4.2</b> Starting RStudio</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="starting-rstudio.html"><a href="starting-rstudio.html#objectives-1"><i class="fa fa-check"></i><b>5.2.1</b> Objectives</a></li>
-<li class="chapter" data-level="5.2.2" data-path="starting-rstudio.html"><a href="starting-rstudio.html#slides-1"><i class="fa fa-check"></i><b>5.2.2</b> Slides</a></li>
+<li class="chapter" data-level="4.2.1" data-path="starting-rstudio.html"><a href="starting-rstudio.html#objectives-1"><i class="fa fa-check"></i><b>4.2.1</b> Objectives</a></li>
+<li class="chapter" data-level="4.2.2" data-path="starting-rstudio.html"><a href="starting-rstudio.html#slides-1"><i class="fa fa-check"></i><b>4.2.2</b> Slides</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="starting-galaxy.html"><a href="starting-galaxy.html"><i class="fa fa-check"></i><b>5.3</b> Starting Galaxy</a>
+<li class="chapter" data-level="4.3" data-path="starting-galaxy.html"><a href="starting-galaxy.html"><i class="fa fa-check"></i><b>4.3</b> Starting Galaxy</a>
 <ul>
-<li class="chapter" data-level="5.3.1" data-path="starting-galaxy.html"><a href="starting-galaxy.html#objectives-2"><i class="fa fa-check"></i><b>5.3.1</b> Objectives</a></li>
-<li class="chapter" data-level="5.3.2" data-path="starting-galaxy.html"><a href="starting-galaxy.html#slides-2"><i class="fa fa-check"></i><b>5.3.2</b> Slides</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>6</b> Data</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="introduction-data.html"><a href="introduction-data.html"><i class="fa fa-check"></i><b>6.1</b> Introduction</a></li>
-<li class="chapter" data-level="6.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html"><i class="fa fa-check"></i><b>6.2</b> Bring Your Own Data</a>
-<ul>
-<li class="chapter" data-level="6.2.1" data-path="account-setup.html"><a href="account-setup.html#overview"><i class="fa fa-check"></i><b>6.2.1</b> Overview</a></li>
-<li class="chapter" data-level="6.2.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>6.2.2</b> Browser: Upload Single Files</a></li>
-<li class="chapter" data-level="6.2.3" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-folders"><i class="fa fa-check"></i><b>6.2.3</b> Browser: Upload Folders</a></li>
-<li class="chapter" data-level="6.2.4" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>6.2.4</b> <code>gsutil</code>: Local to Cloud</a></li>
-<li class="chapter" data-level="6.2.5" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-cloud-to-cloud"><i class="fa fa-check"></i><b>6.2.5</b> <code>gsutil</code>: Cloud to Cloud</a></li>
-</ul></li>
-<li class="chapter" data-level="6.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html"><i class="fa fa-check"></i><b>6.3</b> Analyze Existing Data</a>
-<ul>
-<li class="chapter" data-level="6.3.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#clone-workspace"><i class="fa fa-check"></i><b>6.3.1</b> Clone Workspace</a></li>
-<li class="chapter" data-level="6.3.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#explore-data-in-the-data-library"><i class="fa fa-check"></i><b>6.3.2</b> Explore Data in the Data Library</a></li>
-<li class="chapter" data-level="6.3.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#import-data-from-the-data-library-to-a-workspace"><i class="fa fa-check"></i><b>6.3.3</b> Import Data From the Data Library to a Workspace</a></li>
-<li class="chapter" data-level="6.3.4" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-pfb"><i class="fa fa-check"></i><b>6.3.4</b> Gen3 PFB</a></li>
-</ul></li>
-<li class="chapter" data-level="6.4" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html"><i class="fa fa-check"></i><b>6.4</b> Work with Persistent Disks</a>
-<ul>
-<li class="chapter" data-level="6.4.1" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#overview-1"><i class="fa fa-check"></i><b>6.4.1</b> Overview</a></li>
-<li class="chapter" data-level="6.4.2" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#copy-files-from-the-persistent-disk-to-the-workspace-bucket"><i class="fa fa-check"></i><b>6.4.2</b> Copy Files From the Persistent Disk to the Workspace Bucket</a></li>
-<li class="chapter" data-level="6.4.3" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#copy-files-from-the-workspace-bucket-to-the-persistent-disk"><i class="fa fa-check"></i><b>6.4.3</b> Copy Files From the Workspace Bucket to the Persistent Disk</a></li>
-<li class="chapter" data-level="6.4.4" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#copy-to-local-storage"><i class="fa fa-check"></i><b>6.4.4</b> Copy to Local Storage</a></li>
-<li class="chapter" data-level="6.4.5" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#delete-persistent-disk-storage"><i class="fa fa-check"></i><b>6.4.5</b> Delete Persistent Disk Storage</a></li>
+<li class="chapter" data-level="4.3.1" data-path="starting-galaxy.html"><a href="starting-galaxy.html#objectives-2"><i class="fa fa-check"></i><b>4.3.1</b> Objectives</a></li>
+<li class="chapter" data-level="4.3.2" data-path="starting-galaxy.html"><a href="starting-galaxy.html#slides-2"><i class="fa fa-check"></i><b>4.3.2</b> Slides</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>7</b> Workflows</a>
+<li class="chapter" data-level="5" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>5</b> Data</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html"><i class="fa fa-check"></i><b>7.1</b> Introduction</a>
+<li class="chapter" data-level="5.1" data-path="introduction-data.html"><a href="introduction-data.html"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html"><i class="fa fa-check"></i><b>5.2</b> Bring Your Own Data</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html#who-is-this-guide-for"><i class="fa fa-check"></i><b>7.1.1</b> Who is this guide for?</a></li>
-<li class="chapter" data-level="7.1.2" data-path="introduction-workflows.html"><a href="introduction-workflows.html#whats-in-this-guide"><i class="fa fa-check"></i><b>7.1.2</b> What’s in this guide?</a></li>
+<li class="chapter" data-level="5.2.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#overview-1"><i class="fa fa-check"></i><b>5.2.1</b> Overview</a></li>
+<li class="chapter" data-level="5.2.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>5.2.2</b> Browser: Upload Single Files</a></li>
+<li class="chapter" data-level="5.2.3" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-folders"><i class="fa fa-check"></i><b>5.2.3</b> Browser: Upload Folders</a></li>
+<li class="chapter" data-level="5.2.4" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>5.2.4</b> <code>gsutil</code>: Local to Cloud</a></li>
+<li class="chapter" data-level="5.2.5" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-cloud-to-cloud"><i class="fa fa-check"></i><b>5.2.5</b> <code>gsutil</code>: Cloud to Cloud</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html"><i class="fa fa-check"></i><b>5.3</b> Analyze Existing Data</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#clone-workspace"><i class="fa fa-check"></i><b>5.3.1</b> Clone Workspace</a></li>
+<li class="chapter" data-level="5.3.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#explore-data-in-the-data-library"><i class="fa fa-check"></i><b>5.3.2</b> Explore Data in the Data Library</a></li>
+<li class="chapter" data-level="5.3.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#import-data-from-the-data-library-to-a-workspace"><i class="fa fa-check"></i><b>5.3.3</b> Import Data From the Data Library to a Workspace</a></li>
+<li class="chapter" data-level="5.3.4" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-pfb"><i class="fa fa-check"></i><b>5.3.4</b> Gen3 PFB</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html"><i class="fa fa-check"></i><b>5.4</b> Work with Persistent Disks</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#overview-2"><i class="fa fa-check"></i><b>5.4.1</b> Overview</a></li>
+<li class="chapter" data-level="5.4.2" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#copy-files-from-the-persistent-disk-to-the-workspace-bucket"><i class="fa fa-check"></i><b>5.4.2</b> Copy Files From the Persistent Disk to the Workspace Bucket</a></li>
+<li class="chapter" data-level="5.4.3" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#copy-files-from-the-workspace-bucket-to-the-persistent-disk"><i class="fa fa-check"></i><b>5.4.3</b> Copy Files From the Workspace Bucket to the Persistent Disk</a></li>
+<li class="chapter" data-level="5.4.4" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#copy-to-local-storage"><i class="fa fa-check"></i><b>5.4.4</b> Copy to Local Storage</a></li>
+<li class="chapter" data-level="5.4.5" data-path="work-with-persistent-disks.html"><a href="work-with-persistent-disks.html#delete-persistent-disk-storage"><i class="fa fa-check"></i><b>5.4.5</b> Delete Persistent Disk Storage</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>6</b> Workflows</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html"><i class="fa fa-check"></i><b>6.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html#who-is-this-guide-for"><i class="fa fa-check"></i><b>6.1.1</b> Who is this guide for?</a></li>
+<li class="chapter" data-level="6.1.2" data-path="introduction-workflows.html"><a href="introduction-workflows.html#whats-in-this-guide"><i class="fa fa-check"></i><b>6.1.2</b> What’s in this guide?</a></li>
 </ul></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>A</b> FAQs</a>
 <ul>
-<li class="chapter" data-level="A.0.1" data-path="introduction.html"><a href="introduction.html#what-is-anvil"><i class="fa fa-check"></i><b>A.0.1</b> What is AnVIL?</a></li>
+<li class="chapter" data-level="A.0.1" data-path="faqs.html"><a href="faqs.html#what-is-anvil-1"><i class="fa fa-check"></i><b>A.0.1</b> What is AnVIL?</a></li>
 <li class="chapter" data-level="A.0.2" data-path="faqs.html"><a href="faqs.html#how-do-i-get-started"><i class="fa fa-check"></i><b>A.0.2</b> How Do I Get Started?</a></li>
 <li class="chapter" data-level="A.0.3" data-path="faqs.html"><a href="faqs.html#what-data-is-available"><i class="fa fa-check"></i><b>A.0.3</b> What Data Is Available?</a></li>
 <li class="chapter" data-level="A.0.4" data-path="faqs.html"><a href="faqs.html#how-do-i-perform-an-analysis"><i class="fa fa-check"></i><b>A.0.4</b> How Do I Perform an Analysis?</a></li>
-<li class="chapter" data-level="A.0.5" data-path="introduction.html"><a href="introduction.html#where-can-i-get-help"><i class="fa fa-check"></i><b>A.0.5</b> Where Can I Get Help?</a></li>
+<li class="chapter" data-level="A.0.5" data-path="faqs.html"><a href="faqs.html#where-can-i-get-help-1"><i class="fa fa-check"></i><b>A.0.5</b> Where Can I Get Help?</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="irb-templates.html"><a href="irb-templates.html#security"><i class="fa fa-check"></i><b>B</b> Security</a>
+<li class="chapter" data-level="B" data-path="security-1.html"><a href="security-1.html"><i class="fa fa-check"></i><b>B</b> Security</a>
 <ul>
 <li class="chapter" data-level="B.1" data-path="introduction-security.html"><a href="introduction-security.html"><i class="fa fa-check"></i><b>B.1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="B.1.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html#who-is-this-guide-for"><i class="fa fa-check"></i><b>B.1.1</b> Who is this guide for?</a></li>
-<li class="chapter" data-level="B.1.2" data-path="introduction-workflows.html"><a href="introduction-workflows.html#whats-in-this-guide"><i class="fa fa-check"></i><b>B.1.2</b> What’s in this guide?</a></li>
+<li class="chapter" data-level="B.1.1" data-path="introduction-security.html"><a href="introduction-security.html#who-is-this-guide-for-1"><i class="fa fa-check"></i><b>B.1.1</b> Who is this guide for?</a></li>
+<li class="chapter" data-level="B.1.2" data-path="introduction-security.html"><a href="introduction-security.html#whats-in-this-guide-1"><i class="fa fa-check"></i><b>B.1.2</b> What’s in this guide?</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="C" data-path="billing.html"><a href="billing.html"><i class="fa fa-check"></i><b>C</b> Billing</a>
 <ul>
 <li class="chapter" data-level="C.1" data-path="introduction-billing.html"><a href="introduction-billing.html"><i class="fa fa-check"></i><b>C.1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="C.1.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html#who-is-this-guide-for"><i class="fa fa-check"></i><b>C.1.1</b> Who is this guide for?</a></li>
-<li class="chapter" data-level="C.1.2" data-path="introduction-workflows.html"><a href="introduction-workflows.html#whats-in-this-guide"><i class="fa fa-check"></i><b>C.1.2</b> What’s in this guide?</a></li>
+<li class="chapter" data-level="C.1.1" data-path="introduction-billing.html"><a href="introduction-billing.html#who-is-this-guide-for-2"><i class="fa fa-check"></i><b>C.1.1</b> Who is this guide for?</a></li>
+<li class="chapter" data-level="C.1.2" data-path="introduction-billing.html"><a href="introduction-billing.html#whats-in-this-guide-2"><i class="fa fa-check"></i><b>C.1.2</b> What’s in this guide?</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="D" data-path="overview-videos.html"><a href="overview-videos.html"><i class="fa fa-check"></i><b>D</b> Overview Videos</a></li>
@@ -359,8 +250,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_main_image.png">
 </div>
-<div id="introduction-data" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Introduction</h2>
+<div id="introduction-data" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Introduction</h2>
 <!------------------------------------------>
 </div>
 <hr>
@@ -381,7 +272,6 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -400,6 +290,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -420,6 +311,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }
