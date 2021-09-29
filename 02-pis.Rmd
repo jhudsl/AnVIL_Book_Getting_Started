@@ -1,4 +1,4 @@
-# (PART\*) Getting Started {-}
+# (PART\*) Account Setup {-}
 
 # PIs and Lab Managers
 
