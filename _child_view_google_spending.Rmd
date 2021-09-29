@@ -8,42 +8,43 @@ The Google Billing console displays information by Billing Account.  To view spe
 1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
 
 1. Navigate to [Billing](https://console.cloud.google.com/billing)
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_153")
-```
-    + You may be automatically directed to view a specific Billing Account.  If you see information about a single account (other than the one you're interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
-    + 
-```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_167")
-```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
+    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_153")
+    ```
+
+1. You may be automatically directed to view a specific Billing Account.  If you see information about a single account (other than the one you're interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
+    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_167")
+    ```
 
 1. Click on the name of the Billing Account for the project you want to view.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_5")
-```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted.'}
+    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_5")
+    ```
 
 1. Look at the top of the **Overview** tab to see your month-to-date spending.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Overview.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_0")
-```
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Overview.'}
+    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_0")
+    ```
 
 1. Scroll further down the **Overview** tab to show your top projects.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account top projects.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_4")
-```
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account top projects.'}
+    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_4")
+    ```
 
 1. Click on the **Reports** tab to see more detailed information about each of your billing projects.  This is probably the most useful tab for exploring costs of individual projects over time.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Reports tab.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_8")
-```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Reports tab.'}
+    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_8")
+    ```
 
 1. Click on the **Cost table** tab to obtain a convenient table of spending per project.
-    +
-```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Cost table tab.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_12")
-```
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Cost table tab.'}
+    leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.ge3b5f92447_0_12")
+    ```
