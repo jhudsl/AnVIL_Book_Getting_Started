@@ -36,6 +36,8 @@ wrap-up-1
 consortia
 introduction-1
 workspaces
+create-a-new-workspace-1
+clone-an-existing-workspace
 tools
 starting-jupyter-notebook
 objectives
