@@ -32,7 +32,7 @@ Provides step-by-step instructions for new AnVIL users to set up their accounts 
 
 **Working on AnVIL**
 
-Examples and walk-throughs of common tasks on the AnVIL platform:
+Examples and walkthroughs of common tasks on the AnVIL platform:
 
 - **Tools**: how to run common tools including Jupyter Notebooks, Galaxy, and RStudio
 - **Data**: how to find and access AnVIL datasets, as well as upload and manage your own data

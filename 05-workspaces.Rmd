@@ -1,3 +1,23 @@
 # (PART\*) Working on AnVIL {-}
 
 # Workspaces
+
+Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results. The video below gives a brief introduction to the parts of a Workspace.
+
+<iframe src="https://drive.google.com/file/d/18WUmQfDnulHdaMlrH0Eh6kwIP3zTkaqp/preview" width="640" height="360" allow="autoplay"></iframe>
+
+## Create a New Workspace
+
+Creating a new Workspace from scratch allows you to fully customize the contents. The following steps show you how to create a Workspace so you can get started.
+
+```{r, child=c("_child_create_workspace.Rmd")}
+
+```
+
+## Clone an Existing Workspace
+
+Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space. That following steps show you how to clone a Workspace that has already been developed by other AnVIL users. When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!
+
+```{r, child=c("_child_clone_workspace.Rmd")}
+
+```

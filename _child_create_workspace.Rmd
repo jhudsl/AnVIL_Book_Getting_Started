@@ -24,7 +24,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_91")
     ```
 
-1. Click "Create Workspace".  The new workspace should now show up under your Workspaces.
+1. Click "CREATE WORKSPACE".  The new Workspace should now show up under your Workspaces.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of Terra dialog box for creating a new Workspace.  The "Create Workspace" button is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_97")
