@@ -2,9 +2,9 @@
 
 # Workspaces
 
-<!-- Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results. The video below gives a brief introduction to the parts of a Workspace. -->
+Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results. The video below gives a brief introduction to the parts of a Workspace.
 
-<!-- <iframe src="https://drive.google.com/file/d/1PbjKxhX-xq1LDfUPCgKfLn5_Om7Rrc_R/preview" width="640" height="360" allow="autoplay"></iframe> -->
+<iframe src="https://drive.google.com/file/d/18WUmQfDnulHdaMlrH0Eh6kwIP3zTkaqp/preview" width="640" height="360" allow="autoplay"></iframe>
 
 ## Create a New Workspace
 
