@@ -20,7 +20,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934
     
 1. Click the teardrop button on the far right next to the Workspace you want to clone. Click "Clone". You can also clone the Workspace from the Workspace Dashboard instead of the search results.
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra "My Workspaces" menu with the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The "Clone" option from the list is hightlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra "My Workspaces" menu with the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The "Clone" option from the list is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.gf5172664d7_0_351")
     ```
     ```{r, echo=FALSE, fig.alt='Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The "Clone" option from the list is hightlighted.'}

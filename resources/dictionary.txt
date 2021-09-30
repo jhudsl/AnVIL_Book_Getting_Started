@@ -22,6 +22,7 @@ IRB
 IRBs
 ISAE
 Jupyter
+leanbuild
 NCI
 NHGRI
 NHGRI's
