@@ -79,9 +79,19 @@ command not found: gsutil
 
 #### Copy Files From Your Local Computer to a Workspace Bucket
 
-<!-- ### `gsutil`: Cloud to Cloud -->
+The `gsutil cp` command allows you to copy data from one machine to another. On your local machine's terminal, you should use the command in the following format:
 
-<!-- #### Copy Files Between Workspaces -->
+```
+gsutil cp where_to_copy_data_from/filename where_to_copy_data_to
+```
+
+**Example:** To copy the file `test.bam` located on your local computer at `users/name/data/` into the Workspace Bucket `gs://ab5-27x` on the cloud:
+
+```
+gsutil cp users/name/data/test.bam gs://ab5-27x
+```
+
+Remember that you can easily copy the Workspace Bucket ID using the clipboard button on the [Workspace Dashboard]({#bring-data-overview}). Please see the [`gsutil cp` documentation](https://cloud.google.com/storage/docs/gsutil/commands/cp) for more details, such as how to do parallel multi-threaded/multi-processing copying or copying an entire directory tree. The `gsutil cp` command can also be used to copy files from one Workspace Bucket to another (cloud-to-cloud copying).
 
 <!------------------------------------------>
 
