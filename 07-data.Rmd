@@ -6,15 +6,76 @@
 
 ## Bring Your Own Data
 
-### Overview
+### Overview {#bring-data-overview}
+
+The starting point for bringing your own data to AnVIL is the landing page of your Workspace. At the bottom right, you'll find the full path to the Google Bucket information corresponding to your Workspace. You can click the clipboard icon on the right to copy the name of your Workspace Bucket. You will be able to see any uploaded files by clicking the "Open in browser" link.
+
+```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and "Open in browser" link, at the bottom right of the screen is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf5172664d7_0_142")
+```
+
+You can also see any uploaded files by clicking the "Files" directory at the bottom left in the Data Tab.
+
+```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Workspace Data tab. The Files directory and link on the bottom left is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf55fadc51c_0_3")
+```
 
 ### Browser: Upload Single Files
 
+Click the "Files" directory at the bottom left of the Data Tab. Then click the "+" button in the bottom right corner of the screen. This will prompt a file browser on your local machine.
+
+```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Workspace Data tab. The plus button on the bottom right corner of the screen is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf55fadc51c_0_12")
+```
+
 ### Browser: Upload Folders
+
+Click the ["Open in browser"](#bring-data-overview) link on the bottom right of the Workspace Dashboard Tab. This will open a new browser window or tab directed to your Workspace's Google Bucket on the Google Cloud Platform. 
+
+```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Workspace Dashboard. The "Open in browser" link at the bottom right of the screen is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf57004a098_0_1")
+```
+
+Here, you can upload files and manage your data and folders. You can also upload an entire folder by clicking on "UPLOAD FOLDER".
+
+```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The "UPLOAD FOLDER" button is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf57004a098_0_9")
+```
 
 ### `gsutil`: Local to Cloud
 
+`gsutil` is a Python application that lets you access Cloud Storage from the command line in a terminal. The terminal you use can be run on your local machine (local instance) or built into the Workspace Cloud Environment.
+
 #### Install `gsutil` on Your Local Computer or Local Server
+
+[Cloud SDK](https://cloud.google.com/sdk/docs) is a set of tools that you can use to manage resources and applications hosted on Google Cloud. These tools include the `gsutil` command-line tool. 
+
+1. Ensure you have a terminal available. 
+- MacOS and Linux users have a terminal application available by default. Terminal applications are also available through third party software, such as RStudio. 
+- Windows users should download a terminal application, such as [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+
+1. Install Cloud SDK following the appropriate link below:
+- [Windows](https://cloud.google.com/sdk/docs/install#windows)
+- [macOS](https://cloud.google.com/sdk/docs/install#mac)
+- [Linux](https://cloud.google.com/sdk/docs/install#linux)
+
+1. Test that Cloud SDK has been successfully installed by typing `gsutil` in the terminal prompt:
+
+```
+gsutil
+```
+
+If the installation is successful, you should see something like the following:
+
+```
+Usage: gsutil [-D] [-DD] [-h header]... [-i service_account] [-m] [-o] [-q] [-u user_project] [command [opts...] args...]
+```
+
+If the installation is not successful, you should see something like the following. Please return to the installation steps to ensure they have been completed correctly.
+
+```
+command not found: gsutil
+```
 
 #### Copy Files From Your Local Computer to a Workspace Bucket
 
