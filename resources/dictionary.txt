@@ -23,6 +23,7 @@ IRBs
 ISAE
 Jupyter
 leanbuild
+MacOS
 NCI
 NHGRI
 NHGRI's
@@ -34,6 +35,7 @@ preemptible
 programmatically
 RStudio
 sandboxed
+SDK
 SSAE
 TCGA
 TOPMed
