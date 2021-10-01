@@ -8,7 +8,7 @@
 
 ### Overview {#bring-data-overview}
 
-The starting point for bringing your own data to AnVIL is the landing page of your Workspace. At the bottom right, you'll find the full path to the Google Bucket information corresponding to your Workspace. You can click the clipboard icon on the right to copy the name of your Workspace Bucket. You will be able to see any uploaded files by clicking the "Open in browser" link.
+The starting point for bringing your own data to AnVIL is the Workspace Dashboard. At the bottom right, you'll find the full path to the Google Bucket information corresponding to your Workspace. You can click the clipboard icon on the right to copy the name of your Workspace Bucket. You will be able to see any uploaded files by clicking the "Open in browser" link.
 
 ```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and "Open in browser" link, at the bottom right of the screen is highlighted.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf5172664d7_0_142")
@@ -51,27 +51,27 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF
 [Cloud SDK](https://cloud.google.com/sdk/docs) is a set of tools that you can use to manage resources and applications hosted on Google Cloud. These tools include the `gsutil` command-line tool. 
 
 1. Ensure you have a terminal available. 
-- MacOS and Linux users have a terminal application available by default. Terminal applications are also available through third party software, such as RStudio. 
-- Windows users should download a terminal application, such as [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+    - MacOS and Linux users have a terminal application available by default. Terminal applications are also available through third party software, such as RStudio. 
+    - Windows users should download a terminal application, such as [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
 1. Install Cloud SDK following the appropriate link below:
-- [Windows](https://cloud.google.com/sdk/docs/install#windows)
-- [macOS](https://cloud.google.com/sdk/docs/install#mac)
-- [Linux](https://cloud.google.com/sdk/docs/install#linux)
+    - [Windows](https://cloud.google.com/sdk/docs/install#windows)
+    - [macOS](https://cloud.google.com/sdk/docs/install#mac)
+    - [Linux](https://cloud.google.com/sdk/docs/install#linux)
 
-1. Test that Cloud SDK has been successfully installed by typing `gsutil` in the terminal prompt:
+1. Test that Cloud SDK has been successfully installed by typing `gsutil` in the terminal application prompt:
 
 ```
 gsutil
 ```
 
-If the installation is successful, you should see something like the following:
+If the installation was successful, you should see information about using `gsutil` that looks like the following:
 
 ```
 Usage: gsutil [-D] [-DD] [-h header]... [-i service_account] [-m] [-o] [-q] [-u user_project] [command [opts...] args...]
 ```
 
-If the installation is not successful, you should see something like the following. Please return to the installation steps to ensure they have been completed correctly.
+If the installation was not successful, you should see a warning that `gsutil` was not found. Please return to the installation steps to ensure they have been completed correctly.
 
 ```
 command not found: gsutil
