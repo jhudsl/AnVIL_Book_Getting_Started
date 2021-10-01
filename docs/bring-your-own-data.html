@@ -159,7 +159,7 @@
 <li class="chapter" data-level="7.1" data-path="introduction-data.html"><a href="introduction-data.html"><i class="fa fa-check"></i><b>7.1</b> Introduction</a></li>
 <li class="chapter" data-level="7.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html"><i class="fa fa-check"></i><b>7.2</b> Bring Your Own Data</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#overview"><i class="fa fa-check"></i><b>7.2.1</b> Overview</a></li>
+<li class="chapter" data-level="7.2.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#bring-data-overview"><i class="fa fa-check"></i><b>7.2.1</b> Overview</a></li>
 <li class="chapter" data-level="7.2.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>7.2.2</b> Browser: Upload Single Files</a></li>
 <li class="chapter" data-level="7.2.3" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-folders"><i class="fa fa-check"></i><b>7.2.3</b> Browser: Upload Folders</a></li>
 <li class="chapter" data-level="7.2.4" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>7.2.4</b> <code>gsutil</code>: Local to Cloud</a></li>
@@ -259,24 +259,58 @@
 </div>
 <div id="bring-your-own-data" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> Bring Your Own Data</h2>
-<div id="overview" class="section level3" number="7.2.1">
+<div id="bring-data-overview" class="section level3" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> Overview</h3>
+<p>The starting point for bringing your own data to AnVIL is the Workspace Dashboard. At the bottom right, you’ll find the full path to the Google Bucket information corresponding to your Workspace. You can click the clipboard icon on the right to copy the name of your Workspace Bucket. You will be able to see any uploaded files by clicking the “Open in browser” link.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5172664d7_0_142.png" title="Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and &quot;Open in browser&quot; link, at the bottom right of the screen is highlighted." alt="Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and &quot;Open in browser&quot; link, at the bottom right of the screen is highlighted."  /></p>
+<p>You can also see any uploaded files by clicking the “Files” directory at the bottom left in the Data Tab.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf55fadc51c_0_3.png" title="Image shows a screenshot of the Workspace Data tab. The Files directory and link on the bottom left is highlighted." alt="Image shows a screenshot of the Workspace Data tab. The Files directory and link on the bottom left is highlighted."  /></p>
 </div>
 <div id="browser-upload-single-files" class="section level3" number="7.2.2">
 <h3><span class="header-section-number">7.2.2</span> Browser: Upload Single Files</h3>
+<p>Click the “Files” directory at the bottom left of the Data Tab. Then click the “+” button in the bottom right corner of the screen. This will prompt a file browser on your local machine.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf55fadc51c_0_12.png" title="Image shows a screenshot of the Workspace Data tab. The plus button on the bottom right corner of the screen is highlighted." alt="Image shows a screenshot of the Workspace Data tab. The plus button on the bottom right corner of the screen is highlighted."  /></p>
 </div>
 <div id="browser-upload-folders" class="section level3" number="7.2.3">
 <h3><span class="header-section-number">7.2.3</span> Browser: Upload Folders</h3>
+<p>Click the <a href="bring-your-own-data.html#bring-data-overview">“Open in browser”</a> link on the bottom right of the Workspace Dashboard Tab. This will open a new browser window or tab directed to your Workspace’s Google Bucket on the Google Cloud Platform.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf57004a098_0_1.png" title="Image shows a screenshot of the Workspace Dashboard. The &quot;Open in browser&quot; link at the bottom right of the screen is highlighted." alt="Image shows a screenshot of the Workspace Dashboard. The &quot;Open in browser&quot; link at the bottom right of the screen is highlighted."  /></p>
+<p>Here, you can upload files and manage your data and folders. You can also upload an entire folder by clicking on “UPLOAD FOLDER”.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf57004a098_0_9.png" title="Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The &quot;UPLOAD FOLDER&quot; button is highlighted." alt="Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The &quot;UPLOAD FOLDER&quot; button is highlighted."  /></p>
 </div>
 <div id="gsutil-local-to-cloud" class="section level3" number="7.2.4">
 <h3><span class="header-section-number">7.2.4</span> <code>gsutil</code>: Local to Cloud</h3>
+<p><code>gsutil</code> is a Python application that lets you access Cloud Storage from the command line in a terminal. The terminal you use can be run on your local machine (local instance) or built into the Workspace Cloud Environment.</p>
 <div id="install-gsutil-on-your-local-computer-or-local-server" class="section level4" number="7.2.4.1">
 <h4><span class="header-section-number">7.2.4.1</span> Install <code>gsutil</code> on Your Local Computer or Local Server</h4>
+<p><a href="https://cloud.google.com/sdk/docs">Cloud SDK</a> is a set of tools that you can use to manage resources and applications hosted on Google Cloud. These tools include the <code>gsutil</code> command-line tool.</p>
+<ol style="list-style-type: decimal">
+<li>Ensure you have a terminal available.
+<ul>
+<li>MacOS and Linux users have a terminal application available by default. Terminal applications are also available through third party software, such as RStudio.</li>
+<li>Windows users should download a terminal application, such as <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a>.</li>
+</ul></li>
+<li>Install Cloud SDK following the appropriate link below:
+<ul>
+<li><a href="https://cloud.google.com/sdk/docs/install#windows">Windows</a></li>
+<li><a href="https://cloud.google.com/sdk/docs/install#mac">MacOS</a></li>
+<li><a href="https://cloud.google.com/sdk/docs/install#linux">Linux</a></li>
+</ul></li>
+<li>Test that Cloud SDK has been successfully installed by typing <code>gsutil</code> in the terminal application prompt:</li>
+</ol>
+<pre><code>gsutil</code></pre>
+<p>If the installation was successful, you should see information about using <code>gsutil</code> that looks like the following:</p>
+<pre><code>Usage: gsutil [-D] [-DD] [-h header]... [-i service_account] [-m] [-o] [-q] [-u user_project] [command [opts...] args...]</code></pre>
+<p>If the installation was not successful, you should see a warning that <code>gsutil</code> was not found. Please return to the installation steps to ensure they have been completed correctly.</p>
+<pre><code>command not found: gsutil</code></pre>
 </div>
 <div id="copy-files-from-your-local-computer-to-a-workspace-bucket" class="section level4" number="7.2.4.2">
 <h4><span class="header-section-number">7.2.4.2</span> Copy Files From Your Local Computer to a Workspace Bucket</h4>
-<!-- ### `gsutil`: Cloud to Cloud -->
-<!-- #### Copy Files Between Workspaces -->
+<p>The <code>gsutil cp</code> command allows you to copy data from one machine to another. On your local machine’s terminal, you should use the command in the following format:</p>
+<pre><code>gsutil cp where_to_copy_data_from/filename where_to_copy_data_to</code></pre>
+<p><strong>Example:</strong> To copy the file <code>test.bam</code> located on your local computer at <code>users/name/data/</code> into the Workspace Bucket <code>gs://ab5-27x</code> on the cloud:</p>
+<pre><code>gsutil cp users/name/data/test.bam gs://ab5-27x</code></pre>
+<p>Remember that you can easily copy the Workspace Bucket ID using the clipboard button on the <a href="%7B#bring-data-overview%7D">Workspace Dashboard</a>. Please see the <a href="https://cloud.google.com/storage/docs/gsutil/commands/cp"><code>gsutil cp</code> documentation</a> for more details, such as how to do parallel multi-threaded/multi-processing copying or copying an entire directory tree. The <code>gsutil cp</code> command can also be used to copy files from one Workspace Bucket to another (cloud-to-cloud copying).</p>
 <!------------------------------------------>
 </div>
 </div>
