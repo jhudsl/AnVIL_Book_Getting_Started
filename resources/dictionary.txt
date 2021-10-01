@@ -32,7 +32,8 @@ NIST
 onboarding
 PI
 PFB
-Pre-configured
+Pre
+pre
 preemptible
 programmatically
 quickstart
@@ -45,6 +46,7 @@ TOPMed
 walkthrough
 walkthroughs
 WDL
+wdl
 WGS
 whitepaper
 Workspace
