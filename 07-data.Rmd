@@ -56,7 +56,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF
 
 1. Install Cloud SDK following the appropriate link below:
     - [Windows](https://cloud.google.com/sdk/docs/install#windows)
-    - [macOS](https://cloud.google.com/sdk/docs/install#mac)
+    - [MacOS](https://cloud.google.com/sdk/docs/install#mac)
     - [Linux](https://cloud.google.com/sdk/docs/install#linux)
 
 1. Test that Cloud SDK has been successfully installed by typing `gsutil` in the terminal application prompt:
