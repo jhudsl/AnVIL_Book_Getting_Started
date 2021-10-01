@@ -2,6 +2,9 @@
 
 This chapter is targeted towards people who are joining an existing team on AnVIL. You will find here:
 
+<br>
+<!-- The capital letter above alters the formatting for the bullet points below -->
+
 - **Account Setup Overview** -- Introductory information and goals for this guide
 - **Account Setup Steps** -- Step-by-step instructions to create your first accounts on AnVIL
 
@@ -10,6 +13,8 @@ This chapter is targeted towards people who are joining an existing team on AnVI
 **Terra** is the compute engine of AnVIL; i.e. where you will run your analyses.  Terra currently offers access to **Jupyter Notebooks** and **RStudio** for interactive analysis, as well as the **Workflow Description Language** (WDL) for batch processing of many samples.  Behind the scenes, Terra runs on Google Cloud Platform, so you will need a (free) Google Account.
 
 <img src="03-data-analysts_files/figure-html//1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gd84a304855_0_138.png" title="Diagram illustrating the relationship between Terra and Google Cloud Platform." alt="Diagram illustrating the relationship between Terra and Google Cloud Platform."  />
+
+In this guide, you will go through the following steps:
 
 1. Create a Google account
 1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account
@@ -28,8 +33,8 @@ If you would like to create a Google account that is associated with your non-Gm
 
 [Launch Terra](https://anvil.terra.bio/#workspaces), and you should be prompted to sign in with your Google account.
 
-- Once you have signed in, your Terra account is set up and your PI or manager should be able to add you to projects.
-- If this is the **first time you or your team has used Terra**, the PI will also need to set up billing.
+- Once you have signed in, your Terra account is set up and your PI or manager should be able to add you to projects and/or Workspaces.
+- If this is the **first time you or your team has used Terra**, the PI or manager will also need to set up billing.
 
 You can always access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
 
@@ -46,3 +51,7 @@ The following links will take you to the Terra documentation for setting up and 
 - [Link Terra and eRA Commons ID](https://support.terra.bio/hc/en-us/articles/360038086332-Linking-Terra-to-External-Servers) - To use controlled-access data on Terra, you will need to link your Terra user ID to your authorization account (such as a dbGaP account). Linking to external servers will allow Terra to automatically determine if you can access controlled datasets hosted in Terra (ex. TCGA, TOPMed, etc.) based on your approved dbGaP applications.
 
 ## Wrap-Up
+
+**Congratulations! You have successfully set up your AnVIL account!**
+
+Your PI or lab manager should be now be able to add you to Workspaces so that you can perform analyses. Please contact your PI or manager to coordinate your user permissions for Terra Projects and Workspaces.
