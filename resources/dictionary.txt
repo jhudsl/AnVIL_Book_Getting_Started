@@ -23,6 +23,7 @@ IRBs
 ISAE
 Jupyter
 leanbuild
+learn-wdl
 MacOS
 NCI
 NHGRI
@@ -31,8 +32,10 @@ NIST
 onboarding
 PI
 PFB
+Pre-configured
 preemptible
 programmatically
+quickstart
 RStudio
 sandboxed
 SDK
