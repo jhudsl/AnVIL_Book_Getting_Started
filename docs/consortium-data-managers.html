@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5.1 Create a New Workspace | about</title>
+  <title>4.2 Consortium Data Managers | about</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5.1 Create a New Workspace | about" />
+  <meta property="og:title" content="4.2 Consortium Data Managers | about" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5.1 Create a New Workspace | about" />
+  <meta name="twitter:title" content="4.2 Consortium Data Managers | about" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="workspaces.html"/>
-<link rel="next" href="clone-an-existing-workspace.html"/>
+<link rel="prev" href="overview-consortia.html"/>
+<link rel="next" href="consortium-pis-and-lab-managers.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -283,22 +283,42 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_main_image.png">
 </div>
-<div id="create-a-new-workspace-1" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Create a New Workspace</h2>
-<p>Creating a new Workspace from scratch allows you to fully customize the contents. The following steps show you how to create a Workspace so you can get started.</p>
-<ol style="list-style-type: decimal">
-<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
-<li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
-<p><img src="05-workspaces_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_75.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted."  /></p></li>
-<li><p>Click on the <strong>plus icon</strong> near the top of left of the page.</p>
-<p><img src="05-workspaces_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_69.png" title="Screenshot of Terra Workspaces page.  The &quot;+&quot; is highlighted." alt="Screenshot of Terra Workspaces page.  The &quot;+&quot; is highlighted."  /></p></li>
-<li><p>Name your Workspace and select the appropriate Billing Project. <strong>All activity in the Workspace will be charged to this Billing Project</strong> (regardless of who conducted it).</p>
-<p><img src="05-workspaces_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_84.png" title="Screenshot of Terra dialog box for creating a new Workspace.  The text box labeled &quot;Workspace name&quot; and the drop-down menu labeled &quot;Billing project&quot; are highlighted." alt="Screenshot of Terra dialog box for creating a new Workspace.  The text box labeled &quot;Workspace name&quot; and the drop-down menu labeled &quot;Billing project&quot; are highlighted."  /></p></li>
-<li><p>If you are working with protected data, you can set the <strong>Authorization Domain</strong> to limit who can be added to your Workspace. Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future). Workspaces by default are only visible to people you specifically share them with. Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated. We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data). For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.</p>
-<p><img src="05-workspaces_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_91.png" title="Screenshot of Terra dialog box for creating a new Workspace.  The drop-down menu labeled &quot;Authorization domain&quot; is highlighted." alt="Screenshot of Terra dialog box for creating a new Workspace.  The drop-down menu labeled &quot;Authorization domain&quot; is highlighted."  /></p></li>
-<li><p>Click “CREATE WORKSPACE”. The new Workspace should now show up under your Workspaces.</p>
-<p><img src="05-workspaces_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_97.png" title="Screenshot of Terra dialog box for creating a new Workspace.  The &quot;Create Workspace&quot; button is highlighted." alt="Screenshot of Terra dialog box for creating a new Workspace.  The &quot;Create Workspace&quot; button is highlighted."  /></p></li>
-</ol>
+<div id="consortium-data-managers" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Consortium Data Managers</h2>
+<div id="managing-security-and-privacy-policies" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Managing Security and Privacy Policies</h3>
+<p>As a data manager, you are responsible for managing access to sensitive data. You should be involved in managing the following:</p>
+<ul>
+<li>Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)<br />
+</li>
+<li>Arranging and managing IRB oversight<br />
+</li>
+<li>Drafting policy and protocol for reporting data security and management incidents<br />
+</li>
+<li>Managing data use limitations and conditions of consortium membership</li>
+</ul>
+</div>
+<div id="account-setup" class="section level3" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Account Setup</h3>
+<p>To set up your account on AnVIL, please see the section for <a href="pis-and-lab-managers.html#overview-pis">PIs and lab managers</a>.</p>
+</div>
+<div id="two-factor-authentication" class="section level3" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Two Factor Authentication</h3>
+<p>Note that you must establish <a href="https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&amp;hl=en">two factor authentication</a> on your Google Account for added security.</p>
+</div>
+<div id="set-up-terra-authorization-domains" class="section level3" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Set Up Terra Authorization Domains</h3>
+<p>Terra Authorization Domains help keep sensitive genomic data secure while still allowing easy sharing with collaborators. See the Security section on <a href="security.html#authorization-domains">Terra Authorization Domains</a> for more information on setting up these secure access groups.</p>
+</div>
+<div id="granting-access" class="section level3" number="4.2.5">
+<h3><span class="header-section-number">4.2.5</span> Granting Access</h3>
+<p>Data managers should confirm that <strong>all other consortium members</strong> have two factor authentication set up on their Google accounts prior to granting access to datasets.</p>
+<p>Granting member access to datasets should be controlled via <a href="security.html#authorization-domains">Terra Authorization Domains</a>.</p>
+</div>
+<div id="revoking-access" class="section level3" number="4.2.6">
+<h3><span class="header-section-number">4.2.6</span> Revoking Access</h3>
+<p>Revoking access to datasets, either when a member leaves the consortium or the consortium concludes, should be controlled via <a href="security.html#authorization-domains">Terra Authorization Domains</a>.</p>
+</div>
 </div>
 <hr>
 <center> 
@@ -313,8 +333,8 @@
           </div>
         </div>
       </div>
-<a href="workspaces.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="clone-an-existing-workspace.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="overview-consortia.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="consortium-pis-and-lab-managers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

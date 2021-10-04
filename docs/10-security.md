@@ -1,7 +1,4 @@
 # Security
 
-## Introduction {#introduction-security}
+### Terra Authorization Domains {#authorization-domains}
 
-### Who is this guide for?
-
-### What's in this guide?
