@@ -63,9 +63,8 @@ explore-data-in-the-data-library
 import-data-from-the-data-library-to-a-workspace
 gen3-pfb
 workflows
-introduction-workflows
-who-is-this-guide-for
-whats-in-this-guide
+pre-configured-workflow
+create-a-custom-workflow
 faqs
 what-is-anvil-1
 how-do-i-get-started
@@ -74,8 +73,8 @@ how-do-i-perform-an-analysis
 where-can-i-get-help-1
 security
 introduction-security
-who-is-this-guide-for-1
-whats-in-this-guide-1
+who-is-this-guide-for
+whats-in-this-guide
 templates
 budget-templates
 types-of-costs

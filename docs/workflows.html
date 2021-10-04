@@ -24,7 +24,7 @@
 <meta name="author" content="Katherine Cox, Ava Hoffman, Frederick Tan" />
 
 
-<meta name="date" content="2021-10-01" />
+<meta name="date" content="2021-10-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="analyze-existing-data.html"/>
-<link rel="next" href="introduction-workflows.html"/>
+<link rel="next" href="faqs.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -174,11 +174,8 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>8</b> Workflows</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html"><i class="fa fa-check"></i><b>8.1</b> Introduction</a>
-<ul>
-<li class="chapter" data-level="8.1.1" data-path="introduction-workflows.html"><a href="introduction-workflows.html#who-is-this-guide-for"><i class="fa fa-check"></i><b>8.1.1</b> Who is this guide for?</a></li>
-<li class="chapter" data-level="8.1.2" data-path="introduction-workflows.html"><a href="introduction-workflows.html#whats-in-this-guide"><i class="fa fa-check"></i><b>8.1.2</b> What’s in this guide?</a></li>
-</ul></li>
+<li class="chapter" data-level="8.0.1" data-path="workflows.html"><a href="workflows.html#pre-configured-workflow"><i class="fa fa-check"></i><b>8.0.1</b> Pre-configured Workflow</a></li>
+<li class="chapter" data-level="8.0.2" data-path="workflows.html"><a href="workflows.html#create-a-custom-workflow"><i class="fa fa-check"></i><b>8.0.2</b> Create a Custom Workflow</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>A</b> FAQs</a>
@@ -193,8 +190,8 @@
 <ul>
 <li class="chapter" data-level="B.1" data-path="introduction-security.html"><a href="introduction-security.html"><i class="fa fa-check"></i><b>B.1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="B.1.1" data-path="introduction-security.html"><a href="introduction-security.html#who-is-this-guide-for-1"><i class="fa fa-check"></i><b>B.1.1</b> Who is this guide for?</a></li>
-<li class="chapter" data-level="B.1.2" data-path="introduction-security.html"><a href="introduction-security.html#whats-in-this-guide-1"><i class="fa fa-check"></i><b>B.1.2</b> What’s in this guide?</a></li>
+<li class="chapter" data-level="B.1.1" data-path="introduction-security.html"><a href="introduction-security.html#who-is-this-guide-for"><i class="fa fa-check"></i><b>B.1.1</b> Who is this guide for?</a></li>
+<li class="chapter" data-level="B.1.2" data-path="introduction-security.html"><a href="introduction-security.html#whats-in-this-guide"><i class="fa fa-check"></i><b>B.1.2</b> What’s in this guide?</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="C" data-path="templates.html"><a href="templates.html"><i class="fa fa-check"></i><b>C</b> Templates</a>
@@ -259,7 +256,23 @@
 </div>
 <div id="workflows" class="section level1" number="8">
 <h1><span class="header-section-number">Chapter 8</span> Workflows</h1>
+<p>Workflows allow you to run whole genomic pipelines in Terra. Workflows are written in <a href="https://openwdl.org/#">WDL</a> (Workflow Description Language), which is a human-readable and writable language originally developed for genomic analysis pipelines. Terra on AnVIL is specifically designed to integrate a WDL workflow’s input and output information directly into the platform. This integration allows you to easily configure a workflow from your Workspace. Established workflows help make analyses more reproducible. They also make it easier to configure, launch, and monitor analyses across many samples.</p>
+<p>You can access workflows from a Workspace by clicking on the Workflows Tab.</p>
+<p><img src="08-workflows_files/figure-html/1mcDeXSRgfN8LsOKihL4dh_wVmo9gFRlefxcB9zALyqQ_gf517266050_0_149.png" title="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted." alt="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted."  /></p>
+<p>To run a workflow you should either use a pre-configured workflow, or create your own workflow.</p>
+<div id="pre-configured-workflow" class="section level3" number="8.0.1">
+<h3><span class="header-section-number">8.0.1</span> Pre-configured Workflow</h3>
+<p>You will need to clone a Workspace that contains the workflow you’d like to run. Refer to the <a href="https://support.terra.bio/hc/en-us/articles/360043454592-Workflows-Quickstart-Part-1-Run-pre-configured-workflow">quickstart guide</a> for running a pre-configured workflow.</p>
 </div>
+<div id="create-a-custom-workflow" class="section level3" number="8.0.2">
+<h3><span class="header-section-number">8.0.2</span> Create a Custom Workflow</h3>
+<p>Custom workflows are written in WDL. Refer to the <a href="https://support.terra.bio/hc/en-us/articles/360037117492-Getting-started-with-WDL">“Hello, learn-wdl!”</a> tutorial to learn the basics before fully customizing your analysis pipeline.</p>
+
+</div>
+</div>
+
+
+
 <hr>
 <center> 
   <div class="footer">
@@ -274,7 +287,7 @@
         </div>
       </div>
 <a href="analyze-existing-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="introduction-workflows.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="faqs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
