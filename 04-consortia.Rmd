@@ -29,19 +29,19 @@ Consortia are usually made up of scientists taking on different research roles. 
 
 **Data Manager**
 
-The data manager is responsible for controlling access of consortium members. To protect data security, data managers ensure that consortium members only have access to appropriate datasets. If there are multiple datasets, the data manager will manage consortium member access as appropriate to a subset of those datasets. These limited access permissions should be organized via distinct [Terra Authorization Domains](security.html#terra-auth-domains).
+The data manager is responsible for controlling access of consortium members. To protect data security, data managers ensure that consortium members only have access to appropriate datasets. If there are multiple datasets, the data manager will manage consortium member access as appropriate to a subset of those datasets. These limited access permissions are organized via distinct [Terra Authorization Domains](security.html#terra-auth-domains).
 
 **Principal Investigator / Lab Manager**
 
-PIs are responsible for financial management in the consortium. PIs can create Workspaces and Billing Projects for members of their team who are part of the consortium, which provides centralized control over billing expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](security.html#terra-auth-domains), where necessary.
+PIs are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to [Workspaces](workspaces.html) managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](security.html#terra-auth-domains), where necessary.
 
 **Data Analyst / Researcher**
 
-You might be a data analyst if you are performing analyses or writing code as part of the consortium, but aren't responsible for managing dataset access or billing expenses that accrue from running analyses. You should be able to identify your PI or data manager point of contact in the consortium. This role is also appropriate for research leaders who will not be managing personnel or expenses as part of the consortium.
+A consortium data analyst might describe someone who is performing analyses or writing code, but isn't responsible for managing dataset access or billing expenses. The Analayst should be able to identify the PI or data manager point of contact in the consortium. Analysts will not be able to run analyses or access data without explicit permission from consortium management. This role also describes research leaders who will participate in activities but will not be managing personnel or expenses as part of the consortium.
 
 **Data Submitter**
 
-Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as NIH National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](security.html#terra-auth-domains).
+Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as the National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](security.html#terra-auth-domains).
 
 ### Draft Security Policies
 
@@ -58,13 +58,14 @@ Consortia leadership are responsible for the following:
 
 ## Consortium Data Managers
 
-## Managing Security and Privacy Policies
+### Managing Security and Privacy Policies
 
-As a data manager, you are likely responsible for managing access to sensitive data. You should be involved in managing the following:
-- Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
-- Arranging and managing IRB oversight
-- Drafting policy and protocol for reporting data security and management incidents
-- Managing data use limitations and conditions of consortium membership
+As a data manager, you are responsible for managing access to sensitive data. You should be involved in managing the following:  
+
+- Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)  
+- Arranging and managing IRB oversight  
+- Drafting policy and protocol for reporting data security and management incidents  
+- Managing data use limitations and conditions of consortium membership  
 
 ### Account Setup
 
@@ -76,11 +77,11 @@ Note that you must establish [two factor authentication](https://support.google.
 
 ### Set Up Terra Authorization Domains
 
-Terra Authorization Domains helps keep sensitive genomic data secure while still allowing easy sharing with collaborators. See the Security section on [Terra Authorization Domains](security.html#terra-auth-domains) for more information on setting up these secure access groups.
+Terra Authorization Domains help keep sensitive genomic data secure while still allowing easy sharing with collaborators. See the Security section on [Terra Authorization Domains](security.html#terra-auth-domains) for more information on setting up these secure access groups.
 
 ### Granting Access
 
-Data managers should confirm that **all other consortium** members have two factor authentication set up on their Google accounts prior to granting access to datasets. 
+Data managers should confirm that **all other consortium members** have two factor authentication set up on their Google accounts prior to granting access to datasets. 
 
 Granting member access to datasets should be controlled via [Terra Authorization Domains](security.html#terra-auth-domains).
 
