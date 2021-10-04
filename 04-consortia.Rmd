@@ -29,11 +29,11 @@ Consortia are usually made up of scientists taking on different research roles. 
 
 **Data Manager**
 
-The data manager is responsible for controlling access of consortium members. To protect data security, data managers ensure that consortium members only have access to appropriate datasets. If there are multiple datasets, the data manager will manage consortium member access as appropriate to a subset of those datasets. These limited access permissions should be organized via distinct [Terra Authorization Domains](todo-add-link).
+The data manager is responsible for controlling access of consortium members. To protect data security, data managers ensure that consortium members only have access to appropriate datasets. If there are multiple datasets, the data manager will manage consortium member access as appropriate to a subset of those datasets. These limited access permissions should be organized via distinct [Terra Authorization Domains](security.html#terra-auth-domains).
 
 **Principal Investigator / Lab Manager**
 
-PIs are responsible for financial management in the consortium. PIs can create Workspaces and Billing Projects for members of their team who are part of the consortium, which provides centralized control over billing expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](todo-add-link), where necessary.
+PIs are responsible for financial management in the consortium. PIs can create Workspaces and Billing Projects for members of their team who are part of the consortium, which provides centralized control over billing expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](security.html#terra-auth-domains), where necessary.
 
 **Data Analyst / Researcher**
 
@@ -41,7 +41,7 @@ You might be a data analyst if you are performing analyses or writing code as pa
 
 **Data Submitter**
 
-Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as NIH National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](todo-add-link).
+Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as NIH National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](security.html#terra-auth-domains).
 
 ### Draft Security Policies
 
@@ -58,6 +58,36 @@ Consortia leadership are responsible for the following:
 
 ## Consortium Data Managers
 
+## Managing Security and Privacy Policies
+
+As a data manager, you are likely responsible for managing access to sensitive data. You should be involved in managing the following:
+- Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
+- Arranging and managing IRB oversight
+- Drafting policy and protocol for reporting data security and management incidents
+- Managing data use limitations and conditions of consortium membership
+
+### Account Setup
+
+To set up your account on AnVIL, please see the section for [PIs and lab managers](pis-and-lab-managers.html#overview-pis).
+
+### Two Factor Authentication
+
+Note that you must establish [two factor authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security. 
+
+### Set Up Terra Authorization Domains
+
+Terra Authorization Domains helps keep sensitive genomic data secure while still allowing easy sharing with collaborators. See the Security section on [Terra Authorization Domains](security.html#terra-auth-domains) for more information on setting up these secure access groups.
+
+### Granting Access
+
+Data managers should confirm that **all other consortium** members have two factor authentication set up on their Google accounts prior to granting access to datasets. 
+
+Granting member access to datasets should be controlled via [Terra Authorization Domains](security.html#terra-auth-domains).
+
+### Revoking Access
+
+Revoking access to datasets, either when a member leaves the consortium or the consortium concludes, should be controlled via [Terra Authorization Domains](security.html#terra-auth-domains).
+
 ## Consortium PIs and Lab Managers
 
 ### Be Aware of Security Policies
@@ -73,7 +103,7 @@ To set up your account on AnVIL, please see the section for [PIs and lab manager
 
 ### Two Factor Authentication
 
-Note that you must establish [Two Factor Authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
+Note that you must establish [two factor authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
 
 ## Consortium Data Analysts and Researchers
 
@@ -90,7 +120,7 @@ To set up your account on AnVIL, please see the section for [data analysts](data
 
 ### Two Factor Authentication
 
-Note that you must establish [Two Factor Authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
+Note that you must establish [two factor authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
 
 ## Consortium Data Submitters
 
@@ -107,7 +137,7 @@ To set up your account on AnVIL, please see the section for [data submitters](ht
 
 ### Two Factor Authentication
 
-Note that you must establish [Two Factor Authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
+Note that you must establish [two factor authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
 
 ## Wrap-Up
 
