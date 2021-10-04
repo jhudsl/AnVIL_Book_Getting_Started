@@ -1,4 +1,4 @@
 # Security
 
-### Terra Authorization Domains {#terra-auth-domains}
+### Terra Authorization Domains {#authorization-domains}
 
