@@ -23,6 +23,7 @@ IRBs
 ISAE
 Jupyter
 leanbuild
+learn-wdl
 MacOS
 NCI
 NHGRI
@@ -31,8 +32,11 @@ NIST
 onboarding
 PI
 PFB
+Pre
+pre
 preemptible
 programmatically
+quickstart
 RStudio
 sandboxed
 SDK
@@ -42,6 +46,7 @@ TOPMed
 walkthrough
 walkthroughs
 WDL
+wdl
 WGS
 whitepaper
 Workspace
