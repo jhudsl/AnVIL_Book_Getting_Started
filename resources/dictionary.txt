@@ -9,6 +9,7 @@ Bloomberg
 Computability
 dbGaP
 Dockstore
+DUAs
 eRA
 FISMA
 GATK
@@ -25,6 +26,7 @@ Jupyter
 leanbuild
 learn-wdl
 MacOS
+MOUs
 NCI
 NHGRI
 NHGRI's
@@ -41,6 +43,8 @@ RStudio
 sandboxed
 SDK
 SSAE
+Submitters
+submitters
 TCGA
 TOPMed
 walkthrough
