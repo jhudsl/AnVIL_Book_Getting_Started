@@ -10,6 +10,12 @@ This chapter is targeted towards people who are joining an existing team on AnVI
 
 ## Account Setup Overview {#overview-analysts}
 
+### Goals for This Guide
+
+<img src="03-data-analysts_files/figure-html//1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts and 2) link external accounts." alt="List of goals for this guide: 1) get your accounts and 2) link external accounts."  />
+
+### Starting Setup
+
 **Terra** is the compute engine of AnVIL; i.e. where you will run your analyses.  Terra currently offers access to **Jupyter Notebooks** and **RStudio** for interactive analysis, as well as the **Workflow Description Language** (WDL) for batch processing of many samples.  Behind the scenes, Terra runs on Google Cloud Platform, so you will need a (free) Google Account.
 
 <img src="03-data-analysts_files/figure-html//1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gd84a304855_0_138.png" title="Diagram illustrating the relationship between Terra and Google Cloud Platform." alt="Diagram illustrating the relationship between Terra and Google Cloud Platform."  />
