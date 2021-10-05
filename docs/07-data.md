@@ -87,12 +87,28 @@ Remember that you can easily copy the Workspace Bucket ID using the clipboard bu
 
 ## Analyze Existing Data
 
-<!-- Import data from available projects to existing or new workspace -->
+Instead of bringing your own data, you can use existing data on AnVIL. Using the following resources can help you discover data to use in your analyses.
 
-### Clone Workspace
+### AnVIL Data Library
 
-### Explore Data in the Data Library
+In the [Datasets Library](https://anvil.terra.bio/#library/datasets), you can find curated datasets from thousands of participants.
 
-### Import Data From the Data Library to a Workspace
+<img src="07-data_files/figure-html//12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_15.png" title="Image shows a screenshot of the Datasets Library landing page." alt="Image shows a screenshot of the Datasets Library landing page."  />
 
-### Gen3 PFB
+Taking a look at [Featured Workspaces](https://anvil.terra.bio/#library/showcase) can get you started quickly. Remember that when you [clone a Workspace](workspaces.html#clone-workspace), AnVIL automatically cross-links to the original data contained within the Data Tables. 
+
+<img src="07-data_files/figure-html//12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_24.png" title="Image shows a screenshot of the Featured Workspaces landing page." alt="Image shows a screenshot of the Featured Workspaces landing page."  />
+
+<img src="07-data_files/figure-html//12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_7.png" title="Image shows a screenshot of the Featured Workspaces tab on AnVIL. The featured tab is highlighted." alt="Image shows a screenshot of the Featured Workspaces tab on AnVIL. The featured tab is highlighted."  />
+
+### AnVIL Dataset Catalog
+
+The [AnVIL Dataset Catalog](https://anvilproject.org/data) provides access to key NHGRI datasets, such as the CCDG (Centers for Common Disease Genomics), CMG (Centers for Mendelian Genomics), eMERGE (Electronic Medical Records and Genomics), as well as other relevant datasets. You will need to [coordinate access](https://anvilproject.org/learn/accessing-data/requesting-data-access) to controlled data.
+
+<img src="07-data_files/figure-html//12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_31.png" title="Image shows a screenshot of the AnVIL Dataset Catalog website landing page." alt="Image shows a screenshot of the AnVIL Dataset Catalog website landing page."  />
+
+### Gen3 Data Explorer
+
+The [Gen3 Data Explorer and Data Commons](https://gen3.theanvil.io/) provides their API for data queries and downloads, supporting cross-project analyses.
+
+<img src="07-data_files/figure-html//12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_40.png" title="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page." alt="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page."  />

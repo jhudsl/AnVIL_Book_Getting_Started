@@ -60,7 +60,7 @@ two-factor-authentication-3
 wrap-up-2
 workspaces
 create-a-new-workspace-1
-clone-an-existing-workspace
+clone-workspace
 tools
 starting-jupyter-notebook
 objectives
@@ -81,10 +81,9 @@ gsutil-local-to-cloud
 install-gsutil-on-your-local-computer-or-local-server
 copy-files-from-your-local-computer-to-a-workspace-bucket
 analyze-existing-data
-clone-workspace
-explore-data-in-the-data-library
-import-data-from-the-data-library-to-a-workspace
-gen3-pfb
+anvil-data-library
+anvil-dataset-catalog
+gen3-data-explorer
 workflows
 pre-configured-workflow
 create-a-custom-workflow

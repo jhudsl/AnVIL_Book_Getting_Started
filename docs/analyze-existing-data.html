@@ -24,7 +24,7 @@
 <meta name="author" content="Katherine Cox, Ava Hoffman, Frederick Tan" />
 
 
-<meta name="date" content="2021-10-04" />
+<meta name="date" content="2021-10-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -167,7 +167,7 @@
 <li class="chapter" data-level="5" data-path="workspaces.html"><a href="workspaces.html"><i class="fa fa-check"></i><b>5</b> Workspaces</a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.1</b> Create a New Workspace</a></li>
-<li class="chapter" data-level="5.2" data-path="clone-an-existing-workspace.html"><a href="clone-an-existing-workspace.html"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
+<li class="chapter" data-level="5.2" data-path="clone-workspace.html"><a href="clone-workspace.html"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>6</b> Tools</a>
 <ul>
@@ -199,10 +199,9 @@
 </ul></li>
 <li class="chapter" data-level="7.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html"><i class="fa fa-check"></i><b>7.3</b> Analyze Existing Data</a>
 <ul>
-<li class="chapter" data-level="7.3.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#clone-workspace"><i class="fa fa-check"></i><b>7.3.1</b> Clone Workspace</a></li>
-<li class="chapter" data-level="7.3.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#explore-data-in-the-data-library"><i class="fa fa-check"></i><b>7.3.2</b> Explore Data in the Data Library</a></li>
-<li class="chapter" data-level="7.3.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#import-data-from-the-data-library-to-a-workspace"><i class="fa fa-check"></i><b>7.3.3</b> Import Data From the Data Library to a Workspace</a></li>
-<li class="chapter" data-level="7.3.4" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-pfb"><i class="fa fa-check"></i><b>7.3.4</b> Gen3 PFB</a></li>
+<li class="chapter" data-level="7.3.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-data-library"><i class="fa fa-check"></i><b>7.3.1</b> AnVIL Data Library</a></li>
+<li class="chapter" data-level="7.3.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>7.3.2</b> AnVIL Dataset Catalog</a></li>
+<li class="chapter" data-level="7.3.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-data-explorer"><i class="fa fa-check"></i><b>7.3.3</b> Gen3 Data Explorer</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>8</b> Workflows</a>
@@ -285,18 +284,24 @@
 </div>
 <div id="analyze-existing-data" class="section level2" number="7.3">
 <h2><span class="header-section-number">7.3</span> Analyze Existing Data</h2>
-<!-- Import data from available projects to existing or new workspace -->
-<div id="clone-workspace" class="section level3" number="7.3.1">
-<h3><span class="header-section-number">7.3.1</span> Clone Workspace</h3>
+<p>Instead of bringing your own data, you can use existing data on AnVIL. Using the following resources can help you discover data to use in your analyses.</p>
+<div id="anvil-data-library" class="section level3" number="7.3.1">
+<h3><span class="header-section-number">7.3.1</span> AnVIL Data Library</h3>
+<p>In the <a href="https://anvil.terra.bio/#library/datasets">Datasets Library</a>, you can find curated datasets from thousands of participants.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_15.png" title="Image shows a screenshot of the Datasets Library landing page." alt="Image shows a screenshot of the Datasets Library landing page."  /></p>
+<p>Taking a look at <a href="https://anvil.terra.bio/#library/showcase">Featured Workspaces</a> can get you started quickly. Remember that when you <a href="workspaces.html#clone-workspace">clone a Workspace</a>, AnVIL automatically cross-links to the original data contained within the Data Tables.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_24.png" title="Image shows a screenshot of the Featured Workspaces landing page." alt="Image shows a screenshot of the Featured Workspaces landing page."  /></p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_7.png" title="Image shows a screenshot of the Featured Workspaces tab on AnVIL. The featured tab is highlighted." alt="Image shows a screenshot of the Featured Workspaces tab on AnVIL. The featured tab is highlighted."  /></p>
 </div>
-<div id="explore-data-in-the-data-library" class="section level3" number="7.3.2">
-<h3><span class="header-section-number">7.3.2</span> Explore Data in the Data Library</h3>
+<div id="anvil-dataset-catalog" class="section level3" number="7.3.2">
+<h3><span class="header-section-number">7.3.2</span> AnVIL Dataset Catalog</h3>
+<p>The <a href="https://anvilproject.org/data">AnVIL Dataset Catalog</a> provides access to key NHGRI datasets, such as the CCDG (Centers for Common Disease Genomics), CMG (Centers for Mendelian Genomics), eMERGE (Electronic Medical Records and Genomics), as well as other relevant datasets. You will need to <a href="https://anvilproject.org/learn/accessing-data/requesting-data-access">coordinate access</a> to controlled data.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_31.png" title="Image shows a screenshot of the AnVIL Dataset Catalog website landing page." alt="Image shows a screenshot of the AnVIL Dataset Catalog website landing page."  /></p>
 </div>
-<div id="import-data-from-the-data-library-to-a-workspace" class="section level3" number="7.3.3">
-<h3><span class="header-section-number">7.3.3</span> Import Data From the Data Library to a Workspace</h3>
-</div>
-<div id="gen3-pfb" class="section level3" number="7.3.4">
-<h3><span class="header-section-number">7.3.4</span> Gen3 PFB</h3>
+<div id="gen3-data-explorer" class="section level3" number="7.3.3">
+<h3><span class="header-section-number">7.3.3</span> Gen3 Data Explorer</h3>
+<p>The <a href="https://gen3.theanvil.io/">Gen3 Data Explorer and Data Commons</a> provides their API for data queries and downloads, supporting cross-project analyses.</p>
+<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf5fa6f264a_0_40.png" title="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page." alt="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page."  /></p>
 
 </div>
 </div>
