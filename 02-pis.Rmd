@@ -76,7 +76,7 @@ While there are many ways to configure your lab, this guide defines the followin
 
 - **Data Analyst** - A lab member who is granted write + can-compute access on one or more Terra Workspaces by a Lab Manager and who will run analyses in Terra.  Data Analysts cannot share Terra Workspaces (this prevents them from enabling others to spend lab money).
 
-## Step 1: Create a Google Account
+## Step 1: Create a Google Account {#pis-step-1}
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 1 is highlighted."}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_160")
@@ -342,7 +342,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 
 More details about the permissions associated with each Access Level can be found in the [Terra documentation](https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained).
 
-## Wrap-Up
+## Wrap-Up {#pis-wrap-up}
 
 **Congratulations!  You have successfully set up AnVIL for your lab!**
 
