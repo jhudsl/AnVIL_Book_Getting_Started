@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: "Getting Started on AnVIL"
 output: html_document
 ---
 
