@@ -30,7 +30,7 @@ In this guide, you will go through the following steps:
 1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account
 1. Link external accounts (Gen3, dbGaP) to Terra (optional - enables you to import AnVIL open access datasets and to access protected data if you have appropriate authorization)
 
-## Step 1: Create a Google Account
+## Step 1: Create a Google Account {#data-analysts-step-1}
 
 Terra operates on Google Cloud Platform, so you will need a (free) Google account to create a Terra account and run analyses on AnVIL.
 
@@ -61,7 +61,7 @@ The following links will take you to the Terra documentation for setting up and 
 - [Link Gen3 and Terra accounts](https://support.terra.bio/hc/en-us/articles/360050390451) - allows you to analyze Gen3 data on Terra.
 - [Link Terra and eRA Commons ID](https://support.terra.bio/hc/en-us/articles/360038086332-Linking-Terra-to-External-Servers) - To use controlled-access data on Terra, you will need to link your Terra user ID to your authorization account (such as a dbGaP account). Linking to external servers will allow Terra to automatically determine if you can access controlled datasets hosted in Terra (ex. TCGA, TOPMed, etc.) based on your approved dbGaP applications.
 
-## Wrap-Up
+## Wrap-Up {#data-analysts-wrap-up}
 
 **Congratulations! You have successfully set up your AnVIL account!**
 
