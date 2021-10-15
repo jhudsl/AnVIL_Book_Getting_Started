@@ -6,10 +6,13 @@ BDC
 bioinformatics
 Biostatistics
 Bloomberg
+CCDG
+CMG
 Computability
 dbGaP
 Dockstore
 DUAs
+eMERGE
 eRA
 FISMA
 GATK
@@ -37,6 +40,7 @@ PFB
 Pre
 pre
 preemptible
+preprint
 programmatically
 quickstart
 RStudio
