@@ -11,7 +11,7 @@ design-philosophy
 before-you-start
 account-setup-pis
 lab-management-roles
-step-1-create-a-google-account
+pis-step-1
 step-2-set-up-google-billing
 create-a-google-billing-account
 add-users-or-viewers-optional
@@ -26,15 +26,15 @@ step-6-add-users-and-workspaces
 create-a-new-workspace
 add-members-to-workspaces
 user-access-levels-and-permissions
-wrap-up
+pis-wrap-up
 data-analysts
 overview-analysts
 goals-for-this-guide-1
 starting-setup
-step-1-create-a-google-account-1
+data-analysts-step-1
 step-2-set-up-terra
 step-3-link-external-accounts-optional
-wrap-up-1
+data-analysts-wrap-up
 consortia
 overview-consortia
 goals-for-this-guide-2
@@ -59,7 +59,7 @@ consortium-data-submitters
 be-aware-of-security-policies-2
 account-setup-3
 two-factor-authentication-3
-wrap-up-2
+consortia-wrap-up
 workspaces
 create-a-new-workspace-1
 clone-workspace

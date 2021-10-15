@@ -138,7 +138,7 @@ To set up your account on AnVIL, please see the section for [data submitters](ht
 
 Note that you must establish [two factor authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
 
-## Wrap-Up
+## Wrap-Up {#consortia-wrap-up}
 
 **Congratulations! You have successfully set up your AnVIL account!**
 
