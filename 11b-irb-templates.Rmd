@@ -78,10 +78,10 @@ Below we provide some possible language that could be used for consent forms.
 **Workspace access controls**
 
 - [`https://support.terra.bio/hc/en-us/articles/360025851892`](https://support.terra.bio/hc/en-us/articles/360025851892)
-- Workspace owners (e.g. PI, Lab Manager, Data Coordination Center) can grant read / write / compute access, and can revoke access.
+- Workspace owners (e.g. PI, Lab Manager, Data Coordination Center) can grant read / write / compute access, and can revoke access
 
 **Authorization Domains**
 
 - See our introduction [here](authorization-domains.html)
-[`https://support.terra.bio/hc/en-us/articles/360026775691`](https://support.terra.bio/hc/en-us/articles/360026775691)
+- [`https://support.terra.bio/hc/en-us/articles/360026775691`](https://support.terra.bio/hc/en-us/articles/360026775691)
 - Must be set up when a Workspace is created - prevents accidental sharing
