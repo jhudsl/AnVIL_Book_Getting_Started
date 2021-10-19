@@ -97,7 +97,6 @@ how-do-i-perform-an-analysis
 where-can-i-get-help-1
 security
 authorization-domains
-templates
 budget-templates
 types-of-costs
 usage-of-budget-templates
