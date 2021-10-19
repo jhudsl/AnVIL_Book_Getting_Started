@@ -13,7 +13,8 @@ rmd_files: [
   "08-workflows.Rmd",
   "09-faqs.Rmd",
   "10-security.Rmd",
-  "11-templates.Rmd",
+  "11a-budget-templates.Rmd",
+  "11b-irb-templates.Rmd",
   "12-overview-videos.Rmd",
   "About.Rmd"
 ]
