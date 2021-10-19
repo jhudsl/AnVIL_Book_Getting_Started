@@ -10,7 +10,7 @@ This chapter is targeted towards people who are part of a consortium and plan to
 
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
-navigation bar (e.g., 2.2, 4.2) a second time to expand the 
+navigation bar (e.g., 2.1, 4.3) a second time to expand the 
 table of contents and enable the `scroll_highlight` feature 
 ([see more](introduction.html#scroll-highlight)).
 :::
