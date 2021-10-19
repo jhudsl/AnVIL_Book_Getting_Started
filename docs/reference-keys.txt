@@ -95,7 +95,6 @@ how-do-i-get-started
 what-data-is-available
 how-do-i-perform-an-analysis
 where-can-i-get-help-1
-security
 authorization-domains
 budget-templates
 types-of-costs
@@ -105,7 +104,7 @@ general-information
 description-of-anvil
 data-storage
 privacy-and-confidentiality
-security-1
+security
 example-language-for-informed-consent
 types-of-research
 data-repository-submission
