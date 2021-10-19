@@ -29,11 +29,11 @@ Consortia are usually made up of scientists taking on different research roles. 
 
 **Data Manager**
 
-The data manager is responsible for controlling access of consortium members. To protect data security, data managers ensure that consortium members only have access to appropriate datasets. If there are multiple datasets, the data manager will manage consortium member access as appropriate to a subset of those datasets. These limited access permissions are organized via distinct [Terra Authorization Domains](security.html#authorization-domains).
+The data manager is responsible for controlling access of consortium members. To protect data security, data managers ensure that consortium members only have access to appropriate datasets. If there are multiple datasets, the data manager will manage consortium member access as appropriate to a subset of those datasets. These limited access permissions are organized via distinct [Terra Authorization Domains](auth-domains.html).
 
 **Principal Investigator / Lab Manager**
 
-PIs are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to [Workspaces](workspaces.html) managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](security.html#authorization-domains), where necessary.
+PIs are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to [Workspaces](workspaces.html) managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](auth-domains.html), where necessary.
 
 **Data Analyst / Researcher**
 
@@ -41,7 +41,7 @@ A consortium data analyst might describe someone who is performing analyses or w
 
 **Data Submitter**
 
-Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as the National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](security.html#authorization-domains).
+Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as the National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](auth-domains.html).
 
 ### Draft Security Policies
 
@@ -77,17 +77,17 @@ Note that you must establish [two factor authentication](https://support.google.
 
 ### Set Up Terra Authorization Domains
 
-Terra Authorization Domains help keep sensitive genomic data secure while still allowing easy sharing with collaborators. See the Security section on [Terra Authorization Domains](security.html#authorization-domains) for more information on setting up these secure access groups.
+Terra Authorization Domains help keep sensitive genomic data secure while still allowing easy sharing with collaborators. See the Security section on [Terra Authorization Domains](auth-domains.html) for more information on setting up these secure access groups.
 
 ### Granting Access
 
 Data managers should confirm that **all other consortium members** have two factor authentication set up on their Google accounts prior to granting access to datasets. 
 
-Granting member access to datasets should be controlled via [Terra Authorization Domains](security.html#authorization-domains).
+Granting member access to datasets should be controlled via [Terra Authorization Domains](auth-domains.html).
 
 ### Revoking Access
 
-Revoking access to datasets, either when a member leaves the consortium or the consortium concludes, should be controlled via [Terra Authorization Domains](security.html#authorization-domains).
+Revoking access to datasets, either when a member leaves the consortium or the consortium concludes, should be controlled via [Terra Authorization Domains](auth-domains.html).
 
 ## Consortium PIs and Lab Managers
 
