@@ -12,7 +12,7 @@ rmd_files: [
   "07-data.Rmd",
   "08-workflows.Rmd",
   "09-faqs.Rmd",
-  "10-security.Rmd",
+  "10-auth-domains.Rmd",
   "11-templates.Rmd",
   "12-overview-videos.Rmd",
   "13-not-included.Rmd",

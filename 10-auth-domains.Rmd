@@ -1,6 +1,4 @@
-# Security
-
-### Terra Authorization Domains {#authorization-domains}
+# Authorization Domains
 
 Terra Authorization Domains help keep sensitive genomic data secure while still allowing easy sharing with collaborators. Authorization Domains work like a badge. This badge can be associated with a Workspace that allows access only to people with the same badge. When you [clone a Workspace](workspaces.html#clone-workspace) that has an Authorization Domain, the new copy will also have the badge: anyone who wants to access the cloned Workspace has to have the badge. You don't have to worry about accidentally sharing sensitive data because if you try to share the cloned workspace with a user who doesn’t have the right badge, that researcher won’t be able to enter.
 
