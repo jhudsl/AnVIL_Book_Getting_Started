@@ -15,7 +15,6 @@ rmd_files: [
   "10-security.Rmd",
   "11-templates.Rmd",
   "12-overview-videos.Rmd",
-  "13-not-included.Rmd",
   "About.Rmd"
 ]
 new_session: yes
