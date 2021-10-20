@@ -33,7 +33,7 @@ The data manager is responsible for controlling access of consortium members. To
 
 **Principal Investigator / Lab Manager**
 
-PIs are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to [Workspaces](workspaces.html) managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](authorization-domains.html), where necessary.
+Principal Investigators are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to [Workspaces](workspaces.html) managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal Investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](authorization-domains.html), where necessary.
 
 **Data Analyst / Researcher**
 
