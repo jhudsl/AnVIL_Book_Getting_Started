@@ -22,7 +22,7 @@ Please visit our community support forum at [`help.anvilproject.org`](https://he
 
 This book is not intended to be read through sequentially, rather, it is a collection of guides that you can reference based on your needs.  It is divided into two major sections:
 
-**Getting Started**
+**Account Setup**
 
 Provides step-by-step instructions for new AnVIL users to set up their accounts and start using the AnVIL platform.  We have included recommendations for configuring your accounts based on several common use cases:
 
@@ -34,6 +34,7 @@ Provides step-by-step instructions for new AnVIL users to set up their accounts 
 
 Examples and walkthroughs of common tasks on the AnVIL platform:
 
+- **Workspaces**: how to create and clone research spaces on AnVIL
 - **Tools**: how to run common tools including Jupyter Notebooks, Galaxy, and RStudio
 - **Data**: how to find and access AnVIL datasets, as well as upload and manage your own data
 - **Workflows**: how to find and run existing automated data processing pipelines, and how to customize and share your own
