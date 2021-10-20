@@ -12,7 +12,7 @@ AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics L
 
 Through AnVIL, you pay for computing resources as you use them.  If you'd like to try it out, new users can claim a $300 Google Cloud credit to test out the platform and perform some small analyses.
 
-We also provide a [cost estimator](https://jhudatascience.org/AnVIL_Book_Getting_Started/pis-and-lab-managers.html#types-of-costs).
+We also provide a [cost estimator](budget-templates.html#types-of-costs).
 
 ### Where Can I Get Help?
 
