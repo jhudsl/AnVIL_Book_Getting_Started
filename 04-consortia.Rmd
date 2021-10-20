@@ -94,6 +94,7 @@ Revoking access to datasets, either when a member leaves the consortium or the c
 ### Be Aware of Security Policies
 
 As part of a consortium on AnVIL, you should be aware of the following:
+
 - Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - IRB oversight of the consortium
 - Policy and protocol for reporting data security and management incidents
@@ -111,6 +112,7 @@ Note that you must establish [two factor authentication](https://support.google.
 ### Be Aware of Security Policies
 
 As part of a consortium on AnVIL, you should be aware of the following:
+
 - Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - IRB oversight of the consortium
 - Policy and protocol for reporting data security and management incidents
@@ -128,6 +130,7 @@ Note that you must establish [two factor authentication](https://support.google.
 ### Be Aware of Security Policies
 
 As part of a consortium on AnVIL, you should be aware of the following:
+
 - Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - IRB oversight of the consortium
 - Policy and protocol for reporting data security and management incidents
