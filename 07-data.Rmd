@@ -97,7 +97,7 @@ Remember that you can easily copy the Workspace Bucket ID using the clipboard bu
 
 ## Analyze Existing Data
 
-Instead of bringing your own data, you can use existing data on AnVIL. Using the following resources can help you discover data to use in your analyses.
+In addition to bringing your own data, you can use existing data on AnVIL. Using the following resources can help you discover data to use in your analyses.
 
 ### AnVIL Data Library
 
@@ -119,7 +119,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF
 
 ### AnVIL Dataset Catalog
 
-The [AnVIL Dataset Catalog](https://anvilproject.org/data) provides access to key NHGRI datasets, such as the CCDG (Centers for Common Disease Genomics), CMG (Centers for Mendelian Genomics), eMERGE (Electronic Medical Records and Genomics), as well as other relevant datasets. You will need to [coordinate access](https://anvilproject.org/learn/accessing-data/requesting-data-access) to controlled data.
+The [AnVIL Dataset Catalog](https://anvilproject.org/data) displays key NHGRI datasets accessible in AnVIL, such as the CCDG (Centers for Common Disease Genomics), CMG (Centers for Mendelian Genomics), eMERGE (Electronic Medical Records and Genomics), as well as other relevant datasets. You will need to [coordinate access](https://anvilproject.org/learn/accessing-data/requesting-data-access) to controlled data.
 
 ```{r, echo=FALSE, fig.alt='Image shows a screenshot of the AnVIL Dataset Catalog website landing page.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf5fa6f264a_0_31")
