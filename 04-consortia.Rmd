@@ -139,8 +139,6 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1dOubh-sTo5K3ok
 [Go to the Data Analysts chapter](data-analysts.html#overview-analysts)
 :::
 
-To set up your account on AnVIL, please see the section for [data analysts](data-analysts.html#overview-analysts).
-
 ### Two Factor Authentication
 
 Note that you must establish [two factor authentication](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) on your Google Account for added security.
@@ -157,7 +155,13 @@ As part of a consortium on AnVIL, you should be aware of the following:
 
 ### Account Setup
 
-To set up your account on AnVIL, please see the section for [data submitters](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview).
+::: {.fyi}
+```{r, echo=FALSE, fig.alt="Large text which states 'To set up your account on AnVIL, please see the documentation for Data Submitters'."}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE/edit#slide=id.gf9c278bc2c_0_151")
+```
+
+[Go to the Data Submitters documentation](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview)
+:::
 
 ### Two Factor Authentication
 
