@@ -69,12 +69,10 @@ As a data manager, you are responsible for managing access to sensitive data. Yo
 
 ### Account Setup
 
-::: {.fyi}
-```{r, echo=FALSE, fig.alt="Large text which states 'To set up your account on AnVIL, please see the chapter for PIs and lab managers'."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE/edit#slide=id.gf9c278bc2c_0_0")
-```
+To set up your account on AnVIL, please see the chapter for [PIs and Lab Managers](pis-and-lab-managers.html#overview-pis). Once the setup is complete, return to this page to continue.
 
-[Go to the PIs and lab managers chapter](pis-and-lab-managers.html#overview-pis)
+::: {.fyi}
+[Go to PIs and Lab Managers chapter](pis-and-lab-managers.html#overview-pis)
 :::
 
 ### Two Factor Authentication
@@ -107,12 +105,10 @@ As part of a consortium on AnVIL, you should be aware of the following:
 
 ### Account Setup
 
-::: {.fyi}
-```{r, echo=FALSE, fig.alt="Large text which states 'To set up your account on AnVIL, please see the chapter for PIs and lab managers'."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE/edit#slide=id.gf9c278bc2c_0_0")
-```
+To set up your account on AnVIL, please see the chapter for [PIs and Lab Managers](pis-and-lab-managers.html#overview-pis). Once the setup is complete, return to this page to continue.
 
-[Go to the PIs and lab managers chapter](pis-and-lab-managers.html#overview-pis)
+::: {.fyi}
+[Go to PIs and Lab Managers chapter](pis-and-lab-managers.html#overview-pis)
 :::
 
 ### Two Factor Authentication
@@ -131,12 +127,10 @@ As part of a consortium on AnVIL, you should be aware of the following:
 
 ### Account Setup
 
-::: {.fyi}
-```{r, echo=FALSE, fig.alt="Large text which states 'To set up your account on AnVIL, please see the chapter for Data Analysts'."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE/edit#slide=id.gf9c278bc2c_0_143")
-```
+To set up your account on AnVIL, please see the chapter for [Data Analysts](data-analysts.html#overview-analysts). Once the setup is complete, return to this page to continue.
 
-[Go to the Data Analysts chapter](data-analysts.html#overview-analysts)
+::: {.fyi}
+[Go to Data Analysts chapter](data-analysts.html#overview-analysts)
 :::
 
 ### Two Factor Authentication
@@ -155,12 +149,10 @@ As part of a consortium on AnVIL, you should be aware of the following:
 
 ### Account Setup
 
-::: {.fyi}
-```{r, echo=FALSE, fig.alt="Large text which states 'To set up your account on AnVIL, please see the documentation for Data Submitters'."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE/edit#slide=id.gf9c278bc2c_0_151")
-```
+To set up your account on AnVIL, please see the documentation for [Data Submitters](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview). Once the setup is complete, return to this page to continue.
 
-[Go to the Data Submitters documentation](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview)
+::: {.fyi}
+[Go to Data Submitters documentation](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview)
 :::
 
 ### Two Factor Authentication
