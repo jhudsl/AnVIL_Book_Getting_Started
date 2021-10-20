@@ -43,9 +43,9 @@ A consortium data analyst might describe someone who is performing analyses or w
 
 Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as the National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](authorization-domains.html).
 
-### Draft Security Policies
+### Consortia Responsibilities
 
-Consortia leadership are responsible for the following:
+It is important for consortium members of all roles to have a common understanding of the consortium’s security and data access policies. Consortia leadership are responsible for the following:
 
 - Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - Arranging IRB oversight
