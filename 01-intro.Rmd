@@ -4,7 +4,7 @@ Welcome to the AnVIL Getting Started guide!  In it you will find step-by-step in
 
 ### What Is AnVIL?
 
-AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics Lab-Space.  It provides a platform for performing genomic data analysis on the cloud.
+AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics Lab-space.  It provides a platform for performing genomic data analysis on the cloud.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XC5qzj-yZb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
