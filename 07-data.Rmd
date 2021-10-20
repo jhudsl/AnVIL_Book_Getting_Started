@@ -1,8 +1,6 @@
 # Data
 
-## Introduction {#introduction-data}
 
-<!------------------------------------------>
 
 ## Bring Your Own Data
 
