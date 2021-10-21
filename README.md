@@ -19,6 +19,6 @@ This book will teach learners to:
 
 ## Encountering problems?
 
-If you are encountering any problems with this course, please file a GitHub issue or create a post on [Discourse](https://help.anvilproject.org/).
+If you are encountering any problems with this book, please file a GitHub issue or create a post on [Discourse](https://help.anvilproject.org/).
 
 _All materials in this book are licensed [CC-BY](https://tldrlegal.com/license/creative-commons-attribution-(cc)) and can be repurposed freely with attribution._
