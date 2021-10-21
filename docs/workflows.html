@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-10-20" />
+<meta name="date" content="2021-10-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -192,19 +192,18 @@
 </ul></li>
 <li class="chapter" data-level="7" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>7</b> Data</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="introduction-data.html"><a href="introduction-data.html"><i class="fa fa-check"></i><b>7.1</b> Introduction</a></li>
-<li class="chapter" data-level="7.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html"><i class="fa fa-check"></i><b>7.2</b> Bring Your Own Data</a>
+<li class="chapter" data-level="7.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html"><i class="fa fa-check"></i><b>7.1</b> Bring Your Own Data</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#bring-data-overview"><i class="fa fa-check"></i><b>7.2.1</b> Overview</a></li>
-<li class="chapter" data-level="7.2.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>7.2.2</b> Browser: Upload Single Files</a></li>
-<li class="chapter" data-level="7.2.3" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-folders"><i class="fa fa-check"></i><b>7.2.3</b> Browser: Upload Folders</a></li>
-<li class="chapter" data-level="7.2.4" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>7.2.4</b> <code>gsutil</code>: Local to Cloud</a></li>
+<li class="chapter" data-level="7.1.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#bring-data-overview"><i class="fa fa-check"></i><b>7.1.1</b> Overview</a></li>
+<li class="chapter" data-level="7.1.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>7.1.2</b> Browser: Upload Single Files</a></li>
+<li class="chapter" data-level="7.1.3" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-folders"><i class="fa fa-check"></i><b>7.1.3</b> Browser: Upload Folders</a></li>
+<li class="chapter" data-level="7.1.4" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>7.1.4</b> <code>gsutil</code>: Local to Cloud</a></li>
 </ul></li>
-<li class="chapter" data-level="7.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html"><i class="fa fa-check"></i><b>7.3</b> Analyze Existing Data</a>
+<li class="chapter" data-level="7.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html"><i class="fa fa-check"></i><b>7.2</b> Analyze Existing Data</a>
 <ul>
-<li class="chapter" data-level="7.3.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-data-library"><i class="fa fa-check"></i><b>7.3.1</b> AnVIL Data Library</a></li>
-<li class="chapter" data-level="7.3.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>7.3.2</b> AnVIL Dataset Catalog</a></li>
-<li class="chapter" data-level="7.3.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-data-explorer"><i class="fa fa-check"></i><b>7.3.3</b> Gen3 Data Explorer</a></li>
+<li class="chapter" data-level="7.2.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-data-library"><i class="fa fa-check"></i><b>7.2.1</b> AnVIL Data Library</a></li>
+<li class="chapter" data-level="7.2.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>7.2.2</b> AnVIL Dataset Catalog</a></li>
+<li class="chapter" data-level="7.2.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-data-explorer"><i class="fa fa-check"></i><b>7.2.3</b> Gen3 Data Explorer</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>8</b> Workflows</a>
@@ -283,14 +282,14 @@
 <p>Workflows allow you to run whole genomic pipelines in Terra. Workflows are written in <a href="https://openwdl.org/#">WDL</a> (Workflow Description Language), which is a human-readable and writable language originally developed for genomic analysis pipelines. Terra on AnVIL is specifically designed to integrate a WDL workflow’s input and output information directly into the platform. This integration allows you to easily configure a workflow from your Workspace. Established workflows help make analyses more reproducible. They also make it easier to configure, launch, and monitor analyses across many samples.</p>
 <p>You can access workflows from a Workspace by clicking on the Workflows Tab.</p>
 <p><img src="08-workflows_files/figure-html/1mcDeXSRgfN8LsOKihL4dh_wVmo9gFRlefxcB9zALyqQ_gf517266050_0_149.png" title="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted." alt="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted."  /></p>
-<p>To run a workflow you should either use a pre-configured workflow, or create your own workflow.</p>
+<p>To run a workflow you can either use a pre-configured workflow, or create your own workflow.</p>
 <div id="pre-configured-workflow" class="section level3" number="8.0.1">
 <h3><span class="header-section-number">8.0.1</span> Pre-configured Workflow</h3>
-<p>You will need to clone a Workspace that contains the workflow you’d like to run. Refer to the <a href="https://support.terra.bio/hc/en-us/articles/360043454592-Workflows-Quickstart-Part-1-Run-pre-configured-workflow">quickstart guide</a> for running a pre-configured workflow.</p>
+<p>You will need to clone a Workspace that contains the workflow you’d like to run. Refer to Terra’s <a href="https://support.terra.bio/hc/en-us/articles/360043454592-Workflows-Quickstart-Part-1-Run-pre-configured-workflow">quickstart guide</a> for running a pre-configured workflow. You can browse code and workflows in the AnVIL library <a href="https://anvil.terra.bio/#library/code">here</a>.</p>
 </div>
 <div id="create-a-custom-workflow" class="section level3" number="8.0.2">
 <h3><span class="header-section-number">8.0.2</span> Create a Custom Workflow</h3>
-<p>Custom workflows are written in WDL. Refer to the <a href="https://support.terra.bio/hc/en-us/articles/360037117492-Getting-started-with-WDL">“Hello, learn-wdl!”</a> tutorial to learn the basics before fully customizing your analysis pipeline.</p>
+<p>Custom workflows are written in WDL. Refer to Terra’s <a href="https://support.terra.bio/hc/en-us/articles/360037117492-Getting-started-with-WDL">“Hello, learn-wdl!”</a> tutorial to learn the basics before fully customizing your analysis pipeline.</p>
 
 </div>
 </div>

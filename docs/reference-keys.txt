@@ -74,7 +74,6 @@ starting-galaxy
 objectives-2
 slides-2
 data
-introduction-data
 bring-your-own-data
 bring-data-overview
 browser-upload-single-files

@@ -6,12 +6,12 @@ You can access workflows from a Workspace by clicking on the Workflows Tab.
 
 <img src="08-workflows_files/figure-html//1mcDeXSRgfN8LsOKihL4dh_wVmo9gFRlefxcB9zALyqQ_gf517266050_0_149.png" title="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted." alt="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted."  />
 
-To run a workflow you should either use a pre-configured workflow, or create your own workflow.
+To run a workflow you can either use a pre-configured workflow, or create your own workflow.
 
 ### Pre-configured Workflow
 
-You will need to clone a Workspace that contains the workflow you'd like to run. Refer to the [quickstart guide](https://support.terra.bio/hc/en-us/articles/360043454592-Workflows-Quickstart-Part-1-Run-pre-configured-workflow) for running a pre-configured workflow.
+You will need to clone a Workspace that contains the workflow you'd like to run. Refer to Terra's [quickstart guide](https://support.terra.bio/hc/en-us/articles/360043454592-Workflows-Quickstart-Part-1-Run-pre-configured-workflow) for running a pre-configured workflow. You can browse code and workflows in the AnVIL library [here](https://anvil.terra.bio/#library/code).
     
 ### Create a Custom Workflow
 
-Custom workflows are written in WDL. Refer to the ["Hello, learn-wdl!"](https://support.terra.bio/hc/en-us/articles/360037117492-Getting-started-with-WDL) tutorial to learn the basics before fully customizing your analysis pipeline.
+Custom workflows are written in WDL. Refer to Terra's ["Hello, learn-wdl!"](https://support.terra.bio/hc/en-us/articles/360037117492-Getting-started-with-WDL) tutorial to learn the basics before fully customizing your analysis pipeline.
