@@ -2,7 +2,7 @@
 
 This course was created from [this github template](https://github.com/jhudsl/DaSL_Course_Template_Bookdown).
 
-You can see the rendered course material here: https://jhudatascience.org/AnVIL_Book_Getting_Started/
+You can see the rendered book here: https://jhudatascience.org/AnVIL_Book_Getting_Started/
 
 If you would like to contribute to this book, take a look at the [getting_started.md](./getting_started.md).
 
