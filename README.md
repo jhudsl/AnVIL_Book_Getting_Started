@@ -1,6 +1,6 @@
 # Getting Started on AnVIL
 
-This course was created from [this github template](https://github.com/jhudsl/DaSL_Course_Template_Bookdown).
+This book was created from [this github template](https://github.com/jhudsl/DaSL_Course_Template_Bookdown).
 
 You can see the rendered book here: https://jhudatascience.org/AnVIL_Book_Getting_Started/
 
