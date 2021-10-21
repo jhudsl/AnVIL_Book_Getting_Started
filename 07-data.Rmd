@@ -113,7 +113,7 @@ In addition to bringing your own data, you can use existing data on AnVIL. Using
 
 ### AnVIL Data Library
 
-In the [Datasets Library](https://anvil.terra.bio/#library/datasets), you can find curated datasets from thousands of participants.
+The [Datasets Library](https://anvil.terra.bio/#library/datasets) is a good place to get started and familiarize yourself with existing data. Here, you can find curated datasets from thousands of participants. Some of these are open access (such as the [1000 Genomes dataset](https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019)) while others will require you to request access.
 
 ```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Datasets Library landing page.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf5fa6f264a_0_15")
@@ -139,7 +139,7 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF
 
 ### Gen3 Data Explorer
 
-The [Gen3 Data Explorer and Data Commons](https://gen3.theanvil.io/) provides their API for data queries and downloads, supporting cross-project analyses.
+The [Gen3 Data Explorer and Data Commons](https://gen3.theanvil.io/) provides their API for data queries and downloads, supporting cross-project analyses. Gen3 provides access to open and protected datasets that can be exported to an AnVIL Workspace. For example, users can find the 1000 Genomes dataset on Gen3 and filter by ancestry, age, and other features prior to performing analyses on AnVIL.
 
 ```{r, echo=FALSE, fig.alt='Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8/edit#slide=id.gf5fa6f264a_0_40")
