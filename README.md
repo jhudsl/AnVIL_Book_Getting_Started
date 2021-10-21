@@ -4,7 +4,7 @@ This course was created from [this github template](https://github.com/jhudsl/Da
 
 You can see the rendered course material here: https://jhudatascience.org/AnVIL_Book_Getting_Started/
 
-If you would like to contribute to this course material, take a look at the [getting_started.md](./getting_started.md).
+If you would like to contribute to this book, take a look at the [getting_started.md](./getting_started.md).
 
 ## About this book
 
