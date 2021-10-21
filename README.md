@@ -21,4 +21,4 @@ This book will teach learners to:
 
 If you are encountering any problems with this course, please file a GitHub issue or create a post on [Discourse](https://help.anvilproject.org/).
 
-_All materials in this course are licensed [CC-BY](https://tldrlegal.com/license/creative-commons-attribution-(cc)) and can be repurposed freely with attribution._
+_All materials in this book are licensed [CC-BY](https://tldrlegal.com/license/creative-commons-attribution-(cc)) and can be repurposed freely with attribution._
