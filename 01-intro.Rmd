@@ -4,7 +4,7 @@ Welcome to the AnVIL Getting Started guide!  In it you will find step-by-step in
 
 ### What Is AnVIL?
 
-AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics Lab-Space.  It provides a platform for performing genomic data analysis on the cloud.
+AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics Lab-space.  It provides a platform for performing genomic data analysis on the cloud.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XC5qzj-yZb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -12,7 +12,7 @@ AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics L
 
 Through AnVIL, you pay for computing resources as you use them.  If you'd like to try it out, new users can claim a $300 Google Cloud credit to test out the platform and perform some small analyses.
 
-We also provide a [cost estimator](https://jhudatascience.org/AnVIL_Book_Getting_Started/pis-and-lab-managers.html#types-of-costs).
+We also provide a [cost estimator](budget-templates.html#types-of-costs).
 
 ### Where Can I Get Help?
 
@@ -22,7 +22,7 @@ Please visit our community support forum at [`help.anvilproject.org`](https://he
 
 This book is not intended to be read through sequentially, rather, it is a collection of guides that you can reference based on your needs.  It is divided into two major sections:
 
-**Getting Started**
+**Account Setup**
 
 Provides step-by-step instructions for new AnVIL users to set up their accounts and start using the AnVIL platform.  We have included recommendations for configuring your accounts based on several common use cases:
 
@@ -34,6 +34,7 @@ Provides step-by-step instructions for new AnVIL users to set up their accounts 
 
 Examples and walkthroughs of common tasks on the AnVIL platform:
 
+- **Workspaces**: how to create and clone research spaces on AnVIL
 - **Tools**: how to run common tools including Jupyter Notebooks, Galaxy, and RStudio
 - **Data**: how to find and access AnVIL datasets, as well as upload and manage your own data
 - **Workflows**: how to find and run existing automated data processing pipelines, and how to customize and share your own
