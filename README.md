@@ -15,7 +15,14 @@ This book is part of a series of books for the NHGRI’s Genomic Data Science An
 This book will teach learners to:  
 
 - Set up accounts on AnVIL
-- Use basic components of AnVIL
+- Use AnVIL Workspaces to run common genomics tools including Galaxy, RStudio, and Jupyter Notebooks
+- Access data on AnVIL
+
+## Other books in this series
+
+- [Using AnVIL in the Classroom](https://jhudatascience.org/AnVIL_Book_Teacher_Guide)
+- Analysis Exercises Using AnVIL
+- Galaxy on AnVIL
 
 ## Encountering problems?
 
