@@ -1,12 +1,30 @@
 # About the Authors {-#about}
 
-### Authors {-}
+These credits are based on our [course contributors table guidelines](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits).
 
-The following people authored major sections of this book:
+&nbsp;
+&nbsp;
 
-**Katherine Cox** is an Associate Faculty in the Department of Biostatistics at the Johns Hopkins Bloomberg School of Public Health.  She creates onboarding and training materials for the [AnVIL](https://anvilproject.org/) (Analysis, Visualization, and Informatics Lab-Space) Project.  She is also the director of C-MOOR (Carnegie Massive Open Online Research), where she leads development of cloud-based bioinformatics training and research opportunities.
+|Credits|Names|
+|-------|-----|
+|**Pedagogy**||
+|Lead Content Instructors|[Katherine Cox](https://publichealth.jhu.edu/faculty/4170/katherine-cox), [Ava Hoffman](https://www.avahoffman.com/)|
+|Content Contributors | [Kai Kammers](https://www.hopkinsmedicine.org/profiles/details/kai-kammers), [Sarah Wheelan](https://publichealth.jhu.edu/faculty/1902/sarah-wheelan)  |
+|Content Editor | [Frederick Tan](https://carnegiescience.edu/frederick-tan) |
+|Content Consultants | Allie Hajian, Candace Patterson|
+|**Production**||
+|Content Publisher|[Ira Gooding](https://publichealth.jhu.edu/faculty/4130/ira-gooding)|
+|**Technical**||
+|Template Publishing Engineers|[Candace Savonen](https://www.cansavvy.com/), [Carrie Wright](https://carriewright11.github.io/)|
+|Publishing Maintenance Engineer|[Candace Savonen](https://www.cansavvy.com/)|
+|Technical Publishing Stylists|[Carrie Wright](https://carriewright11.github.io/), [Candace Savonen](https://www.cansavvy.com/)|
+|Package Developers ([Leanbuild](https://github.com/jhudsl/leanbuild))|[John Muschelli](https://johnmuschelli.com/), [Candace Savonen](https://www.cansavvy.com/), [Carrie Wright](https://carriewright11.github.io/)|
+|**Funding**||
+|Funder(s)| Institution/individual who funded course including grant number|
+|Funding Staff| Staff members who help with funding|
 
-**Ava Hoffman** is a Research Associate in the Department of Biostatistics at Johns Hopkins University.
+&nbsp;
 
-### Contributors: {-}
-
+```{r, echo = FALSE}
+devtools::session_info()
+```
