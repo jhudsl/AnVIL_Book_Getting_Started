@@ -31,7 +31,7 @@ The data manager is responsible for controlling access of consortium members. To
 
 **Principal Investigator / Lab Manager**
 
-PIs are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to [Workspaces](workspaces.html) managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](authorization-domains.html), where necessary.
+Principal Investigators are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to [Workspaces](workspaces.html) managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal Investigators will need to work with data managers to ensure their team members have correct data access via [Terra Authorization Domains](authorization-domains.html), where necessary.
 
 **Data Analyst / Researcher**
 
@@ -41,9 +41,9 @@ A consortium data analyst might describe someone who is performing analyses or w
 
 Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as the National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate [Terra Authorization Domains](authorization-domains.html).
 
-### Draft Security Policies
+### Consortia Responsibilities
 
-Consortia leadership are responsible for the following:
+It is important for consortium members of all roles to have a common understanding of the consortium’s security and data access policies. Consortia leadership are responsible for the following:
 
 - Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - Arranging IRB oversight
@@ -67,7 +67,11 @@ As a data manager, you are responsible for managing access to sensitive data. Yo
 
 ### Account Setup
 
-To set up your account on AnVIL, please see the section for [PIs and lab managers](pis-and-lab-managers.html#overview-pis).
+To set up your account on AnVIL, please see the chapter for [PIs and Lab Managers](pis-and-lab-managers.html#overview-pis). Once the setup is complete, return to this page to continue.
+
+::: {.fyi}
+[Go to PIs and Lab Managers chapter](pis-and-lab-managers.html#overview-pis)
+:::
 
 ### Two Factor Authentication
 
@@ -92,13 +96,18 @@ Revoking access to datasets, either when a member leaves the consortium or the c
 ### Be Aware of Security Policies
 
 As part of a consortium on AnVIL, you should be aware of the following:
+
 - Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - IRB oversight of the consortium
 - Policy and protocol for reporting data security and management incidents
 
 ### Account Setup
 
-To set up your account on AnVIL, please see the section for [PIs and lab managers](pis-and-lab-managers.html#overview-pis).
+To set up your account on AnVIL, please see the chapter for [PIs and Lab Managers](pis-and-lab-managers.html#overview-pis). Once the setup is complete, return to this page to continue.
+
+::: {.fyi}
+[Go to PIs and Lab Managers chapter](pis-and-lab-managers.html#overview-pis)
+:::
 
 ### Two Factor Authentication
 
@@ -109,13 +118,18 @@ Note that you must establish [two factor authentication](https://support.google.
 ### Be Aware of Security Policies
 
 As part of a consortium on AnVIL, you should be aware of the following:
+
 - Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - IRB oversight of the consortium
 - Policy and protocol for reporting data security and management incidents
 
 ### Account Setup
 
-To set up your account on AnVIL, please see the section for [data analysts](data-analysts.html#overview-analysts).
+To set up your account on AnVIL, please see the chapter for [Data Analysts](data-analysts.html#overview-analysts). Once the setup is complete, return to this page to continue.
+
+::: {.fyi}
+[Go to Data Analysts chapter](data-analysts.html#overview-analysts)
+:::
 
 ### Two Factor Authentication
 
@@ -126,13 +140,18 @@ Note that you must establish [two factor authentication](https://support.google.
 ### Be Aware of Security Policies
 
 As part of a consortium on AnVIL, you should be aware of the following:
+
 - Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)
 - IRB oversight of the consortium
 - Policy and protocol for reporting data security and management incidents
 
 ### Account Setup
 
-To set up your account on AnVIL, please see the section for [data submitters](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview).
+To set up your account on AnVIL, please see the documentation for [Data Submitters](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview). Once the setup is complete, return to this page to continue.
+
+::: {.fyi}
+[Go to Data Submitters documentation](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview)
+:::
 
 ### Two Factor Authentication
 

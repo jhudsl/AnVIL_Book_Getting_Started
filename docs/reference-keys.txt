@@ -39,7 +39,7 @@ consortia
 overview-consortia
 goals-for-this-guide-2
 choosing-a-role
-draft-security-policies
+consortia-responsibilities
 consortium-data-managers
 managing-security-and-privacy-policies
 account-setup
