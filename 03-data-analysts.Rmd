@@ -66,3 +66,8 @@ The following links will take you to the Terra documentation for setting up and 
 **Congratulations! You have successfully set up your AnVIL account!**
 
 Your PI or lab manager should be now be able to add you to Workspaces so that you can perform analyses. Please contact your PI or manager to coordinate your user permissions for Terra Projects and Workspaces.
+
+To learn more about how to perform analyses on AnVIL, see the **Working on AnVIL** section of this book.
+
+- The [Workspaces] chapter introduces AnVIL Workspaces, the fundamental unit of research organization on AnVIL. All analyses on AnVIL are performed in a Workspace.
+- The [Tools], [Data], and [Workflows] chapters explain how to perform a variety of common research tasks on AnVIL.
