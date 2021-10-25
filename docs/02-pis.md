@@ -7,6 +7,11 @@ This chapter is targeted towards people who are responsible for bringing a team 
 - **Account Setup Overview** -- Design philosophy and goals for this guide - is this a good fit for your team?  What should you know before you start?
 - **Account Setup Steps** -- Step-by-step instructions to create your first accounts on AnVIL and connect your team members
 
+The Appendices of this book contain additional information that may be of interest, including:
+
+- Templates for including AnVIL in grant applications ([Budget Templates], [IRB Templates])
+- Information regarding AnVIL's security features for protecting sensitive research ([Authorization Domains])
+
 ::: {.fyi}
 Please click on the subsection headers in the left hand 
 navigation bar (e.g., 2.1, 4.3) a second time to expand the 
@@ -378,7 +383,7 @@ Billing permissions on Terra can be confusing.  For this reason, **We recommend 
 
 ### Add Members to Workspaces
 
-Lab members must have logged in to Terra at least once before they can be added to your Billing Projects and Workspaces (they do not need to log in to Google Cloud Console).
+Lab members must have logged in to Terra at least once before they can be added to your Billing Projects and Workspaces (they do not need to log in to Google Cloud Console).  You can send lab members to the [Data Analysts] guide for instructions on how they can sign up and start working on AnVIL.
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
 
