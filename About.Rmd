@@ -4,27 +4,46 @@ These credits are based on our [course contributors table guidelines](https://gi
 
 &nbsp;
 &nbsp;
+***In [memory](https://galaxyproject.org/jxtx/) of [James Taylor](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02016-0), who was instrumental in initiating this project.***
+
+&nbsp;
 
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
-|Lead Content Instructors|[Katherine Cox](https://publichealth.jhu.edu/faculty/4170/katherine-cox), [Ava Hoffman](https://www.avahoffman.com/)|
-|Content Contributors | [Kai Kammers](https://www.hopkinsmedicine.org/profiles/details/kai-kammers), [Sarah Wheelan](https://publichealth.jhu.edu/faculty/1902/sarah-wheelan)  |
-|Content Editor | [Frederick Tan](https://carnegiescience.edu/frederick-tan) |
-|Content Consultants | Allie Hajian, Candace Patterson|
+| Lead Content Instructors | [Katherine Cox], [Ava Hoffman] |
+| Content Contributors | [Kai Kammers], [Frederick Tan], [Sarah Wheelan] |
+| Content Editors/Reviewers | Natalie Kucher, [Jeff Leek], Valerie Reeves, [Frederick Tan] |
+| Content Directors | [Jeff Leek], [Frederick Tan] |
+| Content Consultants | Allie Hajian, Candace Patterson |
 |**Production**||
-|Content Publisher|[Ira Gooding](https://publichealth.jhu.edu/faculty/4130/ira-gooding)|
+| Content Publisher | [Ira Gooding] |
 |**Technical**||
-|Template Publishing Engineers|[Candace Savonen](https://www.cansavvy.com/), [Carrie Wright](https://carriewright11.github.io/)|
-|Publishing Maintenance Engineer|[Candace Savonen](https://www.cansavvy.com/)|
-|Technical Publishing Stylists|[Carrie Wright](https://carriewright11.github.io/), [Candace Savonen](https://www.cansavvy.com/)|
-|Package Developers ([Leanbuild](https://github.com/jhudsl/leanbuild))|[John Muschelli](https://johnmuschelli.com/), [Candace Savonen](https://www.cansavvy.com/), [Carrie Wright](https://carriewright11.github.io/)|
+| Template Publishing Engineers | [Candace Savonen], [Carrie Wright] |
+| Publishing Maintenance Engineer | [Candace Savonen] |
+| Technical Publishing Stylists | [Carrie Wright], [Candace Savonen] |
+| Package Developers ([Leanbuild]) | [John Muschelli], [Candace Savonen], [Carrie Wright] |
 |**Funding**||
-|Funder(s)| Institution/individual who funded course including grant number|
-|Funding Staff| Staff members who help with funding|
+| Funder | [National Human Genome Research Institute (NHGRI)] #5U24HG010263 |
+| Funding Staff | Emily Voeglein, Fallon Bachman |
 
 &nbsp;
 
 ```{r, echo = FALSE}
 devtools::session_info()
 ```
+
+<!-- Links to author information -->
+
+[Katherine Cox]: https://publichealth.jhu.edu/faculty/4170/katherine-cox
+[Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
+[Ava Hoffman]: https://www.avahoffman.com/
+[Kai Kammers]: https://www.hopkinsmedicine.org/profiles/details/kai-kammers
+[Leanbuild]: https://github.com/jhudsl/leanbuild
+[Jeff Leek]: https://jtleek.com/
+[John Muschelli]: https://johnmuschelli.com/
+[National Human Genome Research Institute (NHGRI)]: https://www.genome.gov/
+[Candace Savonen]: https://www.cansavvy.com/
+[Frederick Tan]: https://carnegiescience.edu/frederick-tan
+[Sarah Wheelan]: https://publichealth.jhu.edu/faculty/1902/sarah-wheelan
+[Carrie Wright]: https://carriewright11.github.io/
