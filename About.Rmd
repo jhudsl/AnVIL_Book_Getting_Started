@@ -15,7 +15,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 | Content Contributors | [Kai Kammers], [Frederick Tan], [Sarah Wheelan] |
 | Content Editors/Reviewers | Natalie Kucher, [Jeff Leek], Valerie Reeves, [Frederick Tan] |
 | Content Directors | [Jeff Leek], [Frederick Tan] |
-| Content Consultants | Allie Hajian, Candace Patterson |
+| Content Consultants | [Allie Cliffe], Candace Patterson |
 |**Production**||
 | Content Publisher | [Ira Gooding] |
 |**Technical**||
@@ -25,7 +25,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 | Package Developers ([Leanbuild]) | [John Muschelli], [Candace Savonen], [Carrie Wright] |
 |**Funding**||
 | Funder | [National Human Genome Research Institute (NHGRI)] #5U24HG010263 |
-| Funding Staff | Emily Voeglein, Fallon Bachman |
+| Funding Staff | Fallon Bachman, Jennifer Vessio, Emily Voeglein |
 
 &nbsp;
 
@@ -35,6 +35,7 @@ devtools::session_info()
 
 <!-- Links to author information -->
 
+[Allie Cliffe]: https://www.linkedin.com/in/allie-cliffe/
 [Katherine Cox]: https://publichealth.jhu.edu/faculty/4170/katherine-cox
 [Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
 [Ava Hoffman]: https://www.avahoffman.com/
