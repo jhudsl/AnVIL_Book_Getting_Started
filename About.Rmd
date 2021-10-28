@@ -1,12 +1,50 @@
 # About the Authors {-#about}
 
-### Authors {-}
+These credits are based on our [course contributors table guidelines](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits).
 
-The following people authored major sections of this book:
+&nbsp;
+&nbsp;
+***In [memory](https://galaxyproject.org/jxtx/) of [James Taylor](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02016-0), who was instrumental in initiating this project.***
 
-**Katherine Cox** is an Associate Faculty in the Department of Biostatistics at the Johns Hopkins Bloomberg School of Public Health.  She creates onboarding and training materials for the [AnVIL](https://anvilproject.org/) (Analysis, Visualization, and Informatics Lab-Space) Project.  She is also the director of C-MOOR (Carnegie Massive Open Online Research), where she leads development of cloud-based bioinformatics training and research opportunities.
+&nbsp;
 
-**Ava Hoffman** is a Research Associate in the Department of Biostatistics at Johns Hopkins University.
+|Credits|Names|
+|-------|-----|
+|**Pedagogy**||
+| Lead Content Instructors | [Katherine Cox], [Ava Hoffman] |
+| Content Contributors | [Kai Kammers], [Frederick Tan], [Sarah Wheelan] |
+| Content Editors/Reviewers | Natalie Kucher, [Jeff Leek], Valerie Reeves, [Frederick Tan] |
+| Content Directors | [Jeff Leek], [Frederick Tan] |
+| Content Consultants | [Allie Cliffe], Candace Patterson |
+|**Production**||
+| Content Publisher | [Ira Gooding] |
+|**Technical**||
+| Template Publishing Engineers | [Candace Savonen], [Carrie Wright] |
+| Publishing Maintenance Engineer | [Candace Savonen] |
+| Technical Publishing Stylists | [Carrie Wright], [Candace Savonen] |
+| Package Developers ([Leanbuild]) | [John Muschelli], [Candace Savonen], [Carrie Wright] |
+|**Funding**||
+| Funder | [National Human Genome Research Institute (NHGRI)] #5U24HG010263 |
+| Funding Staff | Fallon Bachman, Jennifer Vessio, Emily Voeglein |
 
-### Contributors: {-}
+&nbsp;
 
+```{r, echo = FALSE}
+devtools::session_info()
+```
+
+<!-- Links to author information -->
+
+[Allie Cliffe]: https://www.linkedin.com/in/allie-cliffe/
+[Katherine Cox]: https://publichealth.jhu.edu/faculty/4170/katherine-cox
+[Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
+[Ava Hoffman]: https://www.avahoffman.com/
+[Kai Kammers]: https://www.hopkinsmedicine.org/profiles/details/kai-kammers
+[Leanbuild]: https://github.com/jhudsl/leanbuild
+[Jeff Leek]: https://jtleek.com/
+[John Muschelli]: https://johnmuschelli.com/
+[National Human Genome Research Institute (NHGRI)]: https://www.genome.gov/
+[Candace Savonen]: https://www.cansavvy.com/
+[Frederick Tan]: https://carnegiescience.edu/frederick-tan
+[Sarah Wheelan]: https://publichealth.jhu.edu/faculty/1902/sarah-wheelan
+[Carrie Wright]: https://carriewright11.github.io/
