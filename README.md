@@ -28,4 +28,4 @@ This book will teach learners to:
 
 If you are encountering any problems with this book, please file a GitHub issue or create a post on [Discourse](https://help.anvilproject.org/).
 
-_All materials in this book are licensed [CC-BY](https://tldrlegal.com/license/creative-commons-attribution-(cc)) and can be repurposed freely with attribution._
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />All materials in this book are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> unless noted otherwise.
