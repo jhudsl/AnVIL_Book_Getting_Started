@@ -16,6 +16,7 @@ rmd_files: [
   "11a-budget-templates.Rmd",
   "11b-irb-templates.Rmd",
   "12-overview-videos.Rmd",
+  "13-feedback.Rmd",
   "About.Rmd"
 ]
 new_session: yes
