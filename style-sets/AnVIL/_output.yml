@@ -8,7 +8,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-       <a href="https://anvilproject.org/"><img src="assets/anvil_logo.png" style="padding-left: 15px; padding-top: 8px;"</a>
+       <a href="https://anvilproject.org/" target="_blank"><img src="assets/logo-anvil.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
       after: |
        <p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
        <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
