@@ -18,6 +18,7 @@ rmd_files: [
   "11b-irb-templates.Rmd",
   "12-overview-videos.Rmd",
   "13-feedback.Rmd",
+  "14-test-chapter.Rmd",
   "About.Rmd"
 ]
 new_session: yes
