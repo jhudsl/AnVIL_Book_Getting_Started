@@ -23,10 +23,4 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_230")
     ```
 
-**Troubleshooting**
-
-- The page doesn't always update as soon as the billing project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page. 
-- The error messages generated during billing project creation can be hard to understand (see [this example](https://help.anvilproject.org/t/error-creating-billing-project/47).  If you get an error message,
-    - Double check that your project name follows the rules.
-    - **If your chosen name follows the rules but you are getting an error then the name may be already taken** - try adding something (e.g. your lab or team name, date, etc.) to make it unique.
-- If you need help, please visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org) with any questions.
+The page doesn't always update as soon as the billing project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
