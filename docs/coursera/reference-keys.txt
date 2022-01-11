@@ -94,6 +94,8 @@ how-do-i-get-started
 what-data-is-available
 how-do-i-perform-an-analysis
 where-can-i-get-help-1
+troubleshooting
+create-terra-billing-project
 authorization-domains
 budget-templates
 types-of-costs

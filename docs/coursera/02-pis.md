@@ -231,7 +231,14 @@ If you are uncertain, **we recommend starting by setting up a Billing Project pe
 
     <img src="02-pis_files/figure-html//162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_230.png" title="Screenshot of the Terra Add Billing Project dialog box." alt="Screenshot of the Terra Add Billing Project dialog box."  />
 
+The page doesn't always update as soon as the billing project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
+
 As mentioned above, we recommend creating separate Terra Billing Projects for each of your team members so you can track their spending.  These Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
+
+**Having trouble?**
+
+- Check out the [Troubleshooting] appendix
+- Visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org) with any questions.
 
 ## Step 5: Set Budgets and Alerts
 
