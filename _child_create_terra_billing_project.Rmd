@@ -22,3 +22,5 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
     ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Add Billing Project dialog box.'}
 leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_230")
     ```
+
+The page doesn't always update as soon as the billing project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
