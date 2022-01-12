@@ -35,6 +35,7 @@ jobs:
           git checkout -b "preview-${{ github.event.pull_request.number }}"
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
+          git merge -s recursive --strategy-option=theirs ${{ github.event.after }}
 
       # Run bookdown rendering
       - name: Run bookdown render
