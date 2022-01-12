@@ -30,7 +30,6 @@ jobs:
 
       # Set up git checkout
       - name: Set up git checkout
-        id: bookdown
         run: |
           git checkout -b "preview-${{ github.event.pull_request.number }}"
           git config --local user.email "actions@github.com"
