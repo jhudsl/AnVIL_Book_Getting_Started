@@ -1,0 +1,8 @@
+1. [Launch Terra](https://anvil.terra.bio/#workspaces)
+
+1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_75")
+    ```
+

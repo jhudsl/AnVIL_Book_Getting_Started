@@ -6,9 +6,21 @@ Workspaces are the building blocks of projects in Terra. Inside a Workspace, you
 
 <iframe src="https://drive.google.com/file/d/18WUmQfDnulHdaMlrH0Eh6kwIP3zTkaqp/preview" width="640" height="360" allow="autoplay"></iframe>
 
+## Access Your Workspaces
+
+If you are part of a research team, you may have been added to some existing Workspaces.
+
+```{r, child=c("_child_open_workspace.Rmd")}
+
+```
+
 ## Create a New Workspace
 
 Creating a new Workspace from scratch allows you to fully customize the contents. The following steps show you how to create a Workspace so you can get started.
+
+Note that you can only create a new Workspace if you are at least a "User" on a Terra Billing Project.  This helps prevent unwanted charges.  Workspaces charge money to their associated Billing Project, regardless of who conducts the activity, so it's important to be careful about who has permission to use the Workspace (see [User Access Levels](https://jhudatascience.org/AnVIL_Book_Getting_Started/step-6-add-users-and-workspaces.html#user-access-levels-and-permissions) for details).
+
+If you need to create a Workspace but don't have permission, contact your PI or lab manager so that they can either grant you permission or create the Workspace for you.
 
 ```{r, child=c("_child_create_workspace.Rmd")}
 
@@ -17,6 +29,10 @@ Creating a new Workspace from scratch allows you to fully customize the contents
 ## Clone an Existing Workspace {#clone-workspace}
 
 Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space. That following steps show you how to clone a Workspace that has already been developed by other AnVIL users. When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!
+
+Cloning creates a new copy of the Workspace that will charge costs to your own Billing Project. Note that you can only clone a Workspace if you are at least a "User" on a Terra Billing Project.  This helps prevent unwanted charges.  Workspaces charge money to their associated Billing Project, regardless of who conducts the activity, so it's important to be careful about who has permission to use the Workspace (see [User Access Levels](https://jhudatascience.org/AnVIL_Book_Getting_Started/step-6-add-users-and-workspaces.html#user-access-levels-and-permissions) for details).
+
+If you need to clone a Workspace but don't have permission to create your own Workspaces, contact your PI or lab manager so that they can either grant you permission or clone the Workspace for you.
 
 ```{r, child=c("_child_clone_workspace.Rmd")}
 
