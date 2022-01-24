@@ -264,7 +264,25 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_r
 
 ### Export Cost Data to BigQuery
 
-Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
+Several useful tools are available to help you further analyze and understand your GCP computing costs.  Examples include
+
+The `AnVILBilling` [Bioconductor package](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html)
+[Google Data Studio](https://cloud.google.com/billing/docs/how-to/visualize-data)
+
+[These tools are helpful because...]
+
+In order to make use of these tools, you will need to set up exporting of your cost data to BigQuery.  This cannot be done retroactively (i.e. you can only export cost data as it is produced, there is no way to export your cost data history).  Therefore, **we recommend setting up cost data export immediately, so the cost data will be available to you in the future**.
+
+**NOTE**: This will incur a minimal monthly fee, less than $1 / month (pricing as of Feb 2021)
+
+#### Set Up Data Export
+
+
+
+
+To learn more about how to analyze your BigQuery cost data, see:
+[]
+
 
 ## Step 6: Add Users and Workspaces
 
