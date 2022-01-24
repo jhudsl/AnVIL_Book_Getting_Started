@@ -29,3 +29,4 @@ leanbuild::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934
     ```
 
 From here you can navigate through the different tabs of the Workspace, and if you have sufficient permission, you can start running analyses.  If you are only a Reader, you may need to "clone" (make your own copy) of the Workspace before you can start working.
+
