@@ -276,7 +276,7 @@ To add an R package from GitHub you can add a line that follows this general for
 
 ```
 RUN Rscript --vanilla install_github.R \
-  --packages "jhudsl/didactr, jhudsl/leanbuild, <NEW_PACKAGE>" \
+  --packages "jhudsl/didactr, jhudsl/ottr, <NEW_PACKAGE>" \
 ```
 
 To add a Python package, you will need to add pip3 to install Python packages using this format:
@@ -563,7 +563,7 @@ To add images in the text in your Rmd, use the following function within an [R c
 
 `````
 ```{r, fig.alt="Alternative text",}
-leanbuild::include_slide(<google_slide_url>)
+ottr::include_slide(<google_slide_url>)
 `````
 _You must define `fig.alt` in the code chunk options/parameters to pass to `knitr`._
 You can adjust the size, alignment, or caption of the image you can use these arguments in the code chunk tag:  

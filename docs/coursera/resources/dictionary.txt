@@ -34,7 +34,7 @@ Jupyter
 Kai
 Kammers
 Kucher
-leanbuild
+ottr
 learn-wdl
 MacOS
 MOUs

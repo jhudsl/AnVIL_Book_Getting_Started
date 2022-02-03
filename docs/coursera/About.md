@@ -22,7 +22,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 | Template Publishing Engineers | [Candace Savonen], [Carrie Wright] |
 | Publishing Maintenance Engineer | [Candace Savonen] |
 | Technical Publishing Stylists | [Carrie Wright], [Candace Savonen] |
-| Package Developers ([Leanbuild]) | [John Muschelli], [Candace Savonen], [Carrie Wright] |
+| Package Developers ([ottr]) | [John Muschelli], [Candace Savonen], [Carrie Wright] |
 |**Funding**||
 | Funder | [National Human Genome Research Institute (NHGRI)] #5U24HG010263 |
 | Funding Staff | Fallon Bachman, Jennifer Vessio, Emily Voeglein |
@@ -63,7 +63,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  htmltools     0.5.0      2020-06-16 [1] RSPM (R 4.0.1)                    
 ##  jquerylib     0.1.1      2020-04-30 [1] RSPM (R 4.0.0)                    
 ##  knitr         1.33       2022-01-19 [1] Github (yihui/knitr@a1052d1)      
-##  leanbuild     0.1.2      2022-01-19 [1] Github (jhudsl/leanbuild@1d387e1) 
+##  ottr     0.1.2      2022-01-19 [1] Github (jhudsl/ottr@1d387e1) 
 ##  lifecycle     1.0.0      2021-02-15 [1] CRAN (R 4.0.2)                    
 ##  magrittr      1.5        2014-11-22 [1] RSPM (R 4.0.0)                    
 ##  memoise       1.1.0      2017-04-21 [1] RSPM (R 4.0.0)                    
@@ -103,7 +103,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 [Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
 [Ava Hoffman]: https://www.avahoffman.com/
 [Kai Kammers]: https://www.hopkinsmedicine.org/profiles/details/kai-kammers
-[Leanbuild]: https://github.com/jhudsl/leanbuild
+[ottr]: https://github.com/jhudsl/ottr
 [Jeff Leek]: https://jtleek.com/
 [John Muschelli]: https://johnmuschelli.com/
 [National Human Genome Research Institute (NHGRI)]: https://www.genome.gov/
