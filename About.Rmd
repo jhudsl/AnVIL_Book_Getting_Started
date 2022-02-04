@@ -22,7 +22,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 | Template Publishing Engineers | [Candace Savonen], [Carrie Wright] |
 | Publishing Maintenance Engineer | [Candace Savonen] |
 | Technical Publishing Stylists | [Carrie Wright], [Candace Savonen] |
-| Package Developers ([Leanbuild]) | [John Muschelli], [Candace Savonen], [Carrie Wright] |
+| Package Developers ([ottr]) | [John Muschelli], [Candace Savonen], [Carrie Wright] |
 |**Funding**||
 | Funder | [National Human Genome Research Institute (NHGRI)] #5U24HG010263 |
 | Funding Staff | Fallon Bachman, Jennifer Vessio, Emily Voeglein |
@@ -40,7 +40,7 @@ devtools::session_info()
 [Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
 [Ava Hoffman]: https://www.avahoffman.com/
 [Kai Kammers]: https://www.hopkinsmedicine.org/profiles/details/kai-kammers
-[Leanbuild]: https://github.com/jhudsl/leanbuild
+[ottr]: https://github.com/jhudsl/ottr
 [Jeff Leek]: https://jtleek.com/
 [John Muschelli]: https://johnmuschelli.com/
 [National Human Genome Research Institute (NHGRI)]: https://www.genome.gov/
