@@ -283,6 +283,11 @@ Once you have set up data exporting, you will be able to analyze your cost data 
 - The [vignette](http://www.bioconductor.org/packages/release/bioc/vignettes/AnVILBilling/inst/doc/billing.html) for the [`AnVILBilling`](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html)
 - [Google's documentation](https://cloud.google.com/billing/docs/how-to/visualize-data) on visualizing spending with Google Data Studio
 
+**Having trouble?**
+
+- Visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org) with any questions.
+- View the [`Google documentation`](https://cloud.google.com/billing/docs/how-to/export-data-bigquery)
+
 
 ## Step 6: Add Users and Workspaces
 

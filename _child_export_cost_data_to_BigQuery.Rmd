@@ -1,0 +1,46 @@
+
+Exporting billing data to BigQuery requires a few steps to set up:
+
+1. Create BigQuery Billing Project
+1. Create BigQuery Dataset
+1. Enable data export
+
+**Create BigQuery Billing Project**
+
+First you will need to create a Google Billing Project that will run the export process.  
+
+::: {.fyi}
+Reminder:
+
+- A **Google Billing Account** manages your *funding source* (e.g. credit card, cloud credits).  You probably only need one Billing Account unless you have multiple funding sources.
+- A **Google Billing Project** manages activity you do on GCP.  Once Billing Account can fund multiple Billing Projects.
+:::
+
+Usually you will create your Billing Projects through Terra and won't need to manage them through the Google Cloud interface. In this case, you will create a Billing Project directly within Google. **This must be under the same Google Billing Account as the Projects you want to track spending for.**
+
+
+**Create BigQuery Dataset**
+	to store the billing export
+**Enable data export**
+	Go to the billing tab in the gcloud console and enable export to this dataset
+Make sure the user of this software has the BigQuery scope on the billing project
+
+
+Note that
+
+- You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple lab members, cohorts, etc., as long as they are all under the same Google Billing Account (i.e. have the same funding source)
+- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.
+
+1. [Launch Terra](https://anvil.terra.bio/#workspaces)
+
+1. Locate the Workspace you want to clone. If a Workspace has been shared with you ahead of time, it will appear in "MY WORKSPACES". You can clone a Workspace that was shared with you to perform your own analyses. In the screenshot below, no Workspaces have been shared.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra "MY WORKSPACES" menu. The "MY WORKSPACES" tab is highlighted. No Workspaces are visible because none have been shared with the user. There is an option to create a new Workspace.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.gf5172664d7_0_142")
+    ```
+
+1. If a Workspace hasn't been shared with you, navigate to the "FEATURED" or "PUBLIC" Workspace tabs.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra "My Workspaces" menu. The "FEATURED" tab is highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.gf5172664d7_0_335")
+    ```
