@@ -201,7 +201,7 @@ You can set a single Budget for your entire lab, set up individual budgets for e
 
 ### View spend
 
-```{r, child=c("_child_view_google_spending.Rmd")}
+```{r, child=c("_child_google_billing_view_spend.Rmd")}
 
 ```
 
