@@ -2,7 +2,7 @@
 
 Four of the analysis platforms available on AnVIL include Jupyter Notebook, RStudio, Galaxy, and WDL Workflows.  Each tool offers a unique set of strengths such as accessible analysis reports incorporating multiple languages in the case of [Jupyter](https://anvilproject.org/learn/interactive-analysis/getting-started-with-jupyter-notebooks), rich genomics support through [Bioconductor](https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor) in the case of RStudio, a graphical interface for thousands of tools in the case of [Galaxy](https://anvilproject.org/learn/interactive-analysis/getting-started-with-galaxy), and extreme compute scalability in the case of WDL Workflows.  This chapter focuses on launching and highlighting a few features for the three interactive tools while a later chapter discusses [WDL Workflows](workflows.html).
 
-![](06-tools_files/figure-html//1_CXM3bVvauH6eahRg94zjC6fc6NGDrrnCt33jAABPRk_geb3ae37d4e_0_10.png)<!-- -->
+<img src="06-tools_files/figure-html//1_CXM3bVvauH6eahRg94zjC6fc6NGDrrnCt33jAABPRk_geb3ae37d4e_0_10.png" width="480" />
 
 ## Starting Jupyter Notebook
 

@@ -4,7 +4,7 @@ Workflows allow you to run whole genomic pipelines in Terra. Workflows are writt
 
 You can access workflows from a Workspace by clicking on the Workflows Tab.
 
-<img src="08-workflows_files/figure-html//1mcDeXSRgfN8LsOKihL4dh_wVmo9gFRlefxcB9zALyqQ_gf517266050_0_149.png" title="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted." alt="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted."  />
+<img src="08-workflows_files/figure-html//1mcDeXSRgfN8LsOKihL4dh_wVmo9gFRlefxcB9zALyqQ_gf517266050_0_149.png" title="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted." alt="Image shows a screenshot of the Workspace, with the Workflows Tab highlighted." width="480" />
 
 To run a workflow you can either use a pre-configured workflow, or create your own workflow.
 
