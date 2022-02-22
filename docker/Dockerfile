@@ -43,7 +43,7 @@ COPY git_token.txt .
 
 # Install packages from github
 RUN Rscript --vanilla install_github.R \
-  --packages "jhudsl/didactr, jhudsl/ottr" \
+  --packages "jhudsl/didactr, jhudsl/ottrpal" \
   --token git_token.txt
 
 # Set final workdir for commands
