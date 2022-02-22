@@ -19,7 +19,7 @@ table of contents and enable the `scroll_highlight` feature
 
 ### Goals for This Guide
 
-<img src="04-consortia_files/figure-html//1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) Choose your consortium role, 2) Get your accounts, and 3) Link external accounts." alt="List of goals for this guide: 1) Choose your consortium role, 2) Get your accounts, and 3) Link external accounts."  />
+<img src="04-consortia_files/figure-html//1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) Choose your consortium role, 2) Get your accounts, and 3) Link external accounts." alt="List of goals for this guide: 1) Choose your consortium role, 2) Get your accounts, and 3) Link external accounts." width="480" />
 
 ### Choosing a Role
 
