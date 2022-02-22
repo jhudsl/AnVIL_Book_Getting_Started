@@ -5,15 +5,15 @@ You can always check your current spend through the Google Billing console, but 
 
 The Google Billing console displays information by Billing Account.  To view spending:
   
-1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
+1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using the Google ID associated with your Google Cloud projects.
 
-1. Navigate to [Billing](https://console.cloud.google.com/billing)
+1. Open the dropdown menu on the top left and click on [Billing](https://console.cloud.google.com/billing).
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g115e284bdc2_0_144")
     ```
 
-1. You may be automatically directed to view a specific Billing Account.  If you see information about a single account (other than the one you're interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
+1. You may be automatically directed to view a specific Billing Account. If you see information about a single account (and it’s not the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g115e284bdc2_0_295")

@@ -6,7 +6,7 @@
 ottrpal::include_slide("https://docs.google.com/presentation/d/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY/edit#slide=id.g115e284bdc2_0_144")
     ```
 
-1. You may be automatically directed to view a specific Billing Account. If you see information about a single account (and it’s not the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking “Manage Billing Accounts” from the drop-down menu.
+1. You may be automatically directed to view a specific Billing Account. If you see information about a single account (and it’s not the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY/edit#slide=id.g115e284bdc2_0_295")
