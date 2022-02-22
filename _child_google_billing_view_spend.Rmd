@@ -48,3 +48,4 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBO
     ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Cost table tab.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g1149729109c_0_577")
     ```
+
