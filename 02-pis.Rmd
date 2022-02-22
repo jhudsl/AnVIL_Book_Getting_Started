@@ -24,7 +24,7 @@ table of contents and enable the `scroll_highlight` feature
 ### Goals for This Guide
 
 ```{r, echo=FALSE, fig.alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_165")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_165")
 ```
 
 ### Design Philosophy
@@ -60,7 +60,7 @@ These design decisions are made to help you get up and running as quickly as pos
 AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform (GCP), so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
 
 ```{r, echo=FALSE, fig.alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces"}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_138")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_138")
 ```
 
 1. Create a Google account
@@ -84,7 +84,7 @@ While there are many ways to configure your lab, this guide defines the followin
 ## Step 1: Create a Google Account {#pis-step-1}
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 1 is highlighted."}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_160")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_160")
 ```
 
 
@@ -101,7 +101,7 @@ Terra operates on Google Cloud Platform, so you will need a (free) Google accoun
 ## Step 2: Set Up Google Billing
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 2 is highlighted."}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_170")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_170")
 ```
 
 Terra operates on Google Cloud Platform, and does not charge any markup.  Rather than paying Terra or AnVIL, users set up billing directly with Google Cloud Platform.
@@ -131,7 +131,7 @@ If you have a project manager or finance administrator who needs access to a Bil
 ## Step 3: Add Terra to Google Billing Account
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 3 is highlighted."}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_198")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_198")
 ```
 
 ```{r, child=c("_child_add_terra_to_google_billing_account.Rmd")}
@@ -141,7 +141,7 @@ ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcU
 ## Step 4: Create Terra Billing Projects
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 4 is highlighted."}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_217")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_217")
 ```
 
 
@@ -173,7 +173,7 @@ As mentioned above, we recommend creating separate Terra Billing Projects for ea
 ## Step 5: Set Budgets and Alerts
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 5 is highlighted."}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
 ```
 
 Cloud computing can save a great deal of money, time and effort by providing compute on an as-needed basis.  However, care must be taken that users do not accidentally request excessive resources, or leave resources running when not needed.
@@ -199,61 +199,61 @@ You can set a single Budget for your entire lab, set up individual budgets for e
 1. Navigate to [Billing](https://console.cloud.google.com/billing)
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_153")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_153")
     ```
 
 1. You may be automatically directed to view a specific Billing Account.  If you see information about a single account (other than the one you're interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_167")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_167")
     ```
 
 1. Click on the name of the Billing Account you want to set alerts for.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_5")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_5")
     ```
 
 1. In the left-hand menu, click "Budgets & alerts".
  
     ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the left-hand menu item "Budgets & alerts" highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_11")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_11")
     ```
 
 1. Click "Create Budget".
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the budgets and alerts page for a Google Cloud Billing Account. The "Create Budget" button highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_17")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_17")
     ```
 
 1. Enter a name for your budget, and then choose what you want to monitor.  Click "Next".
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget scope for a Google Cloud Billing Account. Three things are highlighted:  1) the box for entering a "Name" for the budget, 2) the dropdown menu labeled "Projects" for selecting which Billing Projects are part of the budget, and 3) the "Next" button.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_24")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_24")
     ```
 
 1. For Budget Type, select "Specified amount".  Enter the total budget amount for the month (you will set alerts at different thresholds in the next step).  Click "**Next**" (not "Finish").
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget amount for a Google Cloud Billing Account.  The drop-down menu labeled "Budget type" is highlighted and "Specified amount" is selected.  Also highlighted are the text box labeled "Target amount" and the "Next" button.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_32")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_32")
     ```
 
 1. Enter the threshold amounts where you want to receive an alert.  We recommend starting with 50% and 90%.  You can set other alerts if you prefer.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget actions for a Google Cloud Billing Account.  The boxes for entering "Percent of budget" or "Amount" are highlighted.  The drop-down menu labeled "Trigger on" is highlighted and "Actual" is selected.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_40")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_40")
     ```
 
 1. Check the box for "Email alerts to billing admins and users".  Click "**Finish**".  Now you (as the owner and admin), along with anyone you added with admin or user privileges (e.g lab managers) will receive alerts when your lab members reach the specified spending thresholds.  These emails will be sent to the Gmail accounts associated with the Billing Account.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the form for setting budget alerts for a Google Cloud Billing Account.  The checkbox labeled "Email alerts to billing admins and users" is highligheted and checked.  The "Finish" button is highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_44")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_44")
     ```
 
 1. You can edit your budgets at any time by going to Billing > Budgets & alerts, and clicking on the name of the budget you want to edit.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left "hamburger" button for extending the drop-down menu, 2) the drop-down menu item "Billing", 3) the submenu item "Budgets & alerts, 4) the name of a budget.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_55")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_55")
     ```
 
 ### View spend
@@ -269,7 +269,7 @@ Coming soon -- instructions on how to export your cost data so you can better an
 ## Step 6: Add Users and Workspaces
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 6 is highlighted."}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
 ```
 
 Finally, back on Terra, you can add lab members and give them permission to run analyses funded through your Billing Projects.
@@ -298,25 +298,25 @@ Lab members must have logged in to Terra at least once before they can be added 
 1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
 
     ```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_75")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_75")
     ```
 
 1. Click on the name of the Workspace to open the Workspace. Opening a Workspace does not cost anything.  Certain activities in the Workspace (such as running an analysis) will charge to the Workspace’s Billing Project.  Workspace management (e.g. adding and removing members, editing the description) does not cost money.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace page.  The name of a Workspace is highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_103")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_103")
     ```
 
 1. Click the circle with 3 dots on the right hand side to open the Workspace management menu.  Click "Share"
 
     ```{r, echo=FALSE, fig.alt='Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces\'s drop-down menu is highlighted, and the menu item "Share" is highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_109")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_109")
     ```
 
 1. Enter the email address of the user you want to share the Workspace with.  This must be the address associated with the account they are using to access Terra.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled "User email" is highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_116")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_116")
     ```
 
 1. Choose their permission level.  **We recommend adding lab members as Writers** to start.  This gives them permission to freely use the Workspace, (adding and removing data, conducting analyses, etc.) but prevents them from adding additional members who could charge to your Billing Project.
@@ -324,13 +324,13 @@ ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcU
     + "Can share" should **NOT** be checked
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item "Writer" is selected.  The check box labeled "Can share" is annotated with the word "No" and is unchecked.  The checkbox labeled "Can compute" is annotated with the word "Yes" and is checked.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_128")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_128")
     ```
 
 1. Click "Save".  The user should now be able to see the Workspace when logged in to Terra.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The "Save" button is highlighted.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_132")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_132")
     ```
 
 ### User Access Levels and Permissions
@@ -347,7 +347,7 @@ In general we recommend:
 - If working with protected data, take advantage of Authorization Domains to increase security.
 
 ```{r, echo=FALSE, fig.alt='Table summarizing Workspace permission levels.'}
-ottr::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_122")
+ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_122")
 ```
 
 More details about the permissions associated with each Access Level can be found in the [Terra documentation](https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained).
