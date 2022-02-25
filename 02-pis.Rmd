@@ -24,7 +24,7 @@ table of contents and enable the `scroll_highlight` feature
 ### Goals for This Guide
 
 ```{r, echo=FALSE, fig.alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_165")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd5c49c5c55_0_165")
 ```
 
 ### Design Philosophy
@@ -60,7 +60,7 @@ These design decisions are made to help you get up and running as quickly as pos
 AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform (GCP), so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
 
 ```{r, echo=FALSE, fig.alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_138")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_138")
 ```
 
 1. Create a Google account
@@ -84,7 +84,7 @@ While there are many ways to configure your lab, this guide defines the followin
 ## Step 1: Create a Google Account {#pis-step-1}
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 1 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_160")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd5c49c5c55_0_160")
 ```
 
 
@@ -101,7 +101,7 @@ Terra operates on Google Cloud Platform, so you will need a (free) Google accoun
 ## Step 2: Set Up Google Billing
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 2 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd5c49c5c55_0_170")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd5c49c5c55_0_170")
 ```
 
 Terra operates on Google Cloud Platform, and does not charge any markup.  Rather than paying Terra or AnVIL, users set up billing directly with Google Cloud Platform.
@@ -113,7 +113,7 @@ You can create multiple Billing Accounts associated with your Google ID.  We rec
 
 ### Create a Google Billing Account
 
-```{r, child=c("_child_create_google_billing_account.Rmd")}
+```{r, child=c("_child_google_billing_create_account.Rmd")}
 
 ```
 
@@ -124,24 +124,24 @@ If you have a project manager or finance administrator who needs access to a Bil
 - **Users** have a great deal of power over spending - they can create new "Billing Projects" and control who can spend money on those projects.  If you have a lab or accounts manager responsible for expenses, it may make sense to add them as a Billing Account User.  If you wish to retain full control over who can spend money on GCP, you should not add any Users.
 - **Viewers** can see the activity in the Billing Account but can’t make any changes.  This can be useful for finance staff who need access to the reports, or for lab members to be able to see what their analyses are costing.
 
-```{r, child=c("_child_add_member_to_google_billing_account.Rmd")}
+```{r, child=c("_child_google_billing_add_member.Rmd")}
 
 ```
 
 ## Step 3: Add Terra to Google Billing Account
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 3 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_198")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_198")
 ```
 
-```{r, child=c("_child_add_terra_to_google_billing_account.Rmd")}
+```{r, child=c("_child_google_billing_add_terra.Rmd")}
 
 ```
 
 ## Step 4: Create Terra Billing Projects
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 4 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gd84a304855_0_217")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_217")
 ```
 
 
@@ -159,7 +159,7 @@ If you are uncertain, **we recommend starting by setting up a Billing Project pe
 
 ### Create a Billing Project
 
-```{r, child=c("_child_create_terra_billing_project.Rmd")}
+```{r, child=c("_child_terra_create_billing_project.Rmd")}
 
 ```
 
@@ -173,7 +173,7 @@ As mentioned above, we recommend creating separate Terra Billing Projects for ea
 ## Step 5: Set Budgets and Alerts
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 5 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gda79c11827_0_0")
 ```
 
 Cloud computing can save a great deal of money, time and effort by providing compute on an as-needed basis.  However, care must be taken that users do not accidentally request excessive resources, or leave resources running when not needed.
@@ -212,7 +212,7 @@ Coming soon -- instructions on how to export your cost data so you can better an
 ## Step 6: Add Users and Workspaces
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 6 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0/edit#slide=id.gda79c11827_0_0")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gda79c11827_0_64")
 ```
 
 Finally, back on Terra, you can add lab members and give them permission to run analyses funded through your Billing Projects.
