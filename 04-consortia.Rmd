@@ -164,4 +164,3 @@ Note that you must establish [two factor authentication](https://support.google.
 **Congratulations! You have successfully set up your AnVIL account!**
 
 You should now be able to move forward with your consortium activities, such as adding personnel to appropriate datasets or working in a Workspace. Remember that you will need to coordinate with other members of the consortium to establish appropriate permissions for datasets, Terra Billing Projects, and Workspaces.
-
