@@ -43,4 +43,4 @@ Examples and walkthroughs of common tasks on the AnVIL platform:
 
 Note that some sections of this book cover steps in a lot of detail. When navigating the table of contents, you can click subsection (e.g., 2.1, 4.3) headers a second time to expand the table of contents and enable the `scroll_highlight` feature. This can help you follow the separate steps within more clearly.
 
-<img src="01-intro_files/figure-html//18yUr5XSEMgPk8JXFLKfG9JF7L9NpKbCF_mIcXagogKg_gde0d2ef5f6_0_1.png" title="Double-clicking on the H2 headers (for example, 2.1) will expand the contents for view using the 'scroll_highlight' feature." alt="Double-clicking on the H2 headers (for example, 2.1) will expand the contents for view using the 'scroll_highlight' feature." width="480" />
+<img src="01-intro_files/figure-html//1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE_gde0d2ef5f6_0_1.png" title="Double-clicking on the H2 headers (for example, 2.1) will expand the contents for view using the 'scroll_highlight' feature." alt="Double-clicking on the H2 headers (for example, 2.1) will expand the contents for view using the 'scroll_highlight' feature." width="480" />
