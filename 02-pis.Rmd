@@ -226,7 +226,7 @@ Billing permissions on Terra can be confusing.  For this reason, **We recommend 
 
 ### Create a New Workspace
 
-```{r, child=c("_child_create_workspace.Rmd")}
+```{r, child=c("_child_workspace_create.Rmd")}
 
 ```
 
