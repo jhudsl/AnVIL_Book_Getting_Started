@@ -20,7 +20,7 @@ table of contents and enable the `scroll_highlight` feature
 ### Goals for This Guide
 
 ```{r, echo=FALSE, fig.alt="List of goals for this guide: 1) Choose your consortium role, 2) Get your accounts, and 3) Link external accounts."}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1dOubh-sTo5K3okZXx_7OVvUaRO58UzDn7w-pWwHD8CE/edit#slide=id.gd5c49c5c55_0_165")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1H6LfwdDpYxlZ_BhaRKIZnvqr_V_NxE2MfrZuXva8m-8/edit#slide=id.gd5c49c5c55_0_165")
 ```
 
 ### Choosing a Role
