@@ -1,0 +1,40 @@
+1. [Launch Terra](https://anvil.terra.bio/#workspaces)
+
+1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117989bd49c_0_150")
+    ```
+
+1. Click on the name of the Workspace to open the Workspace. Opening a Workspace does not cost anything.  Certain activities in the Workspace (such as running an analysis) will charge to the Workspace’s Billing Project.  Workspace management (e.g. adding and removing members, editing the description) does not cost money.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace page.  The name of a Workspace is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_289")
+    ```
+
+1. Click the circle with 3 dots on the right hand side to open the Workspace management menu.  Click "Share"
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces\'s drop-down menu is highlighted, and the menu item "Share" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_295")
+    ```
+
+1. Enter the email address of the user you want to share the Workspace with.  This must be the address associated with the account they are using to access Terra.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled "User email" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_440")
+    ```
+
+1. Choose their permission level.
+
+    - Remember that all activity in the Workspace will be charged to the Workspace's Billing Project, regardless of who conducts it, so only add members as "Writers" or "Owners" if they should be charging to the Workspace's Billing Project.
+    - "Readers" can view all parts of the Workspace but cannot make edits or run analyses (i.e. they cannot spend money).  They can also clone their own copy of the Workspace where they can conduct activity on their own Billing Project.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item "Writer" is selected.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_756")
+    ```
+
+1. Click "Save".  The user should now be able to see the Workspace when logged in to Terra.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The "Save" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_902")
+    ```
