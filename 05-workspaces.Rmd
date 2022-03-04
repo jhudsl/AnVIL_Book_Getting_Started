@@ -10,7 +10,7 @@ Workspaces are the building blocks of projects in Terra. Inside a Workspace, you
 
 If you are part of a research team, you may have been added to some existing Workspaces.  To find and access your Workspaces, follow the steps below.
 
-```{r, child=c("_child_open_workspace.Rmd")}
+```{r, child=c("_child_workspace_open.Rmd")}
 
 ```
 
