@@ -14,20 +14,6 @@ If you are part of a research team, you may have been added to some existing Wor
 
 ```
 
-## Create a New Workspace
-
-Creating a new Workspace from scratch allows you to fully customize the contents.
-
-Note that you can only create a new Workspace if you are at least a "User" on a Terra Billing Project.  This helps prevent unwanted charges.  Workspaces charge money to their associated Billing Project, regardless of who conducts the activity, so it's important to be careful about who has permission to use the Workspace (see [Add Members to Workspace] for details).
-
-If you need to create a Workspace but don't have permission, contact your PI or lab manager so that they can either grant you permission or create the Workspace for you.
-
-The following steps show you how to create a Workspace so you can get started.
-
-```{r, child=c("_child_create_workspace.Rmd")}
-
-```
-
 ## Clone an Existing Workspace {#clone-workspace}
 
 Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space
@@ -39,6 +25,20 @@ If you need to clone a Workspace but don't have permission to create your own Wo
 The following steps show you how to clone a Workspace that has already been developed by other AnVIL users. When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!
 
 ```{r, child=c("_child_clone_workspace.Rmd")}
+
+```
+
+## Create a New Workspace
+
+Creating a new Workspace from scratch allows you to fully customize the contents.
+
+Note that you can only create a new Workspace if you are at least a "User" on a Terra Billing Project.  This helps prevent unwanted charges.  Workspaces charge money to their associated Billing Project, regardless of who conducts the activity, so it's important to be careful about who has permission to use the Workspace (see [Add Members to Workspace] for details).
+
+If you need to create a Workspace but don't have permission, contact your PI or lab manager so that they can either grant you permission or create the Workspace for you.
+
+The following steps show you how to create a Workspace so you can get started.
+
+```{r, child=c("_child_create_workspace.Rmd")}
 
 ```
 
