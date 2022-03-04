@@ -242,16 +242,16 @@ Lab members can be added to a Workspace with a few different permission levels:
 - **Writers** can make edits and run analyses (i.e. they **can spend your money**)
 - **Owners** can make edits and run analyses and can also manage the permissions of other users (i.e. they **can enable others to spend your money**)
 
-Managing permissions for a Workspace has important implications:
-
-- **Billing**: Terra charges are associated with Workspaces rather than users.  Any billable activity that takes place in a given Workspace will be charged to the associated Billing Project, regardless of who conducted the activity.  If there are multiple users with permission to compute, it is impossible to tell who conducted the activity.
-- **Data access**: Especially when working with protected data, it’s important to ensure that users have proper authorization to view the data before giving them access to a Workspace containing the data.  Terra provides **Authorization Domains** to assist with this.
-
 ```{r, echo=FALSE, fig.alt='Table summarizing Workspace permission levels.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_584")
 ```
 
 More details about the permissions associated with each Access Level can be found in the [Terra documentation](https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained).
+
+Managing permissions for a Workspace has important implications:
+
+- **Billing**: Terra charges are associated with Workspaces rather than users.  Any billable activity that takes place in a given Workspace will be charged to the associated Billing Project, regardless of who conducted the activity.  If there are multiple users with permission to compute, it is impossible to tell who conducted the activity.
+- **Data access**: Especially when working with protected data, it’s important to ensure that users have proper authorization to view the data before giving them access to a Workspace containing the data.  Terra provides **Authorization Domains** to assist with this.
 
 In general we recommend:
 
