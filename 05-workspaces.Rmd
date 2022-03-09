@@ -10,7 +10,7 @@ Workspaces are the building blocks of projects in Terra. Inside a Workspace, you
 
 Creating a new Workspace from scratch allows you to fully customize the contents. The following steps show you how to create a Workspace so you can get started.
 
-```{r, child=c("_child_create_workspace.Rmd")}
+```{r, child=c("_child_workspace_create.Rmd")}
 
 ```
 
@@ -18,6 +18,6 @@ Creating a new Workspace from scratch allows you to fully customize the contents
 
 Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space. That following steps show you how to clone a Workspace that has already been developed by other AnVIL users. When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!
 
-```{r, child=c("_child_clone_workspace.Rmd")}
+```{r, child=c("_child_workspace_clone.Rmd")}
 
 ```
