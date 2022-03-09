@@ -58,6 +58,8 @@ Managing permissions for a Workspace has important implications:
 - **Billing**: Terra charges are associated with Workspaces rather than users.  Any billable activity that takes place in a given Workspace will be charged to the associated Billing Project, regardless of who conducted the activity.  If there are multiple users with permission to compute, it is impossible to tell who conducted the activity.
 - **Data access**: Especially when working with protected data, it’s important to ensure that users have proper authorization to view the data before giving them access to a Workspace containing the data.  Terra provides **Authorization Domains** to assist with this.
 
+Make sure you understand what permissions you are granting before adding someone to your Workspace.
+
 To add a member to a Workspace:
 
 ```{r, child=c("_child_workspace_add_members.Rmd")}
