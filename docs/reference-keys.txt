@@ -60,8 +60,10 @@ account-setup-3
 two-factor-authentication-3
 consortia-wrap-up
 workspaces
-create-a-new-workspace-1
+access-your-workspaces
 clone-workspace
+create-a-new-workspace-1
+add-members-to-workspace
 tools
 starting-jupyter-notebook
 objectives

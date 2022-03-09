@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>D Budget Templates | Getting Started on AnVIL</title>
+  <title>5.4 Add Members to Workspace | Getting Started on AnVIL</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="D Budget Templates | Getting Started on AnVIL" />
+  <meta property="og:title" content="5.4 Add Members to Workspace | Getting Started on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="D Budget Templates | Getting Started on AnVIL" />
+  <meta name="twitter:title" content="5.4 Add Members to Workspace | Getting Started on AnVIL" />
   
   <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="authorization-domains.html"/>
-<link rel="next" href="irb-templates.html"/>
+<link rel="prev" href="create-a-new-workspace-1.html"/>
+<link rel="next" href="tools.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -279,25 +279,40 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="budget-templates" class="section level1" number="12">
-<h1><span class="header-section-number">D</span> Budget Templates</h1>
-<p>If you want to apply for a grant and you plan to use the AnVIL platform for data storage, data movement, and data analysis, you can include the anticipated costs in your proposal. We have created a template for the budget justification paragraph of your grant proposal. The documents described in the following provide you with insightful knowledge.</p>
-<div id="types-of-costs" class="section level3" number="12.0.1">
-<h3><span class="header-section-number">D.0.1</span> Types of Costs</h3>
-<p>There are three types of costs that are typically occur when performing operations on the Google Cloud Platform.</p>
-<p><strong>1. Cost for Computing</strong> is driven by your particular CPU and memory requirements. Importantly, you can save money if your work can tolerate being interrupted (also known as a preemptible compute resource). In this case, you pay less per hour with the understanding that your work may be interrupted by a customer willing to pay more. Details and current pricing can be found <a href="https://cloud.google.com/compute/all-pricing#top_of_page">here</a>.</p>
-<p><strong>2. Cost for Storage</strong> is driven by the amount of data and the length of time you wish to store the data. Here, you can save money if you have data that you do not plan to access frequently. This would be the case for raw data that has already been processed, backups, and archives. Details and current pricing can be found <a href="https://cloud.google.com/storage/pricing#storage-pricing%20and%20https://cloud.google.com/compute/all-pricing#localssdpricing">here</a>.</p>
-<p><strong>3. Cost for Network Usage (egress)</strong> applies to data being transferred out of a Cloud resource. In this context, a Cloud resource refers to a set of computers in a particular region. This would apply, for example, if you transferred data from Google’s East Coast computers to Amazon’s West Coast computers. In general, while it’s free to upload data to the Cloud, you will incur costs when downloading data to your local computer or between Cloud regions. Details and current pricing can be found <a href="https://cloud.google.com/storage/pricing#network-egress">here</a>.</p>
-</div>
-<div id="usage-of-budget-templates" class="section level3" number="12.0.2">
-<h3><span class="header-section-number">D.0.2</span> Usage of Budget Templates</h3>
-<p>In a first step, you can use the template Google Sheet <a href="https://docs.google.com/spreadsheets/d/1GUN93HDRqDbZ0uktaZjoP-y8Ril1T_VIJnQrjRD6tV4">AnVIL_Cost_Estimator</a> to calculate costs for computing, storage, and network usage (egress) for your proposal. In a second step, you can use the template Google Doc <a href="https://docs.google.com/document/d/145JFLn2hviLmaYF-mO06gbCkG0i4HRaWvkUBKORo85Y">AnVIL_Budget_Justification</a> to create a budget justification paragraph for your proposal by including the information highlighted in <span style="background-color: #EA33F7">pink</span>
-(mostly copying entries from your Google Sheet <strong>AnVIL_Cost_Estimator</strong>). Please download and adapt both documents to your project.</p>
-<p>Please check that the prices are up to date by using the links listed below or in the <a href="https://docs.google.com/spreadsheets/d/1GUN93HDRqDbZ0uktaZjoP-y8Ril1T_VIJnQrjRD6tV4">AnVIL_Cost_Estimator</a>.</p>
-<p>For further guidance, you can have a look at a completed document <a href="https://docs.google.com/document/d/1qMZNvZig7vNXposBxA77AIASY0gDCwaYwGl2YwzHXuY">AnVIL_Budget_Justification_Example</a>.</p>
+<div id="add-members-to-workspace" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Add Members to Workspace</h2>
+<p>Members can be added to a Workspace with a few different permission levels:</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_584.png" title="Table summarizing Workspace permission levels." alt="Table summarizing Workspace permission levels." width="480" /></p>
+<p>More details about the permissions associated with each Access Level can be found in the <a href="https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained">Terra documentation</a>.</p>
+<p>Managing permissions for a Workspace has important implications:</p>
+<ul>
+<li><strong>Billing</strong>: Terra charges are associated with Workspaces rather than users. Any billable activity that takes place in a given Workspace will be charged to the associated Billing Project, regardless of who conducted the activity. If there are multiple users with permission to compute, it is impossible to tell who conducted the activity.</li>
+<li><strong>Data access</strong>: Especially when working with protected data, it’s important to ensure that users have proper authorization to view the data before giving them access to a Workspace containing the data. Terra provides <strong>Authorization Domains</strong> to assist with this.</li>
+</ul>
+<p>Make sure you understand what permissions you are granting before adding someone to your Workspace.</p>
+<p>To add a member to a Workspace:</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
+<li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117989bd49c_0_150.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="480" /></p></li>
+<li><p>Click on the name of the Workspace to open the Workspace. Opening a Workspace does not cost anything. Certain activities in the Workspace (such as running an analysis) will charge to the Workspace’s Billing Project. Workspace management (e.g. adding and removing members, editing the description) does not cost money.</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_289.png" title="Screenshot of Terra Workspace page.  The name of a Workspace is highlighted." alt="Screenshot of Terra Workspace page.  The name of a Workspace is highlighted." width="480" /></p></li>
+<li><p>Click the circle with 3 dots on the right hand side to open the Workspace management menu. Click “Share”</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_295.png" title="Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces's drop-down menu is highlighted, and the menu item &quot;Share&quot; is highlighted." alt="Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces's drop-down menu is highlighted, and the menu item &quot;Share&quot; is highlighted." width="480" /></p></li>
+<li><p>Enter the email address of the user you want to share the Workspace with. This must be the address associated with the account they are using to access Terra.</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_440.png" title="Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled &quot;User email&quot; is highlighted." alt="Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled &quot;User email&quot; is highlighted." width="480" /></p></li>
+<li><p>Choose their permission level.</p>
+<ul>
+<li>Remember that all activity in the Workspace will be charged to the Workspace’s Billing Project, regardless of who conducts it, so only add members as “Writers” or “Owners” if they should be charging to the Workspace’s Billing Project.</li>
+<li>“Readers” can view all parts of the Workspace but cannot make edits or run analyses (i.e. they cannot spend money). They can also clone their own copy of the Workspace where they can conduct activity on their own Billing Project.</li>
+</ul>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_756.png" title="Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item &quot;Writer&quot; is selected." alt="Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item &quot;Writer&quot; is selected." width="480" /></p></li>
+<li><p>Click “Save”. The user should now be able to see the Workspace when logged in to Terra.</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_902.png" title="Screenshot of the dialog box for sharing a Terra Workspace.  The &quot;Save&quot; button is highlighted." alt="Screenshot of the dialog box for sharing a Terra Workspace.  The &quot;Save&quot; button is highlighted." width="480" /></p></li>
+</ol>
 
 </div>
-</div>
+<!-- </div> -->
 <hr>
 <center> 
   <div class="footer">
@@ -311,8 +326,8 @@
           </div>
         </div>
       </div>
-<a href="authorization-domains.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="irb-templates.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="create-a-new-workspace-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tools.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -343,7 +358,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/AnVIL_Book_Getting_Started/edit/main/11a-budget-templates.Rmd",
+"link": "https://github.com/jhudsl/AnVIL_Book_Getting_Started/edit/main/05-workspaces.Rmd",
 "text": "Edit"
 },
 "history": {
