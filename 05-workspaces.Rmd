@@ -16,7 +16,7 @@ If you are part of a research team, you may have been added to some existing Wor
 
 ## Clone an Existing Workspace {#clone-workspace}
 
-Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space
+Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space.
 
 Cloning creates a new copy of the Workspace that will charge costs to your own Billing Project. Note that you can only clone a Workspace if you are at least a "User" on a Terra Billing Project.  This helps prevent unwanted charges.  Workspaces charge money to their associated Billing Project, regardless of who conducts the activity, so it's important to be careful about who has permission to use the Workspace (see [Add Members to Workspace] for details).
 
