@@ -37,5 +37,4 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5Ll
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The "Save" button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_902")
-
     ```
