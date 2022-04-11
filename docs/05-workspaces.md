@@ -43,7 +43,6 @@ If you are part of a research team, you may have been added to some existing Wor
 
 From here you can navigate through the different tabs of the Workspace, and if you have sufficient permission, you can start running analyses.  If you are only a Reader, you may need to "clone" (make your own copy) of the Workspace before you can start working.
 
-
 ## Clone an Existing Workspace {#clone-workspace}
 
 Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space.
