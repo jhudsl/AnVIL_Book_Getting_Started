@@ -226,8 +226,11 @@ Billing permissions on Terra can be confusing.  For this reason, **We recommend 
 
 ### Create a New Workspace
 
-```{r, child=c("_child_workspace_create.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "_child_workspace_create.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 **To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, with separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
@@ -262,8 +265,11 @@ In general we recommend:
 
 To add a member to a Workspace:
 
-```{r, child=c("_child_workspace_add_members.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "_child_workspace_add_members.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 

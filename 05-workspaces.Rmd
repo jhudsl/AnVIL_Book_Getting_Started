@@ -18,8 +18,11 @@ The video below gives a brief introduction to the parts of a Workspace.
 If you are part of a research team, you may have been added to some existing Workspaces.  To find and access your Workspaces, follow the steps below.
 
 
-```{r, child=c("_child_workspace_open.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "_child_workspace_open.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ## Clone an Existing Workspace {#clone-workspace}
@@ -32,8 +35,11 @@ If you need to clone a Workspace but don't have permission to create your own Wo
 
 The following steps show you how to clone a Workspace that has already been developed by other AnVIL users. When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!
 
-```{r, child=c("_child_workspace_clone.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "_child_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ## Create a New Workspace
@@ -46,8 +52,11 @@ If you need to create a Workspace but don't have permission, contact your PI or 
 
 The following steps show you how to create a Workspace so you can get started.
 
-```{r, child=c("_child_workspace_create.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "_child_workspace_create.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ## Add Members to Workspace
@@ -69,6 +78,9 @@ Make sure you understand what permissions you are granting before adding someone
 
 To add a member to a Workspace:
 
-```{r, child=c("_child_workspace_add_members.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "_child_workspace_add_members.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
