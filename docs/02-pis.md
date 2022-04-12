@@ -306,7 +306,6 @@ You can set a single Budget for your entire lab, set up individual budgets for e
 
     <img src="02-pis_files/figure-html//1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_1314.png" title="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." alt="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." width="480" />
 
-
 ### View spend
 
 
@@ -346,7 +345,6 @@ The Google Billing console displays information by Billing Account.  To view spe
 1. Click on the **Cost table** tab to obtain a convenient table of spending per project.
     
     <img src="02-pis_files/figure-html//1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_577.png" title="Screenshot of a Google Cloud Billing Account Cost table tab." alt="Screenshot of a Google Cloud Billing Account Cost table tab." width="480" />
-
 
 ### Export Cost Data to BigQuery
 
