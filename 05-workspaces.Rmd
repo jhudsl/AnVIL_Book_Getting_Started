@@ -20,7 +20,7 @@ If you are part of a research team, you may have been added to some existing Wor
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "_child_workspace_open.Rmd",
+  doc_path = "child/_child_workspace_open.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -37,7 +37,7 @@ The following steps show you how to clone a Workspace that has already been deve
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "_child_workspace_clone.Rmd",
+  doc_path = "child/_child_workspace_clone.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -54,7 +54,7 @@ The following steps show you how to create a Workspace so you can get started.
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "_child_workspace_create.Rmd",
+  doc_path = "child/_child_workspace_create.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -80,7 +80,7 @@ To add a member to a Workspace:
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "_child_workspace_add_members.Rmd",
+  doc_path = "child/_child_workspace_share.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```

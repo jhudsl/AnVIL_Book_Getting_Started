@@ -228,7 +228,7 @@ Billing permissions on Terra can be confusing.  For this reason, **We recommend 
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "_child_workspace_create.Rmd",
+  doc_path = "child/_child_workspace_create.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -267,7 +267,7 @@ To add a member to a Workspace:
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "_child_workspace_add_members.Rmd",
+  doc_path = "child/_child_workspace_share.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
