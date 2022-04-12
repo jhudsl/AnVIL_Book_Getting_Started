@@ -94,8 +94,11 @@ Terra operates on Google Cloud Platform, so you will need a (free) Google accoun
 - Access Google Cloud Platform to manage billing
 - Receive alerts when spending reaches specified thresholds
 
-```{r, child=c("_child_create_google_account.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ## Step 2: Set Up Google Billing
@@ -113,8 +116,11 @@ You can create multiple Billing Accounts associated with your Google ID.  We rec
 
 ### Create a Google Billing Account
 
-```{r, child=c("_child_google_billing_create_account.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_billing_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ### Add Users or Viewers (optional)
@@ -124,8 +130,11 @@ If you have a project manager or finance administrator who needs access to a Bil
 - **Users** have a great deal of power over spending - they can create new "Billing Projects" and control who can spend money on those projects.  If you have a lab or accounts manager responsible for expenses, it may make sense to add them as a Billing Account User.  If you wish to retain full control over who can spend money on GCP, you should not add any Users.
 - **Viewers** can see the activity in the Billing Account but can’t make any changes.  This can be useful for finance staff who need access to the reports, or for lab members to be able to see what their analyses are costing.
 
-```{r, child=c("_child_google_billing_add_member.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_billing_add_member.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ## Step 3: Add Terra to Google Billing Account
@@ -134,8 +143,11 @@ If you have a project manager or finance administrator who needs access to a Bil
 ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_198")
 ```
 
-```{r, child=c("_child_google_billing_add_terra.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_billing_add_terra.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ## Step 4: Create Terra Billing Projects
@@ -159,8 +171,11 @@ If you are uncertain, **we recommend starting by setting up a Billing Project pe
 
 ### Create a Billing Project
 
-```{r, child=c("_child_terra_create_billing_project.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_create_billing_project.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 As mentioned above, we recommend creating separate Terra Billing Projects for each of your team members so you can track their spending.  These Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
@@ -195,14 +210,20 @@ You can set a single Budget for your entire lab, set up individual budgets for e
 
 ### Set Alerts
 
-```{r, child=c("_child_google_billing_set_alerts.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_billing_set_alerts.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ### View spend
 
-```{r, child=c("_child_google_billing_view_spend.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_billing_view_spend.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ### Export Cost Data to BigQuery
