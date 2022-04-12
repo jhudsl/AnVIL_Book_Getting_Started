@@ -34,8 +34,11 @@ In this guide, you will go through the following steps:
 
 Terra operates on Google Cloud Platform, so you will need a (free) Google account to create a Terra account and run analyses on AnVIL.
 
-```{r, child=c("_child_create_google_account.Rmd")}
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
 ```
 
 ## Step 2: Set Up Terra
