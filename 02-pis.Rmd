@@ -238,7 +238,7 @@ In order to make use of these tools, you will need to set up exporting of your c
 
 #### Set Up Data Export
 
-```{r, child=c("_child_export_cost_data_to_BigQuery.Rmd")}
+```{r, child=c("_child_google_biling_export_to_BigQuery.Rmd")}
 
 ```
 
