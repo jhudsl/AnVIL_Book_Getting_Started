@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-01-21" />
+<meta name="date" content="2022-04-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
 <link rel="prev" href="starting-galaxy.html"/>
 <link rel="next" href="bring-your-own-data.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -113,7 +113,6 @@
 <ul>
 <li class="chapter" data-level="2.7.1" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
 <li class="chapter" data-level="2.7.2" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
-<li class="chapter" data-level="2.7.3" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#user-access-levels-and-permissions"><i class="fa fa-check"></i><b>2.7.3</b> User Access Levels and Permissions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="pis-wrap-up.html"><a href="pis-wrap-up.html"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
 </ul></li>
@@ -169,8 +168,10 @@
 <li class="part"><span><b>Working on AnVIL</b></span></li>
 <li class="chapter" data-level="5" data-path="workspaces.html"><a href="workspaces.html"><i class="fa fa-check"></i><b>5</b> Workspaces</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.1</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.1" data-path="access-your-workspaces.html"><a href="access-your-workspaces.html"><i class="fa fa-check"></i><b>5.1</b> Access Your Workspaces</a></li>
 <li class="chapter" data-level="5.2" data-path="clone-workspace.html"><a href="clone-workspace.html"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
+<li class="chapter" data-level="5.3" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.3</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.4" data-path="add-members-to-workspace.html"><a href="add-members-to-workspace.html"><i class="fa fa-check"></i><b>5.4</b> Add Members to Workspace</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>6</b> Tools</a>
 <ul>
@@ -283,9 +284,9 @@
 <p>Data is stored by Workspaces in two different locations: the Workspace Bucket and the Persistent Disk.</p>
 <p>The Workspace Bucket is a special Google Cloud Storage bucket that is governed by the built-in AnVIL security policies. This durable and scalable storage location is suitable for both raw data as well as analysis outputs that need to be preserved and/or shared.</p>
 <p>In contrast, Persistent Disks provide a working directory for Cloud Environments that run Jupyter, RStudio, and Galaxy. Input data can be localized to Persistent Disks for analysis while output data can be transferred to the Workspace Bucket for more reliable long term storage.</p>
-<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf982a3b800_0_4.png" title="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset."  /></p>
+<p><img src="07-data_files/figure-html/1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3b800_0_4.png" title="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." width="480" /></p>
 <p>Data Tables provide a way to organize data and metadata, including URI links to storage buckets. These tables are a convenient way to organize input for analyses as well as tracking workflow outputs. More details can be found in the <a href="https://support.terra.bio/hc/en-us/sections/360004147951">Terra documentation</a>.</p>
-<p><img src="07-data_files/figure-html/12QpKaLfqNHPgvF5JJyNNGOEEtkwY1exmRAUeK1BsEG8_gf982a3c0cd_0_0.png" title="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;." alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;."  /></p>
+<p><img src="07-data_files/figure-html/1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3c0cd_0_0.png" title="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;." alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;." width="480" /></p>
 </div>
 <hr>
 <center> 

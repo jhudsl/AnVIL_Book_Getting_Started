@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-01-21" />
+<meta name="date" content="2022-04-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
 <link rel="prev" href="pis-and-lab-managers.html"/>
 <link rel="next" href="pis-step-1.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -113,7 +113,6 @@
 <ul>
 <li class="chapter" data-level="2.7.1" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
 <li class="chapter" data-level="2.7.2" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
-<li class="chapter" data-level="2.7.3" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#user-access-levels-and-permissions"><i class="fa fa-check"></i><b>2.7.3</b> User Access Levels and Permissions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="pis-wrap-up.html"><a href="pis-wrap-up.html"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
 </ul></li>
@@ -169,8 +168,10 @@
 <li class="part"><span><b>Working on AnVIL</b></span></li>
 <li class="chapter" data-level="5" data-path="workspaces.html"><a href="workspaces.html"><i class="fa fa-check"></i><b>5</b> Workspaces</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.1</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.1" data-path="access-your-workspaces.html"><a href="access-your-workspaces.html"><i class="fa fa-check"></i><b>5.1</b> Access Your Workspaces</a></li>
 <li class="chapter" data-level="5.2" data-path="clone-workspace.html"><a href="clone-workspace.html"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
+<li class="chapter" data-level="5.3" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.3</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.4" data-path="add-members-to-workspace.html"><a href="add-members-to-workspace.html"><i class="fa fa-check"></i><b>5.4</b> Add Members to Workspace</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>6</b> Tools</a>
 <ul>
@@ -282,7 +283,7 @@
 <h2><span class="header-section-number">2.1</span> Account Setup Overview</h2>
 <div id="goals-for-this-guide" class="section level3" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Goals for This Guide</h3>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."  /></p>
+<p><img src="02-pis_files/figure-html/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." width="480" /></p>
 </div>
 <div id="design-philosophy" class="section level3" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Design Philosophy</h3>
@@ -321,8 +322,8 @@
 </div>
 <div id="account-setup-pis" class="section level3" number="2.1.4">
 <h3><span class="header-section-number">2.1.4</span> Starting Setup</h3>
-<p>AnVIL uses <a href="https://anvil.terra.bio/">Terra</a> to run analyses. Terra operates on Google Cloud Platform, so you’ll pay for all storage and analysis costs through a Google account linked to Terra. The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis. These costs are passed along through Terra without any markup.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_138.png" title="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces" alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces"  /></p>
+<p>AnVIL uses <a href="https://anvil.terra.bio/">Terra</a> to run analyses. Terra operates on Google Cloud Platform (GCP), so you’ll pay for all storage and analysis costs through a Google account linked to Terra. The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis. These costs are passed along through Terra without any markup.</p>
+<p><img src="02-pis_files/figure-html/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd84a304855_0_138.png" title="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces" alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces" width="480" /></p>
 <ol style="list-style-type: decimal">
 <li>Create a Google account</li>
 <li>Set up Google Billing (and claim your free credits!).

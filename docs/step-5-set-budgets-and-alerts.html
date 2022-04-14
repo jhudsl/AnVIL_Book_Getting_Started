@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-01-21" />
+<meta name="date" content="2022-04-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
 <link rel="prev" href="step-4-create-terra-billing-projects.html"/>
 <link rel="next" href="step-6-add-users-and-workspaces.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -113,7 +113,6 @@
 <ul>
 <li class="chapter" data-level="2.7.1" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
 <li class="chapter" data-level="2.7.2" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
-<li class="chapter" data-level="2.7.3" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#user-access-levels-and-permissions"><i class="fa fa-check"></i><b>2.7.3</b> User Access Levels and Permissions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="pis-wrap-up.html"><a href="pis-wrap-up.html"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
 </ul></li>
@@ -169,8 +168,10 @@
 <li class="part"><span><b>Working on AnVIL</b></span></li>
 <li class="chapter" data-level="5" data-path="workspaces.html"><a href="workspaces.html"><i class="fa fa-check"></i><b>5</b> Workspaces</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.1</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.1" data-path="access-your-workspaces.html"><a href="access-your-workspaces.html"><i class="fa fa-check"></i><b>5.1</b> Access Your Workspaces</a></li>
 <li class="chapter" data-level="5.2" data-path="clone-workspace.html"><a href="clone-workspace.html"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
+<li class="chapter" data-level="5.3" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.3</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.4" data-path="add-members-to-workspace.html"><a href="add-members-to-workspace.html"><i class="fa fa-check"></i><b>5.4</b> Add Members to Workspace</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>6</b> Tools</a>
 <ul>
@@ -280,7 +281,7 @@
 </div>
 <div id="step-5-set-budgets-and-alerts" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Step 5: Set Budgets and Alerts</h2>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_0.png" title="Diagram showing an overview of the six steps. Step 5 is highlighted." alt="Diagram showing an overview of the six steps. Step 5 is highlighted."  /></p>
+<p><img src="02-pis_files/figure-html/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gda79c11827_0_0.png" title="Diagram showing an overview of the six steps. Step 5 is highlighted." alt="Diagram showing an overview of the six steps. Step 5 is highlighted." width="480" /></p>
 <p>Cloud computing can save a great deal of money, time and effort by providing compute on an as-needed basis. However, care must be taken that users do not accidentally request excessive resources, or leave resources running when not needed.</p>
 <p>Unfortunately, there are two issues that make direct cost control difficult:</p>
 <ul>
@@ -298,27 +299,27 @@
 <div id="set-alerts" class="section level3" number="2.6.1">
 <h3><span class="header-section-number">2.6.1</span> Set Alerts</h3>
 <ol style="list-style-type: decimal">
-<li><p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using your Google ID.</p></li>
-<li><p>Navigate to <a href="https://console.cloud.google.com/billing">Billing</a></p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_153.png" title="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted."  /></p></li>
-<li><p>You may be automatically directed to view a specific Billing Account. If you see information about a single account (other than the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking “Manage Billing Accounts” from the drop-down menu.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_167.png" title="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted."  /></p></li>
+<li><p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using the Google ID associated with your Google Cloud projects.</p></li>
+<li><p>Open the dropdown menu on the top left and click on <a href="https://console.cloud.google.com/billing">Billing</a>.</p>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_144.png" title="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." width="480" /></p></li>
+<li><p>You may be automatically directed to view a specific Billing Account. If you see information about a single account (and it’s not the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking “Manage Billing Accounts” from the drop-down menu.</p>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_295.png" title="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." width="480" /></p></li>
 <li><p>Click on the name of the Billing Account you want to set alerts for.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_5.png" title="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted." alt="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted."  /></p></li>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_150.png" title="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted." alt="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted." width="480" /></p></li>
 <li><p>In the left-hand menu, click “Budgets &amp; alerts”.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_11.png" title="Screenshot of an individual Google Cloud Billing Account with the left-hand menu item &quot;Budgets &amp; alerts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the left-hand menu item &quot;Budgets &amp; alerts&quot; highlighted."  /></p></li>
-<li><p>Click “Create Budget”.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_17.png" title="Screenshot of the budgets and alerts page for a Google Cloud Billing Account. The &quot;Create Budget&quot; button highlighted." alt="Screenshot of the budgets and alerts page for a Google Cloud Billing Account. The &quot;Create Budget&quot; button highlighted."  /></p></li>
-<li><p>Enter a name for your budget, and then choose what you want to monitor. Click “Next”.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_24.png" title="Screenshot of the form for setting budget scope for a Google Cloud Billing Account. Three things are highlighted:  1) the box for entering a &quot;Name&quot; for the budget, 2) the dropdown menu labeled &quot;Projects&quot; for selecting which Billing Projects are part of the budget, and 3) the &quot;Next&quot; button." alt="Screenshot of the form for setting budget scope for a Google Cloud Billing Account. Three things are highlighted:  1) the box for entering a &quot;Name&quot; for the budget, 2) the dropdown menu labeled &quot;Projects&quot; for selecting which Billing Projects are part of the budget, and 3) the &quot;Next&quot; button."  /></p></li>
-<li><p>For Budget Type, select “Specified amount”. Enter the total budget amount for the month (you will set alerts at different thresholds in the next step). Click “<strong>Next</strong>” (not “Finish”).</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_32.png" title="Screenshot of the form for setting budget amount for a Google Cloud Billing Account.  The drop-down menu labeled &quot;Budget type&quot; is highlighted and &quot;Specified amount&quot; is selected.  Also highlighted are the text box labeled &quot;Target amount&quot; and the &quot;Next&quot; button." alt="Screenshot of the form for setting budget amount for a Google Cloud Billing Account.  The drop-down menu labeled &quot;Budget type&quot; is highlighted and &quot;Specified amount&quot; is selected.  Also highlighted are the text box labeled &quot;Target amount&quot; and the &quot;Next&quot; button."  /></p></li>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_442.png" title="Screenshot of an individual Google Cloud Billing Account with the left-hand menu item &quot;Budgets &amp; alerts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the left-hand menu item &quot;Budgets &amp; alerts&quot; highlighted." width="480" /></p></li>
+<li><p>Click the “Create Budget” tab.</p>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_587.png" title="Screenshot of the budgets and alerts page for a Google Cloud Billing Account. The &quot;Create Budget&quot; button highlighted." alt="Screenshot of the budgets and alerts page for a Google Cloud Billing Account. The &quot;Create Budget&quot; button highlighted." width="480" /></p></li>
+<li><p>Enter a name for your budget, and then choose which projects you want to monitor. Then click “Next”.</p>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_732.png" title="Screenshot of the form for setting budget scope for a Google Cloud Billing Account. Three things are highlighted:  1) the box for entering a &quot;Name&quot; for the budget, 2) the dropdown menu labeled &quot;Projects&quot; for selecting which Billing Projects are part of the budget, and 3) the &quot;Next&quot; button." alt="Screenshot of the form for setting budget scope for a Google Cloud Billing Account. Three things are highlighted:  1) the box for entering a &quot;Name&quot; for the budget, 2) the dropdown menu labeled &quot;Projects&quot; for selecting which Billing Projects are part of the budget, and 3) the &quot;Next&quot; button." width="480" /></p></li>
+<li><p>For Budget Type, select “Specified amount”. Enter the total budget amount for the month (you will set alerts at different thresholds in the next step). Click “<strong>Next</strong>” (do not click “Finish”).</p>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_878.png" title="Screenshot of the form for setting budget amount for a Google Cloud Billing Account.  The drop-down menu labeled &quot;Budget type&quot; is highlighted and &quot;Specified amount&quot; is selected.  Also highlighted are the text box labeled &quot;Target amount&quot; and the &quot;Next&quot; button." alt="Screenshot of the form for setting budget amount for a Google Cloud Billing Account.  The drop-down menu labeled &quot;Budget type&quot; is highlighted and &quot;Specified amount&quot; is selected.  Also highlighted are the text box labeled &quot;Target amount&quot; and the &quot;Next&quot; button." width="480" /></p></li>
 <li><p>Enter the threshold amounts where you want to receive an alert. We recommend starting with 50% and 90%. You can set other alerts if you prefer.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_40.png" title="Screenshot of the form for setting budget actions for a Google Cloud Billing Account.  The boxes for entering &quot;Percent of budget&quot; or &quot;Amount&quot; are highlighted.  The drop-down menu labeled &quot;Trigger on&quot; is highlighted and &quot;Actual&quot; is selected." alt="Screenshot of the form for setting budget actions for a Google Cloud Billing Account.  The boxes for entering &quot;Percent of budget&quot; or &quot;Amount&quot; are highlighted.  The drop-down menu labeled &quot;Trigger on&quot; is highlighted and &quot;Actual&quot; is selected."  /></p></li>
-<li><p>Check the box for “Email alerts to billing admins and users”. Click “<strong>Finish</strong>”. Now you (as the owner and admin), along with anyone you added with admin or user privileges (e.g lab managers) will receive alerts when your lab members reach the specified spending thresholds. These emails will be sent to the Gmail accounts associated with the Billing Account.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_44.png" title="Screenshot of the form for setting budget alerts for a Google Cloud Billing Account.  The checkbox labeled &quot;Email alerts to billing admins and users&quot; is highligheted and checked.  The &quot;Finish&quot; button is highlighted." alt="Screenshot of the form for setting budget alerts for a Google Cloud Billing Account.  The checkbox labeled &quot;Email alerts to billing admins and users&quot; is highligheted and checked.  The &quot;Finish&quot; button is highlighted."  /></p></li>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_1025.png" title="Screenshot of the form for setting budget actions for a Google Cloud Billing Account.  The boxes for entering &quot;Percent of budget&quot; or &quot;Amount&quot; are highlighted.  The drop-down menu labeled &quot;Trigger on&quot; is highlighted and &quot;Actual&quot; is selected." alt="Screenshot of the form for setting budget actions for a Google Cloud Billing Account.  The boxes for entering &quot;Percent of budget&quot; or &quot;Amount&quot; are highlighted.  The drop-down menu labeled &quot;Trigger on&quot; is highlighted and &quot;Actual&quot; is selected." width="480" /></p></li>
+<li><p>Check the box for “Email alerts to billing admins and users”, then click “<strong>Finish</strong>”. Now you (as the owner and admin), along with anyone you added with admin or user privileges (e.g. lab managers) will receive alerts when your lab members reach the specified spending thresholds. These emails will be sent to the Gmail accounts associated with the Billing Account.</p>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_1169.png" title="Screenshot of the form for setting budget alerts for a Google Cloud Billing Account.  The checkbox labeled &quot;Email alerts to billing admins and users&quot; is highligheted and checked.  The &quot;Finish&quot; button is highlighted." alt="Screenshot of the form for setting budget alerts for a Google Cloud Billing Account.  The checkbox labeled &quot;Email alerts to billing admins and users&quot; is highligheted and checked.  The &quot;Finish&quot; button is highlighted." width="480" /></p></li>
 <li><p>You can edit your budgets at any time by going to Billing &gt; Budgets &amp; alerts, and clicking on the name of the budget you want to edit.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_55.png" title="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." alt="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget."  /></p></li>
+<p><img src="02-pis_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_1314.png" title="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." alt="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." width="480" /></p></li>
 </ol>
 </div>
 <div id="view-spend" class="section level3" number="2.6.2">
@@ -330,21 +331,21 @@
 </ul>
 <p>The Google Billing console displays information by Billing Account. To view spending:</p>
 <ol style="list-style-type: decimal">
-<li><p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using your Google ID.</p></li>
-<li><p>Navigate to <a href="https://console.cloud.google.com/billing">Billing</a></p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_153.png" title="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted."  /></p></li>
-<li><p>You may be automatically directed to view a specific Billing Account. If you see information about a single account (other than the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking “Manage Billing Accounts” from the drop-down menu.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gd84a304855_0_167.png" title="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted."  /></p></li>
+<li><p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using the Google ID associated with your Google Cloud projects.</p></li>
+<li><p>Open the dropdown menu on the top left and click on <a href="https://console.cloud.google.com/billing">Billing</a>.</p>
+<p><img src="02-pis_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g115e284bdc2_0_144.png" title="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with &quot;Billing&quot; highlighted." width="480" /></p></li>
+<li><p>You may be automatically directed to view a specific Billing Account. If you see information about a single account (and it’s not the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking “Manage Billing Accounts” from the drop-down menu.</p>
+<p><img src="02-pis_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g115e284bdc2_0_295.png" title="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." alt="Screenshot of an individual Google Cloud Billing Account with the drop-down menu item &quot;Manage Billing Accounts&quot; highlighted." width="480" /></p></li>
 <li><p>Click on the name of the Billing Account for the project you want to view.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_gda79c11827_0_5.png" title="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted." alt="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted."  /></p></li>
+<p><img src="02-pis_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g115e284bdc2_0_150.png" title="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted." alt="Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted." width="480" /></p></li>
 <li><p>Look at the top of the <strong>Overview</strong> tab to see your month-to-date spending.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_0.png" title="Screenshot of a Google Cloud Billing Account Overview." alt="Screenshot of a Google Cloud Billing Account Overview."  /></p></li>
+<p><img src="02-pis_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_0.png" title="Screenshot of a Google Cloud Billing Account Overview." alt="Screenshot of a Google Cloud Billing Account Overview." width="480" /></p></li>
 <li><p>Scroll further down the <strong>Overview</strong> tab to show your top projects.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_4.png" title="Screenshot of a Google Cloud Billing Account top projects." alt="Screenshot of a Google Cloud Billing Account top projects."  /></p></li>
+<p><img src="02-pis_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_143.png" title="Screenshot of a Google Cloud Billing Account top projects." alt="Screenshot of a Google Cloud Billing Account top projects." width="480" /></p></li>
 <li><p>Click on the <strong>Reports</strong> tab to see more detailed information about each of your billing projects. This is probably the most useful tab for exploring costs of individual projects over time.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_8.png" title="Screenshot of a Google Cloud Billing Account Reports tab." alt="Screenshot of a Google Cloud Billing Account Reports tab."  /></p></li>
+<p><img src="02-pis_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_433.png" title="Screenshot of a Google Cloud Billing Account Reports tab." alt="Screenshot of a Google Cloud Billing Account Reports tab." width="480" /></p></li>
 <li><p>Click on the <strong>Cost table</strong> tab to obtain a convenient table of spending per project.</p>
-<p><img src="02-pis_files/figure-html/162GS7ArBPM4w_rPazcUrpnoEKT7jx9i7fpPQkH_iC_0_ge3b5f92447_0_12.png" title="Screenshot of a Google Cloud Billing Account Cost table tab." alt="Screenshot of a Google Cloud Billing Account Cost table tab."  /></p></li>
+<p><img src="02-pis_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_577.png" title="Screenshot of a Google Cloud Billing Account Cost table tab." alt="Screenshot of a Google Cloud Billing Account Cost table tab." width="480" /></p></li>
 </ol>
 </div>
 <div id="export-cost-data-to-bigquery" class="section level3" number="2.6.3">

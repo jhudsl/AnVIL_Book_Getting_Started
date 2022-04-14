@@ -25,7 +25,6 @@ export-cost-data-to-bigquery
 step-6-add-users-and-workspaces
 create-a-new-workspace
 add-members-to-workspaces
-user-access-levels-and-permissions
 pis-wrap-up
 data-analysts
 overview-analysts
@@ -61,8 +60,10 @@ account-setup-3
 two-factor-authentication-3
 consortia-wrap-up
 workspaces
-create-a-new-workspace-1
+access-your-workspaces
 clone-workspace
+create-a-new-workspace-1
+add-members-to-workspace
 tools
 starting-jupyter-notebook
 objectives
