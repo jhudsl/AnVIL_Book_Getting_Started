@@ -1,4 +1,6 @@
 
+*Updated April 2022.  See the [Google Cloud Documentation](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-setup) for the latest documentation and additional details.*
+
 Exporting billing data to BigQuery requires a few steps to set up:
 
 1. Create BigQuery Billing Project
@@ -13,10 +15,15 @@ First you will need to create a Google Billing Project that will run the export 
 Reminder:
 
 - A **Google Billing Account** manages your *funding source* (e.g. credit card, cloud credits).  You probably only need one Billing Account unless you have multiple funding sources.
-- A **Google Billing Project** manages activity you do on GCP.  Once Billing Account can fund multiple Billing Projects.
+- A **Google Billing Project** manages activity you do on GCP.  Multiple Billing Projects can be funded by a single Billing Account.
 :::
 
 Usually you will create your Billing Projects through Terra and won't need to manage them through the Google Cloud interface. In this case, you will create a Billing Project directly within Google. **This must be under the same Google Billing Account as the Projects you want to track spending for.**
+
+
+To create a new Google Billing Project:
+
+1. 
 
 
 **Create BigQuery Dataset**
@@ -26,9 +33,9 @@ Usually you will create your Billing Projects through Terra and won't need to ma
 Make sure the user of this software has the BigQuery scope on the billing project
 
 
-Note that
+Note that:
 
-- You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple lab members, cohorts, etc., as long as they are all under the same Google Billing Account (i.e. have the same funding source)
+- You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Billing Projects (i.e. lab members, cohorts, etc.), as long as they are all under the same Google Billing Account.
 - If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
