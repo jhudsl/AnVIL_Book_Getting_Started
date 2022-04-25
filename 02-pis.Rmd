@@ -38,9 +38,8 @@ b. Control who can charge to your account by limiting who can “share” permis
 
 2. COST TRANSPARENCY
 
-a. Allow fine-grain accounting of who spent what by creating individual "Billing Projects" for each user
-b. Monitor costs by setting up email alerts to warn you when you reach spending thresholds
-c. Enable detailed analysis of costs by exporting cost data using BigQuery
+a. Monitor costs by setting up email alerts to warn you when you reach spending thresholds
+b. Enable detailed analysis of costs by exporting cost data using BigQuery
 
 3. DATA ACCESS CONTROLS
 
@@ -67,7 +66,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hz
 1. Set up Google Billing (and claim your free credits!).
     + Add an administrator or viewer (optional)
 1. Link Terra to the Google Billing Account
-1. Create Terra Billing Projects
+1. Create Terra Billing Project(s)
 1. Set budgets and alerts (optional, but highly recommended)
 1. Add users and Workspaces
 
@@ -150,7 +149,7 @@ cow::borrow_chapter(
 )
 ```
 
-## Step 4: Create Terra Billing Projects
+## Step 4: Create Terra Billing Project(s)
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 4 is highlighted."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_217")
@@ -158,16 +157,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hz
 
 
 This is how you enable Terra users to charge to the Google Billing Account.
-
-Note that Google will report charges at the level of Billing Projects.  **If you create only one Billing Project for your lab, you will not be able to see a breakdown of where charges are coming from**.
-
-It is highly recommended that you create separate Billing Projects for each category of spending you would like to track.  For example:
-
-- A Billing Project for each **lab member**, if you would like to track individual spending
-- A Billing Project for each **analysis type**, if you would like to track spending on e.g. RNA-seq vs. variant calling.
-- A Billing Project for each **cohort**, if you would like to track spending per data set
-
-If you are uncertain, **we recommend starting by setting up a Billing Project per lab member**.  This makes it easy to track lab member spending, and also makes it easier to cleanly shut down projects when a member leaves the lab.
 
 ### Create a Billing Project
 
@@ -178,7 +167,7 @@ cow::borrow_chapter(
 )
 ```
 
-As mentioned above, we recommend creating separate Terra Billing Projects for each of your team members so you can track their spending.  These Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
+When starting out, a single Billing Project is generally sufficient.  As you and your team grow comfortable with AnVIL, you may find it useful to create additional Billing Projects to organize your spending. Multiple Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
 
 **Having trouble?**
 
@@ -206,7 +195,7 @@ As a PI or lab manager, there are some steps you can take to help monitor and li
 
 **We highly recommended you set budgets and alerts to notify you if spending starts to exceed expectations**.  This will make it easier to notice and shut down any accidental overspending.  A good starting point is to set a monthly budget, and then set alerts at **50 percent** and **90 percent** of expected spend.  You can add additional alerts if you desire.
 
-You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
+You can set a single Budget for your entire lab, set up budgets for individual Workspaces, or even set budgets for certain subsets of Workspaces.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
 
 ### Set Alerts
 
@@ -254,7 +243,7 @@ cow::borrow_chapter(
 )
 ```
 
-**To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, with separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed (there are no limits on the number of Workspaces).
+**To start, we recommend creating one Workspace for each lab member**.  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed.
 
 ### Add Members to Workspaces
 
