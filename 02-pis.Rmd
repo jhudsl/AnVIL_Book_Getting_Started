@@ -283,6 +283,14 @@ cow::borrow_chapter(
 ```
 
 
+### Request Quota Increase
+
+To prevent abuse, new users of GCP are only permitted to create a few Google Cloud "Projects".  When working on Terra, each Terra Workspace is associated with its own Google Cloud Project, so if your team has multiple members you can bump up against this limit fairly quickly and won't be able to create more Workspaces.
+
+Since this limit is imposed by Google, you will need to contact them directly to request a quota increase, using [this form](https://support.google.com/code/contact/billing_quota_increase).
+
+At the time of writing (April 2022) Terra is working to expedite this process for Terra users; we recommend checking the [relevant Terra documentation](https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY) for the latest information as well as recommendations about how to fill out the form.
+
 ## Wrap-Up {#pis-wrap-up}
 
 **Congratulations!  You have successfully set up AnVIL for your lab!**
