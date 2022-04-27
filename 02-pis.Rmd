@@ -300,7 +300,7 @@ To prevent abuse, new users of GCP are only permitted to create a few Google Clo
 
 Since this limit is imposed by Google, you will need to contact them directly to request a quota increase, using [this form](https://support.google.com/code/contact/billing_quota_increase).
 
-As the time of writing (May 2022) Terra is working to expedite this process for Terra users; we recommend checking the [relevant Terra documentation](https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY) for the latest information as well as recommendations about how to fill out the form.
+At the time of writing (April 2022) Terra is working to expedite this process for Terra users; we recommend checking the [relevant Terra documentation](https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY) for the latest information as well as recommendations about how to fill out the form.
 
 ## Wrap-Up {#pis-wrap-up}
 
