@@ -23,7 +23,7 @@ table of contents and enable the `scroll_highlight` feature
 
 ### Goals for This Guide
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending." width="480" />
 
 ### Design Philosophy
 
@@ -56,7 +56,7 @@ These design decisions are made to help you get up and running as quickly as pos
 
 AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform (GCP), so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd84a304855_0_138.png" title="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces" alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces" width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_g12eb9cd9a00_0_0.png" title="Diagram showing an overview of the six steps for setting up your team on AnVIL.  Step 1: A 'PI' signs in to Google Cloud Platform.Step 2: The PI creates a Google Billing Account.  Step 3: The Google Billing Account is connected to Terra to provide funding. Step 4: The PI creates Billing Projects and Workspaces.  Step 5: Team members are added to Terra Workspaces and Billing Projects and Step 6: The charges are repoted through Google Cloud Platform." alt="Diagram showing an overview of the six steps for setting up your team on AnVIL.  Step 1: A 'PI' signs in to Google Cloud Platform.Step 2: The PI creates a Google Billing Account.  Step 3: The Google Billing Account is connected to Terra to provide funding. Step 4: The PI creates Billing Projects and Workspaces.  Step 5: Team members are added to Terra Workspaces and Billing Projects and Step 6: The charges are repoted through Google Cloud Platform." width="480" />
 
 1. Create a Google account
 1. Set up Google Billing (and claim your free credits!).
@@ -78,7 +78,7 @@ While there are many ways to configure your lab, this guide defines the followin
 
 ## Step 1: Create a Google Account {#pis-step-1}
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd5c49c5c55_0_160.png" title="Diagram showing an overview of the six steps. Step 1 is highlighted." alt="Diagram showing an overview of the six steps. Step 1 is highlighted." width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_g11d096f1de6_0_0.png" title="Diagram showing an overview of the six steps. Step 1 is highlighted." alt="Diagram showing an overview of the six steps. Step 1 is highlighted." width="480" />
 
 
 Terra operates on Google Cloud Platform, so you will need a (free) Google account which will allow you to
@@ -94,7 +94,7 @@ If you would like to create a Google account that is associated with your non-Gm
 
 ## Step 2: Set Up Google Billing
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd5c49c5c55_0_170.png" title="Diagram showing an overview of the six steps. Step 2 is highlighted." alt="Diagram showing an overview of the six steps. Step 2 is highlighted." width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_g11d096f1de6_0_25.png" title="Diagram showing an overview of the six steps. Step 2 is highlighted." alt="Diagram showing an overview of the six steps. Step 2 is highlighted." width="480" />
 
 Terra operates on Google Cloud Platform, and does not charge any markup.  Rather than paying Terra or AnVIL, users set up billing directly with Google Cloud Platform.
 
@@ -163,7 +163,7 @@ To add a member to a Billing Project:
 
 ## Step 3: Add Terra to Google Billing Account
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd84a304855_0_198.png" title="Diagram showing an overview of the six steps. Step 3 is highlighted." alt="Diagram showing an overview of the six steps. Step 3 is highlighted." width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_g11d096f1de6_0_50.png" title="Diagram showing an overview of the six steps. Step 3 is highlighted." alt="Diagram showing an overview of the six steps. Step 3 is highlighted." width="480" />
 
 
 This gives Terra permission to create projects and send charges to the Google Billing Account, and must be done by an administrator of the Google Billing Account.
@@ -193,7 +193,7 @@ Terra needs to be added as a "Billing Account User":
 
 ## Step 4: Create Terra Billing Project(s)
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gd84a304855_0_217.png" title="Diagram showing an overview of the six steps. Step 4 is highlighted." alt="Diagram showing an overview of the six steps. Step 4 is highlighted." width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_g11d096f1de6_0_75.png" title="Diagram showing an overview of the six steps. Step 4 is highlighted." alt="Diagram showing an overview of the six steps. Step 4 is highlighted." width="480" />
 
 
 This is how you enable Terra users to charge to the Google Billing Account.
@@ -231,7 +231,7 @@ When starting out, a single Billing Project is generally sufficient.  As you and
 
 ## Step 5: Add Users and Workspaces
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gda79c11827_0_64.png" title="Diagram showing an overview of the six steps. Step 6 is highlighted." alt="Diagram showing an overview of the six steps. Step 6 is highlighted." width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_g11d096f1de6_0_100.png" title="Diagram showing an overview of the six steps. Step 5 is highlighted." alt="Diagram showing an overview of the six steps. Step 5 is highlighted." width="480" />
 
 Once you have set up a Terra Billing Project, you can add lab members and give them permission to run analyses funded through your Billing Projects.
 
@@ -338,7 +338,7 @@ At the time of writing (April 2022) Terra is working to expedite this process fo
 
 ## Step 6: Set Budgets and Alerts
 
-<img src="02-pis_files/figure-html//1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik_gda79c11827_0_0.png" title="Diagram showing an overview of the six steps. Step 5 is highlighted." alt="Diagram showing an overview of the six steps. Step 5 is highlighted." width="480" />
+<img src="02-pis_files/figure-html//1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0_g11d096f1de6_0_125.png" title="Diagram showing an overview of the six steps. Step 6 is highlighted." alt="Diagram showing an overview of the six steps. Step 6 is highlighted." width="480" />
 
 Cloud computing can save a great deal of money, time and effort by providing compute on an as-needed basis.  However, care must be taken that users do not accidentally request excessive resources, or leave resources running when not needed.
 
@@ -454,4 +454,6 @@ Coming soon -- instructions on how to export your cost data so you can better an
 Your lab members should be free to carry out analyses in the Workspaces you created.  You should not need to do any further configuration through Terra until you decide to add or change user permissions for your Billing Projects and Workspaces.
 
 You can view costs at any time through [Google Cloud Billing](https://console.cloud.google.com/billing).  Note that costs are reported with a delay (~1 day).
+
+To learn more about billing and setup, we recommend checking out this [Leanpub course](https://leanpub.com/universities/courses/terra/billing-and-collaboration).
 
