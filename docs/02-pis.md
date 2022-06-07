@@ -455,3 +455,4 @@ Your lab members should be free to carry out analyses in the Workspaces you crea
 
 You can view costs at any time through [Google Cloud Billing](https://console.cloud.google.com/billing).  Note that costs are reported with a delay (~1 day).
 
+To learn more about billing and setup, we recommend checking out this [Leanpub course](https://leanpub.com/universities/courses/terra/billing-and-collaboration).
