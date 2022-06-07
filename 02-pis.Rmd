@@ -180,7 +180,7 @@ When starting out, a single Billing Project is generally sufficient.  As you and
 ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g11d096f1de6_0_100")
 ```
 
-Once you have set up a Terra Billing Project, you can add lab members and give them permission to run analyses funded through your Billing Projects.
+Once you have set up a Terra Billing Project, you can add lab members and give them permission to run analyses funded through your Billing Project(s).
 
 There are two primary ways to permit users to charge to your Billing Projects:
 
@@ -267,7 +267,7 @@ As a PI or lab manager, there are some steps you can take to help monitor and li
 
 **We highly recommended you set budgets and alerts to notify you if spending starts to exceed expectations**.  This will make it easier to notice and shut down any accidental overspending.  A good starting point is to set a monthly budget, and then set alerts at **50 percent** and **90 percent** of expected spend.  You can add additional alerts if you desire.
 
-You can set a single Budget for your entire lab, set up budgets for individual Workspaces, or even set budgets for certain subsets of Workspaces.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
+You can set a single Budget for your entire lab, set up budgets for individual Workspaces, or even set budgets for certain subsets of Workspaces.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Workspace is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
 
 ### Set Alerts
 
