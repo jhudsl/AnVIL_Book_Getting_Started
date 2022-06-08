@@ -302,3 +302,4 @@ You can view costs at any time through [Google Cloud Billing](https://console.cl
 
 To learn more about billing and setup, we recommend checking out this [Leanpub course](https://leanpub.com/universities/courses/terra/billing-and-collaboration).
 
+
