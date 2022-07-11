@@ -25,7 +25,7 @@ This book is part of a series of books for the NHGRI’s Genomic Data Science An
 ottrpal::include_slide("https://docs.google.com/presentation/d/1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE/edit#slide=id.gf8e59f4b48_0_0")
 ```
 
-Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data.  Learn more about AnVIL by visiting https://anvilproject.org or reading the [preprint](https://www.biorxiv.org/content/10.1101/2021.04.22.436044v1).
+Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data.  Learn more about AnVIL by visiting https://anvilproject.org or reading the [paper](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
 
 Other books in this series include:
 
