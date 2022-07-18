@@ -37,7 +37,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZ
 ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_153")
     ```
 
-1. Choose an organization.  Unless you are part of a larger GCP organization, you can choose “No organization” for the location.
+1. You may see an option to choose a location.  Unless you are part of a larger GCP organization, you can choose “No organization” for the location.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The text box labeled "Location" is highlighted.'} '}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_172")
@@ -61,16 +61,7 @@ To create a BigQuery Dataset:
 ```
 # copied from GCP docs:
 
-Go to the Manage resources page in the Google Cloud console.
-Go to the Manage Resources page
-The remaining steps will appear automatically in the Google Cloud console.
-
-On the Select organization drop-down list at the top of the page, select the organization in which you want to create a project. If you are a free trial user, skip this step, as this list does not appear.
-Click Create Project.
-In the New Project window that appears, enter a project name and select a billing account as applicable. A project name can contain only letters, numbers, single quotes, hyphens, spaces, or exclamation points, and must be between 4 and 30 characters.
-Enter the parent organization or folder in the Location box. That resource will be the hierarchical parent of the new project.
-When you're finished entering new project details, click Create.
-
+In the New Project window that appears, enter a project name and select a billing account as applicable.
 
 To create a BigQuery dataset:
 
