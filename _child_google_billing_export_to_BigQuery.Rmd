@@ -1,29 +1,108 @@
 
-*Updated April 2022.  See the [Google Cloud Documentation](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-setup) for the latest documentation and additional details.*
+*Updated July 2022.  See the [Google Cloud Documentation](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-setup) for the latest documentation and additional details.*
 
 Exporting billing data to BigQuery requires a few steps to set up:
 
-1. Create BigQuery Billing Project
+1. Create GCP Project
 1. Create BigQuery Dataset
 1. Enable data export
 
-**Create BigQuery Billing Project**
+**Create GCP Project**
 
-First you will need to create a Google Billing Project that will run the export process.  
+First you will need to create a GCP Project that will run the export process.  
 
 ::: {.fyi}
 Reminder:
 
-- A **Google Billing Account** manages your *funding source* (e.g. credit card, cloud credits).  You probably only need one Billing Account unless you have multiple funding sources.
-- A **Google Billing Project** manages activity you do on GCP.  Multiple Billing Projects can be funded by a single Billing Account.
+- A Google **Billing Account** manages your *funding source* (e.g. credit card, cloud credits).  You probably only need one Billing Account unless you have multiple funding sources.
+- A Google **Project** manages your GCP activities and cloud resources.  Multiple GCP Projects can be funded by a single Billing Account.
 :::
 
-Usually you will create your Billing Projects through Terra and won't need to manage them through the Google Cloud interface. In this case, you will create a Billing Project directly within Google. **This must be under the same Google Billing Account as the Projects you want to track spending for.**
+Usually your GCP Projects are created and managed by Terra (corresponding to Terra Workspaces) and you don't need to manage them through the Google Cloud interface. In this case, you will need to create the GCP Project yourself. **This must be under the same Google Billing Account as the Projects you want to track spending for.**
 
 
-To create a new Google Billing Project:
+To create a new GCP Project:
+
+1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using the Google ID associated with your Google Cloud projects.
+
+1. Open the dropdown menu on the top left, mouseover IAM & Admin, and click “Create a Project.”
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with the "IAM & Admin" submenu open. "IAM & Admin" and "Create a Project" are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_3")
+    ```
+    
+1. Enter a name for your new project.   Project names can contain only letters, numbers, single quotes, hyphens, spaces, or exclamation points, and must be between 4 and 30 characters.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The text box labeled "Project name" is highlighted.'} '}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_153")
+    ```
+
+1. Choose an organization.  Unless you are part of a larger GCP organization, you can choose “No organization” for the location.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The text box labeled "Location" is highlighted.'} '}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_172")
+    ```
+
+1. Click "Create".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The "Create" button is highlighted.'} '}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_166")
+    ```
+
+
+**Create BigQuery Dataset**
+
+Once your GCP Project exists, it can be used to create a BigQuery Dataset to hold your billing data.
+
+To create a BigQuery Dataset:
 
 1. 
+
+```
+# copied from GCP docs:
+
+Go to the Manage resources page in the Google Cloud console.
+Go to the Manage Resources page
+The remaining steps will appear automatically in the Google Cloud console.
+
+On the Select organization drop-down list at the top of the page, select the organization in which you want to create a project. If you are a free trial user, skip this step, as this list does not appear.
+Click Create Project.
+In the New Project window that appears, enter a project name and select a billing account as applicable. A project name can contain only letters, numbers, single quotes, hyphens, spaces, or exclamation points, and must be between 4 and 30 characters.
+Enter the parent organization or folder in the Location box. That resource will be the hierarchical parent of the new project.
+When you're finished entering new project details, click Create.
+
+
+To create a BigQuery dataset:
+
+Sign in to the Google Cloud console and go to the BigQuery page.
+
+Go to BigQuery page
+
+In the project drop-down list ( My Project arrow_drop_down) at the top of the Google Cloud console page, select the project you set up to contain your dataset. Make note of the project ID, as you will use that in the next steps.
+
+In the Explorer panel, in the pinned projects section, click arrow_right  your-project-ID to expand the project to view any existing datasets and saved queries.
+
+Next to the project ID, click the View actions menu (more_vert) and then click Create dataset. The Create dataset panel opens.
+
+Enter a Dataset ID. We recommend an ID that spans projects, such as all_billing_data, rather than a project-specific ID.
+Select a Data location. The data location specifies the region where your data is stored. All tables within this dataset share this location.
+
+When creating a dataset, we recommend that you select a multi-region option for its location, such as United States (US) or European Union (EU). This is required for exporting the detailed usage cost data.
+
+After you create the dataset, the location cannot be changed. Learn more about locations.
+
+Ensure that the Enable table expiration option is cleared.
+
+If you enable table expiration and enter a number of days, any new table created in this dataset is automatically deleted following the specified number of days after creation. Important: If you delete any tables containing exported Cloud Billing data records, those records are gone and we cannot backfill the deleted records.
+
+In the Advanced options section, ensure that the Use a customer-managed encryption key (CMEK) option is cleared.
+
+Customer-managed key encryption is not supported for exporting Cloud Billing data records to BigQuery.
+
+To save, click Create dataset.
+
+
+```
 
 
 **Create BigQuery Dataset**
