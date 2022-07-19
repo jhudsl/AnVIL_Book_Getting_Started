@@ -56,48 +56,30 @@ Once your GCP Project exists, it can be used to create a BigQuery Dataset to hol
 
 To create a BigQuery Dataset:
 
-1. 
+1. Open the dropdown menu on the top left, and click “BigQuery.”  You may need to scroll down quite a ways before you see it.
+
+    - If you’d like, you can pin BigQuery so it’s easier to find next time.
+
+1. Make sure the correct GCP project is selected.  You can see the current project at the top of the screen.  If this is not correct, click on the project name to change it.
+
+1. Find your project in the Explorer pane.  Click on the triple dots to see options, then click “Create dataset”.
+
+1. Enter a Dataset ID.  As a reminder, this dataset will hold data for all projects funded by your Billing Account.
+
+1. Next, it asks for a location.  You must select `US (multiple-regions)` in order to export detailed usage cost data.
+
+1. Make sure that “Enable table expiration” is NOT checked.  Otherwise your billing data will be deleted when it expires.
+
+1. Click “CREATE DATASET”.
+
 
 ```
 # copied from GCP docs:
 
 In the New Project window that appears, enter a project name and select a billing account as applicable.
 
-To create a BigQuery dataset:
-
-Sign in to the Google Cloud console and go to the BigQuery page.
-
-Go to BigQuery page
-
-In the project drop-down list ( My Project arrow_drop_down) at the top of the Google Cloud console page, select the project you set up to contain your dataset. Make note of the project ID, as you will use that in the next steps.
-
-In the Explorer panel, in the pinned projects section, click arrow_right  your-project-ID to expand the project to view any existing datasets and saved queries.
-
-Next to the project ID, click the View actions menu (more_vert) and then click Create dataset. The Create dataset panel opens.
-
-Enter a Dataset ID. We recommend an ID that spans projects, such as all_billing_data, rather than a project-specific ID.
-Select a Data location. The data location specifies the region where your data is stored. All tables within this dataset share this location.
-
-When creating a dataset, we recommend that you select a multi-region option for its location, such as United States (US) or European Union (EU). This is required for exporting the detailed usage cost data.
-
-After you create the dataset, the location cannot be changed. Learn more about locations.
-
-Ensure that the Enable table expiration option is cleared.
-
-If you enable table expiration and enter a number of days, any new table created in this dataset is automatically deleted following the specified number of days after creation. Important: If you delete any tables containing exported Cloud Billing data records, those records are gone and we cannot backfill the deleted records.
-
-In the Advanced options section, ensure that the Use a customer-managed encryption key (CMEK) option is cleared.
-
-Customer-managed key encryption is not supported for exporting Cloud Billing data records to BigQuery.
-
-To save, click Create dataset.
-
-
 ```
 
-
-**Create BigQuery Dataset**
-	to store the billing export
 **Enable data export**
 	Go to the billing tab in the gcloud console and enable export to this dataset
 Make sure the user of this software has the BigQuery scope on the billing project
@@ -108,16 +90,3 @@ Note that:
 - You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Billing Projects (i.e. lab members, cohorts, etc.), as long as they are all under the same Google Billing Account.
 - If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.
 
-1. [Launch Terra](https://anvil.terra.bio/#workspaces)
-
-1. Locate the Workspace you want to clone. If a Workspace has been shared with you ahead of time, it will appear in "MY WORKSPACES". You can clone a Workspace that was shared with you to perform your own analyses. In the screenshot below, no Workspaces have been shared.
-
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra "MY WORKSPACES" menu. The "MY WORKSPACES" tab is highlighted. No Workspaces are visible because none have been shared with the user. There is an option to create a new Workspace.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.gf5172664d7_0_142")
-    ```
-
-1. If a Workspace hasn't been shared with you, navigate to the "FEATURED" or "PUBLIC" Workspace tabs.
-
-    ```{r, echo=FALSE, fig.alt='Screenshot of Terra "My Workspaces" menu. The "FEATURED" tab is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.gf5172664d7_0_335")
-    ```
