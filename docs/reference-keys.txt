@@ -26,7 +26,6 @@ set-up-data-export
 step-6-add-users-and-workspaces
 create-a-new-workspace
 add-members-to-workspaces
-request-quota-increase
 pis-wrap-up
 data-analysts
 overview-analysts
