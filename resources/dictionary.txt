@@ -13,7 +13,6 @@ CMG
 Computability
 dbGaP
 Dockstore
-dropdown
 DUAs
 eMERGE
 eRA

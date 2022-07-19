@@ -1,6 +1,6 @@
 ---
 title: "Getting Started on AnVIL"
-date: "May 20, 2022"
+date: "April 12, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
