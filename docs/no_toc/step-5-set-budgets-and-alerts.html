@@ -113,7 +113,6 @@
 <ul>
 <li class="chapter" data-level="2.7.1" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
 <li class="chapter" data-level="2.7.2" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
-<li class="chapter" data-level="2.7.3" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#request-quota-increase"><i class="fa fa-check"></i><b>2.7.3</b> Request Quota Increase</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="pis-wrap-up.html"><a href="pis-wrap-up.html"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
 </ul></li>
@@ -351,8 +350,7 @@
 </div>
 <div id="export-cost-data-to-bigquery" class="section level3" number="2.6.3">
 <h3><span class="header-section-number">2.6.3</span> Export Cost Data to BigQuery</h3>
-<p>Several useful tools are available to help you further analyze and understand your GCP computing costs. Examples include the <code>AnVILBilling</code> <a href="http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html">Bioconductor package</a> and <a href="https://cloud.google.com/billing/docs/how-to/visualize-data">Google Data Studio</a>.</p>
-<p>These tools can help give greater insight into the charges to your GCP Billing Account which can help you refine your workflows to minimize expenses.</p>
+<p>Several useful tools are available to help you further analyze and understand your GCP computing costs. Examples include the <code>AnVILBilling</code> <a href="http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html">Bioconductor package</a>, as well ass <a href="https://cloud.google.com/billing/docs/how-to/visualize-data">Google Data Studio</a>. These tools can help give greater insight into the charges to your GCP Billing Account which can help you refine your workflows to minimize expenses.</p>
 <p>In order to make use of these tools, you will need to set up exporting of your cost data to BigQuery. This cannot be done retroactively (i.e. you can only export cost data as it is produced; there is no way to export your cost data history). Therefore, <strong>we recommend setting up cost data export immediately, so the cost data will be available to you in the future</strong>.</p>
 <p><strong>NOTE</strong>: This will incur a minimal monthly fee, less than $1 / month (pricing as of Feb 2021)</p>
 <div id="set-up-data-export" class="section level4" number="2.6.3.1">
@@ -362,7 +360,7 @@
 <ol style="list-style-type: decimal">
 <li>Create GCP Project</li>
 <li>Create BigQuery Dataset</li>
-<li>Enable data export</li>
+<li>Enable billing data export</li>
 </ol>
 <p><strong>Create GCP Project</strong></p>
 <p>First you will need to create a GCP Project that will run the export process.</p>
@@ -377,7 +375,7 @@
 <p>To create a new GCP Project:</p>
 <ol style="list-style-type: decimal">
 <li><p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using the Google ID associated with your Google Cloud projects.</p></li>
-<li><p>Open the dropdown menu on the top left, mouseover IAM &amp; Admin, and click “Create a Project.”</p>
+<li><p>Open the dropdown menu on the top left, mouseover IAM &amp; Admin, and click “Create a Project”.</p>
 <p><img src="02-pis_files/figure-html/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_3.png" title="Screenshot of the Google Cloud Console drop-down menu, with the &quot;IAM &amp; Admin&quot; submenu open. &quot;IAM &amp; Admin&quot; and &quot;Create a Project&quot; are highlighted." alt="Screenshot of the Google Cloud Console drop-down menu, with the &quot;IAM &amp; Admin&quot; submenu open. &quot;IAM &amp; Admin&quot; and &quot;Create a Project&quot; are highlighted." width="480" /></p></li>
 <li><p>Enter a name for your new project. Project names can contain only letters, numbers, single quotes, hyphens, spaces, or exclamation points, and must be between 4 and 30 characters.</p>
 <p><img src="02-pis_files/figure-html/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_153.png" title="Screenshot of the GCP Project creation dialog. The text box labeled &quot;Project name&quot; is highlighted." alt="Screenshot of the GCP Project creation dialog. The text box labeled &quot;Project name&quot; is highlighted." width="480" /></p></li>
@@ -390,7 +388,7 @@
 <p>Once your GCP Project exists, it can be used to create a BigQuery Dataset to hold your billing data.</p>
 <p>To create a BigQuery Dataset:</p>
 <ol style="list-style-type: decimal">
-<li><p>Open the dropdown menu on the top left, and click “BigQuery.” You may need to scroll down quite a ways before you see it.</p>
+<li><p>Open the dropdown menu on the top left, and click “BigQuery”. You may need to scroll down quite a ways before you see it.</p>
 <p><img src="02-pis_files/figure-html/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_183.png" title="Screenshot of the Google Cloud Console drop-down menu. &quot;BigQuery&quot; is highlighted." alt="Screenshot of the Google Cloud Console drop-down menu. &quot;BigQuery&quot; is highlighted." width="480" /></p>
 <ul>
 <li>If you’d like, you can pin BigQuery so it’s easier to find next time.</li>
@@ -408,20 +406,35 @@
 <p><img src="02-pis_files/figure-html/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_227.png" title="Screenshot of the GCP BigQuery dataset creation dialog. The checkbox labeled &quot;Enable table expiration&quot; is highlighted and is not checked." alt="Screenshot of the GCP BigQuery dataset creation dialog. The checkbox labeled &quot;Enable table expiration&quot; is highlighted and is not checked." width="480" /></p></li>
 <li><p>Click “CREATE DATASET”.</p>
 <p><img src="02-pis_files/figure-html/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_233.png" title="Screenshot of the GCP BigQuery dataset creation dialog. The &quot;CREATE DATASET&quot; button is highlighted." alt="Screenshot of the GCP BigQuery dataset creation dialog. The &quot;CREATE DATASET&quot; button is highlighted." width="480" /></p></li>
+<li><p>If you click the arrow next to the project name, you should see your new dataset. It’s empty right now, so there’s not much to see here yet.</p>
+<p><img src="02-pis_files/figure-html/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_239.png" title="Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted, " alt="Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted, " width="480" /></p></li>
+</ol>
+<p><strong>Enable billing data export</strong></p>
+<p>Once the BigQuery dataset exists, you can export data to it.</p>
+<p>To enable billing data export:</p>
+<ol style="list-style-type: decimal">
+<li>Open the dropdown menu on the top left and click “Billing”.</li>
+<li>Make sure the correct Billing Account is selected. You can see the current account in the upper left of the screen. If this is not correct, click on the Billing Account name to change it.</li>
+<li>Click “Billing export”.</li>
+<li>On the “BIGQUERY EXPORT” tab, under “Detailed usage cost”, click “EDIT SETTINGS”.</li>
+<li>Select the project that contains the BigQuery Dataset.</li>
+<li>Select the BigQuery dataset.</li>
+<li>Click “SAVE”.</li>
+<li>You should now see that export is enabled. It will take about a day before data starts showing up in your BigQuery Dataset.</li>
 </ol>
 <pre><code># copied from GCP docs:
 
 In the New Project window that appears, enter a project name and select a billing account as applicable.
+
+# From AnVILBilling
+Make sure the user of this software has the BigQuery scope on the billing project
 </code></pre>
-<p><strong>Enable data export</strong>
-Go to the billing tab in the gcloud console and enable export to this dataset
-Make sure the user of this software has the BigQuery scope on the billing project</p>
 <p>Note that:</p>
 <ul>
 <li>You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Billing Projects (i.e. lab members, cohorts, etc.), as long as they are all under the same Google Billing Account.</li>
 <li>If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.</li>
 </ul>
-<p>Once you have set up data exporting, you will be able to analyze your cost data at your convenience. To learn more about how to analyze your cost data, see:</p>
+<p>Now that you have set up data export, your billing data will be available for you to analyze at your convenience. To learn more about how to analyze your cost data, see:</p>
 <ul>
 <li>The <a href="http://www.bioconductor.org/packages/release/bioc/vignettes/AnVILBilling/inst/doc/billing.html">vignette</a> for the <a href="http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html"><code>AnVILBilling</code></a></li>
 <li><a href="https://cloud.google.com/billing/docs/how-to/visualize-data">Google’s documentation</a> on visualizing spending with Google Data Studio</li>
@@ -429,7 +442,7 @@ Make sure the user of this software has the BigQuery scope on the billing projec
 <p><strong>Having trouble?</strong></p>
 <ul>
 <li>Visit our community support forum at <a href="https://help.anvilproject.org"><code>help.anvilproject.org</code></a> with any questions.</li>
-<li>View the <a href="https://cloud.google.com/billing/docs/how-to/export-data-bigquery"><code>Google documentation</code></a></li>
+<li>View the <a href="https://cloud.google.com/billing/docs/how-to/export-data-bigquery"><code>Google documentation</code></a> on exporting billing data.</li>
 </ul>
 </div>
 </div>
