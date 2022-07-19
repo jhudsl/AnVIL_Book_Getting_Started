@@ -1,0 +1,51 @@
+You can always check your current spend through the Google Billing console, but remember
+
+- There is a reporting delay (~1 day), so you cannot immediately see what an analysis cost
+- Costs are reported at the level of Workspaces, so if there are multiple people using a Workspace, you will not be able to determine which of them was responsible for the charges.
+
+The Google Billing console displays information by Billing Account.  To view spending:
+  
+1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using the Google ID associated with your Google Cloud projects.
+
+1. Open the dropdown menu on the top left and click on [Billing](https://console.cloud.google.com/billing).
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g115e284bdc2_0_144")
+    ```
+
+1. You may be automatically directed to view a specific Billing Account. If you see information about a single account (and it’s not the one you’re interested in), you can get back to the list of all your Billing Accounts by clicking "Manage Billing Accounts" from the drop-down menu.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g115e284bdc2_0_295")
+    ```
+
+1. Click on the name of the Billing Account for the project you want to view.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Google Cloud Billing Accounts Overview. A Billing Account name is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g115e284bdc2_0_150")
+    ```
+
+1. Look at the top of the **Overview** tab to see your month-to-date spending.
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Overview.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g1149729109c_0_0")
+    ```
+
+1. Scroll further down the **Overview** tab to show your top projects.
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account top projects.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g1149729109c_0_143")
+    ```
+
+1. Click on the **Reports** tab to see more detailed information about each of your projects.  This is probably the most useful tab for exploring costs of individual projects over time.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Reports tab.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g1149729109c_0_433")
+    ```
+
+1. Click on the **Cost table** tab to obtain a convenient table of spending per project.
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Google Cloud Billing Account Cost table tab.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y/edit#slide=id.g1149729109c_0_577")
+    ```
+

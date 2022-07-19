@@ -1,0 +1,34 @@
+This gives Terra permission to create projects and send charges to the Google Billing Account, and must be done by an administrator of the Google Billing Account.
+
+Terra needs to be added as a "Billing Account User":
+
+1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using your Google ID.
+1. Navigate to [Billing](https://console.cloud.google.com/billing)
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with "Billing" highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1OqSVH5Y4v97-OKMnEDGGuhKBJwc9fyXc-Q1-ivbeZmA/edit#slide=id.g115e284bdc2_0_144")
+    ```
+
+1. You may be automatically directed to view a specific Billing Account.  If you see information about a single account rather than a list of your Billing Accounts, you can get back to the list by clicking "Manage Billing Accounts" from the drop-down menu.
+ 
+    ```{r, echo=FALSE, fig.alt='Screenshot of an individual Google Cloud Billing Account with the drop-down menu item "Manage Billing Accounts" highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1OqSVH5Y4v97-OKMnEDGGuhKBJwc9fyXc-Q1-ivbeZmA/edit#slide=id.g115e284bdc2_0_295")
+    ```
+
+1. Check the box next to the Billing Account you wish to add Terra to, click "ADD MEMBER".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Google Cloud Billing Accounts Overview. The checkbox next to the name of a Billing Account is checked and highlighted, and the "Add Member" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1OqSVH5Y4v97-OKMnEDGGuhKBJwc9fyXc-Q1-ivbeZmA/edit#slide=id.g116e2c647a7_0_151")
+    ```
+
+1. Enter `terra-billing@terra.bio` in the text box.  In the drop-down menu, mouse over Billing, then choose "**Billing Account User**".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The text box is highlighted and has been filled in with "terra-billing@terra.bio".  In the drop-down menu labeled "Select a Role", the item "Billing" and the submenu item "Billing Account User" are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1OqSVH5Y4v97-OKMnEDGGuhKBJwc9fyXc-Q1-ivbeZmA/edit#slide=id.g116e2d0fe67_0_0")
+    ```
+
+1. Click "SAVE".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1OqSVH5Y4v97-OKMnEDGGuhKBJwc9fyXc-Q1-ivbeZmA/edit#slide=id.g116e2d0fe67_0_146")
+    ```
