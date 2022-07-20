@@ -22,7 +22,6 @@ step-5-set-budgets-and-alerts
 set-alerts
 view-spend
 export-cost-data-to-bigquery
-draftnotes
 step-6-add-users-and-workspaces
 create-a-new-workspace
 add-members-to-workspaces
