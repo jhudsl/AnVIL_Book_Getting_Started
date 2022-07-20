@@ -232,7 +232,6 @@ Several useful tools are available to help you further analyze and understand yo
 
 In order to make use of these tools, you will need to set up exporting of your cost data to BigQuery.  This cannot be done retroactively (i.e. you can only export cost data as it is produced; there is no way to export your cost data history).  Therefore, **we recommend setting up cost data export immediately, so the cost data will be available to you in the future**.
 
-**NOTE**: This will incur a minimal monthly fee, less than $1 / month (pricing as of Feb 2021)
 
 ```{r, child=c("_child_google_billing_export_to_BigQuery.Rmd")}
 
