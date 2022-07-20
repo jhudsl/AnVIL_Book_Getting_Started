@@ -106,7 +106,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZ
 
 1. If you click the arrow next to the project name, you should see your new dataset.  It's empty right now, so there's not much to see here yet.
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted, '}
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_239")
     ```
 
@@ -118,27 +118,56 @@ Once the BigQuery dataset exists, you can export data to it.
 To enable billing data export:
 
 1. Open the dropdown menu on the top left and click "Billing".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu. "Billing" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_250")
+    ```
+
 1. Make sure the correct Billing Account is selected.  You can see the current account in the upper left of the screen.  If this is not correct, click on the Billing Account name to change it.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing interface.  In the left panel, the name of the Billing Account is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_245")
+    ```
+
 1. Click "Billing export".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing interface.  In the left panel, "Billing export" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_256")
+    ```
+
 1. On the "BIGQUERY EXPORT" tab, under "Detailed usage cost", click "EDIT SETTINGS".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export tab.  The name of the tab is highlighted. Under "Detailed usage cost", the "EDIT SETTINGS" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_263")
+    ```
+
 1. Select the project that contains the BigQuery Dataset.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export dialog.  The dropdown menu labeled "Projects" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_270")
+    ```
+
 1. Select the BigQuery dataset.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export dialog.  The dropdown menu labeled "Dataset" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_276")
+    ```
+
 1. Click "SAVE".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export dialog.  The "SAVE" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_282")
+    ```
+
 1. You should now see that export is enabled.  It will take about a day before data starts showing up in your BigQuery Dataset.
 
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export tab.  The checkmark indicating that export of detailed cost usage data is enabled is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_290")
+    ```
 
 
 
-
-```
-# copied from GCP docs:
-
-In the New Project window that appears, enter a project name and select a billing account as applicable.
-
-# From AnVILBilling
-Make sure the user of this software has the BigQuery scope on the billing project
-
-```
+#### Draft/notes
 
 Note that:
 
