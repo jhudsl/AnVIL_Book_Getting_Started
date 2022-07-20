@@ -487,7 +487,7 @@ To enable billing data export:
 
 Now that you have set up data export, your billing data will be available for you to analyze at your convenience.  To learn more about how to analyze your cost data, see:
 
-- The [vignette](http://www.bioconductor.org/packages/release/bioc/vignettes/AnVILBilling/inst/doc/billing.html) for the [`AnVILBilling`](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html)
+- The [vignette](http://www.bioconductor.org/packages/release/bioc/vignettes/AnVILBilling/inst/doc/billing.html) for the [`AnVILBilling`](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html) package
 - [Google's documentation](https://cloud.google.com/billing/docs/how-to/visualize-data) on visualizing spending with Google Data Studio
 
 **Having trouble?**
