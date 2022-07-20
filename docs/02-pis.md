@@ -348,13 +348,11 @@ The Google Billing console displays information by Billing Account.  To view spe
 
 ### Export Cost Data to BigQuery
 
-Several useful tools are available to help you further analyze and understand your GCP computing costs.  Examples include the `AnVILBilling` [Bioconductor package](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html), as well ass [Google Data Studio](https://cloud.google.com/billing/docs/how-to/visualize-data).  These tools can help give greater insight into the charges to your GCP Billing Account which can help you refine your workflows to minimize expenses.
+Several useful tools are available to help you further analyze and understand your GCP computing costs.  Examples include the `AnVILBilling` [Bioconductor package](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html), as well as [Google Data Studio](https://cloud.google.com/billing/docs/how-to/visualize-data).  These tools can help give greater insight into the charges to your GCP Billing Account which can help you refine your workflows to minimize expenses.
 
 In order to make use of these tools, you will need to set up exporting of your cost data to BigQuery.  This cannot be done retroactively (i.e. you can only export cost data as it is produced; there is no way to export your cost data history).  Therefore, **we recommend setting up cost data export immediately, so the cost data will be available to you in the future**.
 
 **NOTE**: This will incur a minimal monthly fee, less than $1 / month (pricing as of Feb 2021)
-
-#### Set Up Data Export
 
 
 
@@ -441,7 +439,7 @@ To create a BigQuery Dataset:
 
 1. If you click the arrow next to the project name, you should see your new dataset.  It's empty right now, so there's not much to see here yet.
 
-    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_239.png" title="Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted, " alt="Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted, " width="480" />
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_239.png" title="Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted." alt="Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted." width="480" />
 
 
 **Enable billing data export**
@@ -451,27 +449,40 @@ Once the BigQuery dataset exists, you can export data to it.
 To enable billing data export:
 
 1. Open the dropdown menu on the top left and click "Billing".
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_250.png" title="Screenshot of the Google Cloud Console drop-down menu. &quot;Billing&quot; is highlighted." alt="Screenshot of the Google Cloud Console drop-down menu. &quot;Billing&quot; is highlighted." width="480" />
+
 1. Make sure the correct Billing Account is selected.  You can see the current account in the upper left of the screen.  If this is not correct, click on the Billing Account name to change it.
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_245.png" title="Screenshot of the GCP Billing interface.  In the left panel, the name of the Billing Account is highlighted." alt="Screenshot of the GCP Billing interface.  In the left panel, the name of the Billing Account is highlighted." width="480" />
+
 1. Click "Billing export".
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_256.png" title="Screenshot of the GCP Billing interface.  In the left panel, &quot;Billing export&quot; is highlighted." alt="Screenshot of the GCP Billing interface.  In the left panel, &quot;Billing export&quot; is highlighted." width="480" />
+
 1. On the "BIGQUERY EXPORT" tab, under "Detailed usage cost", click "EDIT SETTINGS".
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_263.png" title="Screenshot of the GCP Billing export tab.  The name of the tab is highlighted. Under &quot;Detailed usage cost&quot;, the &quot;EDIT SETTINGS&quot; button is highlighted." alt="Screenshot of the GCP Billing export tab.  The name of the tab is highlighted. Under &quot;Detailed usage cost&quot;, the &quot;EDIT SETTINGS&quot; button is highlighted." width="480" />
+
 1. Select the project that contains the BigQuery Dataset.
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_270.png" title="Screenshot of the GCP Billing export dialog.  The dropdown menu labeled &quot;Projects&quot; is highlighted." alt="Screenshot of the GCP Billing export dialog.  The dropdown menu labeled &quot;Projects&quot; is highlighted." width="480" />
+
 1. Select the BigQuery dataset.
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_276.png" title="Screenshot of the GCP Billing export dialog.  The dropdown menu labeled &quot;Dataset&quot; is highlighted." alt="Screenshot of the GCP Billing export dialog.  The dropdown menu labeled &quot;Dataset&quot; is highlighted." width="480" />
+
 1. Click "SAVE".
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_282.png" title="Screenshot of the GCP Billing export dialog.  The &quot;SAVE&quot; button is highlighted." alt="Screenshot of the GCP Billing export dialog.  The &quot;SAVE&quot; button is highlighted." width="480" />
+
 1. You should now see that export is enabled.  It will take about a day before data starts showing up in your BigQuery Dataset.
 
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_290.png" title="Screenshot of the GCP Billing export tab.  The checkmark indicating that export of detailed cost usage data is enabled is highlighted." alt="Screenshot of the GCP Billing export tab.  The checkmark indicating that export of detailed cost usage data is enabled is highlighted." width="480" />
 
 
 
-
-```
-# copied from GCP docs:
-
-In the New Project window that appears, enter a project name and select a billing account as applicable.
-
-# From AnVILBilling
-Make sure the user of this software has the BigQuery scope on the billing project
-
-```
+#### Draft/notes
 
 Note that:
 
