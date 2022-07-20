@@ -352,7 +352,6 @@ Several useful tools are available to help you further analyze and understand yo
 
 In order to make use of these tools, you will need to set up exporting of your cost data to BigQuery.  This cannot be done retroactively (i.e. you can only export cost data as it is produced; there is no way to export your cost data history).  Therefore, **we recommend setting up cost data export immediately, so the cost data will be available to you in the future**.
 
-**NOTE**: This will incur a minimal monthly fee, less than $1 / month (pricing as of Feb 2021)
 
 
 
@@ -379,8 +378,8 @@ Usually your GCP Projects are created and managed by Terra (corresponding to Ter
 
 Note that:
 
-- You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.
-- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.
+- You only need one GCP project and corresponding BigQuery Dataset per Google Billing Account. One BigQuery Dataset can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.
+- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a GCP Project and a BigQuery Dataset for each of them.
 
 
 To create a new GCP Project:

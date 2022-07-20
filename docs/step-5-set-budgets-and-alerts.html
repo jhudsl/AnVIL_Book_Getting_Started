@@ -352,7 +352,6 @@
 <h3><span class="header-section-number">2.6.3</span> Export Cost Data to BigQuery</h3>
 <p>Several useful tools are available to help you further analyze and understand your GCP computing costs. Examples include the <code>AnVILBilling</code> <a href="http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html">Bioconductor package</a>, as well as <a href="https://cloud.google.com/billing/docs/how-to/visualize-data">Google Data Studio</a>. These tools can help give greater insight into the charges to your GCP Billing Account which can help you refine your workflows to minimize expenses.</p>
 <p>In order to make use of these tools, you will need to set up exporting of your cost data to BigQuery. This cannot be done retroactively (i.e. you can only export cost data as it is produced; there is no way to export your cost data history). Therefore, <strong>we recommend setting up cost data export immediately, so the cost data will be available to you in the future</strong>.</p>
-<p><strong>NOTE</strong>: This will incur a minimal monthly fee, less than $1 / month (pricing as of Feb 2021)</p>
 <p><em>Updated July 2022. See the <a href="https://cloud.google.com/billing/docs/how-to/export-data-bigquery-setup">Google Cloud Documentation</a> for the latest documentation and additional details.</em></p>
 <p>Exporting billing data to BigQuery requires a few steps to set up:</p>
 <ol style="list-style-type: decimal">
@@ -372,8 +371,8 @@
 <p>Usually your GCP Projects are created and managed by Terra (corresponding to Terra Workspaces) and you don’t need to manage them through the Google Cloud interface. In this case, you will need to create the GCP Project yourself. <strong>This must be under the same Google Billing Account as the Projects you want to track spending for.</strong></p>
 <p>Note that:</p>
 <ul>
-<li>You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.</li>
-<li>If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.</li>
+<li>You only need one GCP project and corresponding BigQuery Dataset per Google Billing Account. One BigQuery Dataset can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.</li>
+<li>If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a GCP Project and a BigQuery Dataset for each of them.</li>
 </ul>
 <p>To create a new GCP Project:</p>
 <ol style="list-style-type: decimal">
