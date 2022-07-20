@@ -20,6 +20,11 @@ Reminder:
 
 Usually your GCP Projects are created and managed by Terra (corresponding to Terra Workspaces) and you don't need to manage them through the Google Cloud interface. In this case, you will need to create the GCP Project yourself. **This must be under the same Google Billing Account as the Projects you want to track spending for.**
 
+Note that:
+
+- You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.
+- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.
+
 
 To create a new GCP Project:
 
@@ -164,13 +169,4 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZ
     ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export tab.  The checkmark indicating that export of detailed cost usage data is enabled is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_290")
     ```
-
-
-
-#### Draft/notes
-
-Note that:
-
-- You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Billing Projects (i.e. lab members, cohorts, etc.), as long as they are all under the same Google Billing Account.
-- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.
 
