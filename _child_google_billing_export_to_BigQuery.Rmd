@@ -22,8 +22,8 @@ Usually your GCP Projects are created and managed by Terra (corresponding to Ter
 
 Note that:
 
-- You only need one BigQuery project per Google Billing Account. One BigQuery Project can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.
-- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a BigQuery project for each of them.
+- You only need one GCP project and corresponding BigQuery Dataset per Google Billing Account. One BigQuery Dataset can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.
+- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a GCP Project and a BigQuery Dataset for each of them.
 
 
 To create a new GCP Project:
