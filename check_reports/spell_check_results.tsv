@@ -1,0 +1,10 @@
+word	file	lines
+dropdown	_child_google_billing_export_to_BigQuery.Rmd	33,64,125
+dropdown	_child_google_billing_set_alerts.Rmd	3
+dropdown	_child_google_billing_view_spend.Rmd	10
+dropdown	_child_google_billing_set_alerts.Rmd	3
+dropdown	_child_google_billing_view_spend.Rmd	10
+dropdown	_child_google_billing_set_alerts.Rmd	3
+dropdown	_child_google_billing_view_spend.Rmd	10
+IAM	_child_google_billing_export_to_BigQuery.Rmd	33
+mouseover	_child_google_billing_export_to_BigQuery.Rmd	33
