@@ -312,7 +312,7 @@ You can set a single Budget for your entire lab, set up individual budgets for e
 You can always check your current spend through the Google Billing console, but remember
 
 - There is a reporting delay (~1 day), so you cannot immediately see what an analysis cost
-- Costs are reported at the level of Billing Projects, so if you have not created separate Billing Projects, you will not be able to determine where charges are coming from.
+- Costs are reported at the level of Workspaces, so if there are multiple people using a Workspace, you will not be able to determine which of them was responsible for the charges.
 
 The Google Billing console displays information by Billing Account.  To view spending:
   
@@ -338,7 +338,7 @@ The Google Billing console displays information by Billing Account.  To view spe
     
     <img src="02-pis_files/figure-html//1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_143.png" title="Screenshot of a Google Cloud Billing Account top projects." alt="Screenshot of a Google Cloud Billing Account top projects." width="480" />
 
-1. Click on the **Reports** tab to see more detailed information about each of your billing projects.  This is probably the most useful tab for exploring costs of individual projects over time.
+1. Click on the **Reports** tab to see more detailed information about each of your projects.  This is probably the most useful tab for exploring costs of individual projects over time.
 
     <img src="02-pis_files/figure-html//1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_433.png" title="Screenshot of a Google Cloud Billing Account Reports tab." alt="Screenshot of a Google Cloud Billing Account Reports tab." width="480" />
 

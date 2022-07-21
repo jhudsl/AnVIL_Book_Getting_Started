@@ -1,6 +1,6 @@
 ---
 title: "Getting Started on AnVIL"
-date: "May 20, 2022"
+date: "July 21, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -18,7 +18,7 @@ This book is part of a series of books for the NHGRI’s Genomic Data Science An
 
 <img src="index_files/figure-html//1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE_gf8e59f4b48_0_0.png" width="480" />
 
-Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data.  Learn more about AnVIL by visiting https://anvilproject.org or reading the [preprint](https://www.biorxiv.org/content/10.1101/2021.04.22.436044v1).
+Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data.  Learn more about AnVIL by visiting https://anvilproject.org or reading the [paper](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
 
 Other books in this series include:
 
