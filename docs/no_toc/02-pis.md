@@ -394,9 +394,13 @@ To create a new GCP Project:
 
     <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_153.png" title="Screenshot of the GCP Project creation dialog. The text box labeled &quot;Project name&quot; is highlighted." alt="Screenshot of the GCP Project creation dialog. The text box labeled &quot;Project name&quot; is highlighted." width="480" />
 
+1. If you have more than one Billing Account, select the Billing Account you wish to export data for.  If you only have one Billing Account, you may not see this option.
+
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g1405b9d7496_0_21.png" title="Screenshot of the GCP Project creation dialog. The dropdown labeled &quot;Billing account&quot; is highlighted." alt="Screenshot of the GCP Project creation dialog. The dropdown labeled &quot;Billing account&quot; is highlighted." width="480" />
+
 1. You may see an option to choose a location.  Unless you are part of a larger GCP organization, you can choose "No organization" for the location.
 
-    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_172.png" title="Screenshot of the GCP Project creation dialog. The text box labeled &quot;Location&quot; is highlighted." alt="Screenshot of the GCP Project creation dialog. The text box labeled &quot;Location&quot; is highlighted." width="480" />
+    <img src="02-pis_files/figure-html//1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY_g13d748460ee_0_172.png" title="Screenshot of the GCP Project creation dialog. The dropdown labeled &quot;Location&quot; is highlighted." alt="Screenshot of the GCP Project creation dialog. The dropdown labeled &quot;Location&quot; is highlighted." width="480" />
 
 1. Click "Create".
 
