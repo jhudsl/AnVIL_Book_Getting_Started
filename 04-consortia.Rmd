@@ -8,7 +8,7 @@ This chapter is targeted towards people who are part of a consortium and plan to
 - **Account Setup Overview** -- Goals for this guide and help choosing a role in the consortium
 - **Account Setup Steps** -- Step-by-step instructions to create your first accounts as part of the consortium on AnVIL
 
-::: {.fyi}
+::: {.notice}
 Please click on the subsection headers in the left hand 
 navigation bar (e.g., 2.1, 4.3) a second time to expand the 
 table of contents and enable the `scroll_highlight` feature 
@@ -71,7 +71,7 @@ As a data manager, you are responsible for managing access to sensitive data. Yo
 
 To set up your account on AnVIL, please see the chapter for [PIs and Lab Managers](pis-and-lab-managers.html#overview-pis). Once the setup is complete, return to this page to continue.
 
-::: {.fyi}
+::: {.dictionary}
 [Go to PIs and Lab Managers chapter](pis-and-lab-managers.html#overview-pis)
 :::
 
@@ -107,7 +107,7 @@ As part of a consortium on AnVIL, you should be aware of the following:
 
 To set up your account on AnVIL, please see the chapter for [PIs and Lab Managers](pis-and-lab-managers.html#overview-pis). Once the setup is complete, return to this page to continue.
 
-::: {.fyi}
+::: {.dictionary}
 [Go to PIs and Lab Managers chapter](pis-and-lab-managers.html#overview-pis)
 :::
 
@@ -129,7 +129,7 @@ As part of a consortium on AnVIL, you should be aware of the following:
 
 To set up your account on AnVIL, please see the chapter for [Data Analysts](data-analysts.html#overview-analysts). Once the setup is complete, return to this page to continue.
 
-::: {.fyi}
+::: {.dictionary}
 [Go to Data Analysts chapter](data-analysts.html#overview-analysts)
 :::
 
@@ -151,7 +151,7 @@ As part of a consortium on AnVIL, you should be aware of the following:
 
 To set up your account on AnVIL, please see the documentation for [Data Submitters](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview). Once the setup is complete, return to this page to continue.
 
-::: {.fyi}
+::: {.dictionary}
 [Go to Data Submitters documentation](https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview)
 :::
 
