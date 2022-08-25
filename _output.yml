@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  css: assets/style_anvil.css
+  css: assets/AnVIL_style/style.css
   includes:
     before_body: assets/AnVIL_style/big-image_anvil.html
     after_body: assets/AnVIL_style/footer.html
