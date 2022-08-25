@@ -1,13 +1,13 @@
 ---
 title: "Getting Started on AnVIL"
-date: "July 21, 2022"
+date: "August 25, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform"
-favicon: assets/anvil_favicon.ico
+favicon: assets/AnVIL_style/anvil_favicon.ico
 ---
 
 

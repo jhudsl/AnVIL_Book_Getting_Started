@@ -12,7 +12,7 @@ The Appendices of this book contain additional information that may be of intere
 - Templates for including AnVIL in grant applications ([Budget Templates], [IRB Templates])
 - Information regarding AnVIL's security features for protecting sensitive research ([Authorization Domains])
 
-::: {.fyi}
+::: {.notice}
 Please click on the subsection headers in the left hand 
 navigation bar (e.g., 2.1, 4.3) a second time to expand the 
 table of contents and enable the `scroll_highlight` feature 
