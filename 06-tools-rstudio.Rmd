@@ -2,7 +2,7 @@
 
 One of the analysis platforms available on AnVIL is RStudio. This platform offers rich genomics support through [Bioconductor](https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor). This chapter focuses on launching and highlighting a few features for RStudio.
 
-## Video tutorial
+## RStudio: Video tutorial
 
 Here is a video tutorial that describes the basics of using RStudio on AnVIL.
 
@@ -18,7 +18,7 @@ Here is a video tutorial that describes the basics of using RStudio on AnVIL.
 
 The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw).
 
-## Step-by-step guide
+## RStudio: Step-by-step guide
 
 This step-by-step guide provides written instructions and screenshots for getting started with RStudio on AnVIL.
 

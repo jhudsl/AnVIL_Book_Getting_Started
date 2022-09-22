@@ -2,7 +2,7 @@
 
 One of the analysis platforms available on AnVIL is Galaxy. This platform offers a graphical interface for thousands of tools(https://anvilproject.org/learn/interactive-analysis/getting-started-with-galaxy). This chapter focuses on launching and highlighting a few features for Galaxy.
 
-## Video tutorial
+## Galaxy: Video tutorial
 
 Here is a video tutorial that describes the basics of using Galaxy on AnVIL.
 
@@ -18,7 +18,7 @@ Here is a video tutorial that describes the basics of using Galaxy on AnVIL.
 
 The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q).
 
-## Step-by-step guide
+## Galaxy: Step-by-step guide
 
 This step-by-step guide provides written instructions and screenshots for getting started with Galaxy on AnVIL.
 
