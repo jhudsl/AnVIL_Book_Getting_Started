@@ -79,3 +79,14 @@ Workspace
 Workspace’s
 # custom block types
 fyi
+BiocManager
+colData
+dex
+dexamethasone
+Glimma
+glimmaMDS
+Leanpub
+limma
+MDS
+plotMDS
+precompiled
