@@ -1,0 +1,217 @@
+# RStudio
+
+One of the analysis platforms available on AnVIL is RStudio. This platform offers rich genomics support through [Bioconductor](https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor). This chapter focuses on launching and highlighting a few features for RStudio.
+
+## Video tutorial
+
+Here is a video tutorial that describes the basics of using RStudio on AnVIL.
+
+<iframe src="https://drive.google.com/file/d/1v72ZG8JIRDUaewFQgGfcCO_qoM4eYmYX/preview" width="640" height="360" allow="autoplay"></iframe>
+
+### Objectives
+
+- Start compute for your RStudio environment
+- Tour RStudio on AnVIL
+- Stop compute to minimize expenses
+
+### Slides
+
+The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw).
+
+## Step-by-step guide
+
+This step-by-step guide provides written instructions and screenshots for getting started with RStudio on AnVIL.
+
+Once you have created a Workspace, you can create an RStudio cloud environment. This will allow you to interface with data and perform genomics-based analyses with add on packages from the Bioconductor community.
+
+### Launch RStudio Cloud Environment
+
+1. Click on the name of the Workspace you just created. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
+
+1. On the top right, Click the gear icon to access your Cloud Environment options.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the newly created Workspace. The gear icon to create a new cloud environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.gdde5ec9a4d_1_34")
+    ```
+
+1. You will see a list of costs because it costs a small amount of money to use cloud computing. Click "CUSTOMIZE".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout menu. The "Customize" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.gdde5ec9a4d_1_50")
+    ```
+
+1. Click on the first drop down menu to see what other software configurations are available.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout menu. The first dropdown menu for options, the Application configuration menu, is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.gdde5ec9a4d_1_11")
+    ```
+
+1. Scroll down and select RStudio from the Community-Maintained RStudio Environments section. **NOTE**: AnVIL is very versatile and can scale up to use very powerful cloud computers. It's very important that you select the cloud computing environment described here to avoid runaway costs.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Application configuration menu. The community maintained RStudio environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_0")
+    ```
+
+1. Leave everything else as-is. To create your RStudio Cloud Environment, click on the “CREATE” button.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Application configuration menu. The "Create" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_34")
+    ```
+
+1. Your Cloud Environment will be available in a few minutes after the cloud resources are provisioned and your software starts up. The upper right corner displays the status and should say “Creating” while resources are being provisioned.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. A cloud environment for RStudio is being created. The loading icon on the top right of the page is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_6")
+    ```
+
+1. After a few minutes, you will see the status change to “Running”.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. A cloud environment for RStudio has been created. The icon on the top right showing that the cloud environment is running is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_10")
+    ```
+
+1. Click on the “R” icon to launch RStudio.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. A cloud environment for RStudio has been created. The R button that launches the RStudio interface is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_43")
+    ```
+
+1. You should now see the RStudio interface with information about the version printed to the console.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_14")
+    ```
+
+### Tour RStudio
+
+Next, we will be using RStudio and the package `Glimma` to create interactive plots. See [this vignette](https://bioconductor.org/packages/release/bioc/vignettes/Glimma/inst/doc/limma_edger.html) for more information.
+
+1. The Bioconductor team has created a very useful package to programmatically interact with Terra and Google Cloud. Install the `AnVIL` package. It will make some steps easier as we go along.
+
+    ```{r, eval = FALSE}
+BiocManager::install("AnVIL")
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_49")
+    ```
+
+1. You can now quickly install precompiled binaries using the AnVIL package’s `install()` function. We will use it to install the `Glimma` package and the `airway` package. The `airway` package contains a `SummarizedExperiment` data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone. 
+
+{Note: for some of the packages, you will have to install packaged from the CRAN repository, using the install.packages() function. The examples will show you which install method to use.}
+
+    ```{r, eval = FALSE}
+AnVIL::install(c("Glimma", "airway"))
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_56")
+    ```
+
+1. Load the example data.
+
+    ```{r, eval = FALSE}
+library(airway)
+data(airway)
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_56")
+    ```
+
+1. The multidimensional scaling (MDS) plot is frequently used to explore differences in samples. When this data is MDS transformed, the first two dimensions explain the greatest variance between samples, and the amount of variance decreases monotonically with increasing dimension. The following code will launch a new window where you can interact with the MDS plot.
+
+    ```{r, eval = FALSE}
+Glimma::glimmaMDS(assay(airway), group = colData(airway)$dex)
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_70")
+    ```
+
+1. Change the `colour_by` setting to "groups" so you can easily distinguish between groups. In this data, the "group" is the treatment.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Glimma popout showing the data in an MDS plot. Data points are colored blue and orange by group. The colour by dropdown menu on the interactive plot is hightlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_77")
+    ```
+
+1. You can download the interactive html file by clicking on "Save As".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Glimma popout showing the data in an MDS plot. The Save As menu is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6da7f_0_0")
+    ```
+
+1. You can also download plots and other files created directly in RStudio. To download the following plot, click on "Export" and save in your preferred format to the default directory. This saves the file in your cloud environment.
+
+    ```{r, eval = FALSE}
+limma::plotMDS(airway)
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6da7f_0_12")
+    ```
+
+1. You should see the plot in the "Files" pane.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the "Files" pane.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6da7f_0_19")
+    ```
+
+1. Select this file and click "More" > "Export"
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the "Files" pane. The "More" and "Export" menus have been highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6db6a_0_0")
+    ```
+
+1. Select "Download" to save the file to your local machine.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. The popup to download the selected file has been highlighted,'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6db6a_0_8")
+    ```
+
+
+### Pause RStudio {#stopping}
+
+1. The upper right corner reminds you that you are accruing cloud computing costs.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. The icon on the top right showing that the cloud environment is running is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_84")
+    ```
+
+1. You should minimize charges when you are not performing an analysis. You can do this by clicking on “Stop cloud environment”. This will release the CPU and memory resources for other people to use. Note that your work will be saved in the environment and continue to accrue a very small cost. Your instructor can delete these environments to stop costs accruing, so it's a good idea to save code or output somewhere else, such as GitHub or your local machine.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. The stop icon on the top right which stops the cloud environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_91")
+    ```
+
+### Delete RStudio Cloud Environment
+
+1. [Stopping](#stopping) your cloud environment only pauses your work. When you are ready to delete the cloud environment, click on the gear icon in the upper right corner to “Update cloud environment”.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. The gear icon on the top right that updates the cloud environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_41")
+    ```
+
+1. Click on “Delete Environment Options”.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout. "Delete environment options" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_20")
+    ```
+
+1. If you are certain that you do not need the data and configuration on your disk, you should select "Delete everything, including persistent disk".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout. "Delete everything, including persistent disk" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_46")
+    ```
+
+1. Select "DELETE".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout. "Delete" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_51")
+    ```
+
+
+
+```{r}
+sessionInfo()
+```
