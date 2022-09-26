@@ -186,7 +186,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1
 
 ### Delete RStudio Cloud Environment
 
-1. [Stopping](#stopping) your cloud environment only pauses your work. When you are ready to delete the cloud environment, click on the gear icon in the upper right corner to “Update cloud environment”.
+1. Stopping your cloud environment only pauses your work. When you are ready to delete the cloud environment, click on the gear icon in the upper right corner to “Update cloud environment”.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. The gear icon on the top right that updates the cloud environment is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_41")
