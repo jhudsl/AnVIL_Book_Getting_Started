@@ -22,6 +22,8 @@ The slides for this tutorial are are located [here](https://docs.google.com/pres
 
 This step-by-step guide provides written instructions and screenshots for getting started with Galaxy on AnVIL.
 
+Note that, in order to use Galaxy, you must have access to a Terra Workspace with permission to compute (i.e. you must be a "Writer" or "Owner" of the Workspace).
+
 ### Starting Galaxy
 
 Open your Workspace, and click on the “NOTEBOOKS” tab. Next, click on “Create a Cloud Environment for Galaxy”. You should see a popup window on the right side of the screen. Click on “NEXT” and “CREATE” to keep all settings as-is. This will take 8-10 minutes. When it is done, click “LAUNCH GALAXY”.
