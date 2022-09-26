@@ -24,7 +24,7 @@ This step-by-step guide provides written instructions and screenshots for gettin
 
 ### Starting Galaxy
 
-In your new Workspace, click on the “NOTEBOOKS” tab. Next, click on “Create a Cloud Environment for Galaxy”. You should see a popup window on the right side of the screen. Click on “NEXT” and “CREATE” to keep all settings as-is. This will take 8-10 minutes. When it is done, click “LAUNCH GALAXY”.
+Open your Workspace, and click on the “NOTEBOOKS” tab. Next, click on “Create a Cloud Environment for Galaxy”. You should see a popup window on the right side of the screen. Click on “NEXT” and “CREATE” to keep all settings as-is. This will take 8-10 minutes. When it is done, click “LAUNCH GALAXY”.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted,'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_788")
