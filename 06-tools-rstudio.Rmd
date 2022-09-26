@@ -178,7 +178,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_84")
     ```
 
-1. You should minimize charges when you are not performing an analysis. You can do this by clicking on “Stop cloud environment”. This will release the CPU and memory resources for other people to use. Note that your work will be saved in the environment and continue to accrue a very small cost. Your instructor can delete these environments to stop costs accruing, so it's a good idea to save code or output somewhere else, such as GitHub or your local machine.
+1. You should minimize charges when you are not performing an analysis. You can do this by clicking on “Stop cloud environment”. This will release the CPU and memory resources for other people to use. Note that your work will be saved in the environment and continue to accrue a very small cost.  This work will be lost if the cloud environment gets deleted.  If there is anything you would like to save permanently, it's a good idea to copy it from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. The stop icon on the top right which stops the cloud environment is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_91")
