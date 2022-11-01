@@ -30,7 +30,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/_child_workspace_navigate.Rmd",
+  doc_path = "child/_child_galaxy_navigate.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -39,7 +39,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/_child_workspace_delete.Rmd",
+  doc_path = "child/_child_galaxy_delete.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
