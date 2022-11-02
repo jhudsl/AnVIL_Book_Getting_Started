@@ -15,7 +15,6 @@ cow::borrow_chapter(
 
 This step-by-step guide provides written instructions and screenshots for getting started with RStudio on AnVIL.
 
-Note that, in order to use RStudio, you must have access to a Terra Workspace with permission to compute (i.e. you must be a “Writer” or “Owner” of the Workspace). From there, you can create an RStudio cloud environment. This will allow you to interface with data and perform genomics-based analyses with add on packages from the Bioconductor community.``
 
 ### Launch RStudio Cloud Environment
 

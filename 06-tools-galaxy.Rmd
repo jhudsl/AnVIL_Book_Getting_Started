@@ -15,7 +15,6 @@ cow::borrow_chapter(
 
 This step-by-step guide provides written instructions and screenshots for getting started with Galaxy on AnVIL.
 
-Note that, in order to use Galaxy, you must have access to a Terra Workspace with permission to compute (i.e. you must be a "Writer" or "Owner" of the Workspace).
 
 ### Starting Galaxy
 
