@@ -1,0 +1,60 @@
+# RStudio
+
+One of the analysis platforms available on AnVIL is RStudio. This platform offers rich genomics support through [Bioconductor](https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor). This chapter focuses on launching and highlighting a few features for RStudio.
+
+## RStudio: Video tutorial
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_video.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+## RStudio: Step-by-step guide
+
+This step-by-step guide provides written instructions and screenshots for getting started with RStudio on AnVIL.
+
+
+### Launch RStudio Cloud Environment
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Tour RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_tour.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+
+### Pause RStudio {#stopping}
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_pause.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Delete RStudio Cloud Environment
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+
+
+```{r}
+sessionInfo()
+```

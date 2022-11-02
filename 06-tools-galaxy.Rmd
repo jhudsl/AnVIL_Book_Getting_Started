@@ -1,0 +1,44 @@
+# Galaxy
+
+One of the analysis platforms available on AnVIL is Galaxy. This platform offers a graphical interface for thousands of tools(https://anvilproject.org/learn/interactive-analysis/getting-started-with-galaxy). This chapter focuses on launching and highlighting a few features for Galaxy.
+
+## Galaxy: Video tutorial
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_video.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+## Galaxy: Step-by-step guide
+
+This step-by-step guide provides written instructions and screenshots for getting started with Galaxy on AnVIL.
+
+
+### Starting Galaxy
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_start.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Navigating Galaxy
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_navigate.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Deleting Galaxy environment
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
