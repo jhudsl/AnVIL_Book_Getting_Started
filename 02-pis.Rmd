@@ -173,7 +173,7 @@ If you are uncertain, **we recommend starting by setting up a Billing Project pe
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/_child_terra_create_billing_project.Rmd",
+  doc_path = "child/_child_terra_billing_project_create.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
