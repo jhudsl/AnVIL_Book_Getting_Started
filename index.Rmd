@@ -30,11 +30,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1kGxHkP0JVPNF1kla
 Please choose the closest matching persona from the lefthand menu.
 
 ::: {.notice}
-_Genetics_
+_Genetics_  
 
 **Novice**: no genetics knowledge needed
 
-_Programming skills_
+_Programming skills_  
 
 **Novice**: no programming experience needed
 :::
