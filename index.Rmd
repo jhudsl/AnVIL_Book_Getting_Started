@@ -31,9 +31,11 @@ Please choose the closest matching persona from the lefthand menu.
 
 ::: {.notice}
 _Genetics_
+
 **Novice**: no genetics knowledge needed
 
 _Programming skills_
+
 **Novice**: no programming experience needed
 :::
 
