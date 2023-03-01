@@ -19,16 +19,28 @@ knitr::write_bib(c(
 
 # About this Book {-}
 
-This book is part of a series of books for the NHGRI’s Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL).  Here, we present opinionated step-by-step guides for setting up accounts focused on three personas: PIs, Analysts, and Consortia.
+This book is part of a series of books for the Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL) of the National Human Genome Research Institute (NHGRI). Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
+
+Here, we present opinionated step-by-step guides for setting up accounts focused on three personas: PIs, Analysts, and Consortia.
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE/edit#slide=id.gf8e59f4b48_0_0")
 ```
 
-Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data.  Learn more about AnVIL by visiting https://anvilproject.org or reading the [paper](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
+Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data.  Learn more about AnVIL by visiting https://anvilproject.org.
 
-Other books in this series include:
+## Skills Level {-} 
 
-- [Using AnVIL in the Classroom](https://jhudatascience.org/AnVIL_Book_Teacher_Guide)
-- Analysis Exercises Using AnVIL
-- Galaxy on AnVIL
+Please choose the closest matching persona from the lefthand menu.
+
+::: {.notice}
+_Genetics_
+**Novice**: no genetics knowledge needed
+
+_Programming skills_
+**Novice**: no programming experience needed
+:::
+
+## AnVIL Collection {-}
+
+Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
