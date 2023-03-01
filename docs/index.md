@@ -1,6 +1,6 @@
 ---
 title: "Getting Started on AnVIL"
-date: "February 13, 2023"
+date: "March 01, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -14,14 +14,26 @@ favicon: assets/AnVIL_style/anvil_favicon.ico
 
 # About this Book {-}
 
-This book is part of a series of books for the NHGRI’s Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL).  Here, we present opinionated step-by-step guides for setting up accounts focused on three personas: PIs, Analysts, and Consortia.
+This book is part of a series of books for the Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL) of the National Human Genome Research Institute (NHGRI). Here, we present opinionated step-by-step guides for setting up accounts focused on three personas: PIs, Analysts, and Consortia.
 
-<img src="index_files/figure-html//1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE_gf8e59f4b48_0_0.png" width="480" />
+<img src="index_files/figure-html//1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE_gf8e59f4b48_0_0.png" title="Icons representing PIs, Analysts, and Consortia personas." alt="Icons representing PIs, Analysts, and Consortia personas." width="80%" style="display: block; margin: auto;" />
 
-Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data.  Learn more about AnVIL by visiting https://anvilproject.org or reading the [paper](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
+### Skills Level {-} 
 
-Other books in this series include:
+Please choose the closest matching persona from the lefthand menu.
 
-- [Using AnVIL in the Classroom](https://jhudatascience.org/AnVIL_Book_Teacher_Guide)
-- Analysis Exercises Using AnVIL
-- Galaxy on AnVIL
+::: {.notice}
+_Genetics_  
+
+**Novice**: no genetics knowledge needed
+
+_Programming skills_  
+
+**Novice**: no programming experience needed
+:::
+
+### AnVIL Collection {-}
+
+Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data. Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
+
+Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
