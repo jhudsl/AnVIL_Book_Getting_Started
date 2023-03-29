@@ -20,9 +20,7 @@ This book will teach learners to:
 
 ## Other books in this series
 
-- [Using AnVIL in the Classroom](https://jhudatascience.org/AnVIL_Book_Teacher_Guide)
-- Analysis Exercises Using AnVIL
-- Galaxy on AnVIL
+Please check out our full collection of AnVIL and related resources [here](https://hutchdatascience.org/AnVIL_Collection/).
 
 ## Encountering problems?
 
