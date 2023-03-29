@@ -11,7 +11,7 @@
 ### How Do I Get Started?
 
 - Identify Billing Account(s) e.g. [Google $300 Free Trial](https://cloud.google.com/free/docs/gcp-free-tier), [AC2](https://anvilproject.org/news/2021/04/12/announcing-anvil-cloud-cost-credits-program)
-- Make an account (see [PIs and Lab Managers](https://jhudatascience.org/AnVIL_Book_Getting_Started/account-setup-pis.html) example)
+- Make an account (see [PIs and Lab Managers](https://jhudatascience.org/AnVIL_Book_Getting_Started/overview-pis.html) example)
 
 ### What Data Is Available?
 
