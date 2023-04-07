@@ -24,7 +24,7 @@ table of contents and enable the `scroll_highlight` feature
 ### Goals for This Guide
 
 ```{r, echo=FALSE, fig.alt="List of goals for this guide: 1) get your accounts, 2) set up billing, 3) set up your lab members to do research on AnVIL, and 4) monitor and manage spending."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd5c49c5c55_0_165")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.gd5c49c5c55_0_165")
 ```
 
 ### Design Philosophy
@@ -38,9 +38,8 @@ b. Control who can charge to your account by limiting who can “share” permis
 
 2. COST TRANSPARENCY
 
-a. Allow fine-grain accounting of who spent what by creating individual "Billing Projects" for each user
-b. Monitor costs by setting up email alerts to warn you when you reach spending thresholds
-c. Enable detailed analysis of costs by exporting cost data using BigQuery
+a. Monitor costs by setting up email alerts to warn you when you reach spending thresholds
+b. Enable detailed analysis of costs by exporting cost data using BigQuery
 
 3. DATA ACCESS CONTROLS
 
@@ -59,17 +58,17 @@ These design decisions are made to help you get up and running as quickly as pos
 
 AnVIL uses [Terra](https://anvil.terra.bio/) to run analyses.  Terra operates on Google Cloud Platform (GCP), so you’ll pay for all storage and analysis costs through a Google account linked to Terra.  The costs are the standard Google Cloud Platform fees for storing and moving data as well as executing an analysis.  These costs are passed along through Terra without any markup.
 
-```{r, echo=FALSE, fig.alt="Diagram outlining the roles of Google and Terra for AnVIL.  A 'PI' signs in with a Google ID, which lets them create a Google Billing Account.  Money flows from the Google Billing Account to a Terra Billing Project, and then to individual Terra Workspaces"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_138")
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps for setting up your team on AnVIL.  Step 1: A 'PI' signs in to Google Cloud Platform.Step 2: The PI creates a Google Billing Account.  Step 3: The Google Billing Account is connected to Terra to provide funding. Step 4: The PI creates Billing Projects and Workspaces.  Step 5: Team members are added to Terra Workspaces and Billing Projects and Step 6: The charges are repoted through Google Cloud Platform."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g12eb9cd9a00_0_0")
 ```
 
 1. Create a Google account
 1. Set up Google Billing (and claim your free credits!).
     + Add an administrator or viewer (optional)
 1. Link Terra to the Google Billing Account
-1. Create Terra Billing Projects
-1. Set budgets and alerts (optional, but highly recommended)
+1. Create Terra Billing Project(s)
 1. Add users and Workspaces
+1. Set budgets and alerts (optional, but highly recommended)
 
 ### Lab Management Roles
 
@@ -84,7 +83,7 @@ While there are many ways to configure your lab, this guide defines the followin
 ## Step 1: Create a Google Account {#pis-step-1}
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 1 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd5c49c5c55_0_160")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g11d096f1de6_0_0")
 ```
 
 
@@ -104,7 +103,7 @@ cow::borrow_chapter(
 ## Step 2: Set Up Google Billing
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 2 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd5c49c5c55_0_170")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g11d096f1de6_0_25")
 ```
 
 Terra operates on Google Cloud Platform, and does not charge any markup.  Rather than paying Terra or AnVIL, users set up billing directly with Google Cloud Platform.
@@ -140,7 +139,7 @@ cow::borrow_chapter(
 ## Step 3: Add Terra to Google Billing Account
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 3 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_198")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g11d096f1de6_0_50")
 ```
 
 ```{r, echo = FALSE, results='asis'}
@@ -150,24 +149,14 @@ cow::borrow_chapter(
 )
 ```
 
-## Step 4: Create Terra Billing Projects
+## Step 4: Create Terra Billing Project(s)
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 4 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gd84a304855_0_217")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g11d096f1de6_0_75")
 ```
 
 
 This is how you enable Terra users to charge to the Google Billing Account.
-
-Note that Google will report charges at the level of Billing Projects.  **If you create only one Billing Project for your lab, you will not be able to see a breakdown of where charges are coming from**.
-
-It is highly recommended that you create separate Billing Projects for each category of spending you would like to track.  For example:
-
-- A Billing Project for each **lab member**, if you would like to track individual spending
-- A Billing Project for each **analysis type**, if you would like to track spending on e.g. RNA-seq vs. variant calling.
-- A Billing Project for each **cohort**, if you would like to track spending per data set
-
-If you are uncertain, **we recommend starting by setting up a Billing Project per lab member**.  This makes it easy to track lab member spending, and also makes it easier to cleanly shut down projects when a member leaves the lab.
 
 ### Create a Billing Project
 
@@ -178,72 +167,27 @@ cow::borrow_chapter(
 )
 ```
 
-As mentioned above, we recommend creating separate Terra Billing Projects for each of your team members so you can track their spending.  These Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
+When starting out, a single Billing Project is generally sufficient.  As you and your team grow comfortable with AnVIL, you may find it useful to create additional Billing Projects to organize your spending. Multiple Billing Projects can all be associated with the same Google Billing Account if they are all funded by the same source.
 
 **Having trouble?**
 
 - Check out the [Troubleshooting] appendix
 - Visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org) with any questions.
 
-## Step 5: Set Budgets and Alerts
+## Step 5: Add Users and Workspaces
 
 ```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 5 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gda79c11827_0_0")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g11d096f1de6_0_100")
 ```
 
-Cloud computing can save a great deal of money, time and effort by providing compute on an as-needed basis.  However, care must be taken that users do not accidentally request excessive resources, or leave resources running when not needed.
-
-Unfortunately, there are two issues that make direct cost control difficult:
-
-- **The Google Cloud billing interface does not provide a way to automatically cancel computations when a spending threshold is reached**
-- **Compute costs are reported with a delay (~1 day)**
-
-As a PI or lab manager, there are some steps you can take to help monitor and limit spending:
-
-- Be careful with members and permissions in your Billing Projects and Workspaces on Terra (see [Adding Users and Workspaces](#step-6-add-users-and-workspaces) for recommended setup)
-- Most importantly, **monitor your spending** so you can shut down unnecessary expensive activities before they have time to accumulate.
-- Terra provides [extensive documentation and examples](https://support.terra.bio/hc/en-us/sections/360006459511-Controlling-Cloud-costs) regarding cost management while working in the cloud
-
-**We highly recommended you set budgets and alerts to notify you if spending starts to exceed expectations**.  This will make it easier to notice and shut down any accidental overspending.  A good starting point is to set a monthly budget, and then set alerts at **50 percent** and **90 percent** of expected spend.  You can add additional alerts if you desire.
-
-You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
-
-### Set Alerts
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "child/_child_google_billing_set_alerts.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
-```
-
-### View spend
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "child/_child_google_billing_view_spend.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
-```
-
-### Export Cost Data to BigQuery
-
-Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
-
-## Step 6: Add Users and Workspaces
-
-```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 6 is highlighted."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1c272-o1y4OdLu0hzr-5xDyTyrJVEmp8Jg55TPDgGZik/edit#slide=id.gda79c11827_0_64")
-```
-
-Finally, back on Terra, you can add lab members and give them permission to run analyses funded through your Billing Projects.
+Once you have set up a Terra Billing Project, you can add lab members and give them permission to run analyses funded through your Billing Project(s).
 
 There are two primary ways to permit users to charge to your Billing Projects:
 
 - **Add them directly to the Billing Project**.  This gives them flexibility to create and manage their own Workspaces, but reduces your control over spending.   Anyone they add to their Workspaces with sufficient permissions (i.e. permission to compute) can charge to your Billing Project.
 - **Create a Workspace yourself, and add them to the Workspace** (or have a designated Lab Manager responsible for managing Workspaces).  This gives you much more control over who can charge to your Billing Project.
 
-Billing permissions on Terra can be confusing.  For this reason, **We recommend starting by having a single person responsible for managing all Workspaces (either yourself or a trusted "lab manager").  This person should create all Workspaces and add lab members as Writers (not Owners) to the Workspaces**.  This provides the greatest control over spending.  Once you are familiar with the permissions system and are certain your lab members understand the implication of different permission settings, you may decide to give them greater control over Workspace access.
+Billing permissions on Terra can be confusing.  For this reason, **We recommend starting by having a single person responsible for managing all Workspaces (either yourself or a trusted "Lab Manager").  This person should create all Workspaces and add lab members as Writers (not Owners) to the Workspaces**.  This provides the greatest control over spending.  Once you are familiar with the permissions system and are certain your lab members understand the implication of different permission settings, you may decide to give them greater control over Workspace access.
 
 ### Create a New Workspace
 
@@ -254,7 +198,7 @@ cow::borrow_chapter(
 )
 ```
 
-**To start, we recommend creating one Workspace for each lab member** (associated with that lab member’s Billing Project, with separate Billing Projects for your lab members).  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed.
+**To start, we recommend creating one Workspace for each lab member**.  This will enable you and your lab members to familiarize yourself with Workspaces and decide how best to organize your work.  You can then create additional Workspaces as needed.
 
 ### Add Members to Workspaces
 
@@ -280,7 +224,7 @@ Managing permissions for a Workspace has important implications:
 In general we recommend:
 
 - **Writers: Lab members who need permission to compute** (and charge to your Billing Project).  This gives them permission to freely use the Workspace, (adding and removing data, conducting analyses, etc.) but prevents them from adding additional members who could charge to your Billing Project. This ensures you have control over *who* is doing the spending.
-- **Readers: All other users** (i.e. users who need to see the Workspace but should not charge to your Billing Project).  Readers can always “clone” the Workspace (creating a copy of it associated with their own Billing Project) if they want to run computations themselves.
+- **Readers: All other users** (i.e. users who need to see the Workspace but should not charge to your Billing Project).  Readers can always "clone" the Workspace (creating a copy of it associated with their own Billing Project) if they want to run computations themselves.
 - If working with protected data, take advantage of Authorization Domains to increase security.
 
 
@@ -302,6 +246,52 @@ Since this limit is imposed by Google, you will need to contact them directly to
 
 At the time of writing (April 2022) Terra is working to expedite this process for Terra users; we recommend checking the [relevant Terra documentation](https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY) for the latest information as well as recommendations about how to fill out the form.
 
+## Step 6: Set Budgets and Alerts
+
+```{r, echo=FALSE, fig.alt="Diagram showing an overview of the six steps. Step 6 is highlighted."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1iiGipBzbGi6lN8KhcmdMkU8es0SbA9xwqLcPYEkyaP0/edit#slide=id.g11d096f1de6_0_125")
+```
+
+Cloud computing can save a great deal of money, time and effort by providing compute on an as-needed basis.  However, care must be taken that users do not accidentally request excessive resources, or leave resources running when not needed.
+
+Unfortunately, there are two issues that make direct cost control difficult:
+
+- **The Google Cloud billing interface does not provide a way to automatically cancel computations when a spending threshold is reached**
+- **Compute costs are reported with a delay (~1 day)**
+
+As a PI or lab manager, there are some steps you can take to help monitor and limit spending:
+
+- Be careful with members and permissions in your Billing Projects and Workspaces on Terra (see [Adding Users and Workspaces](#step-5-add-users-and-workspaces) for recommended setup)
+- Most importantly, **monitor your spending** so you can shut down unnecessary expensive activities before they have time to accumulate.
+- Terra provides [extensive documentation and examples](https://support.terra.bio/hc/en-us/sections/360006459511-Controlling-Cloud-costs) regarding cost management while working in the cloud
+
+**We highly recommended you set budgets and alerts to notify you if spending starts to exceed expectations**.  This will make it easier to notice and shut down any accidental overspending.  A good starting point is to set a monthly budget, and then set alerts at **50 percent** and **90 percent** of expected spend.  You can add additional alerts if you desire.
+
+You can set a single Budget for your entire lab, set up budgets for individual Workspaces, or even set budgets for certain subsets of Workspaces.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Workspace is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
+
+### Set Alerts
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_billing_set_alerts.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### View spend
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_billing_view_spend.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Export Cost Data to BigQuery
+
+Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
+
+
 ## Wrap-Up {#pis-wrap-up}
 
 **Congratulations!  You have successfully set up AnVIL for your lab!**
@@ -311,3 +301,5 @@ Your lab members should be free to carry out analyses in the Workspaces you crea
 You can view costs at any time through [Google Cloud Billing](https://console.cloud.google.com/billing).  Note that costs are reported with a delay (~1 day).
 
 To learn more about billing and setup, we recommend checking out this [Leanpub course](https://leanpub.com/universities/courses/terra/billing-and-collaboration).
+
+
