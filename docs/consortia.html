@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Consortia | Getting Started on AnVIL</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Consortia | Getting Started on AnVIL" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -23,16 +22,15 @@
 
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2024-10-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="data-analysts-wrap-up.html"/>
-<link rel="next" href="overview-consortia.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<link rel="prev" href="data-analysts.html"/>
+<link rel="next" href="workspaces.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,18 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6QHG20WV6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B6QHG20WV6');
-</script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -100,11 +89,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -113,14 +102,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -128,6 +117,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/AnVIL_style/anvil.css" type="text/css" />
@@ -162,147 +155,147 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="part"><span><b>Account Setup</b></span></li>
 <li class="chapter" data-level="2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html"><i class="fa fa-check"></i><b>2</b> PIs and Lab Managers</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="overview-pis.html"><a href="overview-pis.html"><i class="fa fa-check"></i><b>2.1</b> Account Setup Overview</a>
+<li class="chapter" data-level="2.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#overview-pis"><i class="fa fa-check"></i><b>2.1</b> Account Setup Overview</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="overview-pis.html"><a href="overview-pis.html#goals-for-this-guide"><i class="fa fa-check"></i><b>2.1.1</b> Goals for This Guide</a></li>
-<li class="chapter" data-level="2.1.2" data-path="overview-pis.html"><a href="overview-pis.html#design-philosophy"><i class="fa fa-check"></i><b>2.1.2</b> Design Philosophy</a></li>
-<li class="chapter" data-level="2.1.3" data-path="overview-pis.html"><a href="overview-pis.html#before-you-start"><i class="fa fa-check"></i><b>2.1.3</b> Before You Start</a></li>
-<li class="chapter" data-level="2.1.4" data-path="overview-pis.html"><a href="overview-pis.html#account-setup-pis"><i class="fa fa-check"></i><b>2.1.4</b> Starting Setup</a></li>
-<li class="chapter" data-level="2.1.5" data-path="overview-pis.html"><a href="overview-pis.html#lab-management-roles"><i class="fa fa-check"></i><b>2.1.5</b> Lab Management Roles</a></li>
+<li class="chapter" data-level="2.1.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#goals-for-this-guide"><i class="fa fa-check"></i><b>2.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="2.1.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#design-philosophy"><i class="fa fa-check"></i><b>2.1.2</b> Design Philosophy</a></li>
+<li class="chapter" data-level="2.1.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#before-you-start"><i class="fa fa-check"></i><b>2.1.3</b> Before You Start</a></li>
+<li class="chapter" data-level="2.1.4" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#account-setup-pis"><i class="fa fa-check"></i><b>2.1.4</b> Starting Setup</a></li>
+<li class="chapter" data-level="2.1.5" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#lab-management-roles"><i class="fa fa-check"></i><b>2.1.5</b> Lab Management Roles</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="pis-step-1.html"><a href="pis-step-1.html"><i class="fa fa-check"></i><b>2.2</b> Step 1: Create a Google Account</a></li>
-<li class="chapter" data-level="2.3" data-path="step-2-set-up-google-billing.html"><a href="step-2-set-up-google-billing.html"><i class="fa fa-check"></i><b>2.3</b> Step 2: Set Up Google Billing</a>
+<li class="chapter" data-level="2.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#pis-step-1"><i class="fa fa-check"></i><b>2.2</b> Step 1: Create a Google Account</a></li>
+<li class="chapter" data-level="2.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-2-set-up-google-billing"><i class="fa fa-check"></i><b>2.3</b> Step 2: Set Up Google Billing</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="step-2-set-up-google-billing.html"><a href="step-2-set-up-google-billing.html#create-a-google-billing-account"><i class="fa fa-check"></i><b>2.3.1</b> Create a Google Billing Account</a></li>
-<li class="chapter" data-level="2.3.2" data-path="step-2-set-up-google-billing.html"><a href="step-2-set-up-google-billing.html#add-users-or-viewers-optional"><i class="fa fa-check"></i><b>2.3.2</b> Add Users or Viewers (optional)</a></li>
+<li class="chapter" data-level="2.3.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-google-billing-account"><i class="fa fa-check"></i><b>2.3.1</b> Create a Google Billing Account</a></li>
+<li class="chapter" data-level="2.3.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#add-users-or-viewers-optional"><i class="fa fa-check"></i><b>2.3.2</b> Add Users or Viewers (optional)</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="step-3-add-terra-to-google-billing-account.html"><a href="step-3-add-terra-to-google-billing-account.html"><i class="fa fa-check"></i><b>2.4</b> Step 3: Add Terra to Google Billing Account</a></li>
-<li class="chapter" data-level="2.5" data-path="step-4-create-terra-billing-projects.html"><a href="step-4-create-terra-billing-projects.html"><i class="fa fa-check"></i><b>2.5</b> Step 4: Create Terra Billing Projects</a>
+<li class="chapter" data-level="2.4" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-3-add-terra-to-google-billing-account"><i class="fa fa-check"></i><b>2.4</b> Step 3: Add Terra to Google Billing Account</a></li>
+<li class="chapter" data-level="2.5" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-4-create-terra-billing-projects"><i class="fa fa-check"></i><b>2.5</b> Step 4: Create Terra Billing Projects</a>
 <ul>
-<li class="chapter" data-level="2.5.1" data-path="step-4-create-terra-billing-projects.html"><a href="step-4-create-terra-billing-projects.html#create-a-billing-project"><i class="fa fa-check"></i><b>2.5.1</b> Create a Billing Project</a></li>
+<li class="chapter" data-level="2.5.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-billing-project"><i class="fa fa-check"></i><b>2.5.1</b> Create a Billing Project</a></li>
 </ul></li>
-<li class="chapter" data-level="2.6" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html"><i class="fa fa-check"></i><b>2.6</b> Step 5: Set Budgets and Alerts</a>
+<li class="chapter" data-level="2.6" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-5-set-budgets-and-alerts"><i class="fa fa-check"></i><b>2.6</b> Step 5: Set Budgets and Alerts</a>
 <ul>
-<li class="chapter" data-level="2.6.1" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html#set-alerts"><i class="fa fa-check"></i><b>2.6.1</b> Set Alerts</a></li>
-<li class="chapter" data-level="2.6.2" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html#view-spend"><i class="fa fa-check"></i><b>2.6.2</b> View spend</a></li>
-<li class="chapter" data-level="2.6.3" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html#export-cost-data-to-bigquery"><i class="fa fa-check"></i><b>2.6.3</b> Export Cost Data to BigQuery</a></li>
+<li class="chapter" data-level="2.6.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#set-alerts"><i class="fa fa-check"></i><b>2.6.1</b> Set Alerts</a></li>
+<li class="chapter" data-level="2.6.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#view-spend"><i class="fa fa-check"></i><b>2.6.2</b> View spend</a></li>
+<li class="chapter" data-level="2.6.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#export-cost-data-to-bigquery"><i class="fa fa-check"></i><b>2.6.3</b> Export Cost Data to BigQuery</a></li>
 </ul></li>
-<li class="chapter" data-level="2.7" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html"><i class="fa fa-check"></i><b>2.7</b> Step 6: Add Users and Workspaces</a>
+<li class="chapter" data-level="2.7" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-6-add-users-and-workspaces"><i class="fa fa-check"></i><b>2.7</b> Step 6: Add Users and Workspaces</a>
 <ul>
-<li class="chapter" data-level="2.7.1" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
-<li class="chapter" data-level="2.7.2" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
-<li class="chapter" data-level="2.7.3" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#request-quota-increase"><i class="fa fa-check"></i><b>2.7.3</b> Request Quota Increase</a></li>
+<li class="chapter" data-level="2.7.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="2.7.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
+<li class="chapter" data-level="2.7.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#request-quota-increase"><i class="fa fa-check"></i><b>2.7.3</b> Request Quota Increase</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="pis-wrap-up.html"><a href="pis-wrap-up.html"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
+<li class="chapter" data-level="2.8" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#pis-wrap-up"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-analysts.html"><a href="data-analysts.html"><i class="fa fa-check"></i><b>3</b> Data Analysts</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="overview-analysts.html"><a href="overview-analysts.html"><i class="fa fa-check"></i><b>3.1</b> Account Setup Overview</a>
+<li class="chapter" data-level="3.1" data-path="data-analysts.html"><a href="data-analysts.html#overview-analysts"><i class="fa fa-check"></i><b>3.1</b> Account Setup Overview</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="overview-analysts.html"><a href="overview-analysts.html#goals-for-this-guide-1"><i class="fa fa-check"></i><b>3.1.1</b> Goals for This Guide</a></li>
-<li class="chapter" data-level="3.1.2" data-path="overview-analysts.html"><a href="overview-analysts.html#starting-setup"><i class="fa fa-check"></i><b>3.1.2</b> Starting Setup</a></li>
+<li class="chapter" data-level="3.1.1" data-path="data-analysts.html"><a href="data-analysts.html#goals-for-this-guide-1"><i class="fa fa-check"></i><b>3.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-analysts.html"><a href="data-analysts.html#starting-setup"><i class="fa fa-check"></i><b>3.1.2</b> Starting Setup</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="data-analysts-step-1.html"><a href="data-analysts-step-1.html"><i class="fa fa-check"></i><b>3.2</b> Step 1: Create a Google Account</a></li>
-<li class="chapter" data-level="3.3" data-path="step-2-set-up-terra.html"><a href="step-2-set-up-terra.html"><i class="fa fa-check"></i><b>3.3</b> Step 2: Set Up Terra</a></li>
-<li class="chapter" data-level="3.4" data-path="step-3-link-external-accounts-optional.html"><a href="step-3-link-external-accounts-optional.html"><i class="fa fa-check"></i><b>3.4</b> Step 3: Link External Accounts (optional)</a></li>
-<li class="chapter" data-level="3.5" data-path="data-analysts-wrap-up.html"><a href="data-analysts-wrap-up.html"><i class="fa fa-check"></i><b>3.5</b> Wrap-Up</a></li>
+<li class="chapter" data-level="3.2" data-path="data-analysts.html"><a href="data-analysts.html#data-analysts-step-1"><i class="fa fa-check"></i><b>3.2</b> Step 1: Create a Google Account</a></li>
+<li class="chapter" data-level="3.3" data-path="data-analysts.html"><a href="data-analysts.html#step-2-set-up-terra"><i class="fa fa-check"></i><b>3.3</b> Step 2: Set Up Terra</a></li>
+<li class="chapter" data-level="3.4" data-path="data-analysts.html"><a href="data-analysts.html#step-3-link-external-accounts-optional"><i class="fa fa-check"></i><b>3.4</b> Step 3: Link External Accounts (optional)</a></li>
+<li class="chapter" data-level="3.5" data-path="data-analysts.html"><a href="data-analysts.html#data-analysts-wrap-up"><i class="fa fa-check"></i><b>3.5</b> Wrap-Up</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="consortia.html"><a href="consortia.html"><i class="fa fa-check"></i><b>4</b> Consortia</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="overview-consortia.html"><a href="overview-consortia.html"><i class="fa fa-check"></i><b>4.1</b> Account Setup Overview</a>
+<li class="chapter" data-level="4.1" data-path="consortia.html"><a href="consortia.html#overview-consortia"><i class="fa fa-check"></i><b>4.1</b> Account Setup Overview</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="overview-consortia.html"><a href="overview-consortia.html#goals-for-this-guide-2"><i class="fa fa-check"></i><b>4.1.1</b> Goals for This Guide</a></li>
-<li class="chapter" data-level="4.1.2" data-path="overview-consortia.html"><a href="overview-consortia.html#choosing-a-role"><i class="fa fa-check"></i><b>4.1.2</b> Choosing a Role</a></li>
-<li class="chapter" data-level="4.1.3" data-path="overview-consortia.html"><a href="overview-consortia.html#consortia-responsibilities"><i class="fa fa-check"></i><b>4.1.3</b> Consortia Responsibilities</a></li>
+<li class="chapter" data-level="4.1.1" data-path="consortia.html"><a href="consortia.html#goals-for-this-guide-2"><i class="fa fa-check"></i><b>4.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="4.1.2" data-path="consortia.html"><a href="consortia.html#choosing-a-role"><i class="fa fa-check"></i><b>4.1.2</b> Choosing a Role</a></li>
+<li class="chapter" data-level="4.1.3" data-path="consortia.html"><a href="consortia.html#consortia-responsibilities"><i class="fa fa-check"></i><b>4.1.3</b> Consortia Responsibilities</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html"><i class="fa fa-check"></i><b>4.2</b> Consortium Data Managers</a>
+<li class="chapter" data-level="4.2" data-path="consortia.html"><a href="consortia.html#consortium-data-managers"><i class="fa fa-check"></i><b>4.2</b> Consortium Data Managers</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#managing-security-and-privacy-policies"><i class="fa fa-check"></i><b>4.2.1</b> Managing Security and Privacy Policies</a></li>
-<li class="chapter" data-level="4.2.2" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#account-setup"><i class="fa fa-check"></i><b>4.2.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.2.3" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#two-factor-authentication"><i class="fa fa-check"></i><b>4.2.3</b> Two Factor Authentication</a></li>
-<li class="chapter" data-level="4.2.4" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#set-up-terra-authorization-domains"><i class="fa fa-check"></i><b>4.2.4</b> Set Up Terra Authorization Domains</a></li>
-<li class="chapter" data-level="4.2.5" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#granting-access"><i class="fa fa-check"></i><b>4.2.5</b> Granting Access</a></li>
-<li class="chapter" data-level="4.2.6" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#revoking-access"><i class="fa fa-check"></i><b>4.2.6</b> Revoking Access</a></li>
+<li class="chapter" data-level="4.2.1" data-path="consortia.html"><a href="consortia.html#managing-security-and-privacy-policies"><i class="fa fa-check"></i><b>4.2.1</b> Managing Security and Privacy Policies</a></li>
+<li class="chapter" data-level="4.2.2" data-path="consortia.html"><a href="consortia.html#account-setup"><i class="fa fa-check"></i><b>4.2.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.2.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication"><i class="fa fa-check"></i><b>4.2.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.2.4" data-path="consortia.html"><a href="consortia.html#set-up-terra-authorization-domains"><i class="fa fa-check"></i><b>4.2.4</b> Set Up Terra Authorization Domains</a></li>
+<li class="chapter" data-level="4.2.5" data-path="consortia.html"><a href="consortia.html#granting-access"><i class="fa fa-check"></i><b>4.2.5</b> Granting Access</a></li>
+<li class="chapter" data-level="4.2.6" data-path="consortia.html"><a href="consortia.html#revoking-access"><i class="fa fa-check"></i><b>4.2.6</b> Revoking Access</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html"><i class="fa fa-check"></i><b>4.3</b> Consortium PIs and Lab Managers</a>
+<li class="chapter" data-level="4.3" data-path="consortia.html"><a href="consortia.html#consortium-pis-and-lab-managers"><i class="fa fa-check"></i><b>4.3</b> Consortium PIs and Lab Managers</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html#be-aware-of-security-policies"><i class="fa fa-check"></i><b>4.3.1</b> Be Aware of Security Policies</a></li>
-<li class="chapter" data-level="4.3.2" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html#account-setup-1"><i class="fa fa-check"></i><b>4.3.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.3.3" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html#two-factor-authentication-1"><i class="fa fa-check"></i><b>4.3.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.3.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies"><i class="fa fa-check"></i><b>4.3.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="4.3.2" data-path="consortia.html"><a href="consortia.html#account-setup-1"><i class="fa fa-check"></i><b>4.3.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.3.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-1"><i class="fa fa-check"></i><b>4.3.3</b> Two Factor Authentication</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html"><i class="fa fa-check"></i><b>4.4</b> Consortium Data Analysts and Researchers</a>
+<li class="chapter" data-level="4.4" data-path="consortia.html"><a href="consortia.html#consortium-data-analysts-and-researchers"><i class="fa fa-check"></i><b>4.4</b> Consortium Data Analysts and Researchers</a>
 <ul>
-<li class="chapter" data-level="4.4.1" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html#be-aware-of-security-policies-1"><i class="fa fa-check"></i><b>4.4.1</b> Be Aware of Security Policies</a></li>
-<li class="chapter" data-level="4.4.2" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html#account-setup-2"><i class="fa fa-check"></i><b>4.4.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.4.3" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html#two-factor-authentication-2"><i class="fa fa-check"></i><b>4.4.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.4.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies-1"><i class="fa fa-check"></i><b>4.4.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="4.4.2" data-path="consortia.html"><a href="consortia.html#account-setup-2"><i class="fa fa-check"></i><b>4.4.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.4.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-2"><i class="fa fa-check"></i><b>4.4.3</b> Two Factor Authentication</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html"><i class="fa fa-check"></i><b>4.5</b> Consortium Data Submitters</a>
+<li class="chapter" data-level="4.5" data-path="consortia.html"><a href="consortia.html#consortium-data-submitters"><i class="fa fa-check"></i><b>4.5</b> Consortium Data Submitters</a>
 <ul>
-<li class="chapter" data-level="4.5.1" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html#be-aware-of-security-policies-2"><i class="fa fa-check"></i><b>4.5.1</b> Be Aware of Security Policies</a></li>
-<li class="chapter" data-level="4.5.2" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html#account-setup-3"><i class="fa fa-check"></i><b>4.5.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.5.3" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html#two-factor-authentication-3"><i class="fa fa-check"></i><b>4.5.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.5.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies-2"><i class="fa fa-check"></i><b>4.5.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="4.5.2" data-path="consortia.html"><a href="consortia.html#account-setup-3"><i class="fa fa-check"></i><b>4.5.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.5.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-3"><i class="fa fa-check"></i><b>4.5.3</b> Two Factor Authentication</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="consortia-wrap-up.html"><a href="consortia-wrap-up.html"><i class="fa fa-check"></i><b>4.6</b> Wrap-Up</a></li>
+<li class="chapter" data-level="4.6" data-path="consortia.html"><a href="consortia.html#consortia-wrap-up"><i class="fa fa-check"></i><b>4.6</b> Wrap-Up</a></li>
 </ul></li>
 <li class="part"><span><b>Working on AnVIL</b></span></li>
 <li class="chapter" data-level="5" data-path="workspaces.html"><a href="workspaces.html"><i class="fa fa-check"></i><b>5</b> Workspaces</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="access-your-workspaces.html"><a href="access-your-workspaces.html"><i class="fa fa-check"></i><b>5.1</b> Access Your Workspaces</a></li>
-<li class="chapter" data-level="5.2" data-path="clone-workspace.html"><a href="clone-workspace.html"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
-<li class="chapter" data-level="5.3" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.3</b> Create a New Workspace</a></li>
-<li class="chapter" data-level="5.4" data-path="add-members-to-workspace.html"><a href="add-members-to-workspace.html"><i class="fa fa-check"></i><b>5.4</b> Add Members to Workspace</a></li>
+<li class="chapter" data-level="5.1" data-path="workspaces.html"><a href="workspaces.html#access-your-workspaces"><i class="fa fa-check"></i><b>5.1</b> Access Your Workspaces</a></li>
+<li class="chapter" data-level="5.2" data-path="workspaces.html"><a href="workspaces.html#clone-workspace"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
+<li class="chapter" data-level="5.3" data-path="workspaces.html"><a href="workspaces.html#create-a-new-workspace-1"><i class="fa fa-check"></i><b>5.3</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.4" data-path="workspaces.html"><a href="workspaces.html#add-members-to-workspace"><i class="fa fa-check"></i><b>5.4</b> Add Members to Workspace</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html"><i class="fa fa-check"></i><b>6</b> Jupyter Notebook</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="jupyter-notebook-video-tutorial.html"><a href="jupyter-notebook-video-tutorial.html"><i class="fa fa-check"></i><b>6.1</b> Jupyter Notebook: Video tutorial</a>
+<li class="chapter" data-level="6.1" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#jupyter-notebook-video-tutorial"><i class="fa fa-check"></i><b>6.1</b> Jupyter Notebook: Video tutorial</a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="jupyter-notebook-video-tutorial.html"><a href="jupyter-notebook-video-tutorial.html#objectives"><i class="fa fa-check"></i><b>6.1.1</b> Objectives</a></li>
-<li class="chapter" data-level="6.1.2" data-path="jupyter-notebook-video-tutorial.html"><a href="jupyter-notebook-video-tutorial.html#slides"><i class="fa fa-check"></i><b>6.1.2</b> Slides</a></li>
+<li class="chapter" data-level="6.1.1" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#objectives"><i class="fa fa-check"></i><b>6.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="6.1.2" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#slides"><i class="fa fa-check"></i><b>6.1.2</b> Slides</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="galaxy.html"><a href="galaxy.html"><i class="fa fa-check"></i><b>7</b> Galaxy</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="galaxy-video-tutorial.html"><a href="galaxy-video-tutorial.html"><i class="fa fa-check"></i><b>7.1</b> Galaxy: Video tutorial</a>
+<li class="chapter" data-level="7.1" data-path="galaxy.html"><a href="galaxy.html#galaxy-video-tutorial"><i class="fa fa-check"></i><b>7.1</b> Galaxy: Video tutorial</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="galaxy-video-tutorial.html"><a href="galaxy-video-tutorial.html#objectives-1"><i class="fa fa-check"></i><b>7.1.1</b> Objectives</a></li>
-<li class="chapter" data-level="7.1.2" data-path="galaxy-video-tutorial.html"><a href="galaxy-video-tutorial.html#slides-1"><i class="fa fa-check"></i><b>7.1.2</b> Slides</a></li>
+<li class="chapter" data-level="7.1.1" data-path="galaxy.html"><a href="galaxy.html#objectives-1"><i class="fa fa-check"></i><b>7.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="7.1.2" data-path="galaxy.html"><a href="galaxy.html#slides-1"><i class="fa fa-check"></i><b>7.1.2</b> Slides</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html"><i class="fa fa-check"></i><b>7.2</b> Galaxy: Step-by-step guide</a>
+<li class="chapter" data-level="7.2" data-path="galaxy.html"><a href="galaxy.html#galaxy-step-by-step-guide"><i class="fa fa-check"></i><b>7.2</b> Galaxy: Step-by-step guide</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html#starting-galaxy"><i class="fa fa-check"></i><b>7.2.1</b> Starting Galaxy</a></li>
-<li class="chapter" data-level="7.2.2" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html#navigating-galaxy"><i class="fa fa-check"></i><b>7.2.2</b> Navigating Galaxy</a></li>
-<li class="chapter" data-level="7.2.3" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html#deleting-galaxy-environment"><i class="fa fa-check"></i><b>7.2.3</b> Deleting Galaxy environment</a></li>
+<li class="chapter" data-level="7.2.1" data-path="galaxy.html"><a href="galaxy.html#starting-galaxy"><i class="fa fa-check"></i><b>7.2.1</b> Starting Galaxy</a></li>
+<li class="chapter" data-level="7.2.2" data-path="galaxy.html"><a href="galaxy.html#navigating-galaxy"><i class="fa fa-check"></i><b>7.2.2</b> Navigating Galaxy</a></li>
+<li class="chapter" data-level="7.2.3" data-path="galaxy.html"><a href="galaxy.html#deleting-galaxy-environment"><i class="fa fa-check"></i><b>7.2.3</b> Deleting Galaxy environment</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="rstudio.html"><a href="rstudio.html"><i class="fa fa-check"></i><b>8</b> RStudio</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="rstudio-video-tutorial.html"><a href="rstudio-video-tutorial.html"><i class="fa fa-check"></i><b>8.1</b> RStudio: Video tutorial</a>
+<li class="chapter" data-level="8.1" data-path="rstudio.html"><a href="rstudio.html#rstudio-video-tutorial"><i class="fa fa-check"></i><b>8.1</b> RStudio: Video tutorial</a>
 <ul>
-<li class="chapter" data-level="8.1.1" data-path="rstudio-video-tutorial.html"><a href="rstudio-video-tutorial.html#objectives-2"><i class="fa fa-check"></i><b>8.1.1</b> Objectives</a></li>
-<li class="chapter" data-level="8.1.2" data-path="rstudio-video-tutorial.html"><a href="rstudio-video-tutorial.html#slides-2"><i class="fa fa-check"></i><b>8.1.2</b> Slides</a></li>
+<li class="chapter" data-level="8.1.1" data-path="rstudio.html"><a href="rstudio.html#objectives-2"><i class="fa fa-check"></i><b>8.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="8.1.2" data-path="rstudio.html"><a href="rstudio.html#slides-2"><i class="fa fa-check"></i><b>8.1.2</b> Slides</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html"><i class="fa fa-check"></i><b>8.2</b> RStudio: Step-by-step guide</a>
+<li class="chapter" data-level="8.2" data-path="rstudio.html"><a href="rstudio.html#rstudio-step-by-step-guide"><i class="fa fa-check"></i><b>8.2</b> RStudio: Step-by-step guide</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#launch-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.1</b> Launch RStudio Cloud Environment</a></li>
-<li class="chapter" data-level="8.2.2" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#tour-rstudio"><i class="fa fa-check"></i><b>8.2.2</b> Tour RStudio</a></li>
-<li class="chapter" data-level="8.2.3" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#stopping"><i class="fa fa-check"></i><b>8.2.3</b> Pause RStudio</a></li>
-<li class="chapter" data-level="8.2.4" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#delete-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.4</b> Delete RStudio Cloud Environment</a></li>
+<li class="chapter" data-level="8.2.1" data-path="rstudio.html"><a href="rstudio.html#launch-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.1</b> Launch RStudio Cloud Environment</a></li>
+<li class="chapter" data-level="8.2.2" data-path="rstudio.html"><a href="rstudio.html#tour-rstudio"><i class="fa fa-check"></i><b>8.2.2</b> Tour RStudio</a></li>
+<li class="chapter" data-level="8.2.3" data-path="rstudio.html"><a href="rstudio.html#stopping"><i class="fa fa-check"></i><b>8.2.3</b> Pause RStudio</a></li>
+<li class="chapter" data-level="8.2.4" data-path="rstudio.html"><a href="rstudio.html#delete-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.4</b> Delete RStudio Cloud Environment</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>9</b> Data</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html"><i class="fa fa-check"></i><b>9.1</b> Bring Your Own Data</a>
+<li class="chapter" data-level="9.1" data-path="data.html"><a href="data.html#bring-your-own-data"><i class="fa fa-check"></i><b>9.1</b> Bring Your Own Data</a>
 <ul>
-<li class="chapter" data-level="9.1.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#bring-data-overview"><i class="fa fa-check"></i><b>9.1.1</b> Overview</a></li>
-<li class="chapter" data-level="9.1.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>9.1.2</b> Browser: Upload Single Files</a></li>
-<li class="chapter" data-level="9.1.3" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-folders"><i class="fa fa-check"></i><b>9.1.3</b> Browser: Upload Folders</a></li>
-<li class="chapter" data-level="9.1.4" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>9.1.4</b> <code>gsutil</code>: Local to Cloud</a></li>
+<li class="chapter" data-level="9.1.1" data-path="data.html"><a href="data.html#bring-data-overview"><i class="fa fa-check"></i><b>9.1.1</b> Overview</a></li>
+<li class="chapter" data-level="9.1.2" data-path="data.html"><a href="data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>9.1.2</b> Browser: Upload Single Files</a></li>
+<li class="chapter" data-level="9.1.3" data-path="data.html"><a href="data.html#browser-upload-folders"><i class="fa fa-check"></i><b>9.1.3</b> Browser: Upload Folders</a></li>
+<li class="chapter" data-level="9.1.4" data-path="data.html"><a href="data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>9.1.4</b> <code>gsutil</code>: Local to Cloud</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html"><i class="fa fa-check"></i><b>9.2</b> Analyze Existing Data</a>
+<li class="chapter" data-level="9.2" data-path="data.html"><a href="data.html#analyze-existing-data"><i class="fa fa-check"></i><b>9.2</b> Analyze Existing Data</a>
 <ul>
-<li class="chapter" data-level="9.2.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-data-library"><i class="fa fa-check"></i><b>9.2.1</b> AnVIL Data Library</a></li>
-<li class="chapter" data-level="9.2.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>9.2.2</b> AnVIL Dataset Catalog</a></li>
-<li class="chapter" data-level="9.2.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-data-explorer"><i class="fa fa-check"></i><b>9.2.3</b> Gen3 Data Explorer</a></li>
+<li class="chapter" data-level="9.2.1" data-path="data.html"><a href="data.html#anvil-data-library"><i class="fa fa-check"></i><b>9.2.1</b> AnVIL Data Library</a></li>
+<li class="chapter" data-level="9.2.2" data-path="data.html"><a href="data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>9.2.2</b> AnVIL Dataset Catalog</a></li>
+<li class="chapter" data-level="9.2.3" data-path="data.html"><a href="data.html#gen3-data-explorer"><i class="fa fa-check"></i><b>9.2.3</b> Gen3 Data Explorer</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>10</b> Workflows</a>
@@ -347,7 +340,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
-<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/AK12iVXTjsB7yCUUA"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=Getting+Started+on+AnVIL"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
 
 </ul>
 
@@ -377,8 +370,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="consortia" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Consortia</h1>
+<div id="consortia" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Consortia<a href="consortia.html#consortia" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This chapter is targeted towards people who are part of a consortium and plan to use AnVIL as part of their activities. You will find here:</p>
 <p><br>
 <!-- The capital letter above alters the formatting for the bullet points below --></p>
@@ -392,7 +385,158 @@ navigation bar (e.g., 2.1, 4.3) a second time to expand the
 table of contents and enable the <code>scroll_highlight</code> feature
 (<a href="introduction.html#scroll-highlight">see more</a>).</p>
 </div>
+<div id="overview-consortia" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Account Setup Overview<a href="consortia.html#overview-consortia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="goals-for-this-guide-2" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Goals for This Guide<a href="consortia.html#goals-for-this-guide-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="04-consortia_files/figure-html/1H6LfwdDpYxlZ_BhaRKIZnvqr_V_NxE2MfrZuXva8m-8_gd5c49c5c55_0_165.png" alt="List of goals for this guide: 1) Choose your consortium role, 2) Get your accounts, and 3) Link external accounts." width="480" /></p>
 </div>
+<div id="choosing-a-role" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Choosing a Role<a href="consortia.html#choosing-a-role" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Consortia are usually made up of scientists taking on different research roles. This guide will be most helpful to you if you target the section most closely related to your role. The sections are summarized by role below:</p>
+<p><strong>Data Manager</strong></p>
+<p>The data manager is responsible for controlling access of consortium members. To protect data security, data managers ensure that consortium members only have access to appropriate datasets. If there are multiple datasets, the data manager will manage consortium member access as appropriate to a subset of those datasets. These limited access permissions are organized via distinct <a href="authorization-domains.html">Terra Authorization Domains</a>.</p>
+<p><strong>Principal Investigator / Lab Manager</strong></p>
+<p>Principal Investigators are responsible for managing billing expenses accrued by members of the consortium. Within the consortium, PIs can add members to <a href="workspaces.html">Workspaces</a> managed under specific Google Billing Accounts and Billing Projects, providing centralized control over computing and data storage expenses. Principal Investigators will need to work with data managers to ensure their team members have correct data access via <a href="authorization-domains.html">Terra Authorization Domains</a>, where necessary.</p>
+<p><strong>Data Analyst / Researcher</strong></p>
+<p>A consortium data analyst might describe someone who is performing analyses or writing code, but isn’t responsible for managing dataset access or billing expenses. The Analyst should be able to identify the PI or data manager point of contact in the consortium. Analysts will not be able to run analyses or access data without explicit permission from consortium management. This role also describes research leaders who will participate in activities but will not be managing personnel or expenses as part of the consortium.</p>
+<p><strong>Data Submitter</strong></p>
+<p>Data submitters are responsible for working with the AnVIL Data Ingestion Team as well as the National Center for Biotechnology Information (NCBI) to make data available on AnVIL. Data submitters will work with the data manager to ensure the data is protected via the appropriate <a href="authorization-domains.html">Terra Authorization Domains</a>.</p>
+</div>
+<div id="consortia-responsibilities" class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Consortia Responsibilities<a href="consortia.html#consortia-responsibilities" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It is important for consortium members of all roles to have a common understanding of the consortium’s security and data access policies. Consortia leadership are responsible for the following:</p>
+<ul>
+<li>Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)</li>
+<li>Arranging IRB oversight</li>
+<li>Drafting policy and protocol for data security and management incidents</li>
+<li>Ensuring all consortium members are aware of all data use limitations and the terms of the consortium agreements</li>
+<li>Defining what it means to be a consortium member</li>
+<li>Developing clear timelines and milestones for sharing data with the community rapidly, completely, and in NIH-designated data repositories</li>
+<li>Creating a timeline for closing out the consortium and thus the consortium-managed, streamlined access for consortium members</li>
+<li>Communicating the timeline with relevant NHGRI program staff and provide AnVIL with 6 months’ notice of when the consortium’s data access is expected to end</li>
+</ul>
+</div>
+</div>
+<div id="consortium-data-managers" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Consortium Data Managers<a href="consortia.html#consortium-data-managers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="managing-security-and-privacy-policies" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Managing Security and Privacy Policies<a href="consortia.html#managing-security-and-privacy-policies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As a data manager, you are responsible for managing access to sensitive data. You should be involved in managing the following:</p>
+<ul>
+<li>Drafting Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)<br />
+</li>
+<li>Arranging and managing IRB oversight<br />
+</li>
+<li>Drafting policy and protocol for reporting data security and management incidents<br />
+</li>
+<li>Managing data use limitations and conditions of consortium membership</li>
+</ul>
+</div>
+<div id="account-setup" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Account Setup<a href="consortia.html#account-setup" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To set up your account on AnVIL, please see the chapter for <a href="pis-and-lab-managers.html#overview-pis">PIs and Lab Managers</a>. Once the setup is complete, return to this page to continue.</p>
+<div class="dictionary">
+<p><a href="pis-and-lab-managers.html#overview-pis">Go to PIs and Lab Managers chapter</a></p>
+</div>
+</div>
+<div id="two-factor-authentication" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Two Factor Authentication<a href="consortia.html#two-factor-authentication" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Note that you must establish <a href="https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&amp;hl=en">two factor authentication</a> on your Google Account for added security.</p>
+</div>
+<div id="set-up-terra-authorization-domains" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Set Up Terra Authorization Domains<a href="consortia.html#set-up-terra-authorization-domains" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Terra Authorization Domains help keep sensitive genomic data secure while still allowing easy sharing with collaborators. See the Security section on <a href="authorization-domains.html">Terra Authorization Domains</a> for more information on setting up these secure access groups.</p>
+</div>
+<div id="granting-access" class="section level3 hasAnchor" number="4.2.5">
+<h3><span class="header-section-number">4.2.5</span> Granting Access<a href="consortia.html#granting-access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data managers should confirm that <strong>all other consortium members</strong> have two factor authentication set up on their Google accounts prior to granting access to datasets.</p>
+<p>Granting member access to datasets should be controlled via <a href="authorization-domains.html">Terra Authorization Domains</a>.</p>
+</div>
+<div id="revoking-access" class="section level3 hasAnchor" number="4.2.6">
+<h3><span class="header-section-number">4.2.6</span> Revoking Access<a href="consortia.html#revoking-access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Revoking access to datasets, either when a member leaves the consortium or the consortium concludes, should be controlled via <a href="authorization-domains.html">Terra Authorization Domains</a>.</p>
+</div>
+</div>
+<div id="consortium-pis-and-lab-managers" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Consortium PIs and Lab Managers<a href="consortia.html#consortium-pis-and-lab-managers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="be-aware-of-security-policies" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Be Aware of Security Policies<a href="consortia.html#be-aware-of-security-policies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As part of a consortium on AnVIL, you should be aware of the following:</p>
+<ul>
+<li>Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)</li>
+<li>IRB oversight of the consortium</li>
+<li>Policy and protocol for reporting data security and management incidents</li>
+</ul>
+</div>
+<div id="account-setup-1" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Account Setup<a href="consortia.html#account-setup-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To set up your account on AnVIL, please see the chapter for <a href="pis-and-lab-managers.html#overview-pis">PIs and Lab Managers</a>. Once the setup is complete, return to this page to continue.</p>
+<div class="dictionary">
+<p><a href="pis-and-lab-managers.html#overview-pis">Go to PIs and Lab Managers chapter</a></p>
+</div>
+</div>
+<div id="two-factor-authentication-1" class="section level3 hasAnchor" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Two Factor Authentication<a href="consortia.html#two-factor-authentication-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Note that you must establish <a href="https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&amp;hl=en">two factor authentication</a> on your Google Account for added security.</p>
+</div>
+</div>
+<div id="consortium-data-analysts-and-researchers" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Consortium Data Analysts and Researchers<a href="consortia.html#consortium-data-analysts-and-researchers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="be-aware-of-security-policies-1" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Be Aware of Security Policies<a href="consortia.html#be-aware-of-security-policies-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As part of a consortium on AnVIL, you should be aware of the following:</p>
+<ul>
+<li>Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)</li>
+<li>IRB oversight of the consortium</li>
+<li>Policy and protocol for reporting data security and management incidents</li>
+</ul>
+</div>
+<div id="account-setup-2" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Account Setup<a href="consortia.html#account-setup-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To set up your account on AnVIL, please see the chapter for <a href="data-analysts.html#overview-analysts">Data Analysts</a>. Once the setup is complete, return to this page to continue.</p>
+<div class="dictionary">
+<p><a href="data-analysts.html#overview-analysts">Go to Data Analysts chapter</a></p>
+</div>
+</div>
+<div id="two-factor-authentication-2" class="section level3 hasAnchor" number="4.4.3">
+<h3><span class="header-section-number">4.4.3</span> Two Factor Authentication<a href="consortia.html#two-factor-authentication-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Note that you must establish <a href="https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&amp;hl=en">two factor authentication</a> on your Google Account for added security.</p>
+</div>
+</div>
+<div id="consortium-data-submitters" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Consortium Data Submitters<a href="consortia.html#consortium-data-submitters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="be-aware-of-security-policies-2" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> Be Aware of Security Policies<a href="consortia.html#be-aware-of-security-policies-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As part of a consortium on AnVIL, you should be aware of the following:</p>
+<ul>
+<li>Memorandums of Understanding (MOUs) and Data Use Agreements (DUAs)</li>
+<li>IRB oversight of the consortium</li>
+<li>Policy and protocol for reporting data security and management incidents</li>
+</ul>
+</div>
+<div id="account-setup-3" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> Account Setup<a href="consortia.html#account-setup-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To set up your account on AnVIL, please see the documentation for <a href="https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview">Data Submitters</a>. Once the setup is complete, return to this page to continue.</p>
+<div class="dictionary">
+<p><a href="https://anvilproject.org/learn/data-submitters/submission-guide/data-submitters-overview">Go to Data Submitters documentation</a></p>
+</div>
+</div>
+<div id="two-factor-authentication-3" class="section level3 hasAnchor" number="4.5.3">
+<h3><span class="header-section-number">4.5.3</span> Two Factor Authentication<a href="consortia.html#two-factor-authentication-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Note that you must establish <a href="https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&amp;hl=en">two factor authentication</a> on your Google Account for added security.</p>
+</div>
+</div>
+<div id="consortia-wrap-up" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Wrap-Up<a href="consortia.html#consortia-wrap-up" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Congratulations! You have successfully set up your AnVIL account!</strong></p>
+<p>You should now be able to move forward with your consortium activities, such as adding personnel to appropriate datasets or working in a Workspace. Remember that you will need to coordinate with other members of the consortium to establish appropriate permissions for datasets, Terra Billing Projects, and Workspaces.</p>
+
+</div>
+</div>
+
+
+
 <hr>
 <center> 
   <div class="footer">
@@ -406,8 +550,8 @@ table of contents and enable the <code>scroll_highlight</code> feature
           </div>
         </div>
       </div>
-<a href="data-analysts-wrap-up.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="overview-consortia.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-analysts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="workspaces.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -438,8 +582,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/AnVIL_Book_Getting_Started/edit/main/04-consortia.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

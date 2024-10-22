@@ -1,6 +1,6 @@
 ---
 title: "Getting Started on AnVIL"
-date: "May 22, 2023"
+date: "October 22, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -16,7 +16,7 @@ favicon: assets/AnVIL_style/anvil_favicon.ico
 
 This book is part of a series of books for the Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL) of the National Human Genome Research Institute (NHGRI). Here, we present opinionated step-by-step guides for setting up accounts focused on three personas: PIs, Analysts, and Consortia.
 
-<img src="index_files/figure-html//1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE_gf8e59f4b48_0_0.png" title="Icons representing PIs, Analysts, and Consortia personas." alt="Icons representing PIs, Analysts, and Consortia personas." width="80%" style="display: block; margin: auto;" />
+<img src="index_files/figure-html//1kGxHkP0JVPNF1kla5XEqaIt1yz9s4ZbgzJ2zfL7GmTE_gf8e59f4b48_0_0.png" alt="Icons representing PIs, Analysts, and Consortia personas." width="80%" style="display: block; margin: auto;" />
 
 ### Skills Level {-} 
 

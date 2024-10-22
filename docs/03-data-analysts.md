@@ -12,13 +12,13 @@ This chapter is targeted towards people who are joining an existing team on AnVI
 
 ### Goals for This Guide
 
-<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gd5c49c5c55_0_165.png" title="List of goals for this guide: 1) get your accounts and 2) link external accounts." alt="List of goals for this guide: 1) get your accounts and 2) link external accounts." width="480" />
+<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gd5c49c5c55_0_165.png" alt="List of goals for this guide: 1) get your accounts and 2) link external accounts." width="480" />
 
 ### Starting Setup
 
 **Terra** is the compute engine of AnVIL; i.e. where you will run your analyses.  Terra currently offers access to **Jupyter Notebooks** and **RStudio** for interactive analysis, as well as the **Workflow Description Language** (WDL) for batch processing of many samples.  Behind the scenes, Terra runs on Google Cloud Platform, so you will need a (free) Google Account.
 
-<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gd84a304855_0_138.png" title="Diagram illustrating the relationship between Terra and Google Cloud Platform." alt="Diagram illustrating the relationship between Terra and Google Cloud Platform." width="480" />
+<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gd84a304855_0_138.png" alt="Diagram illustrating the relationship between Terra and Google Cloud Platform." width="480" />
 
 In this guide, you will go through the following steps:
 
@@ -44,7 +44,7 @@ If you would like to create a Google account that is associated with your non-Gm
 
 You can always access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
 
-<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gde7783227e_0_31.png" title="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." alt="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." width="480" />
+<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gde7783227e_0_31.png" alt="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." width="480" />
 
 ## Step 3: Link External Accounts (optional)
 

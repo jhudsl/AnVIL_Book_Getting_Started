@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Workspaces | Getting Started on AnVIL</title>
   <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Workspaces | Getting Started on AnVIL" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
   
@@ -23,16 +22,15 @@
 
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2024-10-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="consortia-wrap-up.html"/>
-<link rel="next" href="access-your-workspaces.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<link rel="prev" href="consortia.html"/>
+<link rel="next" href="jupyter-notebook.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,18 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6QHG20WV6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B6QHG20WV6');
-</script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -100,11 +89,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -113,14 +102,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -128,6 +117,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/AnVIL_style/anvil.css" type="text/css" />
@@ -162,147 +155,147 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="part"><span><b>Account Setup</b></span></li>
 <li class="chapter" data-level="2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html"><i class="fa fa-check"></i><b>2</b> PIs and Lab Managers</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="overview-pis.html"><a href="overview-pis.html"><i class="fa fa-check"></i><b>2.1</b> Account Setup Overview</a>
+<li class="chapter" data-level="2.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#overview-pis"><i class="fa fa-check"></i><b>2.1</b> Account Setup Overview</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="overview-pis.html"><a href="overview-pis.html#goals-for-this-guide"><i class="fa fa-check"></i><b>2.1.1</b> Goals for This Guide</a></li>
-<li class="chapter" data-level="2.1.2" data-path="overview-pis.html"><a href="overview-pis.html#design-philosophy"><i class="fa fa-check"></i><b>2.1.2</b> Design Philosophy</a></li>
-<li class="chapter" data-level="2.1.3" data-path="overview-pis.html"><a href="overview-pis.html#before-you-start"><i class="fa fa-check"></i><b>2.1.3</b> Before You Start</a></li>
-<li class="chapter" data-level="2.1.4" data-path="overview-pis.html"><a href="overview-pis.html#account-setup-pis"><i class="fa fa-check"></i><b>2.1.4</b> Starting Setup</a></li>
-<li class="chapter" data-level="2.1.5" data-path="overview-pis.html"><a href="overview-pis.html#lab-management-roles"><i class="fa fa-check"></i><b>2.1.5</b> Lab Management Roles</a></li>
+<li class="chapter" data-level="2.1.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#goals-for-this-guide"><i class="fa fa-check"></i><b>2.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="2.1.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#design-philosophy"><i class="fa fa-check"></i><b>2.1.2</b> Design Philosophy</a></li>
+<li class="chapter" data-level="2.1.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#before-you-start"><i class="fa fa-check"></i><b>2.1.3</b> Before You Start</a></li>
+<li class="chapter" data-level="2.1.4" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#account-setup-pis"><i class="fa fa-check"></i><b>2.1.4</b> Starting Setup</a></li>
+<li class="chapter" data-level="2.1.5" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#lab-management-roles"><i class="fa fa-check"></i><b>2.1.5</b> Lab Management Roles</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="pis-step-1.html"><a href="pis-step-1.html"><i class="fa fa-check"></i><b>2.2</b> Step 1: Create a Google Account</a></li>
-<li class="chapter" data-level="2.3" data-path="step-2-set-up-google-billing.html"><a href="step-2-set-up-google-billing.html"><i class="fa fa-check"></i><b>2.3</b> Step 2: Set Up Google Billing</a>
+<li class="chapter" data-level="2.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#pis-step-1"><i class="fa fa-check"></i><b>2.2</b> Step 1: Create a Google Account</a></li>
+<li class="chapter" data-level="2.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-2-set-up-google-billing"><i class="fa fa-check"></i><b>2.3</b> Step 2: Set Up Google Billing</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="step-2-set-up-google-billing.html"><a href="step-2-set-up-google-billing.html#create-a-google-billing-account"><i class="fa fa-check"></i><b>2.3.1</b> Create a Google Billing Account</a></li>
-<li class="chapter" data-level="2.3.2" data-path="step-2-set-up-google-billing.html"><a href="step-2-set-up-google-billing.html#add-users-or-viewers-optional"><i class="fa fa-check"></i><b>2.3.2</b> Add Users or Viewers (optional)</a></li>
+<li class="chapter" data-level="2.3.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-google-billing-account"><i class="fa fa-check"></i><b>2.3.1</b> Create a Google Billing Account</a></li>
+<li class="chapter" data-level="2.3.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#add-users-or-viewers-optional"><i class="fa fa-check"></i><b>2.3.2</b> Add Users or Viewers (optional)</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="step-3-add-terra-to-google-billing-account.html"><a href="step-3-add-terra-to-google-billing-account.html"><i class="fa fa-check"></i><b>2.4</b> Step 3: Add Terra to Google Billing Account</a></li>
-<li class="chapter" data-level="2.5" data-path="step-4-create-terra-billing-projects.html"><a href="step-4-create-terra-billing-projects.html"><i class="fa fa-check"></i><b>2.5</b> Step 4: Create Terra Billing Projects</a>
+<li class="chapter" data-level="2.4" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-3-add-terra-to-google-billing-account"><i class="fa fa-check"></i><b>2.4</b> Step 3: Add Terra to Google Billing Account</a></li>
+<li class="chapter" data-level="2.5" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-4-create-terra-billing-projects"><i class="fa fa-check"></i><b>2.5</b> Step 4: Create Terra Billing Projects</a>
 <ul>
-<li class="chapter" data-level="2.5.1" data-path="step-4-create-terra-billing-projects.html"><a href="step-4-create-terra-billing-projects.html#create-a-billing-project"><i class="fa fa-check"></i><b>2.5.1</b> Create a Billing Project</a></li>
+<li class="chapter" data-level="2.5.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-billing-project"><i class="fa fa-check"></i><b>2.5.1</b> Create a Billing Project</a></li>
 </ul></li>
-<li class="chapter" data-level="2.6" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html"><i class="fa fa-check"></i><b>2.6</b> Step 5: Set Budgets and Alerts</a>
+<li class="chapter" data-level="2.6" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-5-set-budgets-and-alerts"><i class="fa fa-check"></i><b>2.6</b> Step 5: Set Budgets and Alerts</a>
 <ul>
-<li class="chapter" data-level="2.6.1" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html#set-alerts"><i class="fa fa-check"></i><b>2.6.1</b> Set Alerts</a></li>
-<li class="chapter" data-level="2.6.2" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html#view-spend"><i class="fa fa-check"></i><b>2.6.2</b> View spend</a></li>
-<li class="chapter" data-level="2.6.3" data-path="step-5-set-budgets-and-alerts.html"><a href="step-5-set-budgets-and-alerts.html#export-cost-data-to-bigquery"><i class="fa fa-check"></i><b>2.6.3</b> Export Cost Data to BigQuery</a></li>
+<li class="chapter" data-level="2.6.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#set-alerts"><i class="fa fa-check"></i><b>2.6.1</b> Set Alerts</a></li>
+<li class="chapter" data-level="2.6.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#view-spend"><i class="fa fa-check"></i><b>2.6.2</b> View spend</a></li>
+<li class="chapter" data-level="2.6.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#export-cost-data-to-bigquery"><i class="fa fa-check"></i><b>2.6.3</b> Export Cost Data to BigQuery</a></li>
 </ul></li>
-<li class="chapter" data-level="2.7" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html"><i class="fa fa-check"></i><b>2.7</b> Step 6: Add Users and Workspaces</a>
+<li class="chapter" data-level="2.7" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-6-add-users-and-workspaces"><i class="fa fa-check"></i><b>2.7</b> Step 6: Add Users and Workspaces</a>
 <ul>
-<li class="chapter" data-level="2.7.1" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
-<li class="chapter" data-level="2.7.2" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
-<li class="chapter" data-level="2.7.3" data-path="step-6-add-users-and-workspaces.html"><a href="step-6-add-users-and-workspaces.html#request-quota-increase"><i class="fa fa-check"></i><b>2.7.3</b> Request Quota Increase</a></li>
+<li class="chapter" data-level="2.7.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-new-workspace"><i class="fa fa-check"></i><b>2.7.1</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="2.7.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>2.7.2</b> Add Members to Workspaces</a></li>
+<li class="chapter" data-level="2.7.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#request-quota-increase"><i class="fa fa-check"></i><b>2.7.3</b> Request Quota Increase</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="pis-wrap-up.html"><a href="pis-wrap-up.html"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
+<li class="chapter" data-level="2.8" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#pis-wrap-up"><i class="fa fa-check"></i><b>2.8</b> Wrap-Up</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-analysts.html"><a href="data-analysts.html"><i class="fa fa-check"></i><b>3</b> Data Analysts</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="overview-analysts.html"><a href="overview-analysts.html"><i class="fa fa-check"></i><b>3.1</b> Account Setup Overview</a>
+<li class="chapter" data-level="3.1" data-path="data-analysts.html"><a href="data-analysts.html#overview-analysts"><i class="fa fa-check"></i><b>3.1</b> Account Setup Overview</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="overview-analysts.html"><a href="overview-analysts.html#goals-for-this-guide-1"><i class="fa fa-check"></i><b>3.1.1</b> Goals for This Guide</a></li>
-<li class="chapter" data-level="3.1.2" data-path="overview-analysts.html"><a href="overview-analysts.html#starting-setup"><i class="fa fa-check"></i><b>3.1.2</b> Starting Setup</a></li>
+<li class="chapter" data-level="3.1.1" data-path="data-analysts.html"><a href="data-analysts.html#goals-for-this-guide-1"><i class="fa fa-check"></i><b>3.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-analysts.html"><a href="data-analysts.html#starting-setup"><i class="fa fa-check"></i><b>3.1.2</b> Starting Setup</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="data-analysts-step-1.html"><a href="data-analysts-step-1.html"><i class="fa fa-check"></i><b>3.2</b> Step 1: Create a Google Account</a></li>
-<li class="chapter" data-level="3.3" data-path="step-2-set-up-terra.html"><a href="step-2-set-up-terra.html"><i class="fa fa-check"></i><b>3.3</b> Step 2: Set Up Terra</a></li>
-<li class="chapter" data-level="3.4" data-path="step-3-link-external-accounts-optional.html"><a href="step-3-link-external-accounts-optional.html"><i class="fa fa-check"></i><b>3.4</b> Step 3: Link External Accounts (optional)</a></li>
-<li class="chapter" data-level="3.5" data-path="data-analysts-wrap-up.html"><a href="data-analysts-wrap-up.html"><i class="fa fa-check"></i><b>3.5</b> Wrap-Up</a></li>
+<li class="chapter" data-level="3.2" data-path="data-analysts.html"><a href="data-analysts.html#data-analysts-step-1"><i class="fa fa-check"></i><b>3.2</b> Step 1: Create a Google Account</a></li>
+<li class="chapter" data-level="3.3" data-path="data-analysts.html"><a href="data-analysts.html#step-2-set-up-terra"><i class="fa fa-check"></i><b>3.3</b> Step 2: Set Up Terra</a></li>
+<li class="chapter" data-level="3.4" data-path="data-analysts.html"><a href="data-analysts.html#step-3-link-external-accounts-optional"><i class="fa fa-check"></i><b>3.4</b> Step 3: Link External Accounts (optional)</a></li>
+<li class="chapter" data-level="3.5" data-path="data-analysts.html"><a href="data-analysts.html#data-analysts-wrap-up"><i class="fa fa-check"></i><b>3.5</b> Wrap-Up</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="consortia.html"><a href="consortia.html"><i class="fa fa-check"></i><b>4</b> Consortia</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="overview-consortia.html"><a href="overview-consortia.html"><i class="fa fa-check"></i><b>4.1</b> Account Setup Overview</a>
+<li class="chapter" data-level="4.1" data-path="consortia.html"><a href="consortia.html#overview-consortia"><i class="fa fa-check"></i><b>4.1</b> Account Setup Overview</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="overview-consortia.html"><a href="overview-consortia.html#goals-for-this-guide-2"><i class="fa fa-check"></i><b>4.1.1</b> Goals for This Guide</a></li>
-<li class="chapter" data-level="4.1.2" data-path="overview-consortia.html"><a href="overview-consortia.html#choosing-a-role"><i class="fa fa-check"></i><b>4.1.2</b> Choosing a Role</a></li>
-<li class="chapter" data-level="4.1.3" data-path="overview-consortia.html"><a href="overview-consortia.html#consortia-responsibilities"><i class="fa fa-check"></i><b>4.1.3</b> Consortia Responsibilities</a></li>
+<li class="chapter" data-level="4.1.1" data-path="consortia.html"><a href="consortia.html#goals-for-this-guide-2"><i class="fa fa-check"></i><b>4.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="4.1.2" data-path="consortia.html"><a href="consortia.html#choosing-a-role"><i class="fa fa-check"></i><b>4.1.2</b> Choosing a Role</a></li>
+<li class="chapter" data-level="4.1.3" data-path="consortia.html"><a href="consortia.html#consortia-responsibilities"><i class="fa fa-check"></i><b>4.1.3</b> Consortia Responsibilities</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html"><i class="fa fa-check"></i><b>4.2</b> Consortium Data Managers</a>
+<li class="chapter" data-level="4.2" data-path="consortia.html"><a href="consortia.html#consortium-data-managers"><i class="fa fa-check"></i><b>4.2</b> Consortium Data Managers</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#managing-security-and-privacy-policies"><i class="fa fa-check"></i><b>4.2.1</b> Managing Security and Privacy Policies</a></li>
-<li class="chapter" data-level="4.2.2" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#account-setup"><i class="fa fa-check"></i><b>4.2.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.2.3" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#two-factor-authentication"><i class="fa fa-check"></i><b>4.2.3</b> Two Factor Authentication</a></li>
-<li class="chapter" data-level="4.2.4" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#set-up-terra-authorization-domains"><i class="fa fa-check"></i><b>4.2.4</b> Set Up Terra Authorization Domains</a></li>
-<li class="chapter" data-level="4.2.5" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#granting-access"><i class="fa fa-check"></i><b>4.2.5</b> Granting Access</a></li>
-<li class="chapter" data-level="4.2.6" data-path="consortium-data-managers.html"><a href="consortium-data-managers.html#revoking-access"><i class="fa fa-check"></i><b>4.2.6</b> Revoking Access</a></li>
+<li class="chapter" data-level="4.2.1" data-path="consortia.html"><a href="consortia.html#managing-security-and-privacy-policies"><i class="fa fa-check"></i><b>4.2.1</b> Managing Security and Privacy Policies</a></li>
+<li class="chapter" data-level="4.2.2" data-path="consortia.html"><a href="consortia.html#account-setup"><i class="fa fa-check"></i><b>4.2.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.2.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication"><i class="fa fa-check"></i><b>4.2.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.2.4" data-path="consortia.html"><a href="consortia.html#set-up-terra-authorization-domains"><i class="fa fa-check"></i><b>4.2.4</b> Set Up Terra Authorization Domains</a></li>
+<li class="chapter" data-level="4.2.5" data-path="consortia.html"><a href="consortia.html#granting-access"><i class="fa fa-check"></i><b>4.2.5</b> Granting Access</a></li>
+<li class="chapter" data-level="4.2.6" data-path="consortia.html"><a href="consortia.html#revoking-access"><i class="fa fa-check"></i><b>4.2.6</b> Revoking Access</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html"><i class="fa fa-check"></i><b>4.3</b> Consortium PIs and Lab Managers</a>
+<li class="chapter" data-level="4.3" data-path="consortia.html"><a href="consortia.html#consortium-pis-and-lab-managers"><i class="fa fa-check"></i><b>4.3</b> Consortium PIs and Lab Managers</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html#be-aware-of-security-policies"><i class="fa fa-check"></i><b>4.3.1</b> Be Aware of Security Policies</a></li>
-<li class="chapter" data-level="4.3.2" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html#account-setup-1"><i class="fa fa-check"></i><b>4.3.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.3.3" data-path="consortium-pis-and-lab-managers.html"><a href="consortium-pis-and-lab-managers.html#two-factor-authentication-1"><i class="fa fa-check"></i><b>4.3.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.3.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies"><i class="fa fa-check"></i><b>4.3.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="4.3.2" data-path="consortia.html"><a href="consortia.html#account-setup-1"><i class="fa fa-check"></i><b>4.3.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.3.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-1"><i class="fa fa-check"></i><b>4.3.3</b> Two Factor Authentication</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html"><i class="fa fa-check"></i><b>4.4</b> Consortium Data Analysts and Researchers</a>
+<li class="chapter" data-level="4.4" data-path="consortia.html"><a href="consortia.html#consortium-data-analysts-and-researchers"><i class="fa fa-check"></i><b>4.4</b> Consortium Data Analysts and Researchers</a>
 <ul>
-<li class="chapter" data-level="4.4.1" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html#be-aware-of-security-policies-1"><i class="fa fa-check"></i><b>4.4.1</b> Be Aware of Security Policies</a></li>
-<li class="chapter" data-level="4.4.2" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html#account-setup-2"><i class="fa fa-check"></i><b>4.4.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.4.3" data-path="consortium-data-analysts-and-researchers.html"><a href="consortium-data-analysts-and-researchers.html#two-factor-authentication-2"><i class="fa fa-check"></i><b>4.4.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.4.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies-1"><i class="fa fa-check"></i><b>4.4.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="4.4.2" data-path="consortia.html"><a href="consortia.html#account-setup-2"><i class="fa fa-check"></i><b>4.4.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.4.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-2"><i class="fa fa-check"></i><b>4.4.3</b> Two Factor Authentication</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html"><i class="fa fa-check"></i><b>4.5</b> Consortium Data Submitters</a>
+<li class="chapter" data-level="4.5" data-path="consortia.html"><a href="consortia.html#consortium-data-submitters"><i class="fa fa-check"></i><b>4.5</b> Consortium Data Submitters</a>
 <ul>
-<li class="chapter" data-level="4.5.1" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html#be-aware-of-security-policies-2"><i class="fa fa-check"></i><b>4.5.1</b> Be Aware of Security Policies</a></li>
-<li class="chapter" data-level="4.5.2" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html#account-setup-3"><i class="fa fa-check"></i><b>4.5.2</b> Account Setup</a></li>
-<li class="chapter" data-level="4.5.3" data-path="consortium-data-submitters.html"><a href="consortium-data-submitters.html#two-factor-authentication-3"><i class="fa fa-check"></i><b>4.5.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="4.5.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies-2"><i class="fa fa-check"></i><b>4.5.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="4.5.2" data-path="consortia.html"><a href="consortia.html#account-setup-3"><i class="fa fa-check"></i><b>4.5.2</b> Account Setup</a></li>
+<li class="chapter" data-level="4.5.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-3"><i class="fa fa-check"></i><b>4.5.3</b> Two Factor Authentication</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="consortia-wrap-up.html"><a href="consortia-wrap-up.html"><i class="fa fa-check"></i><b>4.6</b> Wrap-Up</a></li>
+<li class="chapter" data-level="4.6" data-path="consortia.html"><a href="consortia.html#consortia-wrap-up"><i class="fa fa-check"></i><b>4.6</b> Wrap-Up</a></li>
 </ul></li>
 <li class="part"><span><b>Working on AnVIL</b></span></li>
 <li class="chapter" data-level="5" data-path="workspaces.html"><a href="workspaces.html"><i class="fa fa-check"></i><b>5</b> Workspaces</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="access-your-workspaces.html"><a href="access-your-workspaces.html"><i class="fa fa-check"></i><b>5.1</b> Access Your Workspaces</a></li>
-<li class="chapter" data-level="5.2" data-path="clone-workspace.html"><a href="clone-workspace.html"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
-<li class="chapter" data-level="5.3" data-path="create-a-new-workspace-1.html"><a href="create-a-new-workspace-1.html"><i class="fa fa-check"></i><b>5.3</b> Create a New Workspace</a></li>
-<li class="chapter" data-level="5.4" data-path="add-members-to-workspace.html"><a href="add-members-to-workspace.html"><i class="fa fa-check"></i><b>5.4</b> Add Members to Workspace</a></li>
+<li class="chapter" data-level="5.1" data-path="workspaces.html"><a href="workspaces.html#access-your-workspaces"><i class="fa fa-check"></i><b>5.1</b> Access Your Workspaces</a></li>
+<li class="chapter" data-level="5.2" data-path="workspaces.html"><a href="workspaces.html#clone-workspace"><i class="fa fa-check"></i><b>5.2</b> Clone an Existing Workspace</a></li>
+<li class="chapter" data-level="5.3" data-path="workspaces.html"><a href="workspaces.html#create-a-new-workspace-1"><i class="fa fa-check"></i><b>5.3</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="5.4" data-path="workspaces.html"><a href="workspaces.html#add-members-to-workspace"><i class="fa fa-check"></i><b>5.4</b> Add Members to Workspace</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html"><i class="fa fa-check"></i><b>6</b> Jupyter Notebook</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="jupyter-notebook-video-tutorial.html"><a href="jupyter-notebook-video-tutorial.html"><i class="fa fa-check"></i><b>6.1</b> Jupyter Notebook: Video tutorial</a>
+<li class="chapter" data-level="6.1" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#jupyter-notebook-video-tutorial"><i class="fa fa-check"></i><b>6.1</b> Jupyter Notebook: Video tutorial</a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="jupyter-notebook-video-tutorial.html"><a href="jupyter-notebook-video-tutorial.html#objectives"><i class="fa fa-check"></i><b>6.1.1</b> Objectives</a></li>
-<li class="chapter" data-level="6.1.2" data-path="jupyter-notebook-video-tutorial.html"><a href="jupyter-notebook-video-tutorial.html#slides"><i class="fa fa-check"></i><b>6.1.2</b> Slides</a></li>
+<li class="chapter" data-level="6.1.1" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#objectives"><i class="fa fa-check"></i><b>6.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="6.1.2" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#slides"><i class="fa fa-check"></i><b>6.1.2</b> Slides</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="galaxy.html"><a href="galaxy.html"><i class="fa fa-check"></i><b>7</b> Galaxy</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="galaxy-video-tutorial.html"><a href="galaxy-video-tutorial.html"><i class="fa fa-check"></i><b>7.1</b> Galaxy: Video tutorial</a>
+<li class="chapter" data-level="7.1" data-path="galaxy.html"><a href="galaxy.html#galaxy-video-tutorial"><i class="fa fa-check"></i><b>7.1</b> Galaxy: Video tutorial</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="galaxy-video-tutorial.html"><a href="galaxy-video-tutorial.html#objectives-1"><i class="fa fa-check"></i><b>7.1.1</b> Objectives</a></li>
-<li class="chapter" data-level="7.1.2" data-path="galaxy-video-tutorial.html"><a href="galaxy-video-tutorial.html#slides-1"><i class="fa fa-check"></i><b>7.1.2</b> Slides</a></li>
+<li class="chapter" data-level="7.1.1" data-path="galaxy.html"><a href="galaxy.html#objectives-1"><i class="fa fa-check"></i><b>7.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="7.1.2" data-path="galaxy.html"><a href="galaxy.html#slides-1"><i class="fa fa-check"></i><b>7.1.2</b> Slides</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html"><i class="fa fa-check"></i><b>7.2</b> Galaxy: Step-by-step guide</a>
+<li class="chapter" data-level="7.2" data-path="galaxy.html"><a href="galaxy.html#galaxy-step-by-step-guide"><i class="fa fa-check"></i><b>7.2</b> Galaxy: Step-by-step guide</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html#starting-galaxy"><i class="fa fa-check"></i><b>7.2.1</b> Starting Galaxy</a></li>
-<li class="chapter" data-level="7.2.2" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html#navigating-galaxy"><i class="fa fa-check"></i><b>7.2.2</b> Navigating Galaxy</a></li>
-<li class="chapter" data-level="7.2.3" data-path="galaxy-step-by-step-guide.html"><a href="galaxy-step-by-step-guide.html#deleting-galaxy-environment"><i class="fa fa-check"></i><b>7.2.3</b> Deleting Galaxy environment</a></li>
+<li class="chapter" data-level="7.2.1" data-path="galaxy.html"><a href="galaxy.html#starting-galaxy"><i class="fa fa-check"></i><b>7.2.1</b> Starting Galaxy</a></li>
+<li class="chapter" data-level="7.2.2" data-path="galaxy.html"><a href="galaxy.html#navigating-galaxy"><i class="fa fa-check"></i><b>7.2.2</b> Navigating Galaxy</a></li>
+<li class="chapter" data-level="7.2.3" data-path="galaxy.html"><a href="galaxy.html#deleting-galaxy-environment"><i class="fa fa-check"></i><b>7.2.3</b> Deleting Galaxy environment</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="rstudio.html"><a href="rstudio.html"><i class="fa fa-check"></i><b>8</b> RStudio</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="rstudio-video-tutorial.html"><a href="rstudio-video-tutorial.html"><i class="fa fa-check"></i><b>8.1</b> RStudio: Video tutorial</a>
+<li class="chapter" data-level="8.1" data-path="rstudio.html"><a href="rstudio.html#rstudio-video-tutorial"><i class="fa fa-check"></i><b>8.1</b> RStudio: Video tutorial</a>
 <ul>
-<li class="chapter" data-level="8.1.1" data-path="rstudio-video-tutorial.html"><a href="rstudio-video-tutorial.html#objectives-2"><i class="fa fa-check"></i><b>8.1.1</b> Objectives</a></li>
-<li class="chapter" data-level="8.1.2" data-path="rstudio-video-tutorial.html"><a href="rstudio-video-tutorial.html#slides-2"><i class="fa fa-check"></i><b>8.1.2</b> Slides</a></li>
+<li class="chapter" data-level="8.1.1" data-path="rstudio.html"><a href="rstudio.html#objectives-2"><i class="fa fa-check"></i><b>8.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="8.1.2" data-path="rstudio.html"><a href="rstudio.html#slides-2"><i class="fa fa-check"></i><b>8.1.2</b> Slides</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html"><i class="fa fa-check"></i><b>8.2</b> RStudio: Step-by-step guide</a>
+<li class="chapter" data-level="8.2" data-path="rstudio.html"><a href="rstudio.html#rstudio-step-by-step-guide"><i class="fa fa-check"></i><b>8.2</b> RStudio: Step-by-step guide</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#launch-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.1</b> Launch RStudio Cloud Environment</a></li>
-<li class="chapter" data-level="8.2.2" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#tour-rstudio"><i class="fa fa-check"></i><b>8.2.2</b> Tour RStudio</a></li>
-<li class="chapter" data-level="8.2.3" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#stopping"><i class="fa fa-check"></i><b>8.2.3</b> Pause RStudio</a></li>
-<li class="chapter" data-level="8.2.4" data-path="rstudio-step-by-step-guide.html"><a href="rstudio-step-by-step-guide.html#delete-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.4</b> Delete RStudio Cloud Environment</a></li>
+<li class="chapter" data-level="8.2.1" data-path="rstudio.html"><a href="rstudio.html#launch-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.1</b> Launch RStudio Cloud Environment</a></li>
+<li class="chapter" data-level="8.2.2" data-path="rstudio.html"><a href="rstudio.html#tour-rstudio"><i class="fa fa-check"></i><b>8.2.2</b> Tour RStudio</a></li>
+<li class="chapter" data-level="8.2.3" data-path="rstudio.html"><a href="rstudio.html#stopping"><i class="fa fa-check"></i><b>8.2.3</b> Pause RStudio</a></li>
+<li class="chapter" data-level="8.2.4" data-path="rstudio.html"><a href="rstudio.html#delete-rstudio-cloud-environment"><i class="fa fa-check"></i><b>8.2.4</b> Delete RStudio Cloud Environment</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>9</b> Data</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html"><i class="fa fa-check"></i><b>9.1</b> Bring Your Own Data</a>
+<li class="chapter" data-level="9.1" data-path="data.html"><a href="data.html#bring-your-own-data"><i class="fa fa-check"></i><b>9.1</b> Bring Your Own Data</a>
 <ul>
-<li class="chapter" data-level="9.1.1" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#bring-data-overview"><i class="fa fa-check"></i><b>9.1.1</b> Overview</a></li>
-<li class="chapter" data-level="9.1.2" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>9.1.2</b> Browser: Upload Single Files</a></li>
-<li class="chapter" data-level="9.1.3" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#browser-upload-folders"><i class="fa fa-check"></i><b>9.1.3</b> Browser: Upload Folders</a></li>
-<li class="chapter" data-level="9.1.4" data-path="bring-your-own-data.html"><a href="bring-your-own-data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>9.1.4</b> <code>gsutil</code>: Local to Cloud</a></li>
+<li class="chapter" data-level="9.1.1" data-path="data.html"><a href="data.html#bring-data-overview"><i class="fa fa-check"></i><b>9.1.1</b> Overview</a></li>
+<li class="chapter" data-level="9.1.2" data-path="data.html"><a href="data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>9.1.2</b> Browser: Upload Single Files</a></li>
+<li class="chapter" data-level="9.1.3" data-path="data.html"><a href="data.html#browser-upload-folders"><i class="fa fa-check"></i><b>9.1.3</b> Browser: Upload Folders</a></li>
+<li class="chapter" data-level="9.1.4" data-path="data.html"><a href="data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>9.1.4</b> <code>gsutil</code>: Local to Cloud</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html"><i class="fa fa-check"></i><b>9.2</b> Analyze Existing Data</a>
+<li class="chapter" data-level="9.2" data-path="data.html"><a href="data.html#analyze-existing-data"><i class="fa fa-check"></i><b>9.2</b> Analyze Existing Data</a>
 <ul>
-<li class="chapter" data-level="9.2.1" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-data-library"><i class="fa fa-check"></i><b>9.2.1</b> AnVIL Data Library</a></li>
-<li class="chapter" data-level="9.2.2" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>9.2.2</b> AnVIL Dataset Catalog</a></li>
-<li class="chapter" data-level="9.2.3" data-path="analyze-existing-data.html"><a href="analyze-existing-data.html#gen3-data-explorer"><i class="fa fa-check"></i><b>9.2.3</b> Gen3 Data Explorer</a></li>
+<li class="chapter" data-level="9.2.1" data-path="data.html"><a href="data.html#anvil-data-library"><i class="fa fa-check"></i><b>9.2.1</b> AnVIL Data Library</a></li>
+<li class="chapter" data-level="9.2.2" data-path="data.html"><a href="data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>9.2.2</b> AnVIL Dataset Catalog</a></li>
+<li class="chapter" data-level="9.2.3" data-path="data.html"><a href="data.html#gen3-data-explorer"><i class="fa fa-check"></i><b>9.2.3</b> Gen3 Data Explorer</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>10</b> Workflows</a>
@@ -347,7 +340,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
-<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/AK12iVXTjsB7yCUUA"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=Getting+Started+on+AnVIL"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
 
 </ul>
 
@@ -377,8 +370,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="workspaces" class="section level1" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Workspaces</h1>
+<div id="workspaces" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Workspaces<a href="workspaces.html#workspaces" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results.</p>
 <p>To get a Workspace of your own, you can</p>
 <ul>
@@ -388,6 +381,109 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>The video below gives a brief introduction to the parts of a Workspace.</p>
 <iframe src="https://drive.google.com/file/d/18WUmQfDnulHdaMlrH0Eh6kwIP3zTkaqp/preview" width="640" height="360" allow="autoplay">
 </iframe>
+<div id="access-your-workspaces" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Access Your Workspaces<a href="workspaces.html#access-your-workspaces" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you are part of a research team, you may have been added to some existing Workspaces. To find and access your Workspaces, follow the steps below.</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
+<li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
+<p><img src="05-workspaces_files/figure-html/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg_g10f3888d99c_0_156.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="480" /></p></li>
+<li><p>You are automatically directed to the “My Workspaces” tab. Here you can see any Workspaces that have been shared with you, along with your permission level.</p>
+<p><img src="05-workspaces_files/figure-html/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg_g10f3888d99c_0_0.png" alt="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The &quot;My Workspaces&quot; tab and the column showing permission level are highlighted." width="480" /></p>
+<ul>
+<li><strong>Reader</strong> means you can open the Workspace and see everything, but can’t do any computations or make any edits.</li>
+<li><strong>Writer</strong> means you can run computations, which will charge costs to the Workspace’s Billing Project. Writers can also make edits to the Workspace.</li>
+<li><strong>Owner</strong> is similar to Writer, but also allows you to control who can access the Workspace.</li>
+</ul></li>
+<li><p>Click on the name of a Workspace to open it. Opening and viewing a Workspace does not cost anything.</p>
+<p><img src="05-workspaces_files/figure-html/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg_g10f3888d99c_0_163.png" alt="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of one of the Workspaces is highlighted." width="480" /></p></li>
+<li><p>When you open a Workspace, you are directed to the Workspace Dashboard. This generally has a description of the Workspace contents, as well as some useful details about the Workspace itself.</p>
+<p><img src="05-workspaces_files/figure-html/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg_g10f3888d99c_0_170.png" alt="Screenshot of a Terra Workspace.  The &quot;Dashboard&quot; is highlighted." width="480" /></p></li>
+</ol>
+<p>From here you can navigate through the different tabs of the Workspace, and if you have sufficient permission, you can start running analyses. If you are only a Reader, you may need to “clone” (make your own copy) of the Workspace before you can start working.</p>
+</div>
+<div id="clone-workspace" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Clone an Existing Workspace<a href="workspaces.html#clone-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space.</p>
+<p>Cloning creates a new copy of the Workspace that will charge costs to the Billing Project of your choice. Note that you can only clone a Workspace if you are at least a “User” on the Terra Billing Project. This helps prevent unwanted charges. Workspaces charge money to their associated Billing Project, regardless of who conducts the activity, so it’s important to be careful about who has permission to use the Workspace (see <a href="workspaces.html#add-members-to-workspace">Add Members to Workspace</a> for details).</p>
+<p>If you need to clone a Workspace but don’t have permission to create your own Workspaces, contact your PI or lab manager so that they can either grant you permission or clone the Workspace for you.</p>
+<p>The following steps show you how to clone a Workspace that has already been developed by other AnVIL users. When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
+<li><p>Locate the Workspace you want to clone. If a Workspace has been shared with you ahead of time, it will appear in “MY WORKSPACES”. You can clone a Workspace that was shared with you to perform your own analyses. In the screenshot below, no Workspaces have been shared.</p>
+<p><img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_0.png" alt="Screenshot of Terra &quot;MY WORKSPACES&quot; menu. The &quot;MY WORKSPACES&quot; tab is highlighted. No Workspaces are visible because none have been shared with the user. There is an option to create a new Workspace." width="480" /></p></li>
+<li><p>If a Workspace hasn’t been shared with you, navigate to the “FEATURED” or “PUBLIC” Workspace tabs.</p>
+<p><img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_144.png" alt="Screenshot of Terra &quot;My Workspaces&quot; menu. The &quot;FEATURED&quot; tab is highlighted." width="480" /></p></li>
+<li><p>Use the search box to find the Workspace you want to clone.</p>
+<p><img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_288.png" alt="Screenshot of Terra &quot;My Workspaces&quot; menu. The search bar is highlighted and the user has typed in the term &quot;COVID-19&quot;. A Workspace related to COVID-19 appears in the results." width="480" /></p></li>
+<li><p>Click the teardrop button on the far right next to the Workspace you want to clone. Click “Clone”. You can also clone the Workspace from the Workspace Dashboard instead of the search results.</p>
+<p><img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_432.png" alt="Screenshot of Terra &quot;My Workspaces&quot; menu with the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="480" />
+<img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_577.png" alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="480" /></p></li>
+<li><p>You will see a popup box appear. Name your Workspace and select the appropriate Terra Billing Project. <strong>All activity in the Workspace will be charged to this Billing Project</strong> (regardless of who conducted it). Remember that each Workspace should have its own Billing Project.</p>
+<p><img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_722.png" alt="Screenshot of the &quot;clone workspace&quot; Terra popup dialog box. The Workspace name and Billing Project dropdown are highlighted. Text has been filled in for the Workspace name as &quot;Lab-member-1-workspace-2&quot;." width="480" /></p></li>
+<li><p>If you are working with protected data, you can set the <strong>Authorization Domain</strong> to limit who can be added to your Workspace. Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future). Workspaces by default are only visible to people you specifically share them with. Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated. We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data). For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.</p>
+<p><img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_867.png" alt="Screenshot of Terra popup dialog box for creating a new Workspace. The drop-down menu labeled &quot;Authorization domain&quot; is highlighted." width="480" /></p></li>
+<li><p>Click “CLONE WORKSPACE”. The new Workspace should now show up under your Workspaces.</p>
+<p><img src="05-workspaces_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_1012.png" alt="Screenshot of Terra popup dialog box for creating a new Workspace. The &quot;Clone Workspace&quot; button is highlighted." width="480" /></p></li>
+</ol>
+</div>
+<div id="create-a-new-workspace-1" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Create a New Workspace<a href="workspaces.html#create-a-new-workspace-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Creating a new Workspace from scratch allows you to fully customize the contents.</p>
+<p>Note that you can only create a new Workspace if you are at least a “User” on a Terra Billing Project. This helps prevent unwanted charges. Workspaces charge money to their associated Billing Project, regardless of who conducts the activity, so it’s important to be careful about who has permission to use the Workspace (see <a href="workspaces.html#add-members-to-workspace">Add Members to Workspace</a> for details).</p>
+<p>If you need to create a Workspace but don’t have permission, contact your PI or lab manager so that they can either grant you permission or create the Workspace for you.</p>
+<p>The following steps show you how to create a Workspace so you can get started.</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
+<li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
+<p><img src="05-workspaces_files/figure-html/1zyqZHITAthNhXeH2XQqA7FMOu2mek6wfgGEaje1KQsk_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="480" /></p></li>
+<li><p>Click on the <strong>plus icon</strong> near the top of left of the page.</p>
+<p><img src="05-workspaces_files/figure-html/1zyqZHITAthNhXeH2XQqA7FMOu2mek6wfgGEaje1KQsk_g117989bd49c_0_733.png" alt="Screenshot of Terra Workspaces page.  The &quot;+&quot; is highlighted." width="480" /></p></li>
+<li><p>Name your Workspace and select the appropriate Billing Project. <strong>All activity in the Workspace will be charged to this Billing Project</strong> (regardless of who conducted it).</p>
+<p><img src="05-workspaces_files/figure-html/1zyqZHITAthNhXeH2XQqA7FMOu2mek6wfgGEaje1KQsk_g117989bd49c_0_877.png" alt="Screenshot of Terra dialog box for creating a new Workspace.  The text box labeled &quot;Workspace name&quot; and the drop-down menu labeled &quot;Billing project&quot; are highlighted." width="480" /></p></li>
+<li><p>If you are working with protected data, you can set the <strong>Authorization Domain</strong> to limit who can be added to your Workspace. Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future). Workspaces by default are only visible to people you specifically share them with. Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated. We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data). For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.</p>
+<p><img src="05-workspaces_files/figure-html/1zyqZHITAthNhXeH2XQqA7FMOu2mek6wfgGEaje1KQsk_g117989bd49c_0_1022.png" alt="Screenshot of Terra dialog box for creating a new Workspace.  The drop-down menu labeled &quot;Authorization domain&quot; is highlighted." width="480" /></p></li>
+<li><p>Click “CREATE WORKSPACE”. The new Workspace should now show up under your Workspaces.</p>
+<p><img src="05-workspaces_files/figure-html/1zyqZHITAthNhXeH2XQqA7FMOu2mek6wfgGEaje1KQsk_g117989bd49c_0_1166.png" alt="Screenshot of Terra dialog box for creating a new Workspace.  The &quot;Create Workspace&quot; button is highlighted." width="480" /></p></li>
+</ol>
+</div>
+<div id="add-members-to-workspace" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Add Members to Workspace<a href="workspaces.html#add-members-to-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Members can be added to a Workspace with a few different permission levels:</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_584.png" alt="Table summarizing Workspace permission levels." width="480" /></p>
+<p>More details about the permissions associated with each Access Level can be found in the <a href="https://support.terra.bio/hc/en-us/articles/360025851892-Reader-writer-or-owner-Workspace-access-controls-explained">Terra documentation</a>.</p>
+<p>Managing permissions for a Workspace has important implications:</p>
+<ul>
+<li><strong>Billing</strong>: Terra charges are associated with Workspaces rather than users. Any billable activity that takes place in a given Workspace will be charged to the associated Billing Project, regardless of who conducted the activity. If there are multiple users with permission to compute, it is impossible to tell who conducted the activity.</li>
+<li><strong>Data access</strong>: Especially when working with protected data, it’s important to ensure that users have proper authorization to view the data before giving them access to a Workspace containing the data. Terra provides <strong>Authorization Domains</strong> to assist with this.</li>
+</ul>
+<p>Make sure you understand what permissions you are granting before adding someone to your Workspace.</p>
+<p>To add a member to a Workspace:</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
+<li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="480" /></p></li>
+<li><p>Click on the name of the Workspace to open the Workspace. Opening a Workspace does not cost anything. Certain activities in the Workspace (such as running an analysis) will charge to the Workspace’s Billing Project. Workspace management (e.g. adding and removing members, editing the description) does not cost money.</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_289.png" alt="Screenshot of Terra Workspace page.  The name of a Workspace is highlighted." width="480" /></p></li>
+<li><p>Click the teardrop button (<img src="https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png" width="25" alt="teardrop button" />) on the right hand side to open the Workspace management menu. Click “Share”</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_295.png" alt="Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces's drop-down menu is highlighted, and the menu item &quot;Share&quot; is highlighted." width="480" /></p></li>
+<li><p>Enter the email address of the user or Group you’d like to share the Workspace with.</p>
+<ul>
+<li>If adding an individual, make sure to enter the account that they use to access AnVIL.</li>
+<li>If adding a Terra Group, use the Group email address, which can be found on the Terra Group management page.</li>
+</ul>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_440.png" alt="Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled &quot;User email&quot; is highlighted." width="480" /></p></li>
+<li><p>Choose their permission level.</p>
+<ul>
+<li>Remember that all activity in the Workspace will be charged to the Workspace’s Billing Project, regardless of who conducts it, so only add members as “Writers” or “Owners” if they should be charging to the Workspace’s Billing Project.</li>
+<li>“Readers” can view all parts of the Workspace but cannot make edits or run analyses (i.e. they cannot spend money). They can also clone their own copy of the Workspace where they can conduct activity on their own Billing Project.</li>
+</ul>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_756.png" alt="Screenshot of the dialog box for sharing a Terra Workspace.  The drop-down menu labeled with the email of the user you are sharing with is highlighted and the menu item &quot;Writer&quot; is selected." width="480" /></p></li>
+<li><p>Click “Save”. The user should now be able to see the Workspace when logged in to Terra.</p>
+<p><img src="05-workspaces_files/figure-html/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I_g117dd5f15db_0_902.png" alt="Screenshot of the dialog box for sharing a Terra Workspace.  The &quot;Save&quot; button is highlighted." width="480" /></p></li>
+</ol>
+
+</div>
 </div>
 <hr>
 <center> 
@@ -402,8 +498,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="consortia-wrap-up.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="access-your-workspaces.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="consortia.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="jupyter-notebook.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -434,8 +530,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/AnVIL_Book_Getting_Started/edit/main/05-workspaces.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

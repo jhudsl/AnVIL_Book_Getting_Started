@@ -6,11 +6,11 @@ The Workspace Bucket is a special Google Cloud Storage bucket that is governed b
 
 In contrast, Persistent Disks provide a working directory for Cloud Environments that run Jupyter, RStudio, and Galaxy.  Input data can be localized to Persistent Disks for analysis while output data can be transferred to the Workspace Bucket for more reliable long term storage.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3b800_0_4.png" title="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3b800_0_4.png" alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." width="480" />
 
 Data Tables provide a way to organize data and metadata, including URI links to storage buckets.  These tables are a convenient way to organize input for analyses as well as tracking workflow outputs.  More details can be found in the [Terra documentation](https://support.terra.bio/hc/en-us/sections/360004147951).
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3c0cd_0_0.png" title="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;." alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3c0cd_0_0.png" alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;." width="480" />
 
 ## Bring Your Own Data
 
@@ -18,27 +18,27 @@ Data Tables provide a way to organize data and metadata, including URI links to 
 
 The starting point for bringing your own data to AnVIL is the Workspace Dashboard. At the bottom right, you'll find the full path to the Google Bucket information corresponding to your Workspace. You can click the clipboard icon on the right to copy the name of your Workspace Bucket. You will be able to see any uploaded files by clicking the "Open in browser" link.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5172664d7_0_142.png" title="Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and &quot;Open in browser&quot; link, at the bottom right of the screen is highlighted." alt="Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and &quot;Open in browser&quot; link, at the bottom right of the screen is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5172664d7_0_142.png" alt="Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and &quot;Open in browser&quot; link, at the bottom right of the screen is highlighted." width="480" />
 
 You can also see any uploaded files by clicking the "Files" directory at the bottom left in the Data Tab.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf55fadc51c_0_3.png" title="Image shows a screenshot of the Workspace Data tab. The Files directory and link on the bottom left is highlighted." alt="Image shows a screenshot of the Workspace Data tab. The Files directory and link on the bottom left is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf55fadc51c_0_3.png" alt="Image shows a screenshot of the Workspace Data tab. The Files directory and link on the bottom left is highlighted." width="480" />
 
 ### Browser: Upload Single Files
 
 Click the "Files" directory at the bottom left of the Data Tab. Then click the "+" button in the bottom right corner of the screen. This will prompt a file browser on your local machine.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf55fadc51c_0_12.png" title="Image shows a screenshot of the Workspace Data tab. The plus button on the bottom right corner of the screen is highlighted." alt="Image shows a screenshot of the Workspace Data tab. The plus button on the bottom right corner of the screen is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf55fadc51c_0_12.png" alt="Image shows a screenshot of the Workspace Data tab. The plus button on the bottom right corner of the screen is highlighted." width="480" />
 
 ### Browser: Upload Folders
 
 Click the ["Open in browser"](#bring-data-overview) link on the bottom right of the Workspace Dashboard Tab. This will open a new browser window or tab directed to your Workspace's Google Bucket on the Google Cloud Platform. 
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_1.png" title="Image shows a screenshot of the Workspace Dashboard. The &quot;Open in browser&quot; link at the bottom right of the screen is highlighted." alt="Image shows a screenshot of the Workspace Dashboard. The &quot;Open in browser&quot; link at the bottom right of the screen is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_1.png" alt="Image shows a screenshot of the Workspace Dashboard. The &quot;Open in browser&quot; link at the bottom right of the screen is highlighted." width="480" />
 
 Here, you can upload files and manage your data and folders. You can also upload an entire folder by clicking on "UPLOAD FOLDER".
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_9.png" title="Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The &quot;UPLOAD FOLDER&quot; button is highlighted." alt="Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The &quot;UPLOAD FOLDER&quot; button is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_9.png" alt="Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The &quot;UPLOAD FOLDER&quot; button is highlighted." width="480" />
 
 ### `gsutil`: Local to Cloud
 
@@ -101,22 +101,22 @@ In addition to bringing your own data, you can use existing data on AnVIL. Using
 
 The [Datasets Library](https://anvil.terra.bio/#library/datasets) is a good place to get started and familiarize yourself with existing data. Here, you can find curated datasets from thousands of participants. Some of these are open access (such as the [1000 Genomes dataset](https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019)) while others will require you to request access.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_15.png" title="Image shows a screenshot of the Datasets Library landing page." alt="Image shows a screenshot of the Datasets Library landing page." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_15.png" alt="Image shows a screenshot of the Datasets Library landing page." width="480" />
 
 Taking a look at [Featured Workspaces](https://anvil.terra.bio/#library/showcase) can get you started quickly. Remember that when you [clone a Workspace](workspaces.html#clone-workspace), AnVIL automatically cross-links to the original data contained within the Data Tables. 
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_24.png" title="Image shows a screenshot of the Featured Workspaces landing page." alt="Image shows a screenshot of the Featured Workspaces landing page." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_24.png" alt="Image shows a screenshot of the Featured Workspaces landing page." width="480" />
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_7.png" title="Image shows a screenshot of the Featured Workspaces tab on AnVIL. The featured tab is highlighted." alt="Image shows a screenshot of the Featured Workspaces tab on AnVIL. The featured tab is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_7.png" alt="Image shows a screenshot of the Featured Workspaces tab on AnVIL. The featured tab is highlighted." width="480" />
 
 ### AnVIL Dataset Catalog
 
 The [AnVIL Dataset Catalog](https://anvilproject.org/data) displays key NHGRI datasets accessible in AnVIL, such as the CCDG (Centers for Common Disease Genomics), CMG (Centers for Mendelian Genomics), eMERGE (Electronic Medical Records and Genomics), as well as other relevant datasets. You will need to [coordinate access](https://anvilproject.org/learn/accessing-data/requesting-data-access) to controlled data.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_31.png" title="Image shows a screenshot of the AnVIL Dataset Catalog website landing page." alt="Image shows a screenshot of the AnVIL Dataset Catalog website landing page." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_31.png" alt="Image shows a screenshot of the AnVIL Dataset Catalog website landing page." width="480" />
 
 ### Gen3 Data Explorer
 
 The [Gen3 Data Explorer and Data Commons](https://gen3.theanvil.io/) provides their API for data queries and downloads, supporting cross-project analyses. Gen3 provides access to open and protected datasets that can be exported to an AnVIL Workspace. For example, users can find the 1000 Genomes dataset on Gen3 and filter by ancestry, age, and other features prior to performing analyses on AnVIL.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_40.png" title="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page." alt="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_40.png" alt="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page." width="480" />
