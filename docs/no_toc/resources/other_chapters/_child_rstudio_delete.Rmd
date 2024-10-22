@@ -1,0 +1,28 @@
+
+1. Pausing your cloud environment only temporarily stops your work. When you are ready to delete the cloud environment, click on the RStudio icon on the right-hand side and select “Settings”.  If you don’t see this icon, you may need to scroll to the right.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Workspace page. The RStudio icon associated with the cloud environment is highlighted. The Settings button is also highlighted'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_41")
+    ```
+
+1. Click on “Delete Environment”.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the cloud environment popout. "Delete environment" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_20")
+    ```
+
+1. If you are certain that you do not need the data and configuration on your disk, you should select "Delete everything, including persistent disk".  If there is anything you would like to save, open the compute environment and copy the file(s) from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the cloud environment popout. "Delete everything, including persistent disk" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_46")
+    ```
+
+1. Select "DELETE".
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the cloud environment popout. "Delete" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_51")
+    ```
+
+:::{.notice}
+You can also delete your cloud environment(s) and disk storage at https://anvil.terra.bio/#clusters.
+:::

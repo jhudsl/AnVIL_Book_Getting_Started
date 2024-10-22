@@ -1,0 +1,86 @@
+
+Next, we will be using RStudio and the package `Glimma` to create interactive plots. See [this vignette](https://bioconductor.org/packages/release/bioc/vignettes/Glimma/inst/doc/limma_edger.html) for more information.
+
+1. The Bioconductor team has created a very useful package to programmatically interact with Terra and Google Cloud. Install the `AnVIL` package. It will make some steps easier as we go along.
+
+    ```{r, eval = FALSE}
+BiocManager::install("AnVIL")
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_49")
+    ```
+
+1. You can now quickly install precompiled binaries using the AnVIL package’s `install()` function. We will use it to install the `Glimma` package and the `airway` package. The `airway` package contains a `SummarizedExperiment` data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone. 
+
+{Note: for some of the packages, you will have to install packaged from the CRAN repository, using the install.packages() function. The examples will show you which install method to use.}
+
+    ```{r, eval = FALSE}
+AnVIL::install(c("Glimma", "airway"))
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_56")
+    ```
+
+1. Load the example data.
+
+    ```{r, eval = FALSE}
+library(airway)
+data(airway)
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_56")
+    ```
+
+1. The multidimensional scaling (MDS) plot is frequently used to explore differences in samples. When this data is MDS transformed, the first two dimensions explain the greatest variance between samples, and the amount of variance decreases monotonically with increasing dimension. The following code will launch a new window where you can interact with the MDS plot.
+
+    ```{r, eval = FALSE}
+Glimma::glimmaMDS(assay(airway), group = colData(airway)$dex)
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_70")
+    ```
+
+1. Change the `colour_by` setting to "groups" so you can easily distinguish between groups. In this data, the "group" is the treatment.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Glimma popout showing the data in an MDS plot. Data points are colored blue and orange by group. The colour by dropdown menu on the interactive plot is hightlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_77")
+    ```
+
+1. You can download the interactive html file by clicking on "Save As".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Glimma popout showing the data in an MDS plot. The Save As menu is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6da7f_0_0")
+    ```
+
+1. You can also download plots and other files created directly in RStudio. To download the following plot, click on "Export" and save in your preferred format to the default directory. This saves the file in your cloud environment.
+
+    ```{r, eval = FALSE}
+limma::plotMDS(airway)
+    ```
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6da7f_0_12")
+    ```
+
+1. You should see the plot in the "Files" pane.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the "Files" pane.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6da7f_0_19")
+    ```
+
+1. Select this file and click "More" > "Export"
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the "Files" pane. The "More" and "Export" menus have been highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6db6a_0_0")
+    ```
+
+1. Select "Download" to save the file to your local machine.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. The popup to download the selected file has been highlighted,'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g1204ed6db6a_0_8")
+    ```
+

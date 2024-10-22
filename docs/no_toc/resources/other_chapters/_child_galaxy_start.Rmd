@@ -1,0 +1,19 @@
+Note that, in order to use Galaxy, you must have access to a Terra Workspace with permission to compute (i.e. you must be a "Writer" or "Owner" of the Workspace).
+
+Open your Workspace, and click on the “Environment configuration” button, a cloud icon on the righthand side of the screen. 
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Workspace that points to the Environment configuration button, an icon of a cloud with a lightning bolt.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit#slide=id.ge20e585f11_0_9")
+```
+
+Under Galaxy, click on “Create new Environment”. Click on “Next” and “Create” to keep all settings as-is. This will take 8-10 minutes.
+
+```{r, echo=FALSE, fig.alt='The button that starts a cloud environment for Galaxy has been highlighted,'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit#slide=id.ge1182914a6_0_36")
+```
+
+Click on "Open Galaxy" when the environment is ready.
+
+```{r, echo=FALSE, fig.alt='The Open Galaxy button is highlighted in the ready environment popup.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit#slide=id.ge1182914a6_0_57")
+```

@@ -1,0 +1,16 @@
+
+Here is a video tutorial that describes the basics of using Galaxy on AnVIL.
+
+<iframe width="560" height="315" src="https://youtu.be/9TEVu7QobOo?si=tLFXNe951vVJV4iN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Objectives
+
+- Start compute for your Galaxy on AnVIL
+- Run tool to quality control sequencing reads
+- Stop compute to minimize expenses
+
+### Slides
+
+The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit?usp=sharing).
+
+
