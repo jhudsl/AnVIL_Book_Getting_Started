@@ -19,7 +19,7 @@ The NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Spac
 
 - The **Terra platform**: provides a compute environment with secure data and analysis sharing capabilities 
 - **Dockstore**: provides standards based sharing of containerized tools and workflows
-- **The Gen3 data commons framework**: provides data and metadata ingest, querying, and organization 
+- **The AnVIL Data Explorer**: enables faceted searches of open and managed access datasets hosted in AnVIL
 - **Bioconductor and Galaxy**: provide environments for users at different skill levels to construct and execute analyses
 
 ### Data Storage
