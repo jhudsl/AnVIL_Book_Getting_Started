@@ -233,7 +233,7 @@ sessionInfo()
 ##  [1] sass_0.4.8        utf8_1.2.4        generics_0.1.3    xml2_1.3.6       
 ##  [5] stringi_1.8.3     lattice_0.21-9    hms_1.1.3         digest_0.6.34    
 ##  [9] magrittr_2.0.3    evaluate_0.23     grid_4.3.2        timechange_0.3.0 
-## [13] bookdown_0.40     fastmap_1.1.1     rprojroot_2.0.4   jsonlite_1.8.8   
+## [13] bookdown_0.41     fastmap_1.1.1     rprojroot_2.0.4   jsonlite_1.8.8   
 ## [17] Matrix_1.6-1.1    processx_3.8.3    chromote_0.3.1    ps_1.7.6         
 ## [21] promises_1.2.1    httr_1.4.7        fansi_1.0.6       ottrpal_1.3.0    
 ## [25] udpipe_0.8.11     cow_0.0.0.9000    jquerylib_0.1.4   cli_3.6.2        

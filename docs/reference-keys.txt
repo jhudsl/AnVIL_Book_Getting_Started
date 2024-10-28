@@ -97,7 +97,7 @@ copy-files-from-your-local-computer-to-a-workspace-bucket
 analyze-existing-data
 anvil-data-library
 anvil-dataset-catalog
-gen3-data-explorer
+anvil-data-explorer
 workflows
 pre-configured-workflow
 create-a-custom-workflow

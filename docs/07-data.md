@@ -115,8 +115,8 @@ The [AnVIL Dataset Catalog](https://anvilproject.org/data) displays key NHGRI da
 
 <img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_31.png" alt="Image shows a screenshot of the AnVIL Dataset Catalog website landing page." width="480" />
 
-### Gen3 Data Explorer
+### AnVIL Data Explorer
 
-The [Gen3 Data Explorer and Data Commons](https://gen3.theanvil.io/) provides their API for data queries and downloads, supporting cross-project analyses. Gen3 provides access to open and protected datasets that can be exported to an AnVIL Workspace. For example, users can find the 1000 Genomes dataset on Gen3 and filter by ancestry, age, and other features prior to performing analyses on AnVIL.
+The [AnVIL Data Explorer](https://explore.anvilproject.org/datasets) enables faceted searches of open and managed access datasets hosted in AnVIL, making it easier for researchers to find and custom-build cohorts. 
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5fa6f264a_0_40.png" alt="Image shows a screenshot of the Gen3 on AnVIL Data Explorer website landing page." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_g30d935bde8e_0_0.png" alt="Image shows a screenshot of the AnVIL Data Explorer website landing page." width="480" />
