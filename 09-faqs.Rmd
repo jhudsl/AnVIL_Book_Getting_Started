@@ -16,7 +16,7 @@
 ### What Data Is Available?
 
 - Browse the [Data Dashboard](https://anvilproject.org/data)
-- [Request access](https://anvilproject.org/learn/accessing-data/requesting-data-access) if necessary for Controlled Access Data or Consortia Access Data
+- [Request access](https://anvilproject.org/learn/find-data/requesting-data-access) if necessary for Controlled Access Data or Consortia Access Data
 - [Bring Your Own Data](https://jhudatascience.org/AnVIL_Book_Getting_Started/bring-your-own-data.html)
 
 ### How Do I Perform an Analysis?
