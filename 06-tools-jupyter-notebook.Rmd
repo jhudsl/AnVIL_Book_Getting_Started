@@ -1,6 +1,6 @@
 # Jupyter Notebook
 
-One of the analysis platforms available on AnVIL is Jupyter Notebook. This platform offers accessible analysis reports incorporating multiple languages in the case of [Jupyter](https://anvilproject.org/learn/interactive-analysis/getting-started-with-jupyter-notebooks). This chapter focuses on launching and highlighting a few features for Jupyter Notebook.
+One of the analysis platforms available on AnVIL is Jupyter Notebook. This platform offers accessible analysis reports incorporating multiple languages in the case of [Jupyter](https://anvilproject.org/learn/run-interactive-analyses/getting-started-with-jupyter-notebooks). This chapter focuses on launching and highlighting a few features for Jupyter Notebook.
 
 ## Jupyter Notebook: Video tutorial
 
