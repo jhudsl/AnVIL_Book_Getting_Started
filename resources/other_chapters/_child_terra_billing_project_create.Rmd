@@ -1,0 +1,44 @@
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  If this is your first time logging in to Terra, you will need to accept the Terms of Service.
+
+1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the "hamburger" button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item "Billing".'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_2")
+    ```
+
+1. On the Billing page, click the "+ CREATE" button to create a new Billing Project. Select GCP Billing Project (Google's Platform). If prompted, select the Google account to use and give Terra permission to manage Google Cloud Platform billing accounts.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Page.  The "plus" button next to "Billing Projects" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_149")
+    ```
+
+1. Enter a **unique** name for your Terra Billing Project and select the appropriate Google Billing Account. The name of the Terra Billing Project must:
+    + Only contain lowercase letters, numbers and hyphens
+    + Start with a lowercase letter
+    + Not end with a hyphen
+    + Be between 6 and 30 characters
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_293")
+    ```
+    
+1. Select the Google Billing Account to use.  All activities conducted under your new Terra Billing Project will charge to this Google Billing Account.  If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.  The dropdown menu labeled "Select billing account" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g2105956e909_0_0")
+    ```
+
+1. Click "Create".
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.  The button labeled "CREATE BILLING PROJECT" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_438")
+    ```
+
+
+1. Your new Billing Project should now show up in the list of Billing Projects Owned by You.  You can add additional members or can modify or deactivate the Billing Project at any time by clicking on its name in this list.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Projects menu.  The submenu "Owned by you" is highlighted and has been expanded, showing a list of Billing Projects below.  One of the Billing Project names is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g2105956e909_0_16")
+    ```
+
+The page doesn't always update as soon as the Billing Project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
