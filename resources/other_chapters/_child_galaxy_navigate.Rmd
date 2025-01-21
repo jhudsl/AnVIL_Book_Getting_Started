@@ -1,0 +1,14 @@
+
+Notice the three main sections.
+
+**Tools** - These are all of the bioinformatics tool packages available for you to use.
+
+**The Main Dashboard** - This contains flash messages and posts when you first open Galaxy, but when we are using data this is the main interface area.
+
+**History** - When you start a project you will be able to see all of the documents in the project in the history. Now be aware, this can become very busy. Also the naming that Galaxy uses is not very intuitive, so you must make sure that you label your files with something that makes sense to you.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_816")
+```
+
+On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.
