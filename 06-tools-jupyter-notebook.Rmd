@@ -10,3 +10,12 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+
+## Launching Jupyter Notebook
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_jupyter_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
