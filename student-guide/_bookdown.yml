@@ -1,9 +1,8 @@
 book_filename: "Student_Guide"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/AnVIL_Template/
+repo: https://github.com/jhudsl/AnVIL_Book_Getting_Started/
 rmd_files: ["index.Rmd",
-            "09-student_guide.Rmd",
-            "References.Rmd"]
+            "99-student_guide.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
