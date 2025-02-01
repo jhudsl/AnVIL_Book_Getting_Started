@@ -1,0 +1,6 @@
+urls	urls_status	file
+https://anvilproject.org/learn/interactive-analysis/getting-started-with-galaxy	failed	/github/workspace/06-tools-galaxy.Rmd
+https://anvilproject.org/learn/interactive-analysis/getting-started-with-jupyter-notebooks	failed	/github/workspace/06-tools-jupyter-notebook.Rmd
+https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor	failed	/github/workspace/06-tools-rstudio.Rmd
+https://anvilproject.org/learn/accessing-data/requesting-data-access	failed	/github/workspace/09-faqs.Rmd
+https://anvilproject.org/learn/data-analysts/rstudio-gsg-video	failed	/github/workspace/09-faqs.Rmd
