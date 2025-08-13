@@ -8,6 +8,17 @@ AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics L
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XC5qzj-yZb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<details><summary>Why use the AnVIL?</summary>
+
+```{r echo=FALSE, results='asis'}
+cow::borrow_chapter("why-anvil-overview.Rmd",
+                    repo_name = "jhudsl/AnVIL_Template",
+                    remove_h1 = TRUE)
+
+```
+
+</details>
+
 ### Does AnVIL Cost Money?
 
 Through AnVIL, you pay for computing resources as you use them.  If you'd like to try it out, new users can claim a $300 Google Cloud credit to test out the platform and perform some small analyses.
@@ -17,6 +28,8 @@ We also provide a [cost estimator](budget-templates.html#types-of-costs).
 ### Where Can I Get Help?
 
 Please visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org) with any questions (or suggestions!) you may have.
+
+Also join the AnVIL Mailing List `anvil-mailing-list@lists.anvilproject.org` by subscribing here: [https://lists.anvilproject.org/lists/anvil-mailing-list.lists.anvilproject.org/]([https://lists.anvilproject.org/lists/anvil-mailing-list.lists.anvilproject.org/).
 
 ### How to Use This Book
 
