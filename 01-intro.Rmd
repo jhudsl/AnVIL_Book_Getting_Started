@@ -10,10 +10,9 @@ AnVIL is NHGRI's Genomic Data Science Analysis, Visualization, and Informatics L
 
 <details><summary>Why use the AnVIL?</summary>
 
-```{r echo=FALSE, results='asis'}
+```{r echo=FALSE}
 cow::borrow_chapter("docs/why-anvil-overview.md",
-                    repo_name = "jhudsl/AnVIL_Template",
-                    remove_h1 = TRUE)
+                    repo_name = "jhudsl/AnVIL_Template")
 
 ```
 
