@@ -228,7 +228,25 @@ cow::borrow_chapter(
 
 ### Export Cost Data to BigQuery
 
-Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
+Several useful tools are available to help you further analyze and understand your GCP computing costs.  Examples include the `AnVILBilling` [Bioconductor package](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html), as well as [Google Data Studio](https://cloud.google.com/billing/docs/how-to/visualize-data).  These tools can help give greater insight into the charges to your GCP Billing Account which can help you refine your workflows to minimize expenses.
+
+In order to make use of these tools, you will need to set up exporting of your cost data to BigQuery.  This cannot be done retroactively (i.e. you can only export cost data as it is produced; there is no way to export your cost data history).  Therefore, **we recommend setting up cost data export immediately, so the cost data will be available to you in the future**.
+
+
+```{r, child=c("_child_google_billing_export_to_BigQuery.Rmd")}
+
+```
+
+Now that you have set up data export, your billing data will be available for you to analyze at your convenience.  To learn more about how to analyze your cost data, see:
+
+- The [vignette](http://www.bioconductor.org/packages/release/bioc/vignettes/AnVILBilling/inst/doc/billing.html) for the [`AnVILBilling`](http://www.bioconductor.org/packages/release/bioc/html/AnVILBilling.html) package
+- [Google's documentation](https://cloud.google.com/billing/docs/how-to/visualize-data) on visualizing spending with Google Data Studio
+
+**Having trouble?**
+
+- Visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org) with any questions.
+- View the [`Google documentation`](https://cloud.google.com/billing/docs/how-to/export-data-bigquery) on exporting billing data.
+
 
 ## Step 6: Add Users and Workspaces
 

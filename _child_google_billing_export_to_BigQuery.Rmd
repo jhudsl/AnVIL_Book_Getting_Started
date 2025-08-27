@@ -1,0 +1,178 @@
+
+*Updated July 2022.  See the [Google Cloud Documentation](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-setup) for the latest documentation and additional details.*
+
+Exporting billing data to BigQuery requires a few steps to set up:
+
+1. Create GCP Project
+1. Create BigQuery Dataset
+1. Enable billing data export
+
+**Create GCP Project**
+
+First you will need to create a GCP Project that will run the export process.  
+
+::: {.fyi}
+Reminder:
+
+- A Google **Billing Account** manages your *funding source* (e.g. credit card, cloud credits).  You probably only need one Billing Account unless you have multiple funding sources.
+- A Google **Project** manages your GCP activities and cloud resources.  Multiple GCP Projects can be funded by a single Billing Account.
+:::
+
+Usually your GCP Projects are created and managed by Terra (corresponding to Terra Workspaces) and you don't need to manage them through the Google Cloud interface. In this case, you will need to create the GCP Project yourself. **This must be under the same Google Billing Account as the Projects you want to track spending for.**
+
+Note that:
+
+- You only need one GCP project and corresponding BigQuery Dataset per Google Billing Account. One BigQuery Dataset can handle cost data for multiple Projects (i.e. Terra Workspaces), as long as they are all under the same Google Billing Account.
+- If you are using multiple Google Billing Accounts (i.e. have multiple funding sources) you will need to set up a GCP Project and a BigQuery Dataset for each of them.
+
+
+To create a new GCP Project:
+
+1. Log in to the [Google Cloud Platform](https://console.cloud.google.com/) console using the Google ID associated with your Google Cloud projects.
+
+1. Open the dropdown menu on the top left, mouseover IAM & Admin, and click "Create a Project".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu, with the "IAM & Admin" submenu open. "IAM & Admin" and "Create a Project" are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_3")
+    ```
+    
+1. Enter a name for your new project.   Project names can contain only letters, numbers, single quotes, hyphens, spaces, or exclamation points, and must be between 4 and 30 characters.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The text box labeled "Project name" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_153")
+    ```
+
+1. If you have more than one Billing Account, select the Billing Account you wish to export data for.  If you only have one Billing Account, you may not see this option.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The dropdown labeled "Billing account" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g1405b9d7496_0_21")
+    ```
+
+1. You may see an option to choose a location.  Unless you are part of a larger GCP organization, you can choose "No organization" for the location.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The dropdown labeled "Location" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_172")
+    ```
+
+1. Click "Create".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Project creation dialog. The "Create" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_166")
+    ```
+
+
+**Create BigQuery Dataset**
+
+Once your GCP Project exists, it can be used to create a BigQuery Dataset to hold your billing data.
+
+To create a BigQuery Dataset:
+
+1. Open the dropdown menu on the top left, and click "BigQuery".  You may need to scroll down quite a ways before you see it.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu. "BigQuery" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_183")
+    ```
+
+    - If you’d like, you can pin BigQuery so it’s easier to find next time.
+    
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu. The pin icon next to "BigQuery" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_189")
+    ```
+
+1. Make sure the correct GCP project is selected.  You can see the current project at the top of the screen.  If this is not correct, click on the project name to change it.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery interface.  The project name at the top of the page is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_195")
+    ```
+
+1. Find your project in the Explorer pane.  Click on the triple dots to see options, then click "Create dataset".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery interface.  In the Explorer pane, the triple dots next to the project named anvil-project-pi-billing are highlighted, the menu is expanded, and "Create dataset" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_208")
+    ```
+
+1. Enter a Dataset ID.  As a reminder, this dataset will hold data for all projects funded by your Billing Account.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery dataset creation dialog. The textbox labeled "Dataset ID" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_215")
+    ```
+
+1. Next, it asks for a location.  You must select `US (multiple-regions)` in order to export detailed usage cost data.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery dataset creation dialog. The dropdown menu labeled "Data location" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_221")
+    ```
+
+1. Make sure that "Enable table expiration" is NOT checked.  Otherwise your billing data will be deleted when it expires.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery dataset creation dialog. The checkbox labeled "Enable table expiration" is highlighted and is not checked.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_227")
+    ```
+
+1. Click "CREATE DATASET".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery dataset creation dialog. The "CREATE DATASET" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_233")
+    ```
+
+1. If you click the arrow next to the project name, you should see your new dataset.  It's empty right now, so there's not much to see here yet.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP BigQuery interface.  In the Explorer pane, the arrow next to the project named anvil-project-pi-billing is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_239")
+    ```
+
+
+**Enable billing data export**
+
+Once the BigQuery dataset exists, you can export data to it.
+
+To enable billing data export:
+
+1. Open the dropdown menu on the top left and click "Billing".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Google Cloud Console drop-down menu. "Billing" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_250")
+    ```
+
+1. Make sure the correct Billing Account is selected.  You can see the current account in the upper left of the screen.  If this is not correct, click on the Billing Account name to change it.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing interface.  In the left panel, the name of the Billing Account is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_245")
+    ```
+
+1. Click "Billing export".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing interface.  In the left panel, "Billing export" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_256")
+    ```
+
+1. On the "BIGQUERY EXPORT" tab, under "Detailed usage cost", click "EDIT SETTINGS".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export tab.  The name of the tab is highlighted. Under "Detailed usage cost", the "EDIT SETTINGS" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_263")
+    ```
+
+1. Select the project that contains the BigQuery Dataset.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export dialog.  The dropdown menu labeled "Projects" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_270")
+    ```
+
+1. Select the BigQuery dataset.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export dialog.  The dropdown menu labeled "Dataset" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_276")
+    ```
+
+1. Click "SAVE".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export dialog.  The "SAVE" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_282")
+    ```
+
+1. You should now see that export is enabled.  It will take about a day before data starts showing up in your BigQuery Dataset.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the GCP Billing export tab.  The checkmark indicating that export of detailed cost usage data is enabled is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1JejmHJHLTF-eywlZs5GUQXb82FCGM5wIUNrbVKlJcrY/edit#slide=id.g13d748460ee_0_290")
+    ```
+
