@@ -1,6 +1,6 @@
 # Galaxy
 
-One of the analysis platforms available on AnVIL is Galaxy. This platform offers a graphical interface for thousands of tools(https://anvilproject.org/learn/interactive-analysis/getting-started-with-galaxy). This chapter focuses on launching and highlighting a few features for Galaxy.
+One of the analysis platforms available on AnVIL is Galaxy. This platform offers a graphical interface for thousands of tools(https://anvilproject.org/learn/run-interactive-analyses#galaxy). This chapter focuses on launching and highlighting a few features for Galaxy.
 
 ## Galaxy: Video tutorial
 
