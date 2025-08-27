@@ -71,4 +71,5 @@ Your PI or lab manager should be now be able to add you to Workspaces so that yo
 To learn more about how to perform analyses on AnVIL, see the **Working on AnVIL** section of this book.
 
 - The [Workspaces] chapter introduces AnVIL Workspaces, the fundamental unit of research organization on AnVIL. All analyses on AnVIL are performed in a Workspace.
-- The [Tools], [Data], and [Workflows] chapters explain how to perform a variety of common research tasks on AnVIL.
+- The [Jupyter Notebook], [Galaxy], and [RStudio] chapters surveys a variety of common analysis tools on AnVIL.
+- The [Data] and [Workflows] chapters explain how to perform a variety of common research tasks on AnVIL.
