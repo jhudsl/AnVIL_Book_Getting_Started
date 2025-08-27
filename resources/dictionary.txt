@@ -35,6 +35,7 @@ Jupyter
 Kai
 Kammers
 Kucher
+lefthand
 ottr
 learn-wdl
 MacOS
@@ -54,6 +55,7 @@ preemptible
 preprint
 programmatically
 quickstart
+Rmd
 RStudio
 sandboxed
 Savonen
