@@ -24,11 +24,11 @@ Additional guides are provided to help you with Workspaces, launch interactive t
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
 
-### Why AnVIL
+### Why AnVIL?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XC5qzj-yZb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Read on for more information regarding "Why use the AnVIL?" in the next chapter, or skip ahead to another guide. 
+Read on for more information regarding "Why use the AnVIL?" in the next chapter, or skip ahead to another guide.
 
 ```{r echo=FALSE, results = 'asis'}
 cow::borrow_chapter("why-anvil-overview.Rmd",
