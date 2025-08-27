@@ -67,7 +67,7 @@ Return to AnVIL, and find the Galaxy logo that shows your cloud environment is r
 
 Next, click on "Settings". Click on "Delete Environment".
 
-<img src="06-tools-galaxy_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge20e585f11_0_256.png" alt="Screenshot of the cloud environment pop out menu. The &quot;Delete Environment&quot; button is highlighted." width="480" />
+<img src="06-tools-galaxy_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge20e585f11_0_256.png" alt="Screenshot of the cloud environment pop out menu. The "Delete Environment" button is highlighted." width="480" />
 
 Finally, select "Delete everything, including persistent disk". Make sure you are done with the activity and then click "Delete".
 
