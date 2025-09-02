@@ -1,0 +1,8 @@
+# (PART\*) Why use AnVIL? {-}
+
+```{r echo=FALSE, results = 'asis'}
+cow::borrow_chapter("why-anvil-overview.Rmd",
+                    repo_name = "jhudsl/AnVIL_Template",
+                    remove_h1 = TRUE)
+
+```
