@@ -1,0 +1,20 @@
+
+Once you are done with your activity, you’ll need to shut down your Galaxy cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.
+
+Return to AnVIL, and find the Galaxy logo that shows your cloud environment is running. Click on this logo.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the right sidebar is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit#slide=id.ge20e585f11_0_248")
+```
+
+Next, click on "Settings". Click on "Delete Environment".
+
+```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment pop out menu. The "Delete Environment" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit#slide=id.ge20e585f11_0_256")
+```
+
+Finally, select "Delete everything, including persistent disk". Make sure you are done with the activity and then click "Delete".
+
+```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “Delete” button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1UIfBMQcujMzyNTyIiMXQ6eU0DdWHmI9QUtseGylg6Ms/edit#slide=id.g117989bd49c_0_0")
+```

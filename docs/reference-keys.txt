@@ -4,7 +4,6 @@ does-anvil-cost-money
 where-can-i-get-help
 anvil-collection
 why-anvil
-why-use-anvil
 benefits-of-using-anvil-for-research
 ease-of-platform-access
 variety-of-analysis-solutions

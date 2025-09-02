@@ -1,0 +1,34 @@
+When you are not actively performing an analysis (but will be returning soon), you should “pause” your cloud environment to minimize costs. This will release the CPU and memory resources for other people to use. Your files will be saved and will continue to accrue a small storage cost.
+
+Before pausing, it’s a good idea to transfer any important files out of your cloud environment. While a paused environment does preserve your files, it has no backup mechanism, so if anything happens to your cloud environment those files will be lost. If there is anything you would like to save permanently, it’s a good idea to copy it to another location, such as the Workspace bucket, GitHub, or your local machine.
+
+**To pause your cloud environment**:
+
+1. You can view costs and make changes to your cloud environments from the panel on the far right of the page.  If you don’t see this panel, you may need to scroll to the right.  Running environments will have a green dot, and paused environments will have an orange dot.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio interface. The cloud environment panel on the right is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU/edit#slide=id.g230ed3a46c7_0_0")
+    ```
+
+1. Hovering over the RStudio icon will show you the costs associated with your RStudio environment.  Click on the RStudio icon to open the cloud environment settings.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment panel.  The RStudio icon is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU/edit#slide=id.g230ed3a46c7_0_6")
+    ```
+
+1. Click the Pause button to pause RStudio.  This will take a few minutes.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio cloud environment settings. The Pause button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU/edit#slide=id.g230ed3a46c7_0_231")
+    ```
+
+1. When the environment is paused, an orange dot will be displayed next to the RStudio icon.  If you hover over the icon, you will see that it is paused, and has a small ongoing cost as long as it is paused.  When you’re ready to resume working, you can do so by clicking the RStudio icon and clicking Resume.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace Dashboard. The RStudio icon in the far right panel is highlighted.  It has an orange dot next to it indicating the cloud environment is paused.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU/edit#slide=id.g230ed3a46c7_0_237")
+    ```
+
+:::{.notice}
+You can also pause your cloud environment(s) at https://anvil.terra.bio/#clusters.
+:::
+

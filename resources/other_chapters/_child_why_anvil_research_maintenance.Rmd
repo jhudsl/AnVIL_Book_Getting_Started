@@ -1,0 +1,17 @@
+
+AnVIL allows you to rent the computational resources that you need for occasional high demand needs rather than obtaining and maintaining the same resources yourself or paying a subscription for an allocation/constant access (with little consistent use over time). AnVIL can provide different hardware and software setups, rather than preparing the environment yourself (or relying on an institutional core to do it and waiting in the queue).
+
+::: {.click_to_expand_block}
+
+<details><summary>Additional considerations</summary>
+
+Other considerations that make renting computational resources from AnVIL appealing compared to obtaining and maintaining your own resources or upgrading an institutional allocation (HPC) include:
+
+* AnVIL is compliant with protected data. Some institutional HPCs may not be.
+* Once your group is initially set up on AnVIL, adding users (with specified permissions) is easier than trying to add a user to an allocation through an email chain.
+* Because AnVIL maintains docker images, the exact version of a tool is documented and available.
+* AnVIL scales well for large numbers of samples and won't require long waits in queues to access limited, specialized resources; AnVIL also works well for small analyses where you may not want to connect to the HPC and set up a complicated environment there.
+
+</details>
+
+:::

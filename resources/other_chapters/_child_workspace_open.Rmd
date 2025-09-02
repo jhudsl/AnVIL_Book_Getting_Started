@@ -1,0 +1,31 @@
+1. [Launch Terra](https://anvil.terra.bio/#workspaces)
+
+1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.g10f3888d99c_0_156")
+    ```
+
+1. You are automatically directed to the "My Workspaces" tab.  Here you can see any Workspaces that have been shared with you, along with your permission level.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspaces page with the "My Workspaces" tab selected.  The "My Workspaces" tab and the column showing permission level are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.g10f3888d99c_0_0")
+    ```
+   
+    - **Reader** means you can open the Workspace and see everything, but can't do any computations or make any edits.
+    - **Writer** means you can run computations, which will charge costs to the Workspace's Billing Project.  Writers can also make edits to the Workspace.
+    - **Owner** is similar to Writer, but also allows you to control who can access the Workspace.
+    
+1. Click on the name of a Workspace to open it.  Opening and viewing a Workspace does not cost anything.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspaces page with the "My Workspaces" tab selected.  The name of one of the Workspaces is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.g10f3888d99c_0_163")
+    ```
+
+1. When you open a Workspace, you are directed to the Workspace Dashboard.  This generally has a description of the Workspace contents, as well as some useful details about the Workspace itself.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace.  The "Dashboard" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ioYY0n3CcrP934WRKEsQ1aKocPqfswdWWHxYCf76BCg/edit#slide=id.g10f3888d99c_0_170")
+    ```
+
+From here you can navigate through the different tabs of the Workspace, and if you have sufficient permission, you can start running analyses.  If you are only a Reader, you may need to "clone" (make your own copy) of the Workspace before you can start working.
