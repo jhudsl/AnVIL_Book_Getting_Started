@@ -1,4 +1,4 @@
-# (PART\*) Why use AnVIL? {-}
+# Why use AnVIL? {-}
 
 ```{r echo=FALSE, results = 'asis'}
 cow::borrow_chapter("why-anvil-overview.Rmd",
