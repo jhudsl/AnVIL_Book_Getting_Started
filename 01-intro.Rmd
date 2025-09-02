@@ -29,9 +29,3 @@ Please check out our full collection of AnVIL and related resources: https://hut
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XC5qzj-yZb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Read on for more information regarding [Why use AnVIL?] in the next chapter, or skip ahead to another guide on Account Setup or Working on AnVIL.
-
-```{r echo=FALSE, results = 'asis'}
-cow::borrow_chapter("why-anvil-overview.Rmd",
-                    repo_name = "jhudsl/AnVIL_Template")
-
-```
