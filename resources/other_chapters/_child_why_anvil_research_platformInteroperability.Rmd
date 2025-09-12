@@ -1,0 +1,24 @@
+
+AnVIL supports an assortment of frameworks and tools. Researchers can use their favorite tool to work with data interactively or through non-interactive batch processing. Due to this variety and interoperability with other platforms, researchers can stay within a single environment for their analysis without having to shift between platforms.
+
+::: {.click_to_expand_block}
+
+<details><summary>Interactive sessions</summary>
+
+Interactive sessions are available with Jupyter, RStudio/Bioconductor, and Galaxy.
+
+Use of Galaxy on AnVIL enables even more customizability with the ability to [install specific tools/versions with Toolshed](https://support.terra.bio/hc/en-us/articles/4402392877979-Galaxy-on-Terra-FAQs#heading-12).
+
+</details>
+
+:::
+
+::: {.click_to_expand_block}
+
+<details><summary>Non-interactive batch processing</summary>
+
+Workflows can be [user-supplied/written](https://jhudatascience.org/AnVIL_Book_WDL/write-wdl.html#export-to-anvil-powered-by-terra-and-run) or [imported with Dockstore](https://jhudatascience.org/AnVIL_Book_WDL/import-and-configure-workflows.html) and used to steer non-interactive pipelines and batch processing of data.
+
+</details>
+
+:::

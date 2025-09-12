@@ -1,0 +1,215 @@
+# Why use AnVIL?
+
+The NHGRI AnVIL (Genomic Data Science Analysis, Visualization, and Informatics Lab-space) is a project powered by Terra for biomedical researchers to access data, run analysis tools, and collaborate. Both biology researchers and educators can benefit from using AnVIL ([anvil.terra.bio](https://anvil.terra.bio/)) for their research and in the classroom.
+
+This guide acts as a resource answering the question "why use AnVIL?". It will discuss the research, classroom, and general benefits of using AnVIL and point to related resources throughout.
+
+```{r echo = FALSE, out.width = "100%", results = 'asis', fig.alt = "The research, classroom, and general benefits of using the AnVIL are outlined. For research, the AnVIL platform can be accessed easily, there are a variety of available analysis solutions and tools, you can bring your own data or access cloud-hosted open or controlled access data; further your data and analysis are in the same place instead of having to move data between platforms. The analysis resources are scalable with researchers renting what they need. Additionally work on the AnVIL platform can be collaborative with workspaces having role-based permissions for group members and then these workspaces are shareable enhancing reproducibility. For the classroom, the AnVIL offers a unified computing system for learners where they will have an authentic experience with cloud computing that is increasingly becoming frequently utilized within today’s research environment. Learners can learn and practice with a variety of tools using relevant datasets and prepared exercises. The general benefits of using the AnVIL include the ability to control cloud-computing costs, being able to safely work with protected data, maintenance is handled by others not the users, training and support is available for users, and the AnVIL is a collaborative community with a development mindset."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g37132c23502_0_0#slide=id.g37132c23502_0_0")
+```
+
+## Benefits of using AnVIL for research
+
+```{r echo=FALSE, out.width="100%", fig.alt = "Research benefits for the AnVIL include that the AnVIL platform can be accessed easily, there are a variety of available analysis solutions and tools, you can bring your own data or access cloud-hosted open or controlled access data; further your data and analysis are in the same place instead of having to move data between platforms. The analysis resources are scalable with researchers renting what they need. Additionally work on the AnVIL platform can be collaborative with workspaces having role-based permissions for group members and then these workspaces are shareable enhancing reproducibility"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g37132c23502_0_56#slide=id.g37132c23502_0_56")
+```
+
+### Ease of platform access
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_platformAccess.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Variety of analysis solutions
+
+```{r echo=FALSE, out.width = "100%", fig.alt = "There are a variety of available analysis frameworks and tools available on the AnVIL, each with interoperability such that data and results in your workspace can be passed from tool to tool. Analysis solutions are available for interactive work or non-interactive batch processing (e.g., with WDL workflows)."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_142#slide=id.g36e681c6048_0_142")
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_platformInteroperability.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Data: yours or cloud-hosted open & controlled access
+
+```{r echo=FALSE, out.width = "100%", fig.alt = "With AnVIL you can upload your own data (signified by the plus sign) or browse cloud-hosted open and controlled access datasets to identify relevant datasets, importing or requesting access to those for your workspaces. Several consortia have data available on AnVIL with data deposits growing."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_91#slide=id.g36e681c6048_0_91")
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_data.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Data & analysis in same place
+
+```{r echo = FALSE, out.width = "100%", fig.alt = "The AnVIL portal is an entry point for all parts of AnVIL, allowing visitors to launch Terra to work on AnVIL, as well as access important announcements or documentation."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_179#slide=id.g36e681c6048_0_179")
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_inverted.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Scalability
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_scale.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Rent needed resources
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_maintenance.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Role-based permissions
+
+```{r echo = FALSE, out.width = "100%", fig.alt = "A workspace is the fundamental unit of activity in AnVIL with role-based access. The workspace will show the user’s access level (e.g., whether they are an owner or reader or writer who has the ability to run compute or share). This helps to enable collaboration. The Access level of the user is highlighted in this example workspace."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_152#slide=id.g36e681c6048_0_152")
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_workspaceRole.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Shareable workspaces
+
+```{r echo = FALSE, out.width = "100%", fig.alt = "A workspace can serve as a shareable record of analyses. The ability to access the permalink to the example workspace is highlighted in this image."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_166#slide=id.g36e681c6048_0_166")
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_workspaceShare.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Repository compliant with DMS Policy
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_research_repository.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+  )
+```
+
+## Benefits of using AnVIL in the classroom
+
+```{r echo=FALSE, out.width="100%", fig.alt = "For the classroom, the AnVIL offers a unified computing system for learners where they will have an authentic experience with cloud computing that is increasingly becoming frequently utilized within today’s research environment. Learners can learn and practice with a variety of tools using relevant datasets and prepared exercises."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g37132c23502_0_68#slide=id.g37132c23502_0_68")
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_classroom.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+```{r, echo = FALSE, out.width = "100%", fig.alt = "AnVIL provides several prepared exercises providing relevant biology background and datasets using a variety of tools to help train students within a cloud computing environment. 4 examples include the Single Cell with Bioconductor AnVIL Demo, the analysis of a SARS-CoV-2 genome with Galaxy on AnVIL (part of the Genomic Data Science Community Network or GDSCN), the GDSCN BioDIGS R Data Package, and an RNA-Seq mini CURE."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_34#slide=id.g36e681c6048_0_34")
+```
+
+## Overall benefits of AnVIL
+
+```{r echo=FALSE, out.width="100%", fig.alt = "The general benefits of using the AnVIL include the ability to control cloud-computing costs, being able to safely work with protected data, maintenance is handled by others not the users, training and support is available for users, and the AnVIL is a collaborative community with a development mindset."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g37132c23502_0_80#slide=id.g37132c23502_0_80")
+```
+
+### Ability to control costs
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_general_costControl.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Work with protected data safely
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_general_protectedData.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Maintenance is handled
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_general_maintenance.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+### Training and support is available
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_general_support.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+```{r echo=FALSE, out.width = "100%", fig.alt = "Training and support are available for users in multiple formats. Users can browse the AnVIL collection to see what is available. Examples include the AnVIL Getting Started book (available online), a moderated support forum, and live AnVIL Demos that are also recorded and posted to YouTube."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_185#slide=id.g36e681c6048_0_185")
+```
+
+### Collaborative community
+
+```{r echo=FALSE, out.width="100%", fig.alt = "The AnVIL has a collaborative community with a development mindset, soliciting and listening to feedback and supporting and maintaining forums and training for discussion and help."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_147#slide=id.g36e681c6048_0_147")
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+    doc_path = "child/_child_why_anvil_general_community.Rmd",
+    repo_name = "jhudsl/AnVIL_Template",
+    remove_h1 = TRUE
+)
+```
+
+## Conclusion
+
+All of this together describes how the AnVIL provides secure, cost-effective genomic analysis at scale, and is a useful cloud-based platform for training and research.
+
+```{r echo = FALSE, out.width = "100%", fig.alt = "In addition to the general benefits of working on the cloud (such as learners and analysts being able to work with identical environments with pre-installed bioinformatic tools), AnVIL provides a strong community with support and training material, bridging the gap between training to research on human genomic datasets using a secure platform for controlled-access data storage, management, and analysis. And though bioinformatic tools are pre-installed, users are given the ability to install additional software and tools as needed and can pay to scale resources resulting in quicker runtimes as needed. Additionally, AnVIL has collaboration tools for workgroups."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.p#slide=id.p")
+```

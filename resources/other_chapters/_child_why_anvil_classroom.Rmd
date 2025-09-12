@@ -1,0 +1,12 @@
+
+AnVIL provides all the **advantages of a cloud computing environment**, such as version control and offering a **unified computing system** without providing physical computers with certain specifications. Additionally, AnVIL provides students with **authentic experience** working in the cloud -- which is becoming common in today's research environment. Students can also gain experience with a **variety of tools** (e.g., Galaxy, RStudio, Jupyter notebooks, WDL workflows) all in one place while working with **relevant datasets** and **prepared exercises**.
+
+::: {.click_to_expand_block}
+
+<details><summary>Instructor Guide Available</summary>
+
+See more in our [instructor guide](https://jhudatascience.org/AnVIL_Book_Instructor_Guide/introduction.html#why-should-i-use-anvil) on why AnVIL is a good choice for your classroom.
+
+</details>
+
+:::

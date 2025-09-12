@@ -1,0 +1,7 @@
+
+To equip researchers and students to work on the AnVIL, the AnVIL team
+
+* provides and maintains [training materials](https://hutchdatascience.org/AnVIL_Collection/) and documentation in multiple formats (ex: [Getting Started on AnVIL](https://jhudatascience.org/AnVIL_Book_Getting_Started/)),
+* moderates a [support forum](https://help.anvilproject.org/)
+* hosts [demos](https://hutchdatascience.org/AnVIL_Demos/) (ex: https://anvilproject.org/events/anvil2023-december-demos)
+* hosts workshops (ex: https://anvilproject.org/events/anvil2024-nhgri-intramural-workshop)

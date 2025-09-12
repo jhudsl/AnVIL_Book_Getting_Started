@@ -1,0 +1,2 @@
+
+Since AnVIL handles the support and maintenance of the platform (including the hardware and software), you can focus on performing your work on AnVIL rather than setting up and maintaining the platform, freeing up effort for your science. This is immensely valuable for researchers who do not have deep institutional IT and system administrator support for research infrastructure.

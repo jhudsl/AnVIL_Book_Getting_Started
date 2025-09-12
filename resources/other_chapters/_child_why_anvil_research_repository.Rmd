@@ -1,0 +1,26 @@
+
+The AnVIL serves as a [cloud data repository compliant with the Data Management and Sharing (DMS) Policy](https://anvilproject.org/overview/dms-requirements). Data access controls can be specified to limit data access and use.
+
+By submitting their data to AnVIL, not only can researchers meet the requirements of DMS Policy, they can also [contribute to the expanding network of NIH funded data housed in the AnVIL](https://terra.bio/anvil-platform-helps-meet-the-new-nih-data-management-and-sharing-policy-requirements/), furthering scientific discovery.
+
+::: {.click_to_expand_block}
+
+<details><summary>What is DMS Policy?</summary>
+
+The National Institutes of Health (NIH) Data Management and Sharing (DMS) policy requires that all NIH-supported research which generates [scientific data](https://hutchdatascience.org/NIH_Data_Sharing/how-will-this-policy-affect-me.html#scientific-data) (barring ethical, legal, or technical factors [limiting data sharing](https://hutchdatascience.org/NIH_Data_Sharing/how-will-this-policy-affect-me.html#when-to-not-share)) must create a plan and budget for data management and sharing.
+
+While some funding announcements for some research may specify which repository should be used to comply with DMS policy, mostly the NIH does not specify [where data should be stored.](https://hutchdatascience.org/NIH_Data_Sharing/data-management-and-storage.html#data-repositories). The NIH does provide an [interactive table listing NIH supported data repositories](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data) than can be used and [suggests that researchers use a repository most appropriate for the data generated from their research](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository).
+
+</details>
+
+:::
+
+::: {.click_to_expand_block}
+
+<details><summary>How is data access managed and requests granted?</summary>
+
+AnVIL utilizes the Data Use and Oversight System [(DUOS)](https://duos.org/) to efficiently expedite data access and management while maintaining security. Researchers can [explore datasets hosted in the AnVIL cloud and request access using DUOS](https://anvilproject.org/news/2024/11/15/duos-announcement). [Data use limitations can be set if necessary with Data Access Committees reviewing access requests](https://duos.org/anvil_dms_policy). 
+
+</details>
+
+:::

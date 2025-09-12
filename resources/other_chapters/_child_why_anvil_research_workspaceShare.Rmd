@@ -1,0 +1,16 @@
+
+[Workspaces](https://support.terra.bio/hc/en-us/articles/360024743371-Working-with-workspaces) can contain data, metadata, and analysis tools, as well as documentation and history of workflow runs, additionally displaying important information such as when the workspace was created and last modified. AnVIL workspaces on the web can serve as shareable, reproducible records of analyses. Research conducted on the AnVIL platform has contributed to over 115 scientific publications citing the AnVIL paper, demonstrating its role in advancing genomic and biomedical research.
+
+::: {.click_to_expand_block}
+
+<details><summary>Examples of AnVIL workspaces shared in publications</summary>
+
+AnVIL workspaces have previously been shared in publications to demonstrate reproducible science.
+
+* https://www.science.org/doi/10.1126/science.abl3533
+* https://www.science.org/doi/10.1126/science.abe3261
+* https://anvil.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot
+
+</details>
+
+:::

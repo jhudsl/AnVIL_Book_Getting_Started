@@ -1,0 +1,2 @@
+
+Due to AnVIL maintaining compliance with [FedRAMP](https://www.fedramp.gov/) policies, clinical data containing PHI and PII can be safely and securely stored and analyzed on AnVIL. This includes the ability to [export data from clinical data collection and management tools like REDCap and import it into AnVIL Terra Tables](https://support.terra.bio/hc/en-us/articles/28965977114651-AnVIL-User-Guide-for-REDCap).

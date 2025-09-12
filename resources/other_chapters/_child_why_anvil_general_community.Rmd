@@ -1,0 +1,20 @@
+
+AnVIL has begun hosting community conferences to collaboratively innovate during CoFests! and to discuss research performed with the platform. The community can work directly with the AnVIL team to understand current development, feature requests, and a roadmap or future directions for the platform.
+
+::: {.click_to_expand_block}
+
+<details><summary>Past and Upcoming AnVIL Community Conferences</summary>
+
+* 2024: https://anvilproject.org/events/anvil2024-community-conference
+* 2025: https://anvilproject.org/events/anvil2025-community-conference
+
+</details>
+
+:::
+
+Additionally, AnVIL values and routinely solicits user feedback to improve the user experience and provide the most beneficial features and enhancement for biomedical research. Feedback is gathered:
+
+* at the community conference
+* through [State of the AnVIL community polls](https://help.anvilproject.org/t/participate-in-the-state-of-the-anvil-2025-community-poll/275)
+* through voluntary user interviews
+* 24/7 at the support forum [help.anvilproject.org](https://help.anvilproject.org/)

@@ -1,0 +1,2 @@
+
+AnVIL is conducive to analysis at massive scale and for data exploration and training. Researchers get access to dedicated compute resources, avoiding queue time and lack of access at some institutions. Researchers can also launch light environments or run test analyses without incurring much cost or spending a lot of time to configure.
