@@ -37,7 +37,7 @@ Note that, in order to use RStudio, you must have access to a Terra Workspace wi
 
 1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
 
-    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted." width="480" />
+    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The 'hamburger' button to extend the drop-down menu is highlighted, and the menu item 'Workspaces' is highlighted." width="480" />
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
@@ -57,7 +57,7 @@ Note that, in order to use RStudio, you must have access to a Terra Workspace wi
 
 1. Configure any settings you need for your cloud environment.  If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice.  It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Scroll down and click the "CREATE" button when you are satisfied with your setup.
 
-    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_16.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The "CREATE" button is highlighted." width="480" />
+    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_16.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The 'CREATE' button is highlighted." width="480" />
 
     
 
@@ -73,15 +73,15 @@ Note that, in order to use RStudio, you must have access to a Terra Workspace wi
 
 1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio icon.  It will take a few minutes for Terra to request computers and install software.
 
-    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_91.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is "Creating"." width="480" />
+    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_91.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is 'Creating'." width="480" />
 
 1. When your environment is ready, its status will change to "Running".  Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.
 
-    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_95.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is "Running"." width="480" />
+    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_95.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is 'Running'." width="480" />
     
 1. Click the launch icon to open RStudio.  This is also where you can pause, modify, or delete your environment when needed.
 
-    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_99.png" alt="Screenshot of the RStudio Environment Details dialogue box. The "Open" button is highlighted." width="480" />
+    <img src="06-tools-rstudio_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_99.png" alt="Screenshot of the RStudio Environment Details dialogue box. The 'Open' button is highlighted." width="480" />
 
 1. You should now see the RStudio interface with information about the version printed to the console.
 
@@ -104,7 +104,10 @@ Next, we will be using RStudio and the package `Glimma` to create interactive pl
 1. The Bioconductor team has created a very useful package to programmatically interact with Terra and Google Cloud. Install the `AnVIL` package. It will make some steps easier as we go along.
 
     
-
+    ``` r
+    BiocManager::install("AnVIL")
+    ```
+    <br/>
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_49.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" />
 
 1. You can now quickly install precompiled binaries using the AnVIL package’s `install()` function. We will use it to install the `Glimma` package and the `airway` package. The `airway` package contains a `SummarizedExperiment` data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone. 
@@ -112,7 +115,10 @@ Next, we will be using RStudio and the package `Glimma` to create interactive pl
 {Note: for some of the packages, you will have to install packaged from the CRAN repository, using the install.packages() function. The examples will show you which install method to use.}
 
     
-
+    ``` r
+    AnVIL::install(c("Glimma", "airway"))
+    ```
+    <br/>
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" />
 
 1. Load the example data.
@@ -126,13 +132,20 @@ The example in this walkthrough uses data from an imported R package.
 :::
 
     
-
+    ``` r
+    library(airway)
+    data(airway)
+    ```
+    <br/>
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" />
 
 1. The multidimensional scaling (MDS) plot is frequently used to explore differences in samples. When this data is MDS transformed, the first two dimensions explain the greatest variance between samples, and the amount of variance decreases monotonically with increasing dimension. The following code will launch a new window where you can interact with the MDS plot.
 
     
-
+    ``` r
+    Glimma::glimmaMDS(assay(airway), group = colData(airway)$dex)
+    ```
+    <br/>
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_70.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." width="480" />
 
 1. Change the `colour_by` setting to "groups" so you can easily distinguish between groups. In this data, the "group" is the treatment.
@@ -151,11 +164,11 @@ The example in this walkthrough uses data from an imported R package.
 
 1. You should see the plot in the "Files" pane.
 
-    <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_19.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the "Files" pane." width="480" />
+    <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_19.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the 'Files' pane." width="480" />
 
 1. Select this file and click "More" > "Export"
 
-    <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_0.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the "Files" pane. The "More" and "Export" menus have been highlighted." width="480" />
+    <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_0.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the 'Files' pane. The 'More' and 'Export' menus have been highlighted." width="480" />
 
 1. Select "Download" to save the file to your local machine.
 
@@ -200,15 +213,15 @@ You can also pause your cloud environment(s) at https://anvil.terra.bio/#cluster
 
 1. Click on “Delete Environment”.
 
-    <img src="06-tools-rstudio_files/figure-html//1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_20.png" alt="Screenshot of the cloud environment popout. "Delete environment" is highlighted." width="100%" />
+    <img src="06-tools-rstudio_files/figure-html//1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_20.png" alt="Screenshot of the cloud environment popout. 'Delete environment' is highlighted." width="100%" />
 
 1. If you are certain that you do not need the data and configuration on your disk, you should select "Delete everything, including persistent disk".  If there is anything you would like to save, open the compute environment and copy the file(s) from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.
 
-    <img src="06-tools-rstudio_files/figure-html//1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_46.png" alt="Screenshot of the cloud environment popout. "Delete everything, including persistent disk" is highlighted." width="100%" />
+    <img src="06-tools-rstudio_files/figure-html//1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_46.png" alt="Screenshot of the cloud environment popout. 'Delete everything, including persistent disk' is highlighted." width="100%" />
 
 1. Select "DELETE".
 
-    <img src="06-tools-rstudio_files/figure-html//1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_51.png" alt="Screenshot of the cloud environment popout. "Delete" is highlighted." width="100%" />
+    <img src="06-tools-rstudio_files/figure-html//1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_51.png" alt="Screenshot of the cloud environment popout. 'Delete' is highlighted." width="100%" />
 
 :::{.notice}
 You can also delete your cloud environment(s) and disk storage at https://anvil.terra.bio/#clusters.
