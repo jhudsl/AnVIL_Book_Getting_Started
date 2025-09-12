@@ -2,7 +2,7 @@
 
 # Workspaces
 
-Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results. 
+Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools (like RStudio, Jupyter Notebooks, and Galaxy), store data, and share results. 
 
 To get a Workspace of your own, you can
 
