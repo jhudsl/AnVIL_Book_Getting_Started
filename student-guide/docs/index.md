@@ -1,6 +1,6 @@
 ---
 title: "Getting Started on AnVIL"
-date: "September 12, 2025"
+date: "September 15, 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -53,7 +53,7 @@ Examples and walkthroughs of common tasks on the AnVIL platform:
 - **Data**: how to find and access AnVIL datasets, as well as upload and manage your own data
 - **Workflows**: how to find and run existing automated data processing pipelines, and how to customize and share your own
 
-### Activate `scroll_highlight` Feature {#scroll-highlight} {-}
+### Activate `scroll_highlight` Feature {- #scroll-highlight}
 
 Note that some sections of this book cover steps in a lot of detail. When navigating the table of contents, you can click subsection (e.g., 2.1, 4.3) headers a second time to expand the table of contents and enable the `scroll_highlight` feature. This can help you follow the separate steps within more clearly.
 
