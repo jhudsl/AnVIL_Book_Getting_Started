@@ -38,7 +38,8 @@ The following steps show you how to clone a Workspace that has already been deve
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_workspace_clone.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
+  repo_name = "jhudsl/AnVIL_Template",
+  branch = "kweav-tryQuoteAdjust"
 )
 ```
 
