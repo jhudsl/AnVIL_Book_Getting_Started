@@ -101,42 +101,40 @@ For more information about configuring your RStudio environment, you can check t
 
 Next, we will be using RStudio and the package `Glimma` to create interactive plots. See [this vignette](https://bioconductor.org/packages/release/bioc/vignettes/Glimma/inst/doc/limma_edger.html) for more information.
 
+::: {.notice}
+If you need to load data stored in your workspace or a GCP bucket, you'll need to use the [AnVILGCP package](https://bioconductor.org/packages/release/bioc/vignettes/AnVILGCP/inst/doc/AnVILGCPIntroduction.html) to load it into RStudio.
+
+The example in this walkthrough uses data from an imported R package.  
+:::
+
 1. The Bioconductor team has created a very useful package to programmatically interact with Terra and Google Cloud. Install the `AnVIL` package. It will make some steps easier as we go along.
 
     
     ``` r
     BiocManager::install("AnVIL")
     ```
-    <br/>
+
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_49.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" />
 
-1. You can now quickly install precompiled binaries using the AnVIL package’s `install()` function. We will use it to install the `Glimma` package and the `airway` package. The `airway` package contains a `SummarizedExperiment` data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone. 
+1. You can now quickly install precompiled binaries using the AnVIL package’s `install()` function. We will use it to install the `Glimma` package and the `airway` package. The `airway` package contains a `SummarizedExperiment` data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone.
 
-{Note: for some of the packages, you will have to install packaged from the CRAN repository, using the install.packages() function. The examples will show you which install method to use.}
+    {Note: for some of the packages, you will have to install packaged from the CRAN repository, using the `install.packages()` function. The examples will show you which install method to use.}
 
     
     ``` r
     AnVIL::install(c("Glimma", "airway"))
     ```
-    <br/>
+
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" />
 
 1. Load the example data.
-
-::: {.notice}
-If you need to load data stored in your workspace or a GCP bucket, 
-you'll need to use the [AnVILGCP package](https://bioconductor.org/packages/release/bioc/vignettes/AnVILGCP/inst/doc/AnVILGCPIntroduction.html)
-to load it into RStudio.
-
-The example in this walkthrough uses data from an imported R package.  
-:::
 
     
     ``` r
     library(airway)
     data(airway)
     ```
-    <br/>
+
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" />
 
 1. The multidimensional scaling (MDS) plot is frequently used to explore differences in samples. When this data is MDS transformed, the first two dimensions explain the greatest variance between samples, and the amount of variance decreases monotonically with increasing dimension. The following code will launch a new window where you can interact with the MDS plot.
@@ -145,7 +143,7 @@ The example in this walkthrough uses data from an imported R package.
     ``` r
     Glimma::glimmaMDS(assay(airway), group = colData(airway)$dex)
     ```
-    <br/>
+
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_70.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." width="480" />
 
 1. Change the `colour_by` setting to "groups" so you can easily distinguish between groups. In this data, the "group" is the treatment.
@@ -159,6 +157,9 @@ The example in this walkthrough uses data from an imported R package.
 1. You can also download plots and other files created directly in RStudio. To download the following plot, click on "Export" and save in your preferred format to the default directory. This saves the file in your cloud environment.
 
     
+    ``` r
+    limma::plotMDS(airway)
+    ```
 
     <img src="06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_12.png" alt="Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted." width="480" />
 

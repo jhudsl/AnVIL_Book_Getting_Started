@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2025-09-15" />
+<meta name="date" content="2025-09-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -468,44 +468,31 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="tour-rstudio" class="section level3 hasAnchor" number="9.2.2">
 <h3><span class="header-section-number">9.2.2</span> Tour RStudio<a href="rstudio.html#tour-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Next, we will be using RStudio and the package <code>Glimma</code> to create interactive plots. See <a href="https://bioconductor.org/packages/release/bioc/vignettes/Glimma/inst/doc/limma_edger.html">this vignette</a> for more information.</p>
+<div class="notice">
+<p>If you need to load data stored in your workspace or a GCP bucket, you’ll need to use the <a href="https://bioconductor.org/packages/release/bioc/vignettes/AnVILGCP/inst/doc/AnVILGCPIntroduction.html">AnVILGCP package</a> to load it into RStudio.</p>
+<p>The example in this walkthrough uses data from an imported R package.</p>
+</div>
 <ol style="list-style-type: decimal">
 <li><p>The Bioconductor team has created a very useful package to programmatically interact with Terra and Google Cloud. Install the <code>AnVIL</code> package. It will make some steps easier as we go along.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="rstudio.html#cb1-1" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&quot;AnVIL&quot;</span>)</span></code></pre></div>
-<p><br/>
-<img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_49.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
-<li><p>You can now quickly install precompiled binaries using the AnVIL package’s <code>install()</code> function. We will use it to install the <code>Glimma</code> package and the <code>airway</code> package. The <code>airway</code> package contains a <code>SummarizedExperiment</code> data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone.</p></li>
-</ol>
-<p>{Note: for some of the packages, you will have to install packaged from the CRAN repository, using the install.packages() function. The examples will show you which install method to use.}</p>
-<pre><code>``` r
-AnVIL::install(c(&quot;Glimma&quot;, &quot;airway&quot;))
-```
-&lt;br/&gt;
-&lt;img src=&quot;06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png&quot; alt=&quot;Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.&quot; width=&quot;480&quot; /&gt;</code></pre>
-<ol style="list-style-type: decimal">
-<li>Load the example data.</li>
-</ol>
-<div class="notice">
-<p>If you need to load data stored in your workspace or a GCP bucket,
-you’ll need to use the <a href="https://bioconductor.org/packages/release/bioc/vignettes/AnVILGCP/inst/doc/AnVILGCPIntroduction.html">AnVILGCP package</a>
-to load it into RStudio.</p>
-<p>The example in this walkthrough uses data from an imported R package.</p>
-</div>
-<pre><code>``` r
-library(airway)
-data(airway)
-```
-&lt;br/&gt;
-&lt;img src=&quot;06-tools-rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png&quot; alt=&quot;Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.&quot; width=&quot;480&quot; /&gt;</code></pre>
-<ol style="list-style-type: decimal">
+<p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_49.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
+<li><p>You can now quickly install precompiled binaries using the AnVIL package’s <code>install()</code> function. We will use it to install the <code>Glimma</code> package and the <code>airway</code> package. The <code>airway</code> package contains a <code>SummarizedExperiment</code> data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone.</p>
+<p>{Note: for some of the packages, you will have to install packaged from the CRAN repository, using the <code>install.packages()</code> function. The examples will show you which install method to use.}</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="rstudio.html#cb2-1" tabindex="-1"></a>AnVIL<span class="sc">::</span><span class="fu">install</span>(<span class="fu">c</span>(<span class="st">&quot;Glimma&quot;</span>, <span class="st">&quot;airway&quot;</span>))</span></code></pre></div>
+<p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
+<li><p>Load the example data.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="rstudio.html#cb3-1" tabindex="-1"></a><span class="fu">library</span>(airway)</span>
+<span id="cb3-2"><a href="rstudio.html#cb3-2" tabindex="-1"></a><span class="fu">data</span>(airway)</span></code></pre></div>
+<p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
 <li><p>The multidimensional scaling (MDS) plot is frequently used to explore differences in samples. When this data is MDS transformed, the first two dimensions explain the greatest variance between samples, and the amount of variance decreases monotonically with increasing dimension. The following code will launch a new window where you can interact with the MDS plot.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="rstudio.html#cb4-1" tabindex="-1"></a>Glimma<span class="sc">::</span><span class="fu">glimmaMDS</span>(<span class="fu">assay</span>(airway), <span class="at">group =</span> <span class="fu">colData</span>(airway)<span class="sc">$</span>dex)</span></code></pre></div>
-<p><br/>
-<img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_70.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." width="480" /></p></li>
+<p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_70.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." width="480" /></p></li>
 <li><p>Change the <code>colour_by</code> setting to “groups” so you can easily distinguish between groups. In this data, the “group” is the treatment.</p>
 <p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_77.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. Data points are colored blue and orange by group. The colour by dropdown menu on the interactive plot is hightlighted." width="480" /></p></li>
 <li><p>You can download the interactive html file by clicking on “Save As”.</p>
 <p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_0.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. The Save As menu is highlighted." width="480" /></p></li>
 <li><p>You can also download plots and other files created directly in RStudio. To download the following plot, click on “Export” and save in your preferred format to the default directory. This saves the file in your cloud environment.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="rstudio.html#cb5-1" tabindex="-1"></a>limma<span class="sc">::</span><span class="fu">plotMDS</span>(airway)</span></code></pre></div>
 <p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_12.png" alt="Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted." width="480" /></p></li>
 <li><p>You should see the plot in the “Files” pane.</p>
 <p><img src="06-tools-rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_19.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the 'Files' pane." width="480" /></p></li>
@@ -549,7 +536,7 @@ data(airway)
 <div class="notice">
 <p>You can also delete your cloud environment(s) and disk storage at <a href="https://anvil.terra.bio/#clusters" class="uri">https://anvil.terra.bio/#clusters</a>.</p>
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="rstudio.html#cb5-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="rstudio.html#cb6-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
 <pre><code>## R version 4.3.2 (2023-10-31)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 22.04.4 LTS
