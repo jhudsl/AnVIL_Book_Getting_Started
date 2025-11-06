@@ -88,6 +88,8 @@ jupyter-notebook
 jupyter-notebook-video-tutorial
 objectives
 slides
+jupyter-notebook-step-by-step-guide
+launching-jupyter-notebook
 galaxy
 galaxy-video-tutorial
 objectives-1
