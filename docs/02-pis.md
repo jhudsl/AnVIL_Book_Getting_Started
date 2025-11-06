@@ -271,7 +271,7 @@ As a PI or lab manager, there are some steps you can take to help monitor and li
 
 **We highly recommended you set budgets and alerts to notify you if spending starts to exceed expectations**.  This will make it easier to notice and shut down any accidental overspending.  A good starting point is to set a monthly budget, and then set alerts at **50 percent** and **90 percent** of expected spend.  You can add additional alerts if you desire.
 
-You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget.  Any restrictions should be lifted when you upgrade to a paid account.
+You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects.  This will depend on the size of your lab and how closely you want to monitor spending.  More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month.  When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface.  **NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.**  At the time of writing (Jan 2025), you [cannot set budget alerts if you are using the GCP free credits on Terra](https://support.terra.bio/hc/en-us/articles/360057589931-How-to-set-up-and-use-Google-Cloud-budget-alerts). Any restrictions should be lifted when you upgrade to a paid account
 
 ### Set Alerts
 
@@ -360,7 +360,9 @@ The Google Billing console displays information by Billing Account.  To view spe
 
 ### Export Cost Data to BigQuery
 
-Coming soon -- instructions on how to export your cost data so you can better analyze and control your expenses.
+After a workflow has completed on AnVIL, you access the time and cost from Google's BigQuery database to explore more granular cost details. 
+
+Details on how this can be done on Terra are [here](https://support.terra.bio/hc/en-us/articles/360036932671-How-to-retrieve-detailed-workflow-cost-information-on-GCP). Instructions for doing this on AnVIL are coming soon!
 
 ## Step 6: Add Users and Workspaces
 
@@ -469,7 +471,7 @@ To prevent abuse, new users of GCP are only permitted to create a few Google Clo
 
 Since this limit is imposed by Google, you will need to contact them directly to request a quota increase, using [this form](https://support.google.com/code/contact/billing_quota_increase).
 
-At the time of writing (April 2022) Terra is working to expedite this process for Terra users; we recommend checking the [relevant Terra documentation](https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY) for the latest information as well as recommendations about how to fill out the form.
+At the time of writing (Jan 2025) Terra has released guidelines on requesting quota increases; we recommend checking the [relevant Terra documentation](https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY) for the latest information as well as recommendations about how to fill out the form.
 
 ## Wrap-Up {#pis-wrap-up}
 
