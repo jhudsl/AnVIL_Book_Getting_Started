@@ -1,6 +1,6 @@
 # RStudio
 
-One of the analysis platforms available on AnVIL is [RStudio](https://support.terra.bio/hc/en-us/sections/4407114738587-RStudio). This platform offers rich genomics support through [Bioconductor](https://www.bioconductor.org/). This chapter focuses on launching and highlighting a few features for RStudio.
+One of the analysis platforms available on AnVIL is [RStudio](https://support.terra.bio/hc/en-us/sections/4407114738587-RStudio). This platform offers rich genomics support through [Bioconductor](https://anvilproject.org/learn/run-interactive-analyses/getting-started-with-bioconductor). This chapter focuses on launching and highlighting a few features for RStudio.
 
 ## RStudio: Video tutorial
 

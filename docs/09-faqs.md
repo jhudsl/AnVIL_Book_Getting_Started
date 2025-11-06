@@ -21,7 +21,7 @@
 
 ### How Do I Perform an Analysis?
 
-- Launch interactive tools like [Jupyter](https://anvilproject.org/learn/data-analysts/jupyter-gsg-video), [RStudio](https://anvilproject.org/learn/data-analysts/rstudio-gsg-video), [Galaxy](https://anvilproject.org/learn/data-analysts/galaxy-gsg-video)
+- Launch interactive tools like [Jupyter](https://youtu.be/T5xCxFHGpPE?si=2xDPCog3n7DZ-Pui), [RStudio](https://youtu.be/cdkNbdhxUPc?si=PILw39NaU8IW5Kh6), [Galaxy](https://youtu.be/9TEVu7QobOo?si=iaxhgOxYfDfXcjP3)
     - "Terminal" available through Jupyter and RStudio
 - Migrate your HPC analysis to AnVIL using Docker/WDLs
     - Introducing the Learn WDL Course ([10 min video](https://www.youtube.com/watch?v=RtcW2Zdn_28))

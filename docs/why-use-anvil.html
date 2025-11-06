@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Why use AnVIL? | Getting Started on AnVIL</title>
+  <meta name="description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Why use AnVIL? | Getting Started on AnVIL" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Why use AnVIL? | Getting Started on AnVIL" />
+  
+  <meta name="twitter:description" content="Guides to help new AnVIL users set up their accounts and start doing research on the AnVIL platform" />
+  
+
+
+
+<meta name="date" content="2025-09-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="pis-and-lab-managers.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6QHG20WV6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B6QHG20WV6');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #204a87; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/AnVIL_style/anvil.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://anvilproject.org/" target="_blank"><img src="assets/AnVIL_style/logo-anvil.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Book</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#skills-level"><i class="fa fa-check"></i>Skills Level</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i>How to Use This Book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#scroll-highlight"><i class="fa fa-check"></i>Activate <code>scroll_highlight</code> Feature</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="introduction.html"><a href="introduction.html#what-is-anvil"><i class="fa fa-check"></i><b>1.0.1</b> What Is AnVIL?</a></li>
+<li class="chapter" data-level="1.0.2" data-path="introduction.html"><a href="introduction.html#why-anvil"><i class="fa fa-check"></i><b>1.0.2</b> Why AnVIL?</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="why-use-anvil.html"><a href="why-use-anvil.html"><i class="fa fa-check"></i><b>2</b> Why use AnVIL?</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="why-use-anvil.html"><a href="why-use-anvil.html#benefits-of-using-anvil-for-research"><i class="fa fa-check"></i><b>2.1</b> Benefits of using AnVIL for research</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="why-use-anvil.html"><a href="why-use-anvil.html#ease-of-platform-access"><i class="fa fa-check"></i><b>2.1.1</b> Ease of platform access</a></li>
+<li class="chapter" data-level="2.1.2" data-path="why-use-anvil.html"><a href="why-use-anvil.html#variety-of-analysis-solutions"><i class="fa fa-check"></i><b>2.1.2</b> Variety of analysis solutions</a></li>
+<li class="chapter" data-level="2.1.3" data-path="why-use-anvil.html"><a href="why-use-anvil.html#data-yours-or-cloud-hosted-open-controlled-access"><i class="fa fa-check"></i><b>2.1.3</b> Data: yours or cloud-hosted open &amp; controlled access</a></li>
+<li class="chapter" data-level="2.1.4" data-path="why-use-anvil.html"><a href="why-use-anvil.html#data-analysis-in-same-place"><i class="fa fa-check"></i><b>2.1.4</b> Data &amp; analysis in same place</a></li>
+<li class="chapter" data-level="2.1.5" data-path="why-use-anvil.html"><a href="why-use-anvil.html#scalability"><i class="fa fa-check"></i><b>2.1.5</b> Scalability</a></li>
+<li class="chapter" data-level="2.1.6" data-path="why-use-anvil.html"><a href="why-use-anvil.html#rent-needed-resources"><i class="fa fa-check"></i><b>2.1.6</b> Rent needed resources</a></li>
+<li class="chapter" data-level="2.1.7" data-path="why-use-anvil.html"><a href="why-use-anvil.html#role-based-permissions"><i class="fa fa-check"></i><b>2.1.7</b> Role-based permissions</a></li>
+<li class="chapter" data-level="2.1.8" data-path="why-use-anvil.html"><a href="why-use-anvil.html#shareable-workspaces"><i class="fa fa-check"></i><b>2.1.8</b> Shareable workspaces</a></li>
+<li class="chapter" data-level="2.1.9" data-path="why-use-anvil.html"><a href="why-use-anvil.html#repository-compliant-with-dms-policy"><i class="fa fa-check"></i><b>2.1.9</b> Repository compliant with DMS Policy</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="why-use-anvil.html"><a href="why-use-anvil.html#benefits-of-using-anvil-in-the-classroom"><i class="fa fa-check"></i><b>2.2</b> Benefits of using AnVIL in the classroom</a></li>
+<li class="chapter" data-level="2.3" data-path="why-use-anvil.html"><a href="why-use-anvil.html#overall-benefits-of-anvil"><i class="fa fa-check"></i><b>2.3</b> Overall benefits of AnVIL</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="why-use-anvil.html"><a href="why-use-anvil.html#ability-to-control-costs"><i class="fa fa-check"></i><b>2.3.1</b> Ability to control costs</a></li>
+<li class="chapter" data-level="2.3.2" data-path="why-use-anvil.html"><a href="why-use-anvil.html#work-with-protected-data-safely"><i class="fa fa-check"></i><b>2.3.2</b> Work with protected data safely</a></li>
+<li class="chapter" data-level="2.3.3" data-path="why-use-anvil.html"><a href="why-use-anvil.html#maintenance-is-handled"><i class="fa fa-check"></i><b>2.3.3</b> Maintenance is handled</a></li>
+<li class="chapter" data-level="2.3.4" data-path="why-use-anvil.html"><a href="why-use-anvil.html#training-and-support-is-available"><i class="fa fa-check"></i><b>2.3.4</b> Training and support is available</a></li>
+<li class="chapter" data-level="2.3.5" data-path="why-use-anvil.html"><a href="why-use-anvil.html#collaborative-community"><i class="fa fa-check"></i><b>2.3.5</b> Collaborative community</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="why-use-anvil.html"><a href="why-use-anvil.html#conclusion"><i class="fa fa-check"></i><b>2.4</b> Conclusion</a></li>
+</ul></li>
+<li class="part"><span><b>Account Setup</b></span></li>
+<li class="chapter" data-level="3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html"><i class="fa fa-check"></i><b>3</b> PIs and Lab Managers</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#overview-pis"><i class="fa fa-check"></i><b>3.1</b> Account Setup Overview</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#goals-for-this-guide"><i class="fa fa-check"></i><b>3.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="3.1.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#design-philosophy"><i class="fa fa-check"></i><b>3.1.2</b> Design Philosophy</a></li>
+<li class="chapter" data-level="3.1.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#before-you-start"><i class="fa fa-check"></i><b>3.1.3</b> Before You Start</a></li>
+<li class="chapter" data-level="3.1.4" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#account-setup-pis"><i class="fa fa-check"></i><b>3.1.4</b> Starting Setup</a></li>
+<li class="chapter" data-level="3.1.5" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#lab-management-roles"><i class="fa fa-check"></i><b>3.1.5</b> Lab Management Roles</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#pis-step-1"><i class="fa fa-check"></i><b>3.2</b> Step 1: Create a Google Account</a></li>
+<li class="chapter" data-level="3.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-2-set-up-google-billing"><i class="fa fa-check"></i><b>3.3</b> Step 2: Set Up Google Billing</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-google-billing-account"><i class="fa fa-check"></i><b>3.3.1</b> Create a Google Billing Account</a></li>
+<li class="chapter" data-level="3.3.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#add-users-or-viewers-optional"><i class="fa fa-check"></i><b>3.3.2</b> Add Users or Viewers (optional)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-3-add-terra-to-google-billing-account"><i class="fa fa-check"></i><b>3.4</b> Step 3: Add Terra to Google Billing Account</a></li>
+<li class="chapter" data-level="3.5" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-4-create-terra-billing-projects"><i class="fa fa-check"></i><b>3.5</b> Step 4: Create Terra Billing Projects</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-billing-project"><i class="fa fa-check"></i><b>3.5.1</b> Create a Billing Project</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-5-set-budgets-and-alerts"><i class="fa fa-check"></i><b>3.6</b> Step 5: Set Budgets and Alerts</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#set-alerts"><i class="fa fa-check"></i><b>3.6.1</b> Set Alerts</a></li>
+<li class="chapter" data-level="3.6.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#view-spend"><i class="fa fa-check"></i><b>3.6.2</b> View spend</a></li>
+<li class="chapter" data-level="3.6.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#export-cost-data-to-bigquery"><i class="fa fa-check"></i><b>3.6.3</b> Export Cost Data to BigQuery</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#step-6-add-users-and-workspaces"><i class="fa fa-check"></i><b>3.7</b> Step 6: Add Users and Workspaces</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#create-a-new-workspace"><i class="fa fa-check"></i><b>3.7.1</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="3.7.2" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#add-members-to-workspaces"><i class="fa fa-check"></i><b>3.7.2</b> Add Members to Workspaces</a></li>
+<li class="chapter" data-level="3.7.3" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#request-quota-increase"><i class="fa fa-check"></i><b>3.7.3</b> Request Quota Increase</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="pis-and-lab-managers.html"><a href="pis-and-lab-managers.html#pis-wrap-up"><i class="fa fa-check"></i><b>3.8</b> Wrap-Up</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-analysts.html"><a href="data-analysts.html"><i class="fa fa-check"></i><b>4</b> Data Analysts</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="data-analysts.html"><a href="data-analysts.html#overview-analysts"><i class="fa fa-check"></i><b>4.1</b> Account Setup Overview</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="data-analysts.html"><a href="data-analysts.html#goals-for-this-guide-1"><i class="fa fa-check"></i><b>4.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-analysts.html"><a href="data-analysts.html#starting-setup"><i class="fa fa-check"></i><b>4.1.2</b> Starting Setup</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="data-analysts.html"><a href="data-analysts.html#data-analysts-step-1"><i class="fa fa-check"></i><b>4.2</b> Step 1: Create a Google Account</a></li>
+<li class="chapter" data-level="4.3" data-path="data-analysts.html"><a href="data-analysts.html#step-2-set-up-terra"><i class="fa fa-check"></i><b>4.3</b> Step 2: Set Up Terra</a></li>
+<li class="chapter" data-level="4.4" data-path="data-analysts.html"><a href="data-analysts.html#step-3-link-external-accounts-optional"><i class="fa fa-check"></i><b>4.4</b> Step 3: Link External Accounts (optional)</a></li>
+<li class="chapter" data-level="4.5" data-path="data-analysts.html"><a href="data-analysts.html#data-analysts-wrap-up"><i class="fa fa-check"></i><b>4.5</b> Wrap-Up</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="consortia.html"><a href="consortia.html"><i class="fa fa-check"></i><b>5</b> Consortia</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="consortia.html"><a href="consortia.html#overview-consortia"><i class="fa fa-check"></i><b>5.1</b> Account Setup Overview</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="consortia.html"><a href="consortia.html#goals-for-this-guide-2"><i class="fa fa-check"></i><b>5.1.1</b> Goals for This Guide</a></li>
+<li class="chapter" data-level="5.1.2" data-path="consortia.html"><a href="consortia.html#choosing-a-role"><i class="fa fa-check"></i><b>5.1.2</b> Choosing a Role</a></li>
+<li class="chapter" data-level="5.1.3" data-path="consortia.html"><a href="consortia.html#consortia-responsibilities"><i class="fa fa-check"></i><b>5.1.3</b> Consortia Responsibilities</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="consortia.html"><a href="consortia.html#consortium-data-managers"><i class="fa fa-check"></i><b>5.2</b> Consortium Data Managers</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="consortia.html"><a href="consortia.html#managing-security-and-privacy-policies"><i class="fa fa-check"></i><b>5.2.1</b> Managing Security and Privacy Policies</a></li>
+<li class="chapter" data-level="5.2.2" data-path="consortia.html"><a href="consortia.html#account-setup"><i class="fa fa-check"></i><b>5.2.2</b> Account Setup</a></li>
+<li class="chapter" data-level="5.2.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication"><i class="fa fa-check"></i><b>5.2.3</b> Two Factor Authentication</a></li>
+<li class="chapter" data-level="5.2.4" data-path="consortia.html"><a href="consortia.html#set-up-terra-authorization-domains"><i class="fa fa-check"></i><b>5.2.4</b> Set Up Terra Authorization Domains</a></li>
+<li class="chapter" data-level="5.2.5" data-path="consortia.html"><a href="consortia.html#granting-access"><i class="fa fa-check"></i><b>5.2.5</b> Granting Access</a></li>
+<li class="chapter" data-level="5.2.6" data-path="consortia.html"><a href="consortia.html#revoking-access"><i class="fa fa-check"></i><b>5.2.6</b> Revoking Access</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="consortia.html"><a href="consortia.html#consortium-pis-and-lab-managers"><i class="fa fa-check"></i><b>5.3</b> Consortium PIs and Lab Managers</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies"><i class="fa fa-check"></i><b>5.3.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="5.3.2" data-path="consortia.html"><a href="consortia.html#account-setup-1"><i class="fa fa-check"></i><b>5.3.2</b> Account Setup</a></li>
+<li class="chapter" data-level="5.3.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-1"><i class="fa fa-check"></i><b>5.3.3</b> Two Factor Authentication</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="consortia.html"><a href="consortia.html#consortium-data-analysts-and-researchers"><i class="fa fa-check"></i><b>5.4</b> Consortium Data Analysts and Researchers</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies-1"><i class="fa fa-check"></i><b>5.4.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="5.4.2" data-path="consortia.html"><a href="consortia.html#account-setup-2"><i class="fa fa-check"></i><b>5.4.2</b> Account Setup</a></li>
+<li class="chapter" data-level="5.4.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-2"><i class="fa fa-check"></i><b>5.4.3</b> Two Factor Authentication</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="consortia.html"><a href="consortia.html#consortium-data-submitters"><i class="fa fa-check"></i><b>5.5</b> Consortium Data Submitters</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="consortia.html"><a href="consortia.html#be-aware-of-security-policies-2"><i class="fa fa-check"></i><b>5.5.1</b> Be Aware of Security Policies</a></li>
+<li class="chapter" data-level="5.5.2" data-path="consortia.html"><a href="consortia.html#account-setup-3"><i class="fa fa-check"></i><b>5.5.2</b> Account Setup</a></li>
+<li class="chapter" data-level="5.5.3" data-path="consortia.html"><a href="consortia.html#two-factor-authentication-3"><i class="fa fa-check"></i><b>5.5.3</b> Two Factor Authentication</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="consortia.html"><a href="consortia.html#consortia-wrap-up"><i class="fa fa-check"></i><b>5.6</b> Wrap-Up</a></li>
+</ul></li>
+<li class="part"><span><b>Working on AnVIL</b></span></li>
+<li class="chapter" data-level="6" data-path="workspaces.html"><a href="workspaces.html"><i class="fa fa-check"></i><b>6</b> Workspaces</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="workspaces.html"><a href="workspaces.html#access-your-workspaces"><i class="fa fa-check"></i><b>6.1</b> Access Your Workspaces</a></li>
+<li class="chapter" data-level="6.2" data-path="workspaces.html"><a href="workspaces.html#clone-workspace"><i class="fa fa-check"></i><b>6.2</b> Clone an Existing Workspace</a></li>
+<li class="chapter" data-level="6.3" data-path="workspaces.html"><a href="workspaces.html#create-a-new-workspace-1"><i class="fa fa-check"></i><b>6.3</b> Create a New Workspace</a></li>
+<li class="chapter" data-level="6.4" data-path="workspaces.html"><a href="workspaces.html#add-members-to-workspace"><i class="fa fa-check"></i><b>6.4</b> Add Members to Workspace</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html"><i class="fa fa-check"></i><b>7</b> Jupyter Notebook</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#jupyter-notebook-video-tutorial"><i class="fa fa-check"></i><b>7.1</b> Jupyter Notebook: Video tutorial</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#objectives"><i class="fa fa-check"></i><b>7.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="7.1.2" data-path="jupyter-notebook.html"><a href="jupyter-notebook.html#slides"><i class="fa fa-check"></i><b>7.1.2</b> Slides</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="galaxy.html"><a href="galaxy.html"><i class="fa fa-check"></i><b>8</b> Galaxy</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="galaxy.html"><a href="galaxy.html#galaxy-video-tutorial"><i class="fa fa-check"></i><b>8.1</b> Galaxy: Video tutorial</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="galaxy.html"><a href="galaxy.html#objectives-1"><i class="fa fa-check"></i><b>8.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="8.1.2" data-path="galaxy.html"><a href="galaxy.html#slides-1"><i class="fa fa-check"></i><b>8.1.2</b> Slides</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="galaxy.html"><a href="galaxy.html#galaxy-step-by-step-guide"><i class="fa fa-check"></i><b>8.2</b> Galaxy: Step-by-step guide</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="galaxy.html"><a href="galaxy.html#starting-galaxy"><i class="fa fa-check"></i><b>8.2.1</b> Starting Galaxy</a></li>
+<li class="chapter" data-level="8.2.2" data-path="galaxy.html"><a href="galaxy.html#navigating-galaxy"><i class="fa fa-check"></i><b>8.2.2</b> Navigating Galaxy</a></li>
+<li class="chapter" data-level="8.2.3" data-path="galaxy.html"><a href="galaxy.html#deleting-galaxy-environment"><i class="fa fa-check"></i><b>8.2.3</b> Deleting Galaxy environment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="rstudio.html"><a href="rstudio.html"><i class="fa fa-check"></i><b>9</b> RStudio</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="rstudio.html"><a href="rstudio.html#rstudio-video-tutorial"><i class="fa fa-check"></i><b>9.1</b> RStudio: Video tutorial</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="rstudio.html"><a href="rstudio.html#objectives-2"><i class="fa fa-check"></i><b>9.1.1</b> Objectives</a></li>
+<li class="chapter" data-level="9.1.2" data-path="rstudio.html"><a href="rstudio.html#slides-2"><i class="fa fa-check"></i><b>9.1.2</b> Slides</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="rstudio.html"><a href="rstudio.html#rstudio-step-by-step-guide"><i class="fa fa-check"></i><b>9.2</b> RStudio: Step-by-step guide</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="rstudio.html"><a href="rstudio.html#launch-rstudio-cloud-environment"><i class="fa fa-check"></i><b>9.2.1</b> Launch RStudio Cloud Environment</a></li>
+<li class="chapter" data-level="9.2.2" data-path="rstudio.html"><a href="rstudio.html#tour-rstudio"><i class="fa fa-check"></i><b>9.2.2</b> Tour RStudio</a></li>
+<li class="chapter" data-level="9.2.3" data-path="rstudio.html"><a href="rstudio.html#stopping"><i class="fa fa-check"></i><b>9.2.3</b> Pause RStudio</a></li>
+<li class="chapter" data-level="9.2.4" data-path="rstudio.html"><a href="rstudio.html#delete-rstudio-cloud-environment"><i class="fa fa-check"></i><b>9.2.4</b> Delete RStudio Cloud Environment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>10</b> Data</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="data.html"><a href="data.html#bring-your-own-data"><i class="fa fa-check"></i><b>10.1</b> Bring Your Own Data</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="data.html"><a href="data.html#bring-data-overview"><i class="fa fa-check"></i><b>10.1.1</b> Overview</a></li>
+<li class="chapter" data-level="10.1.2" data-path="data.html"><a href="data.html#browser-upload-single-files"><i class="fa fa-check"></i><b>10.1.2</b> Browser: Upload Single Files</a></li>
+<li class="chapter" data-level="10.1.3" data-path="data.html"><a href="data.html#browser-upload-folders"><i class="fa fa-check"></i><b>10.1.3</b> Browser: Upload Folders</a></li>
+<li class="chapter" data-level="10.1.4" data-path="data.html"><a href="data.html#gsutil-local-to-cloud"><i class="fa fa-check"></i><b>10.1.4</b> <code>gsutil</code>: Local to Cloud</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="data.html"><a href="data.html#analyze-existing-data"><i class="fa fa-check"></i><b>10.2</b> Analyze Existing Data</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="data.html"><a href="data.html#anvil-data-library"><i class="fa fa-check"></i><b>10.2.1</b> AnVIL Data Library</a></li>
+<li class="chapter" data-level="10.2.2" data-path="data.html"><a href="data.html#anvil-dataset-catalog"><i class="fa fa-check"></i><b>10.2.2</b> AnVIL Dataset Catalog</a></li>
+<li class="chapter" data-level="10.2.3" data-path="data.html"><a href="data.html#anvil-data-explorer"><i class="fa fa-check"></i><b>10.2.3</b> AnVIL Data Explorer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="workflows.html"><a href="workflows.html"><i class="fa fa-check"></i><b>11</b> Workflows</a>
+<ul>
+<li class="chapter" data-level="11.0.1" data-path="workflows.html"><a href="workflows.html#pre-configured-workflow"><i class="fa fa-check"></i><b>11.0.1</b> Pre-configured Workflow</a></li>
+<li class="chapter" data-level="11.0.2" data-path="workflows.html"><a href="workflows.html#create-a-custom-workflow"><i class="fa fa-check"></i><b>11.0.2</b> Create a Custom Workflow</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>A</b> FAQs</a>
+<ul>
+<li class="chapter" data-level="A.0.1" data-path="faqs.html"><a href="faqs.html#what-is-anvil-1"><i class="fa fa-check"></i><b>A.0.1</b> What is AnVIL?</a></li>
+<li class="chapter" data-level="A.0.2" data-path="faqs.html"><a href="faqs.html#how-do-i-get-started"><i class="fa fa-check"></i><b>A.0.2</b> How Do I Get Started?</a></li>
+<li class="chapter" data-level="A.0.3" data-path="faqs.html"><a href="faqs.html#what-data-is-available"><i class="fa fa-check"></i><b>A.0.3</b> What Data Is Available?</a></li>
+<li class="chapter" data-level="A.0.4" data-path="faqs.html"><a href="faqs.html#how-do-i-perform-an-analysis"><i class="fa fa-check"></i><b>A.0.4</b> How Do I Perform an Analysis?</a></li>
+<li class="chapter" data-level="A.0.5" data-path="faqs.html"><a href="faqs.html#where-can-i-get-help-1"><i class="fa fa-check"></i><b>A.0.5</b> Where Can I Get Help?</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i><b>B</b> Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="B.0.1" data-path="troubleshooting.html"><a href="troubleshooting.html#create-terra-billing-project"><i class="fa fa-check"></i><b>B.0.1</b> Create Terra Billing Project</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="authorization-domains.html"><a href="authorization-domains.html"><i class="fa fa-check"></i><b>C</b> Authorization Domains</a></li>
+<li class="chapter" data-level="D" data-path="budget-templates.html"><a href="budget-templates.html"><i class="fa fa-check"></i><b>D</b> Budget Templates</a>
+<ul>
+<li class="chapter" data-level="D.0.1" data-path="budget-templates.html"><a href="budget-templates.html#types-of-costs"><i class="fa fa-check"></i><b>D.0.1</b> Types of Costs</a></li>
+<li class="chapter" data-level="D.0.2" data-path="budget-templates.html"><a href="budget-templates.html#usage-of-budget-templates"><i class="fa fa-check"></i><b>D.0.2</b> Usage of Budget Templates</a></li>
+</ul></li>
+<li class="chapter" data-level="E" data-path="irb-templates.html"><a href="irb-templates.html"><i class="fa fa-check"></i><b>E</b> IRB Templates</a>
+<ul>
+<li class="chapter" data-level="E.0.1" data-path="irb-templates.html"><a href="irb-templates.html#general-information"><i class="fa fa-check"></i><b>E.0.1</b> General Information</a></li>
+<li class="chapter" data-level="E.0.2" data-path="irb-templates.html"><a href="irb-templates.html#description-of-anvil"><i class="fa fa-check"></i><b>E.0.2</b> Description of AnVIL</a></li>
+<li class="chapter" data-level="E.0.3" data-path="irb-templates.html"><a href="irb-templates.html#data-storage"><i class="fa fa-check"></i><b>E.0.3</b> Data Storage</a></li>
+<li class="chapter" data-level="E.0.4" data-path="irb-templates.html"><a href="irb-templates.html#privacy-and-confidentiality"><i class="fa fa-check"></i><b>E.0.4</b> Privacy and Confidentiality</a></li>
+<li class="chapter" data-level="E.0.5" data-path="irb-templates.html"><a href="irb-templates.html#security"><i class="fa fa-check"></i><b>E.0.5</b> Security</a></li>
+<li class="chapter" data-level="E.0.6" data-path="irb-templates.html"><a href="irb-templates.html#example-language-for-informed-consent"><i class="fa fa-check"></i><b>E.0.6</b> Example Language for Informed Consent</a></li>
+<li class="chapter" data-level="E.0.7" data-path="irb-templates.html"><a href="irb-templates.html#additional-resources"><i class="fa fa-check"></i><b>E.0.7</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="F" data-path="overview-videos.html"><a href="overview-videos.html"><i class="fa fa-check"></i><b>F</b> Overview Videos</a></li>
+<li class="chapter" data-level="G" data-path="give-us-feedback.html"><a href="give-us-feedback.html"><i class="fa fa-check"></i><b>G</b> Give us Feedback</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=Getting+Started+on+AnVIL"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Getting Started on AnVIL</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
+</div>
+<div id="why-use-anvil" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Why use AnVIL?<a href="why-use-anvil.html#why-use-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The NHGRI AnVIL (Genomic Data Science Analysis, Visualization, and Informatics Lab-space) is a project powered by Terra for biomedical researchers to access data, run analysis tools, and collaborate. Both biology researchers and educators can benefit from using AnVIL (<a href="https://anvil.terra.bio/">anvil.terra.bio</a>) for their research and in the classroom.</p>
+<p>This guide acts as a resource answering the question “why use AnVIL?”. It will discuss the research, classroom, and general benefits of using AnVIL and point to related resources throughout.</p>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g37132c23502_0_0.png" alt="The research, classroom, and general benefits of using the AnVIL are outlined. For research, the AnVIL platform can be accessed easily, there are a variety of available analysis solutions and tools, you can bring your own data or access cloud-hosted open or controlled access data; further your data and analysis are in the same place instead of having to move data between platforms. The analysis resources are scalable with researchers renting what they need. Additionally work on the AnVIL platform can be collaborative with workspaces having role-based permissions for group members and then these workspaces are shareable enhancing reproducibility. For the classroom, the AnVIL offers a unified computing system for learners where they will have an authentic experience with cloud computing that is increasingly becoming frequently utilized within today’s research environment. Learners can learn and practice with a variety of tools using relevant datasets and prepared exercises. The general benefits of using the AnVIL include the ability to control cloud-computing costs, being able to safely work with protected data, maintenance is handled by others not the users, training and support is available for users, and the AnVIL is a collaborative community with a development mindset." width="100%" /></p>
+<div id="benefits-of-using-anvil-for-research" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Benefits of using AnVIL for research<a href="why-use-anvil.html#benefits-of-using-anvil-for-research" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g37132c23502_0_56.png" alt="Research benefits for the AnVIL include that the AnVIL platform can be accessed easily, there are a variety of available analysis solutions and tools, you can bring your own data or access cloud-hosted open or controlled access data; further your data and analysis are in the same place instead of having to move data between platforms. The analysis resources are scalable with researchers renting what they need. Additionally work on the AnVIL platform can be collaborative with workspaces having role-based permissions for group members and then these workspaces are shareable enhancing reproducibility" width="100%" /></p>
+<div id="ease-of-platform-access" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Ease of platform access<a href="why-use-anvil.html#ease-of-platform-access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The primary means of accessing the AnVIL platform (<a href="https://anvil.terra.bio/">anvil.terra.bio</a>) is through a web browser - users do not need to download data or install software.</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Accessing AnVIL beyond the web browser
+</summary>
+<p>The platform (<a href="https://anvil.terra.bio/">anvil.terra.bio</a>) provides a variety of graphical user interfaces (GUIs) as well as optional application programming interface (API) library/command line interfaces to interact with data, analysis solutions, and workflows. Bioconductor packages (<a href="https://www.bioconductor.org/packages/release/bioc/vignettes/AnVIL/inst/doc/Introduction.html">AnVIL</a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/AnVILGCP.html">AnVILGCP</a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/AnVILWorkflow.html">AnVILWorkflow</a>) offer additional methods for users to programmatically interact with and access AnVIL resources from within AnVIL, or stand-alone computing environments such as a user’s laptop.</p>
+</details>
+</div>
+</div>
+<div id="variety-of-analysis-solutions" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Variety of analysis solutions<a href="why-use-anvil.html#variety-of-analysis-solutions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_142.png" alt="There are a variety of available analysis frameworks and tools available on the AnVIL, each with interoperability such that data and results in your workspace can be passed from tool to tool. Analysis solutions are available for interactive work or non-interactive batch processing (e.g., with WDL workflows)." width="100%" /></p>
+<p>AnVIL supports an assortment of frameworks and tools. Researchers can use their favorite tool to work with data interactively or through non-interactive batch processing. Due to this variety and interoperability with other platforms, researchers can stay within a single environment for their analysis without having to shift between platforms.</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Interactive sessions
+</summary>
+<p>Interactive sessions are available with Jupyter, RStudio/Bioconductor, and Galaxy.</p>
+<p>Use of Galaxy on AnVIL enables even more customizability with the ability to <a href="https://support.terra.bio/hc/en-us/articles/4402392877979-Galaxy-on-Terra-FAQs#heading-12">install specific tools/versions with Toolshed</a>.</p>
+</details>
+</div>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Non-interactive batch processing
+</summary>
+<p>Workflows can be <a href="https://jhudatascience.org/AnVIL_Book_WDL/write-wdl.html#export-to-anvil-powered-by-terra-and-run">user-supplied/written</a> or <a href="https://jhudatascience.org/AnVIL_Book_WDL/import-and-configure-workflows.html">imported with Dockstore</a> and used to steer non-interactive pipelines and batch processing of data.</p>
+</details>
+</div>
+</div>
+<div id="data-yours-or-cloud-hosted-open-controlled-access" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Data: yours or cloud-hosted open &amp; controlled access<a href="why-use-anvil.html#data-yours-or-cloud-hosted-open-controlled-access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_91.png" alt="With AnVIL you can upload your own data (signified by the plus sign) or browse cloud-hosted open and controlled access datasets to identify relevant datasets, importing or requesting access to those for your workspaces. Several consortia have data available on AnVIL with data deposits growing." width="100%" /></p>
+<p>AnVIL securely stores diverse, open and controlled access, cloud-hosted datasets with a browsable summary catalog so researchers can identify relevant datasets they may need to request access to.</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Consortia Data on the AnVIL
+</summary>
+<p>Data on the AnVIL includes data from consortia such as</p>
+<ul>
+<li><a href="https://anvilproject.org/news/2023/09/05/data-release-als-compute-project">The Amyotrophic Lateral Sclerosis (ALS) Compute Project</a></li>
+<li><a href="https://anvilproject.org/news/2023/03/17/data-release-card-dementia-long-read-project">NIH Intramural Center for Alzheimer’s and Related Dementias (CARD)</a></li>
+<li><a href="https://www.genome.gov/Funded-Programs-Projects/NHGRI-Genome-Sequencing-Program/Centers-for-Common-Disease-Genomics">The Centers for Common Disease Genomics (CCDG)</a></li>
+<li><a href="https://www.genome.gov/Funded-Programs-Projects/NHGRI-Genome-Sequencing-Program/Centers-for-Mendelian-Genomics-CMG">The Centers for Mendelian Genomics (CMG)</a></li>
+<li><a href="https://anvilproject.org/news/2024/11/21/gregor-consortium">Genomics Research to Elucidate the Genetics of Rare diseases (GREGoR)</a></li>
+<li><a href="https://anvilproject.org/news/2024/11/20/gtexv10">Genotype-Tissue Expression (GTEx) project</a></li>
+<li><a href="https://www.fetalgenomics.org/">International Fetal Genomics Consortium (IFGC)</a></li>
+<li><a href="https://www.internationalgenome.org/">The 1000 Genomes Project</a></li>
+<li><a href="https://anvilproject.org/consortia/cser">The Clinical Sequencing Evidence-Generating Research (CSER) consortium</a></li>
+<li><a href="https://emerge-network.org/">The Electronic and MEdical Records and Genomics project (eMERGE)</a></li>
+<li><a href="https://www.genome.gov/Funded-Programs-Projects/Population-Architecture-Using-Genomics-and-Epidemiology">The Population Architecture Using Genomics and Epidemiology Consortium (PAGE)</a></li>
+<li><a href="https://anvilproject.org/news/2021/03/11/hprc-on-anvil">The Human Pangenome Reference Consortium (HPRC)</a></li>
+<li><a href="https://anvilproject.org/news/2023/03/17/data-release-telomere-to-telomere">Telomere-to-Telomere (T2T)</a></li>
+</ul>
+<p><a href="https://anvilproject.org/consortia">Additional consortia or upcoming planned data ingestion can be found on the AnVIL project portal</a>. By inverting the typical method of genomic analysis, AnVIL brings a computing environment to the data rather than moving the data from storage to the computing environment or stories copies of the data across institutional high performance computing clusters.</p>
+</details>
+</div>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Amount of data on AnVIL
+</summary>
+<p>As discussed in the <a href="https://www.cell.com/cell-genomics/fulltext/">flagship AnVIL paper</a>, the AnVIL hosts data from &gt;280,000 human genomes from &gt;240 different cohorts spanning multiple consortia and major NHGRI projects. The AnVIL offers a browsable catalog of summary information about all of the datasets so that even if a user isn’t authorized to access the data itself, they can better determine if the data will be helpful for their research if they need to apply for authorization for access. AnVIL is working to facilitate data harmonization across studies, ensuring consistency and interoperability, which is critical for large-scale analyses. These efforts will increase the value of the AnVIL data and maximize its utility to the researcher community.</p>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_496.png" alt="https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_496#slide=id.g36e681c6048_0_496" width="100%" /></p>
+</details>
+</div>
+<div class="click_to_expand_block">
+<details>
+<summary>
+AnVIL is a FedRAMP Moderate compliant platform
+</summary>
+<p>As a <a href="https://www.fedramp.gov/rev5/baselines/">FedRAMP Moderate compliant platform</a>, AnVIL maintains FedRAMP authorization of compliance to ensure as a cloud service provider, minimum security requirements are met for data processing, storage, and transmission of Protected Health Information (PHI) and Personally Identifiable Information (PII) where loss of confidentiality, integrity, and availability would result in serious adverse effect or non-life threatening harm. All steps necessary to maintain compliance, such as robust logging of access to data, periodic audits by third-party analysts, and monitoring for abnormal use patterns are managed and guaranteed by AnVIL.</p>
+</details>
+</div>
+</div>
+<div id="data-analysis-in-same-place" class="section level3 hasAnchor" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> Data &amp; analysis in same place<a href="why-use-anvil.html#data-analysis-in-same-place" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_179.png" alt="The AnVIL portal is an entry point for all parts of AnVIL, allowing visitors to launch Terra to work on AnVIL, as well as access important announcements or documentation." width="100%" /></p>
+<p>AnVIL is a unified computing environment for data storage, management, and analysis. The <a href="https://anvilproject.org">AnVIL portal</a> serves as an entry point to access all parts of the AnVIL system as well as training materials and announcements.</p>
+</div>
+<div id="scalability" class="section level3 hasAnchor" number="2.1.5">
+<h3><span class="header-section-number">2.1.5</span> Scalability<a href="why-use-anvil.html#scalability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>AnVIL is conducive to analysis at massive scale and for data exploration and training. Researchers get access to dedicated compute resources, avoiding queue time and lack of access at some institutions. Researchers can also launch light environments or run test analyses without incurring much cost or spending a lot of time to configure.</p>
+</div>
+<div id="rent-needed-resources" class="section level3 hasAnchor" number="2.1.6">
+<h3><span class="header-section-number">2.1.6</span> Rent needed resources<a href="why-use-anvil.html#rent-needed-resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>AnVIL allows you to rent the computational resources that you need for occasional high demand needs rather than obtaining and maintaining the same resources yourself or paying a subscription for an allocation/constant access (with little consistent use over time). AnVIL can provide different hardware and software setups, rather than preparing the environment yourself (or relying on an institutional core to do it and waiting in the queue).</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Additional considerations
+</summary>
+<p>Other considerations that make renting computational resources from AnVIL appealing compared to obtaining and maintaining your own resources or upgrading an institutional allocation (HPC) include:</p>
+<ul>
+<li>AnVIL is compliant with protected data. Some institutional HPCs may not be.</li>
+<li>Once your group is initially set up on AnVIL, adding users (with specified permissions) is easier than trying to add a user to an allocation through an email chain.</li>
+<li>Because AnVIL maintains docker images, the exact version of a tool is documented and available.</li>
+<li>AnVIL scales well for large numbers of samples and won’t require long waits in queues to access limited, specialized resources; AnVIL also works well for small analyses where you may not want to connect to the HPC and set up a complicated environment there.</li>
+</ul>
+</details>
+</div>
+</div>
+<div id="role-based-permissions" class="section level3 hasAnchor" number="2.1.7">
+<h3><span class="header-section-number">2.1.7</span> Role-based permissions<a href="why-use-anvil.html#role-based-permissions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_152.png" alt="A workspace is the fundamental unit of activity in AnVIL with role-based access. The workspace will show the user’s access level (e.g., whether they are an owner or reader or writer who has the ability to run compute or share). This helps to enable collaboration. The Access level of the user is highlighted in this example workspace." width="100%" /></p>
+<p><a href="https://support.terra.bio/hc/en-us/articles/360022704371-Navigating-in-Terra">Group management</a> can be utilized to control who can access specific data, analysis workspaces, and your billing resources. <a href="https://support.terra.bio/hc/en-us/articles/360024743371-Working-with-workspaces">Workspaces provide a collaborative environment</a> with role-based permissions. These <a href="https://support.terra.bio/hc/en-us/articles/360025851892-Sharing-data-and-tools-with-workspace-access-controls">permission include reading, writing, or owning with additional permissions for running compute and sharing</a>. Especially within the contexts of working with sensitive data or large amounts of data, AnVIL’s role-based group management permission structure is instrumental.</p>
+</div>
+<div id="shareable-workspaces" class="section level3 hasAnchor" number="2.1.8">
+<h3><span class="header-section-number">2.1.8</span> Shareable workspaces<a href="why-use-anvil.html#shareable-workspaces" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_166.png" alt="A workspace can serve as a shareable record of analyses. The ability to access the permalink to the example workspace is highlighted in this image." width="100%" /></p>
+<p><a href="https://support.terra.bio/hc/en-us/articles/360024743371-Working-with-workspaces">Workspaces</a> can contain data, metadata, and analysis tools, as well as documentation and history of workflow runs, additionally displaying important information such as when the workspace was created and last modified. AnVIL workspaces on the web can serve as shareable, reproducible records of analyses. Research conducted on the AnVIL platform has contributed to over 115 scientific publications citing the AnVIL paper, demonstrating its role in advancing genomic and biomedical research.</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Examples of AnVIL workspaces shared in publications
+</summary>
+<p>AnVIL workspaces have previously been shared in publications to demonstrate reproducible science.</p>
+<ul>
+<li><a href="https://www.science.org/doi/10.1126/science.abl3533" class="uri">https://www.science.org/doi/10.1126/science.abl3533</a></li>
+<li><a href="https://www.science.org/doi/10.1126/science.abe3261" class="uri">https://www.science.org/doi/10.1126/science.abe3261</a></li>
+<li><a href="https://anvil.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot" class="uri">https://anvil.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot</a></li>
+</ul>
+</details>
+</div>
+</div>
+<div id="repository-compliant-with-dms-policy" class="section level3 hasAnchor" number="2.1.9">
+<h3><span class="header-section-number">2.1.9</span> Repository compliant with DMS Policy<a href="why-use-anvil.html#repository-compliant-with-dms-policy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The AnVIL serves as a <a href="https://anvilproject.org/overview/dms-requirements">cloud data repository compliant with the Data Management and Sharing (DMS) Policy</a>. Data access controls can be specified to limit data access and use.</p>
+<p>By submitting their data to AnVIL, not only can researchers meet the requirements of DMS Policy, they can also <a href="https://terra.bio/anvil-platform-helps-meet-the-new-nih-data-management-and-sharing-policy-requirements/">contribute to the expanding network of NIH funded data housed in the AnVIL</a>, furthering scientific discovery.</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+What is DMS Policy?
+</summary>
+<p>The National Institutes of Health (NIH) Data Management and Sharing (DMS) policy requires that all NIH-supported research which generates <a href="https://hutchdatascience.org/NIH_Data_Sharing/how-will-this-policy-affect-me.html#scientific-data">scientific data</a> (barring ethical, legal, or technical factors <a href="https://hutchdatascience.org/NIH_Data_Sharing/how-will-this-policy-affect-me.html#when-to-not-share">limiting data sharing</a>) must create a plan and budget for data management and sharing.</p>
+<p>While some funding announcements for some research may specify which repository should be used to comply with DMS policy, mostly the NIH does not specify <a href="https://hutchdatascience.org/NIH_Data_Sharing/data-management-and-storage.html#data-repositories">where data should be stored.</a>. The NIH does provide an <a href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data">interactive table listing NIH supported data repositories</a> than can be used and <a href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository">suggests that researchers use a repository most appropriate for the data generated from their research</a>.</p>
+</details>
+</div>
+<div class="click_to_expand_block">
+<details>
+<summary>
+How is data access managed and requests granted?
+</summary>
+<p>AnVIL utilizes the Data Use and Oversight System <a href="https://duos.org/">(DUOS)</a> to efficiently expedite data access and management while maintaining security. Researchers can <a href="https://anvilproject.org/news/2024/11/15/duos-announcement">explore datasets hosted in the AnVIL cloud and request access using DUOS</a>. <a href="https://duos.org/anvil_dms_policy">Data use limitations can be set if necessary with Data Access Committees reviewing access requests</a>.</p>
+</details>
+</div>
+</div>
+</div>
+<div id="benefits-of-using-anvil-in-the-classroom" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Benefits of using AnVIL in the classroom<a href="why-use-anvil.html#benefits-of-using-anvil-in-the-classroom" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g37132c23502_0_68.png" alt="For the classroom, the AnVIL offers a unified computing system for learners where they will have an authentic experience with cloud computing that is increasingly becoming frequently utilized within today’s research environment. Learners can learn and practice with a variety of tools using relevant datasets and prepared exercises." width="100%" /></p>
+<p>AnVIL provides all the <strong>advantages of a cloud computing environment</strong>, such as version control and offering a <strong>unified computing system</strong> without providing physical computers with certain specifications. Additionally, AnVIL provides students with <strong>authentic experience</strong> working in the cloud – which is becoming common in today’s research environment. Students can also gain experience with a <strong>variety of tools</strong> (e.g., Galaxy, RStudio, Jupyter notebooks, WDL workflows) all in one place while working with <strong>relevant datasets</strong> and <strong>prepared exercises</strong>.</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Instructor Guide Available
+</summary>
+<p>See more in our <a href="https://jhudatascience.org/AnVIL_Book_Instructor_Guide/introduction.html#why-should-i-use-anvil">instructor guide</a> on why AnVIL is a good choice for your classroom.</p>
+</details>
+</div>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_34.png" alt="AnVIL provides several prepared exercises providing relevant biology background and datasets using a variety of tools to help train students within a cloud computing environment. 4 examples include the Single Cell with Bioconductor AnVIL Demo, the analysis of a SARS-CoV-2 genome with Galaxy on AnVIL (part of the Genomic Data Science Community Network or GDSCN), the GDSCN BioDIGS R Data Package, and an RNA-Seq mini CURE." width="100%" /></p>
+</div>
+<div id="overall-benefits-of-anvil" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Overall benefits of AnVIL<a href="why-use-anvil.html#overall-benefits-of-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g37132c23502_0_80.png" alt="The general benefits of using the AnVIL include the ability to control cloud-computing costs, being able to safely work with protected data, maintenance is handled by others not the users, training and support is available for users, and the AnVIL is a collaborative community with a development mindset." width="100%" /></p>
+<div id="ability-to-control-costs" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Ability to control costs<a href="why-use-anvil.html#ability-to-control-costs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cloud computing is not free and estimating costs may seem daunting to those considering use of the AnVIL. However, Terra provides thorough, transparent <a href="https://support.terra.bio/hc/en-us/articles/360029748111-Overview-Controlling-Google-Cloud-costs-on-Terra">documentation explaining data storage and cloud computing costs</a> and has been working to improve transparency and management of costs for AnVIL users through <a href="https://terra.bio/tools-to-manage-terra-costs/">cost reporting, cost controls and estimates, and cost optimizations</a>. Additionally, in order to debug or benchmark your work, analyses or workflows can be tested with smaller scale test datasets or light environments without incurring much cost or spending a lot of time to configure environments.</p>
+</div>
+<div id="work-with-protected-data-safely" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Work with protected data safely<a href="why-use-anvil.html#work-with-protected-data-safely" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Due to AnVIL maintaining compliance with <a href="https://www.fedramp.gov/">FedRAMP</a> policies, clinical data containing PHI and PII can be safely and securely stored and analyzed on AnVIL. This includes the ability to <a href="https://support.terra.bio/hc/en-us/articles/28965977114651-AnVIL-User-Guide-for-REDCap">export data from clinical data collection and management tools like REDCap and import it into AnVIL Terra Tables</a>.</p>
+</div>
+<div id="maintenance-is-handled" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Maintenance is handled<a href="why-use-anvil.html#maintenance-is-handled" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Since AnVIL handles the support and maintenance of the platform (including the hardware and software), you can focus on performing your work on AnVIL rather than setting up and maintaining the platform, freeing up effort for your science. This is immensely valuable for researchers who do not have deep institutional IT and system administrator support for research infrastructure.</p>
+</div>
+<div id="training-and-support-is-available" class="section level3 hasAnchor" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> Training and support is available<a href="why-use-anvil.html#training-and-support-is-available" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To equip researchers and students to work on the AnVIL, the AnVIL team</p>
+<ul>
+<li>provides and maintains <a href="https://hutchdatascience.org/AnVIL_Collection/">training materials</a> and documentation in multiple formats (ex: <a href="https://jhudatascience.org/AnVIL_Book_Getting_Started/">Getting Started on AnVIL</a>),</li>
+<li>moderates a <a href="https://help.anvilproject.org/">support forum</a></li>
+<li>hosts <a href="https://hutchdatascience.org/AnVIL_Demos/">demos</a> (ex: <a href="https://anvilproject.org/events/anvil2023-december-demos" class="uri">https://anvilproject.org/events/anvil2023-december-demos</a>)</li>
+<li>hosts workshops (ex: <a href="https://anvilproject.org/events/anvil2024-nhgri-intramural-workshop" class="uri">https://anvilproject.org/events/anvil2024-nhgri-intramural-workshop</a>)</li>
+</ul>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_185.png" alt="Training and support are available for users in multiple formats. Users can browse the AnVIL collection to see what is available. Examples include the AnVIL Getting Started book (available online), a moderated support forum, and live AnVIL Demos that are also recorded and posted to YouTube." width="100%" /></p>
+</div>
+<div id="collaborative-community" class="section level3 hasAnchor" number="2.3.5">
+<h3><span class="header-section-number">2.3.5</span> Collaborative community<a href="why-use-anvil.html#collaborative-community" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_147.png" alt="The AnVIL has a collaborative community with a development mindset, soliciting and listening to feedback and supporting and maintaining forums and training for discussion and help." width="100%" /></p>
+<p>AnVIL has begun hosting community conferences to collaboratively innovate during CoFests! and to discuss research performed with the platform. The community can work directly with the AnVIL team to understand current development, feature requests, and a roadmap or future directions for the platform.</p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+Past and Upcoming AnVIL Community Conferences
+</summary>
+<ul>
+<li>2024: <a href="https://anvilproject.org/events/anvil2024-community-conference" class="uri">https://anvilproject.org/events/anvil2024-community-conference</a></li>
+<li>2025: <a href="https://anvilproject.org/events/anvil2025-community-conference" class="uri">https://anvilproject.org/events/anvil2025-community-conference</a></li>
+</ul>
+</details>
+</div>
+<p>Additionally, AnVIL values and routinely solicits user feedback to improve the user experience and provide the most beneficial features and enhancement for biomedical research. Feedback is gathered:</p>
+<ul>
+<li>at the community conference</li>
+<li>through <a href="https://help.anvilproject.org/t/participate-in-the-state-of-the-anvil-2025-community-poll/275">State of the AnVIL community polls</a></li>
+<li>through voluntary user interviews</li>
+<li>24/7 at the support forum <a href="https://help.anvilproject.org/">help.anvilproject.org</a></li>
+</ul>
+</div>
+</div>
+<div id="conclusion" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Conclusion<a href="why-use-anvil.html#conclusion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>All of this together describes how the AnVIL provides secure, cost-effective genomic analysis at scale, and is a useful cloud-based platform for training and research.</p>
+<p><img src="01-intro_files/figure-html/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_p.png" alt="In addition to the general benefits of working on the cloud (such as learners and analysts being able to work with identical environments with pre-installed bioinformatic tools), AnVIL provides a strong community with support and training material, bridging the gap between training to research on human genomic datasets using a secure platform for controlled-access data storage, management, and analysis. And though bioinformatic tools are pre-installed, users are given the ability to install additional software and tools as needed and can pay to scale resources resulting in quicker runtimes as needed. Additionally, AnVIL has collaboration tools for workgroups." width="100%" /></p>
+
+</div>
+</div>
+
+
+
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pis-and-lab-managers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

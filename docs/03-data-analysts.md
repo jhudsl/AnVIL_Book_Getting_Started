@@ -44,7 +44,7 @@ If you would like to create a Google account that is associated with your non-Gm
 
 You can always access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
 
-<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gde7783227e_0_31.png" alt="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." width="480" />
+<img src="03-data-analysts_files/figure-html//1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM_gde7783227e_0_31.png" alt="Screenshot of the AnVIL home page. The button to 'launch Terra' is highlighted." width="480" />
 
 ## Step 3: Link External Accounts (optional)
 
@@ -63,4 +63,5 @@ Your PI or lab manager should be now be able to add you to Workspaces so that yo
 To learn more about how to perform analyses on AnVIL, see the **Working on AnVIL** section of this book.
 
 - The [Workspaces] chapter introduces AnVIL Workspaces, the fundamental unit of research organization on AnVIL. All analyses on AnVIL are performed in a Workspace.
-- The [Tools], [Data], and [Workflows] chapters explain how to perform a variety of common research tasks on AnVIL.
+- The [Jupyter Notebook], [Galaxy], and [RStudio] chapters surveys a variety of common analysis tools on AnVIL.
+- The [Data] and [Workflows] chapters explain how to perform a variety of common research tasks on AnVIL.

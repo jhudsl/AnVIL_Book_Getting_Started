@@ -6,11 +6,11 @@ The Workspace Bucket is a special Google Cloud Storage bucket that is governed b
 
 In contrast, Persistent Disks provide a working directory for Cloud Environments that run Jupyter, RStudio, and Galaxy.  Input data can be localized to Persistent Disks for analysis while output data can be transferred to the Workspace Bucket for more reliable long term storage.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3b800_0_4.png" alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number &quot;one&quot; and the Persistent Disk is highlighted with a number &quot;two&quot;. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3b800_0_4.png" alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Google Bucket is highlighted with a number 'one' and the Persistent Disk is highlighted with a number 'two'. The `gsutil` command connects the two storage locations and allows users to copy data back and forth. The Persistent Disk is used by RStudio, Jupyter, and Galaxy. Data can also be copied to the Persistent Disk from another Workspace or SRA dataset." width="480" />
 
 Data Tables provide a way to organize data and metadata, including URI links to storage buckets.  These tables are a convenient way to organize input for analyses as well as tracking workflow outputs.  More details can be found in the [Terra documentation](https://support.terra.bio/hc/en-us/sections/360004147951).
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3c0cd_0_0.png" alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number &quot;three&quot;." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf982a3c0cd_0_0.png" alt="Image shows a schematic of the data storage locations in an AnVIL Workspace. The Data Table is highlighted with a number 'three'." width="480" />
 
 ## Bring Your Own Data
 
@@ -18,7 +18,7 @@ Data Tables provide a way to organize data and metadata, including URI links to 
 
 The starting point for bringing your own data to AnVIL is the Workspace Dashboard. At the bottom right, you'll find the full path to the Google Bucket information corresponding to your Workspace. You can click the clipboard icon on the right to copy the name of your Workspace Bucket. You will be able to see any uploaded files by clicking the "Open in browser" link.
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5172664d7_0_142.png" alt="Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and &quot;Open in browser&quot; link, at the bottom right of the screen is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf5172664d7_0_142.png" alt="Image shows a screenshot of the Workspace Dashboard. Google Bucket information, including the Google Bucket name, location, and 'Open in browser' link, at the bottom right of the screen is highlighted." width="480" />
 
 You can also see any uploaded files by clicking the "Files" directory at the bottom left in the Data Tab.
 
@@ -34,11 +34,11 @@ Click the "Files" directory at the bottom left of the Data Tab. Then click the "
 
 Click the ["Open in browser"](#bring-data-overview) link on the bottom right of the Workspace Dashboard Tab. This will open a new browser window or tab directed to your Workspace's Google Bucket on the Google Cloud Platform. 
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_1.png" alt="Image shows a screenshot of the Workspace Dashboard. The &quot;Open in browser&quot; link at the bottom right of the screen is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_1.png" alt="Image shows a screenshot of the Workspace Dashboard. The 'Open in browser' link at the bottom right of the screen is highlighted." width="480" />
 
 Here, you can upload files and manage your data and folders. You can also upload an entire folder by clicking on "UPLOAD FOLDER".
 
-<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_9.png" alt="Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The &quot;UPLOAD FOLDER&quot; button is highlighted." width="480" />
+<img src="07-data_files/figure-html//1H5onDH7cBLK2m7fCcJ6ZodAAQ3wtJO8tNc2rwptrTPM_gf57004a098_0_9.png" alt="Image shows a screenshot of the Workspace Google Bucket on the Google Cloud Platform. The 'UPLOAD FOLDER' button is highlighted." width="480" />
 
 ### `gsutil`: Local to Cloud
 

@@ -50,7 +50,7 @@ cow::borrow_chapter(
 
 You can always access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
 
-```{r, echo=FALSE, fig.alt='Screenshot of the AnVIL home page. The button to "launch Terra" is highlighted.'}
+```{r, echo=FALSE, fig.alt="Screenshot of the AnVIL home page. The button to 'launch Terra' is highlighted."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1LT4wxVioJWtSpf3GV81hrbG8W2M-YWOaY7PmJObRioM/edit#slide=id.gde7783227e_0_31")
 ```
 
@@ -71,4 +71,5 @@ Your PI or lab manager should be now be able to add you to Workspaces so that yo
 To learn more about how to perform analyses on AnVIL, see the **Working on AnVIL** section of this book.
 
 - The [Workspaces] chapter introduces AnVIL Workspaces, the fundamental unit of research organization on AnVIL. All analyses on AnVIL are performed in a Workspace.
-- The [Tools], [Data], and [Workflows] chapters explain how to perform a variety of common research tasks on AnVIL.
+- The [Jupyter Notebook], [Galaxy], and [RStudio] chapters surveys a variety of common analysis tools on AnVIL.
+- The [Data] and [Workflows] chapters explain how to perform a variety of common research tasks on AnVIL.

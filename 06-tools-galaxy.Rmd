@@ -1,6 +1,6 @@
 # Galaxy
 
-One of the analysis platforms available on AnVIL is Galaxy. This platform offers a [graphical interface for thousands of tools](https://support.terra.bio/hc/en-us/articles/360050566271-Overview-Galaxy-in-Terra) This chapter focuses on launching and highlighting a few features for Galaxy.
+One of the analysis platforms available on AnVIL is Galaxy. This platform offers a [graphical interface for thousands of tools](https://anvilproject.org/learn/run-interactive-analyses/getting-started-with-galaxy) (see [Terra](https://support.terra.bio/hc/en-us/articles/360050566271-Overview-Galaxy-in-Terra) documentation). This chapter focuses on launching and highlighting a few features for Galaxy.
 
 ## Galaxy: Video tutorial
 
