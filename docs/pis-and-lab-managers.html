@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2025-09-24" />
+<meta name="date" content="2025-11-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -626,7 +626,7 @@ You can create multiple Billing Accounts associated with your Google ID. We reco
 <li>Terra provides <a href="https://support.terra.bio/hc/en-us/sections/360006459511-Controlling-Cloud-costs">extensive documentation and examples</a> regarding cost management while working in the cloud</li>
 </ul>
 <p><strong>We highly recommended you set budgets and alerts to notify you if spending starts to exceed expectations</strong>. This will make it easier to notice and shut down any accidental overspending. A good starting point is to set a monthly budget, and then set alerts at <strong>50 percent</strong> and <strong>90 percent</strong> of expected spend. You can add additional alerts if you desire.</p>
-<p>You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects. This will depend on the size of your lab and how closely you want to monitor spending. More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month. When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface. <strong>NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.</strong> At the time of writing (Feb 2021) you are not able to set budgets for individual projects while you are using the GCP free credits, but can still set an overall budget. Any restrictions should be lifted when you upgrade to a paid account.</p>
+<p>You can set a single Budget for your entire lab, set up individual budgets for each Billing Project, or even set budgets for certain subsets of your Billing Projects. This will depend on the size of your lab and how closely you want to monitor spending. More granular budgets make it quicker to notice and track down overspending from a particular project but mean you will get more emails every month. When setting budgets with broader scope, you can always find out which particular Billing Project is spending the money by checking in the GCP Billing interface. <strong>NOTE: that there may be some restrictions on the budgets and alerts you can set while you’re using GCP’s free credits.</strong> At the time of writing (Jan 2025), you <a href="https://support.terra.bio/hc/en-us/articles/360057589931-How-to-set-up-and-use-Google-Cloud-budget-alerts">cannot set budget alerts if you are using the GCP free credits on Terra</a>. Any restrictions should be lifted when you upgrade to a paid account</p>
 <div id="set-alerts" class="section level3 hasAnchor" number="3.6.1">
 <h3><span class="header-section-number">3.6.1</span> Set Alerts<a href="pis-and-lab-managers.html#set-alerts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
@@ -681,7 +681,8 @@ You can create multiple Billing Accounts associated with your Google ID. We reco
 </div>
 <div id="export-cost-data-to-bigquery" class="section level3 hasAnchor" number="3.6.3">
 <h3><span class="header-section-number">3.6.3</span> Export Cost Data to BigQuery<a href="pis-and-lab-managers.html#export-cost-data-to-bigquery" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Coming soon – instructions on how to export your cost data so you can better analyze and control your expenses.</p>
+<p>After a workflow has completed on AnVIL, you access the time and cost from Google’s BigQuery database to explore more granular cost details.</p>
+<p>Details on how this can be done on Terra are <a href="https://support.terra.bio/hc/en-us/articles/360036932671-How-to-retrieve-detailed-workflow-cost-information-on-GCP">here</a>. Instructions for doing this on AnVIL are coming soon!</p>
 </div>
 </div>
 <div id="step-6-add-users-and-workspaces" class="section level2 hasAnchor" number="3.7">
@@ -762,7 +763,7 @@ You can create multiple Billing Accounts associated with your Google ID. We reco
 <h3><span class="header-section-number">3.7.3</span> Request Quota Increase<a href="pis-and-lab-managers.html#request-quota-increase" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To prevent abuse, new users of GCP are only permitted to create a few Google Cloud “Projects”. When working on Terra, each Terra Workspace is associated with its own Google Cloud Project, so if your team has multiple members you can bump up against this limit fairly quickly and won’t be able to create more Workspaces.</p>
 <p>Since this limit is imposed by Google, you will need to contact them directly to request a quota increase, using <a href="https://support.google.com/code/contact/billing_quota_increase">this form</a>.</p>
-<p>At the time of writing (April 2022) Terra is working to expedite this process for Terra users; we recommend checking the <a href="https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY">relevant Terra documentation</a> for the latest information as well as recommendations about how to fill out the form.</p>
+<p>At the time of writing (Jan 2025) Terra has released guidelines on requesting quota increases; we recommend checking the <a href="https://support.terra.bio/hc/en-us/articles/360029071251#h_01FFNCK82NB0YMAH5BTP41GYSY">relevant Terra documentation</a> for the latest information as well as recommendations about how to fill out the form.</p>
 </div>
 </div>
 <div id="pis-wrap-up" class="section level2 hasAnchor" number="3.8">

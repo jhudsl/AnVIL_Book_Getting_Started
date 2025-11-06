@@ -52,7 +52,7 @@ The primary means of accessing the AnVIL platform ([anvil.terra.bio](https://anv
 
 <details><summary>Accessing AnVIL beyond the web browser</summary>
 
-The platform ([anvil.terra.bio](https://anvil.terra.bio/)) provides a variety of graphical user interfaces (GUIs) as well as optional application programming interface (API) library/command line interfaces to interact with data, analysis solutions, and workflows. Bioconductor packages ([AnVIL](https://www.bioconductor.org/packages/release/bioc/vignettes/AnVIL/inst/doc/Introduction.html), [AnVILGCP](https://www.bioconductor.org/packages/release/bioc/html/AnVILGCP.html), [AnVILWorkflow](https://www.bioconductor.org/packages/release/bioc/html/AnVILWorkflow.html)) offer additional methods for users to programmatically interact with and access AnVIL resources from within AnVIL, or stand-alone computing environments such as a user's laptop.
+The platform ([anvil.terra.bio](https://anvil.terra.bio/)) provides a variety of graphical user interfaces (GUIs) to interact with data, analysis solutions, and workflows. Bioconductor packages ([AnVIL](https://www.bioconductor.org/packages/release/bioc/vignettes/AnVIL/inst/doc/Introduction.html), [AnVILGCP](https://www.bioconductor.org/packages/release/bioc/html/AnVILGCP.html), [AnVILWorkflow](https://www.bioconductor.org/packages/release/bioc/html/AnVILWorkflow.html)) offer additional methods for users to programmatically interact with and access AnVIL resources from within AnVIL, or stand-alone computing environments such as a user's laptop.
 
 </details>
 
