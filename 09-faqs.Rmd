@@ -15,13 +15,13 @@
 
 ### What Data Is Available?
 
-- Browse the [Data Dashboard](https://anvilproject.org/data)
-- [Request access](https://anvilproject.org/learn/accessing-data/requesting-data-access) if necessary for Controlled Access Data or Consortia Access Data
+- Browse the [Data Explorer](https://explore.anvilproject.org/datasets)
+- [Get access](https://anvilproject.org/learn/find-data/requesting-data-access) to Controlled Access Data or Consortia Access Data by [linking your NIH account](https://support.terra.bio/hc/en-us/articles/19124069598235-Access-controlled-data-files-by-linking-your-NIH-account-in-Terra).
 - [Bring Your Own Data](https://jhudatascience.org/AnVIL_Book_Getting_Started/bring-your-own-data.html)
 
 ### How Do I Perform an Analysis?
 
-- Launch interactive tools like [Jupyter](https://anvilproject.org/learn/data-analysts/jupyter-gsg-video), [RStudio](https://anvilproject.org/learn/data-analysts/rstudio-gsg-video), [Galaxy](https://anvilproject.org/learn/data-analysts/galaxy-gsg-video)
+- Launch interactive tools like [Jupyter](https://support.terra.bio/hc/en-us/articles/360024898671-Interactive-analysis-with-Jupyter-notebooks), [RStudio](https://anvilproject.org/learn/run-interactive-analyses/rstudio-gsg-video), [Galaxy](https://anvilproject.org/learn/run-interactive-analyses/galaxy-gsg-video)
     - "Terminal" available through Jupyter and RStudio
 - Migrate your HPC analysis to AnVIL using Docker/WDLs
     - Introducing the Learn WDL Course ([10 min video](https://www.youtube.com/watch?v=RtcW2Zdn_28))
