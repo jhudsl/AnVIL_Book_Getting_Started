@@ -114,7 +114,7 @@ Data on the AnVIL includes data from consortia such as
 * [The Human Pangenome Reference Consortium (HPRC)](https://anvilproject.org/news/2021/03/11/hprc-on-anvil)
 * [Telomere-to-Telomere (T2T)](https://anvilproject.org/news/2023/03/17/data-release-telomere-to-telomere)
 
-[Additional consortia or upcoming planned data ingestion can be found on the AnVIL project portal](https://anvilproject.org/consortia). By inverting the typical method of genomic analysis, AnVIL brings a computing environment to the data rather than moving the data from storage to the computing environment or stories copies of the data across institutional high performance computing clusters.
+[Additional consortia or upcoming planned data ingestion can be found on the AnVIL project portal](https://anvilproject.org/consortia). By inverting the typical method of genomic analysis, AnVIL brings a computing environment to the data rather than moving the data from storage to the computing environment or storing copies of the data across institutional high performance computing clusters.
 
 </details>
 
@@ -124,7 +124,7 @@ Data on the AnVIL includes data from consortia such as
 
 <details><summary>Amount of data on AnVIL</summary>
 
-As discussed in the [flagship AnVIL paper](https://www.cell.com/cell-genomics/fulltext/), the AnVIL hosts data from >280,000 human genomes from >240 different cohorts spanning multiple consortia and major NHGRI projects. The AnVIL offers a browsable catalog of summary information about all of the datasets so that even if a user isn't authorized to access the data itself, they can better determine if the data will be helpful for their research if they need to apply for authorization for access. AnVIL is working to facilitate data harmonization across studies, ensuring consistency and interoperability, which is critical for large-scale analyses. These efforts will increase the value of the AnVIL data and maximize its utility to the researcher community.
+As discussed in the [flagship AnVIL paper](https://www.cell.com/cell-genomics/fulltext/S2666-979X(21)00106-3), the AnVIL hosts data from >280,000 human genomes from >240 different cohorts spanning multiple consortia and major NHGRI projects. The AnVIL offers a browsable catalog of summary information about all of the datasets so that even if a user isn't authorized to access the data itself, they can better determine if the data will be helpful for their research if they need to apply for authorization for access. AnVIL is working to facilitate data harmonization across studies, ensuring consistency and interoperability, which is critical for large-scale analyses. These efforts will increase the value of the AnVIL data and maximize its utility to the researcher community.
 
 <img src="01-intro_files/figure-html//1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI_g36e681c6048_0_496.png" alt="https://docs.google.com/presentation/d/1zq27o5gSWeiaEPqbCTTL3c_zvozN5lg_QNJYRVyM-SI/edit?slide=id.g36e681c6048_0_496#slide=id.g36e681c6048_0_496" width="100%" />
 
